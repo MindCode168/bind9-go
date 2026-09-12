@@ -1,0 +1,94 @@
+{"Time":"2026-09-13T00:32:05.816612+08:00","Action":"start","Package":"bind-go/internal/serial"}
+{"Time":"2026-09-13T00:32:05.81751+08:00","Action":"start","Package":"bind-go/internal/ttl"}
+{"Time":"2026-09-13T00:32:06.291462+08:00","Action":"run","Package":"bind-go/internal/serial","Test":"TestUpstreamOracle"}
+{"Time":"2026-09-13T00:32:06.291559+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"TestUpstreamOracle","Output":"=== RUN   TestUpstreamOracle\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.484187+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"TestUpstreamOracle","Output":"--- PASS: TestUpstreamOracle (0.19s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.484214+08:00","Action":"pass","Package":"bind-go/internal/serial","Test":"TestUpstreamOracle","Elapsed":0.19}
+{"Time":"2026-09-13T00:32:06.484283+08:00","Action":"run","Package":"bind-go/internal/serial","Test":"TestCompare"}
+{"Time":"2026-09-13T00:32:06.484286+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"TestCompare","Output":"=== RUN   TestCompare\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.484319+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"TestCompare","Output":"--- PASS: TestCompare (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.484327+08:00","Action":"pass","Package":"bind-go/internal/serial","Test":"TestCompare","Elapsed":0}
+{"Time":"2026-09-13T00:32:06.484338+08:00","Action":"run","Package":"bind-go/internal/serial","Test":"TestAdd"}
+{"Time":"2026-09-13T00:32:06.484341+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"TestAdd","Output":"=== RUN   TestAdd\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.484371+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"TestAdd","Output":"--- PASS: TestAdd (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.484375+08:00","Action":"pass","Package":"bind-go/internal/serial","Test":"TestAdd","Elapsed":0}
+{"Time":"2026-09-13T00:32:06.484407+08:00","Action":"run","Package":"bind-go/internal/serial","Test":"FuzzCompare"}
+{"Time":"2026-09-13T00:32:06.48441+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"FuzzCompare","Output":"=== RUN   FuzzCompare\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.484621+08:00","Action":"run","Package":"bind-go/internal/serial","Test":"FuzzCompare/seed#0"}
+{"Time":"2026-09-13T00:32:06.484625+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"FuzzCompare/seed#0","Output":"=== RUN   FuzzCompare/seed#0\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.484736+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"FuzzCompare/seed#0","Output":"--- PASS: FuzzCompare/seed#0 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.48474+08:00","Action":"pass","Package":"bind-go/internal/serial","Test":"FuzzCompare/seed#0","Elapsed":0}
+{"Time":"2026-09-13T00:32:06.484751+08:00","Action":"run","Package":"bind-go/internal/serial","Test":"FuzzCompare/seed#1"}
+{"Time":"2026-09-13T00:32:06.484753+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"FuzzCompare/seed#1","Output":"=== RUN   FuzzCompare/seed#1\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.484784+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"FuzzCompare/seed#1","Output":"--- PASS: FuzzCompare/seed#1 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.484786+08:00","Action":"pass","Package":"bind-go/internal/serial","Test":"FuzzCompare/seed#1","Elapsed":0}
+{"Time":"2026-09-13T00:32:06.484814+08:00","Action":"output","Package":"bind-go/internal/serial","Test":"FuzzCompare","Output":"--- PASS: FuzzCompare (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.484843+08:00","Action":"pass","Package":"bind-go/internal/serial","Test":"FuzzCompare","Elapsed":0}
+{"Time":"2026-09-13T00:32:06.484874+08:00","Action":"output","Package":"bind-go/internal/serial","Output":"PASS\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:06.487274+08:00","Action":"output","Package":"bind-go/internal/serial","Output":"coverage: 100.0% of statements\n"}
+{"Time":"2026-09-13T00:32:06.730361+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"TestUpstreamOracle"}
+{"Time":"2026-09-13T00:32:06.730402+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"TestUpstreamOracle","Output":"=== RUN   TestUpstreamOracle\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056036+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"TestUpstreamOracle","Output":"--- PASS: TestUpstreamOracle (0.33s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056059+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"TestUpstreamOracle","Elapsed":0.33}
+{"Time":"2026-09-13T00:32:07.056063+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"TestParse"}
+{"Time":"2026-09-13T00:32:07.056068+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"TestParse","Output":"=== RUN   TestParse\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056148+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"TestParse","Output":"--- PASS: TestParse (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056154+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"TestParse","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056164+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"TestFormat"}
+{"Time":"2026-09-13T00:32:07.056166+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"TestFormat","Output":"=== RUN   TestFormat\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.05621+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"TestFormat","Output":"--- PASS: TestFormat (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056223+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"TestFormat","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056242+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzParse"}
+{"Time":"2026-09-13T00:32:07.056249+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse","Output":"=== RUN   FuzzParse\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056371+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#0"}
+{"Time":"2026-09-13T00:32:07.056374+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#0","Output":"=== RUN   FuzzParse/seed#0\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056445+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#0","Output":"--- PASS: FuzzParse/seed#0 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056449+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#0","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056467+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#1"}
+{"Time":"2026-09-13T00:32:07.056471+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#1","Output":"=== RUN   FuzzParse/seed#1\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056493+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#1","Output":"--- PASS: FuzzParse/seed#1 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056516+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#1","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056532+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#2"}
+{"Time":"2026-09-13T00:32:07.056533+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#2","Output":"=== RUN   FuzzParse/seed#2\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056536+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#2","Output":"--- PASS: FuzzParse/seed#2 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056539+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#2","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.05655+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#3"}
+{"Time":"2026-09-13T00:32:07.056552+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#3","Output":"=== RUN   FuzzParse/seed#3\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056575+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#3","Output":"--- PASS: FuzzParse/seed#3 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056581+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#3","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056589+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#4"}
+{"Time":"2026-09-13T00:32:07.056592+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#4","Output":"=== RUN   FuzzParse/seed#4\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056608+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#4","Output":"--- PASS: FuzzParse/seed#4 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056616+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#4","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056626+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#5"}
+{"Time":"2026-09-13T00:32:07.056627+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#5","Output":"=== RUN   FuzzParse/seed#5\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056652+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#5","Output":"--- PASS: FuzzParse/seed#5 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056655+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#5","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056665+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#6"}
+{"Time":"2026-09-13T00:32:07.056668+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#6","Output":"=== RUN   FuzzParse/seed#6\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056684+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#6","Output":"--- PASS: FuzzParse/seed#6 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056692+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzParse/seed#6","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056705+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzParse","Output":"--- PASS: FuzzParse (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056712+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzParse","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056715+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip"}
+{"Time":"2026-09-13T00:32:07.056716+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip","Output":"=== RUN   FuzzRoundTrip\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056783+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#0"}
+{"Time":"2026-09-13T00:32:07.056786+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#0","Output":"=== RUN   FuzzRoundTrip/seed#0\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056817+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#0","Output":"--- PASS: FuzzRoundTrip/seed#0 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.05682+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#0","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056835+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#1"}
+{"Time":"2026-09-13T00:32:07.056836+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#1","Output":"=== RUN   FuzzRoundTrip/seed#1\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056868+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#1","Output":"--- PASS: FuzzRoundTrip/seed#1 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056879+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#1","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056882+08:00","Action":"run","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#2"}
+{"Time":"2026-09-13T00:32:07.056883+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#2","Output":"=== RUN   FuzzRoundTrip/seed#2\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056916+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#2","Output":"--- PASS: FuzzRoundTrip/seed#2 (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.05692+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip/seed#2","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056932+08:00","Action":"output","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip","Output":"--- PASS: FuzzRoundTrip (0.00s)\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.056939+08:00","Action":"pass","Package":"bind-go/internal/ttl","Test":"FuzzRoundTrip","Elapsed":0}
+{"Time":"2026-09-13T00:32:07.056949+08:00","Action":"output","Package":"bind-go/internal/ttl","Output":"PASS\n","OutputType":"frame"}
+{"Time":"2026-09-13T00:32:07.058479+08:00","Action":"output","Package":"bind-go/internal/ttl","Output":"coverage: 100.0% of statements\n"}
+{"Time":"2026-09-13T00:32:07.493065+08:00","Action":"output","Package":"bind-go/internal/serial","Output":"ok  \tbind-go/internal/serial\t1.675s\tcoverage: 100.0% of statements\n"}
+{"Time":"2026-09-13T00:32:07.49309+08:00","Action":"pass","Package":"bind-go/internal/serial","Elapsed":1.6760000000000002}
+{"Time":"2026-09-13T00:32:08.062028+08:00","Action":"output","Package":"bind-go/internal/ttl","Output":"ok  \tbind-go/internal/ttl\t2.244s\tcoverage: 100.0% of statements\n"}
+{"Time":"2026-09-13T00:32:08.062045+08:00","Action":"pass","Package":"bind-go/internal/ttl","Elapsed":2.245}

@@ -1,0 +1,485 @@
+make: Entering directory '/src/tests'
+make  check-recursive
+make[1]: Entering directory '/src/tests'
+Making check in libtest
+make[2]: Entering directory '/src/tests/libtest'
+make  check-am
+make[3]: Entering directory '/src/tests/libtest'
+make  check-TESTS
+make[4]: Entering directory '/src/tests/libtest'
+make[5]: Entering directory '/src/tests/libtest'
+============================================================================
+Testsuite summary for BIND 9.20.27
+============================================================================
+# TOTAL: 0
+# PASS:  0
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[5]: Leaving directory '/src/tests/libtest'
+make[4]: Leaving directory '/src/tests/libtest'
+make[3]: Leaving directory '/src/tests/libtest'
+make[2]: Leaving directory '/src/tests/libtest'
+Making check in isc
+make[2]: Entering directory '/src/tests/isc'
+make  check-am
+make[3]: Entering directory '/src/tests/isc'
+make  ascii_test async_test buffer_test counter_test crc64_test dnsstream_utils_test errno_test file_test hash_test hashmap_test heap_test histo_test hmac_test ht_test job_test lex_test loop_test md_test mem_test mutex_test netaddr_test parse_test proxyheader_test proxystream_test proxyudp_test quota_test radix_test ratelimiter_test regex_test result_test rwlock_test safe_test siphash_test sockaddr_test spinlock_test stats_test symtab_test tcp_test tcpdns_test time_test timer_test tls_test tlsdns_test udp_test url_test work_test doh_test
+make[4]: Entering directory '/src/tests/isc'
+  CC       ascii_test.o
+  CC       async_test.o
+  CC       buffer_test.o
+  CC       counter_test.o
+  CC       crc64_test.o
+  CC       dnsstream_utils_test-dnsstream_utils_test.o
+  CC       errno_test.o
+  CC       file_test.o
+  CC       hash_test.o
+  CC       hashmap_test.o
+  CC       heap_test.o
+  CC       histo_test.o
+  CC       hmac_test-hmac_test.o
+  CC       ht_test.o
+  CC       job_test.o
+  CC       lex_test.o
+  CC       loop_test.o
+  CC       md_test-md_test.o
+  CC       mem_test.o
+  CC       mutex_test.o
+  CC       netaddr_test.o
+  CC       parse_test.o
+  CC       proxyheader_test-proxyheader_test.o
+  CC       proxystream_test-proxystream_test.o
+  CC       proxystream_test-netmgr_common.o
+  CC       proxystream_test-stream_shutdown.o
+  CC       proxyudp_test-proxyudp_test.o
+  CC       proxyudp_test-netmgr_common.o
+  CC       quota_test.o
+  CC       radix_test.o
+  CC       ratelimiter_test.o
+  CC       regex_test.o
+  CC       result_test.o
+  CC       rwlock_test.o
+  CC       safe_test.o
+  CC       siphash_test.o
+  CC       sockaddr_test.o
+  CC       spinlock_test.o
+  CC       stats_test.o
+  CC       symtab_test.o
+  CC       tcp_test-tcp_test.o
+  CC       tcp_test-netmgr_common.o
+  CC       tcp_test-stream_shutdown.o
+  CC       tcpdns_test-tcpdns_test.o
+  CC       tcpdns_test-netmgr_common.o
+  CC       time_test.o
+  CC       timer_test.o
+  CC       tls_test-tls_test.o
+  CC       tls_test-netmgr_common.o
+  CC       tls_test-stream_shutdown.o
+  CC       tlsdns_test-tlsdns_test.o
+  CC       tlsdns_test-netmgr_common.o
+  CC       udp_test-udp_test.o
+  CC       udp_test-netmgr_common.o
+  CC       url_test.o
+  CC       work_test.o
+  CC       doh_test-doh_test.o
+  CCLD     ascii_test
+  CCLD     async_test
+  CCLD     buffer_test
+  CCLD     counter_test
+  CCLD     crc64_test
+  CCLD     dnsstream_utils_test
+  CCLD     errno_test
+  CCLD     file_test
+  CCLD     hash_test
+  CCLD     hashmap_test
+  CCLD     heap_test
+  CCLD     histo_test
+  CCLD     hmac_test
+  CCLD     ht_test
+  CCLD     job_test
+  CCLD     lex_test
+  CCLD     loop_test
+  CCLD     md_test
+  CCLD     mem_test
+  CCLD     mutex_test
+  CCLD     netaddr_test
+  CCLD     parse_test
+  CCLD     proxyheader_test
+  CCLD     proxystream_test
+  CCLD     proxyudp_test
+  CCLD     quota_test
+  CCLD     radix_test
+  CCLD     ratelimiter_test
+  CCLD     regex_test
+  CCLD     result_test
+  CCLD     rwlock_test
+  CCLD     safe_test
+  CCLD     siphash_test
+  CCLD     sockaddr_test
+  CCLD     spinlock_test
+  CCLD     stats_test
+  CCLD     symtab_test
+  CCLD     tcp_test
+  CCLD     tcpdns_test
+  CCLD     time_test
+  CCLD     timer_test
+  CCLD     tls_test
+  CCLD     tlsdns_test
+  CCLD     udp_test
+  CCLD     url_test
+  CCLD     work_test
+  CCLD     doh_test
+make[4]: Leaving directory '/src/tests/isc'
+make  check-TESTS
+make[4]: Entering directory '/src/tests/isc'
+make[5]: Entering directory '/src/tests/isc'
+PASS: async_test
+PASS: buffer_test
+PASS: counter_test
+PASS: ascii_test
+PASS: crc64_test
+PASS: file_test
+PASS: errno_test
+PASS: dnsstream_utils_test
+PASS: hashmap_test
+PASS: heap_test
+PASS: hash_test
+PASS: job_test
+PASS: hmac_test
+PASS: ht_test
+PASS: histo_test
+PASS: loop_test
+PASS: md_test
+PASS: lex_test
+PASS: mem_test
+PASS: mutex_test
+PASS: parse_test
+PASS: netaddr_test
+PASS: proxyheader_test
+PASS: proxystream_test
+PASS: proxyudp_test
+PASS: quota_test
+PASS: radix_test
+PASS: regex_test
+PASS: result_test
+PASS: ratelimiter_test
+PASS: siphash_test
+PASS: safe_test
+PASS: sockaddr_test
+PASS: stats_test
+PASS: spinlock_test
+PASS: symtab_test
+PASS: tcp_test
+PASS: tcpdns_test
+PASS: tls_test
+PASS: time_test
+PASS: tlsdns_test
+PASS: udp_test
+PASS: url_test
+PASS: work_test
+PASS: rwlock_test
+PASS: doh_test
+PASS: timer_test
+============================================================================
+Testsuite summary for BIND 9.20.27
+============================================================================
+# TOTAL: 47
+# PASS:  47
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[5]: Leaving directory '/src/tests/isc'
+make[4]: Leaving directory '/src/tests/isc'
+make[3]: Leaving directory '/src/tests/isc'
+make[2]: Leaving directory '/src/tests/isc'
+Making check in dns
+make[2]: Entering directory '/src/tests/dns'
+make  check-am
+make[3]: Entering directory '/src/tests/dns'
+make  acl_test badcache_test db_test dbdiff_test dbiterator_test dbversion_test diff_test dispatch_test dns64_test dst_test ede_test keytable_test name_test nametree_test nsec3_test nsec3param_test private_test qp_test qpmulti_test qpdb_test qpzone_test rbt_test rbtdb_test rdata_test rdataset_test rdatasetstats_test resconf_test resolver_test rsa_test sigs_test skr_test time_test tsig_test update_test zonemgr_test zt_test master_test geoip_test dnstap_test
+make[4]: Entering directory '/src/tests/dns'
+  CC       acl_test.o
+  CC       badcache_test.o
+  CC       db_test.o
+  CC       dbdiff_test.o
+  CC       dbiterator_test.o
+  CC       dbversion_test.o
+  CC       diff_test.o
+  CC       dispatch_test.o
+  CC       dns64_test.o
+  CC       dst_test-dst_test.o
+  CC       ede_test.o
+  CC       keytable_test.o
+  CC       name_test.o
+  CC       nametree_test.o
+  CC       nsec3_test.o
+  CC       nsec3param_test.o
+  CC       private_test.o
+  CC       qp_test.o
+  CC       qpmulti_test.o
+  CC       qpdb_test.o
+  CC       qpzone_test.o
+  CC       rbt_test.o
+  CC       rbtdb_test.o
+  CC       rdata_test-rdata_test.o
+  CC       rdataset_test.o
+  CC       rdatasetstats_test.o
+  CC       resconf_test.o
+  CC       resolver_test.o
+  CC       rsa_test-rsa_test.o
+  CC       sigs_test.o
+mkdir -p testdata/master
+sed -e 's,@TOP_SRCDIR@,/src/tests/dns,' < ./testdata/master/master18.data.in > testdata/master/master18.data
+  CC       skr_test.o
+  CC       time_test.o
+  CC       tsig_test.o
+  CC       update_test.o
+  CC       zonemgr_test.o
+  CC       zt_test.o
+  CC       master_test.o
+mkdir -p testdata/master
+/usr/bin/perl -w ./mkraw.pl < ./testdata/master/master12.data.in > testdata/master/master12.data
+mkdir -p testdata/master
+/usr/bin/perl -w ./mkraw.pl < ./testdata/master/master13.data.in > testdata/master/master13.data
+mkdir -p testdata/master
+/usr/bin/perl -w ./mkraw.pl < ./testdata/master/master14.data.in > testdata/master/master14.data
+  CC       geoip_test-geoip_test.o
+  CC       dnstap_test-dnstap_test.o
+  CCLD     acl_test
+  CCLD     badcache_test
+  CCLD     db_test
+  CCLD     dbdiff_test
+  CCLD     dbiterator_test
+  CCLD     dbversion_test
+  CCLD     diff_test
+  CCLD     dispatch_test
+  CCLD     dns64_test
+  CCLD     dst_test
+  CCLD     ede_test
+  CCLD     keytable_test
+  CCLD     name_test
+  CCLD     nametree_test
+  CCLD     nsec3_test
+  CCLD     nsec3param_test
+  CCLD     private_test
+  CCLD     qp_test
+  CCLD     qpmulti_test
+  CCLD     qpdb_test
+  CCLD     qpzone_test
+  CCLD     rbt_test
+  CCLD     rbtdb_test
+  CCLD     rdata_test
+  CCLD     rdataset_test
+  CCLD     rdatasetstats_test
+  CCLD     resconf_test
+  CCLD     resolver_test
+  CCLD     rsa_test
+  CCLD     sigs_test
+  CCLD     skr_test
+  CCLD     time_test
+  CCLD     tsig_test
+  CCLD     update_test
+  CCLD     zonemgr_test
+  CCLD     zt_test
+  CCLD     master_test
+  CCLD     geoip_test
+  CCLD     dnstap_test
+make[4]: Leaving directory '/src/tests/dns'
+make  check-TESTS
+make[4]: Entering directory '/src/tests/dns'
+make[5]: Entering directory '/src/tests/dns'
+PASS: acl_test
+PASS: badcache_test
+PASS: dbdiff_test
+PASS: dbiterator_test
+PASS: dbversion_test
+PASS: diff_test
+PASS: dns64_test
+PASS: dst_test
+PASS: ede_test
+PASS: keytable_test
+PASS: name_test
+PASS: nametree_test
+PASS: nsec3_test
+PASS: nsec3param_test
+PASS: db_test
+PASS: qp_test
+PASS: private_test
+PASS: qpzone_test
+PASS: qpdb_test
+PASS: rbtdb_test
+PASS: qpmulti_test
+PASS: rdata_test
+PASS: rdataset_test
+PASS: rbt_test
+PASS: rdatasetstats_test
+PASS: resconf_test
+PASS: resolver_test
+PASS: rsa_test
+PASS: sigs_test
+PASS: skr_test
+PASS: time_test
+PASS: tsig_test
+PASS: update_test
+PASS: zonemgr_test
+PASS: zt_test
+PASS: master_test
+PASS: geoip_test
+PASS: dnstap_test
+PASS: dispatch_test
+============================================================================
+Testsuite summary for BIND 9.20.27
+============================================================================
+# TOTAL: 39
+# PASS:  39
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[5]: Leaving directory '/src/tests/dns'
+make[4]: Leaving directory '/src/tests/dns'
+make[3]: Leaving directory '/src/tests/dns'
+make[2]: Leaving directory '/src/tests/dns'
+Making check in ns
+make[2]: Entering directory '/src/tests/ns'
+make  check-am
+make[3]: Entering directory '/src/tests/ns'
+make  listenlist_test notify_test plugin_test query_test
+make[4]: Entering directory '/src/tests/ns'
+  CC       listenlist_test.o
+  CC       notify_test.o
+  CC       netmgr_wrap.o
+  CC       plugin_test.o
+  CC       query_test.o
+  CCLD     plugin_test
+  CCLD     listenlist_test
+  CCLD     notify_test
+  CCLD     query_test
+make[4]: Leaving directory '/src/tests/ns'
+make  check-TESTS
+make[4]: Entering directory '/src/tests/ns'
+make[5]: Entering directory '/src/tests/ns'
+PASS: notify_test
+PASS: plugin_test
+PASS: query_test
+PASS: listenlist_test
+============================================================================
+Testsuite summary for BIND 9.20.27
+============================================================================
+# TOTAL: 4
+# PASS:  4
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[5]: Leaving directory '/src/tests/ns'
+make[4]: Leaving directory '/src/tests/ns'
+make[3]: Leaving directory '/src/tests/ns'
+make[2]: Leaving directory '/src/tests/ns'
+Making check in isccfg
+make[2]: Entering directory '/src/tests/isccfg'
+make  check-am
+make[3]: Entering directory '/src/tests/isccfg'
+make  duration_test parser_test grammar_test
+make[4]: Entering directory '/src/tests/isccfg'
+  CC       duration_test.o
+  CC       parser_test.o
+  CC       grammar_test.o
+  CCLD     grammar_test
+  CCLD     parser_test
+  CCLD     duration_test
+make[4]: Leaving directory '/src/tests/isccfg'
+make  check-TESTS
+make[4]: Entering directory '/src/tests/isccfg'
+make[5]: Entering directory '/src/tests/isccfg'
+PASS: duration_test
+PASS: parser_test
+PASS: grammar_test
+============================================================================
+Testsuite summary for BIND 9.20.27
+============================================================================
+# TOTAL: 3
+# PASS:  3
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[5]: Leaving directory '/src/tests/isccfg'
+make[4]: Leaving directory '/src/tests/isccfg'
+make[3]: Leaving directory '/src/tests/isccfg'
+make[2]: Leaving directory '/src/tests/isccfg'
+Making check in bench
+make[2]: Entering directory '/src/tests/bench'
+make  check-am
+make[3]: Entering directory '/src/tests/bench'
+make[3]: Nothing to be done for 'check-am'.
+make[3]: Leaving directory '/src/tests/bench'
+make[2]: Leaving directory '/src/tests/bench'
+make[2]: Entering directory '/src/tests'
+make  
+make[3]: Entering directory '/src/tests'
+make  all-recursive
+make[4]: Entering directory '/src/tests'
+Making all in libtest
+make[5]: Entering directory '/src/tests/libtest'
+make  all-am
+make[6]: Entering directory '/src/tests/libtest'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/src/tests/libtest'
+make[5]: Leaving directory '/src/tests/libtest'
+Making all in isc
+make[5]: Entering directory '/src/tests/isc'
+make  all-am
+make[6]: Entering directory '/src/tests/isc'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/src/tests/isc'
+make[5]: Leaving directory '/src/tests/isc'
+Making all in dns
+make[5]: Entering directory '/src/tests/dns'
+make  all-am
+make[6]: Entering directory '/src/tests/dns'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/src/tests/dns'
+make[5]: Leaving directory '/src/tests/dns'
+Making all in ns
+make[5]: Entering directory '/src/tests/ns'
+make  all-am
+make[6]: Entering directory '/src/tests/ns'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/src/tests/ns'
+make[5]: Leaving directory '/src/tests/ns'
+Making all in isccfg
+make[5]: Entering directory '/src/tests/isccfg'
+make  all-am
+make[6]: Entering directory '/src/tests/isccfg'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/src/tests/isccfg'
+make[5]: Leaving directory '/src/tests/isccfg'
+Making all in bench
+make[5]: Entering directory '/src/tests/bench'
+make  all-am
+make[6]: Entering directory '/src/tests/bench'
+make[6]: Nothing to be done for 'all-am'.
+make[6]: Leaving directory '/src/tests/bench'
+make[5]: Leaving directory '/src/tests/bench'
+make[5]: Entering directory '/src/tests'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/src/tests'
+make[4]: Leaving directory '/src/tests'
+make[3]: Leaving directory '/src/tests'
+make[2]: Leaving directory '/src/tests'
+make[1]: Leaving directory '/src/tests'
+make: Leaving directory '/src/tests'

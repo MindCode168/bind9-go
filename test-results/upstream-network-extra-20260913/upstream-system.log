@@ -1,0 +1,56 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /opt/testenv/bin/python3
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: /src/bin/tests/system
+configfile: pytest.ini
+plugins: flaky-3.8.1, xdist-3.8.0, hypothesis-6.168.0
+created: 2/2 workers
+2 workers [5 items]
+
+scheduling tests via LoadScopeScheduling
+
+timeouts/tests_tcp_timeouts.py::test_max_transfer_idle_out 
+doth/tests_sslyze.py::test_sslyze_doh 
+[gw0] [ 20%] PASSED doth/tests_sslyze.py::test_sslyze_doh 
+doth/tests_sslyze.py::test_sslyze_dot 
+[gw0] [ 40%] PASSED doth/tests_sslyze.py::test_sslyze_dot 
+doth/tests_gnutls.py::test_gnutls_cli_query 
+[gw0] [ 60%] PASSED doth/tests_gnutls.py::test_gnutls_cli_query 
+[gw1] [ 80%] PASSED timeouts/tests_tcp_timeouts.py::test_max_transfer_idle_out 
+timeouts/tests_tcp_timeouts.py::test_max_transfer_time_out 
+[gw1] [100%] PASSED timeouts/tests_tcp_timeouts.py::test_max_transfer_time_out 
+
+==================================== PASSES ====================================
+_______________________________ test_sslyze_doh ________________________________
+[gw0] linux -- Python 3.12.3 /opt/testenv/bin/python3
+------------------------------ Captured log setup ------------------------------
+2026-09-12 16:45:41 INFO:doth switching to tmpdir: /src/bin/tests/system/doth-tmp-v4ciks58
+2026-09-12 16:45:41 INFO:doth test started: /src/bin/tests/system/doth/tests_sslyze.py
+2026-09-12 16:45:41 INFO:doth using port range: <18903, 18922>
+---------------------------- Captured log teardown -----------------------------
+2026-09-12 16:46:11 INFO:doth test artifacts in: doth-sslyze
+____________________________ test_gnutls_cli_query _____________________________
+[gw0] linux -- Python 3.12.3 /opt/testenv/bin/python3
+------------------------------ Captured log setup ------------------------------
+2026-09-12 16:46:11 INFO:doth switching to tmpdir: /src/bin/tests/system/doth-tmp-aialtzhd
+2026-09-12 16:46:11 INFO:doth test started: /src/bin/tests/system/doth/tests_gnutls.py
+2026-09-12 16:46:11 INFO:doth using port range: <18843, 18862>
+---------------------------- Captured log teardown -----------------------------
+2026-09-12 16:46:14 INFO:doth test artifacts in: doth-gnutls
+__________________________ test_max_transfer_idle_out __________________________
+[gw1] linux -- Python 3.12.3 /opt/testenv/bin/python3
+------------------------------ Captured log setup ------------------------------
+2026-09-12 16:45:41 INFO:timeouts switching to tmpdir: /src/bin/tests/system/timeouts-tmp-__xqjl5t
+2026-09-12 16:45:41 INFO:timeouts test started: /src/bin/tests/system/timeouts/tests_tcp_timeouts.py
+2026-09-12 16:45:41 INFO:timeouts using port range: <21783, 21802>
+---------------------------- Captured log teardown -----------------------------
+2026-09-12 16:52:43 INFO:timeouts test artifacts in: timeouts-tcp_timeouts
+--------------- generated xml file: /results/upstream-system.xml ---------------
+=========================== short test summary info ============================
+PASSED doth/tests_sslyze.py::test_sslyze_doh
+PASSED doth/tests_sslyze.py::test_sslyze_dot
+PASSED doth/tests_gnutls.py::test_gnutls_cli_query
+PASSED timeouts/tests_tcp_timeouts.py::test_max_transfer_idle_out
+PASSED timeouts/tests_tcp_timeouts.py::test_max_transfer_time_out
+======================== 5 passed in 423.52s (0:07:03) =========================

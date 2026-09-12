@@ -1,0 +1,30 @@
+DNS Performance Testing Tool
+Version 2.14.0
+
+[Status] Command line: dnsperf -f inet -m tcp -s 127.0.0.1 -p 5300 -d /results/nxdomain.txt -T 2 -c 16 -q 256 -Q 10000 -l 5 -t 1 -O suppress=timeouts -O num-queries-per-conn=1000000
+[Status] Sending queries (to 127.0.0.1:5300)
+[Status] Started at: Sat Sep 12 17:08:02 2026
+[Status] Stopping after 5.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         49961
+  Queries completed:    49961 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NXDOMAIN 49961 (100.00%)
+  Average packet size:  request 40, response 90
+  Run time (s):         5.000080
+  Queries per second:   9992.040127
+
+  Average Latency (s):  0.000068 (min 0.000010, max 0.004570)
+  Latency StdDev (s):   0.000259
+
+Connection Statistics:
+
+  Connection attempts:  16 (16 successful, 100.00%)
+
+  Average Latency (s):  0.003659 (min 0.000327, max 0.006067)
+  Latency StdDev (s):   0.001541
+

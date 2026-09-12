@@ -1,0 +1,63 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from provider.Dockerfile
+#1 transferring dockerfile: 806B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/bind9-go-upstream-extended:9.20.27
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/bind9-go-upstream-extended:9.20.27@sha256:7b2562e45ca10f5b6fff57394b4208ba594279e92579394690de1b069e48a183
+#4 resolve docker.io/library/bind9-go-upstream-extended:9.20.27@sha256:7b2562e45ca10f5b6fff57394b4208ba594279e92579394690de1b069e48a183 done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 377B done
+#5 DONE 0.0s
+
+#6 [2/5] RUN python3 -m pip install --no-cache-dir meson ninja
+#6 CACHED
+
+#7 [3/5] RUN curl --fail --location --max-time 120     https://codeload.github.com/openssl-projects/pkcs11-provider/tar.gz/refs/tags/v1.2.0     -o /tmp/pkcs11-provider.tar.gz &&     sha256sum /tmp/pkcs11-provider.tar.gz > /src/pkcs11-provider.sha256 &&     tar -xzf /tmp/pkcs11-provider.tar.gz -C /opt &&     meson setup /opt/pkcs11-build /opt/pkcs11-provider-1.2.0 &&     meson compile -C /opt/pkcs11-build -j4 &&     meson install -C /opt/pkcs11-build
+#7 CACHED
+
+#8 [4/5] COPY openssl-provider.cnf /src/openssl-provider.cnf
+#8 DONE 0.1s
+
+#9 [5/5] RUN openssl list -providers && /src/bin/tests/system/feature-test --md5
+#9 0.130 Providers:
+#9 0.130   default
+#9 0.130     name: OpenSSL Default Provider
+#9 0.130     version: 3.0.13
+#9 0.130     status: active
+#9 0.130   pkcs11
+#9 0.130     name: PKCS#11 Provider
+#9 0.130     version: 1.2.0
+#9 0.130     status: active
+#9 0.143 Segmentation fault
+#9 ERROR: process "/bin/sh -c openssl list -providers && /src/bin/tests/system/feature-test --md5" did not complete successfully: exit code: 139
+------
+ > [5/5] RUN openssl list -providers && /src/bin/tests/system/feature-test --md5:
+0.130 Providers:
+0.130   default
+0.130     name: OpenSSL Default Provider
+0.130     version: 3.0.13
+0.130     status: active
+0.130   pkcs11
+0.130     name: PKCS#11 Provider
+0.130     version: 1.2.0
+0.130     status: active
+0.143 Segmentation fault
+------
+provider.Dockerfile:14
+--------------------
+  12 |     COPY openssl-provider.cnf /src/openssl-provider.cnf
+  13 |     ENV OPENSSL_CONF=/src/openssl-provider.cnf
+  14 | >>> RUN openssl list -providers && /src/bin/tests/system/feature-test --md5
+  15 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c openssl list -providers && /src/bin/tests/system/feature-test --md5" did not complete successfully: exit code: 139

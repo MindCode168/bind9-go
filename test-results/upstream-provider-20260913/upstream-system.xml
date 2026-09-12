@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="4" skipped="0" tests="5" time="2.752" timestamp="2026-09-12T16:47:10.587087+00:00" hostname="1dbdacddc21f"><testcase classname="keyfromlabel.tests_keyfromlabel" name="test_keyfromlabel[rsasha256-rsa-2048]" time="0.230"><failure message="subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'rsasha256', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-rsasha256.example;pin-source=pin', 'rsasha256.example']' died with &lt;Signals.SIGSEGV: 11&gt;.">/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:161: in test_keyfromlabel
+    zsk_file = keyfromlabel(alg_name, zone, "keyfromlabel-zsk", "")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:144: in keyfromlabel
+    cmd = isctest.run.cmd(keyfrlab_command)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/isctest/run.py:82: in cmd
+    raise exc
+/src/bin/tests/system/isctest/run.py:66: in cmd
+    proc = subprocess.run(
+/usr/lib/python3.12/subprocess.py:571: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'rsasha256', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-rsasha256.example;pin-source=pin', 'rsasha256.example']' died with &lt;Signals.SIGSEGV: 11&gt;.</failure><system-out>--------------------------------- Captured Log ---------------------------------
+2026-09-12 16:47:11 INFO:keyfromlabel switching to tmpdir: /src/bin/tests/system/keyfromlabel-tmp-jmikdn6s
+2026-09-12 16:47:11 INFO:keyfromlabel test started: /src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py
+2026-09-12 16:47:11 INFO:keyfromlabel using port range: &lt;19583, 19602&gt;
+</system-out></testcase><testcase classname="keyfromlabel.tests_keyfromlabel" name="test_keyfromlabel[rsasha512-rsa-2048]" time="0.313"><failure message="subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'rsasha512', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-rsasha512.example;pin-source=pin', 'rsasha512.example']' died with &lt;Signals.SIGSEGV: 11&gt;.">/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:161: in test_keyfromlabel
+    zsk_file = keyfromlabel(alg_name, zone, "keyfromlabel-zsk", "")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:144: in keyfromlabel
+    cmd = isctest.run.cmd(keyfrlab_command)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/isctest/run.py:82: in cmd
+    raise exc
+/src/bin/tests/system/isctest/run.py:66: in cmd
+    proc = subprocess.run(
+/usr/lib/python3.12/subprocess.py:571: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'rsasha512', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-rsasha512.example;pin-source=pin', 'rsasha512.example']' died with &lt;Signals.SIGSEGV: 11&gt;.</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+</system-out></testcase><testcase classname="enginepkcs11.tests_sh_enginepkcs11" name="test_enginepkcs11" time="0.001" /><testcase classname="keyfromlabel.tests_keyfromlabel" name="test_keyfromlabel[ecdsap256sha256-EC-prime256v1]" time="0.046"><failure message="subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'ecdsap256sha256', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-ecdsap256sha256.example;pin-source=pin', 'ecdsap256sha256.example']' died with &lt;Signals.SIGSEGV: 11&gt;.">/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:161: in test_keyfromlabel
+    zsk_file = keyfromlabel(alg_name, zone, "keyfromlabel-zsk", "")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:144: in keyfromlabel
+    cmd = isctest.run.cmd(keyfrlab_command)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/isctest/run.py:82: in cmd
+    raise exc
+/src/bin/tests/system/isctest/run.py:66: in cmd
+    proc = subprocess.run(
+/usr/lib/python3.12/subprocess.py:571: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'ecdsap256sha256', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-ecdsap256sha256.example;pin-source=pin', 'ecdsap256sha256.example']' died with &lt;Signals.SIGSEGV: 11&gt;.</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+</system-out></testcase><testcase classname="keyfromlabel.tests_keyfromlabel" name="test_keyfromlabel[ecdsap384sha384-EC-prime384v1]" time="0.055"><failure message="subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'ecdsap384sha384', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-ecdsap384sha384.example;pin-source=pin', 'ecdsap384sha384.example']' died with &lt;Signals.SIGSEGV: 11&gt;.">/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:161: in test_keyfromlabel
+    zsk_file = keyfromlabel(alg_name, zone, "keyfromlabel-zsk", "")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:144: in keyfromlabel
+    cmd = isctest.run.cmd(keyfrlab_command)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/isctest/run.py:82: in cmd
+    raise exc
+/src/bin/tests/system/isctest/run.py:66: in cmd
+    proc = subprocess.run(
+/usr/lib/python3.12/subprocess.py:571: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'ecdsap384sha384', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-ecdsap384sha384.example;pin-source=pin', 'ecdsap384sha384.example']' died with &lt;Signals.SIGSEGV: 11&gt;.</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+</system-out></testcase><testcase classname="enginepkcs11.tests_sh_enginepkcs11" name="test_enginepkcs11" time="0.001" /><testcase classname="enginepkcs11.tests_sh_enginepkcs11" name="test_enginepkcs11" time="0.001" /><testcase classname="enginepkcs11.tests_sh_enginepkcs11" name="test_enginepkcs11" time="0.001" /><testcase classname="enginepkcs11.tests_sh_enginepkcs11" name="test_enginepkcs11" time="0.172"><error message="failed on setup with &quot;Failed: setup.sh exited with 1&quot;">/src/bin/tests/system/conftest.py:591: in setup_test
+    isctest.run.shell(f"{system_test_dir}/setup.sh")
+/src/bin/tests/system/isctest/run.py:136: in shell
+    _run_script(os.environ["SHELL"], script, args)
+/src/bin/tests/system/isctest/run.py:130: in _run_script
+    raise subprocess.CalledProcessError(returncode, command)
+E   subprocess.CalledProcessError: Command '['/bin/bash', '/src/bin/tests/system/enginepkcs11-tmp-w1kwkwqe/setup.sh']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+/opt/testenv/lib/python3.12/site-packages/flaky/flaky_pytest_plugin.py:146: in &lt;lambda&gt;
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/conftest.py:639: in system_test
+    setup_test()
+/src/bin/tests/system/conftest.py:594: in setup_test
+    pytest.fail(f"setup.sh exited with {exc.returncode}")
+E   Failed: setup.sh exited with 1</error></testcase></testsuite></testsuites>

@@ -1,0 +1,16 @@
+# Diagnostic profile used by the recorded failing provider 1.2.0 run.
+openssl_conf = openssl_init
+
+[openssl_init]
+providers = provider_section
+
+[provider_section]
+default = default_section
+pkcs11 = pkcs11_section
+
+[default_section]
+activate = 1
+
+[pkcs11_section]
+pkcs11-module-path = /usr/lib/softhsm/libsofthsm2.so
+activate = 1

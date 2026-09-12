@@ -1,0 +1,12 @@
+bind-go/internal/serial/serial.go:11:	Less		100.0%
+bind-go/internal/serial/serial.go:14:	Greater		100.0%
+bind-go/internal/serial/serial.go:17:	LessEqual	100.0%
+bind-go/internal/serial/serial.go:20:	GreaterEqual	100.0%
+bind-go/internal/serial/serial.go:23:	Equal		100.0%
+bind-go/internal/serial/serial.go:26:	NotEqual	100.0%
+bind-go/internal/serial/serial.go:30:	Compare		100.0%
+bind-go/internal/serial/serial.go:45:	Add		100.0%
+bind-go/internal/ttl/ttl.go:22:		Parse		100.0%
+bind-go/internal/ttl/ttl.go:31:		ParseCounter	100.0%
+bind-go/internal/ttl/ttl.go:88:		Format		100.0%
+total:					(statements)	100.0%

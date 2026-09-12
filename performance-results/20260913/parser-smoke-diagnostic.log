@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/bench/run_benchmark.py", line 216, in <module>
+    main()
+  File "/bench/run_benchmark.py", line 168, in main
+    assert parse_stats(smoke)['response_codes'].get('NOERROR',0)>0
+           ^^^^^^^^^^^^^^^^^^
+  File "/bench/run_benchmark.py", line 51, in parse_stats
+    raise ValueError('No latency range')
+ValueError: No latency range

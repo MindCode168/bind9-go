@@ -1,0 +1,16 @@
+(pkcs11) pkcs11 engine
+ [RSA, rsaEncryption, id-ecPublicKey]
+     [ available ]
+Providers:
+  default
+    name: OpenSSL Default Provider
+    version: 3.0.13
+    status: active
+dst_api.c:267: REQUIRE(dst_initialized) failed, back trace
+/src/lib/isc/.libs/libisc-9.20.27.so(+0x370a4)[0xffff975c70a4]
+/src/lib/isc/.libs/libisc-9.20.27.so(isc_assertion_failed+0x14)[0xffff975c6fd4]
+/src/lib/dns/.libs/libdns-9.20.27.so(+0x5a5b8)[0xffff9739a5b8]
+/src/bin/tests/system/.libs/feature-test(main+0x30c)[0xaaaaae22120c]
+/lib/aarch64-linux-gnu/libc.so.6(+0x284c4)[0xffff96d184c4]
+/lib/aarch64-linux-gnu/libc.so.6(__libc_start_main+0x98)[0xffff96d18598]
+/src/bin/tests/system/.libs/feature-test(_start+0x30)[0xaaaaae2212f0]

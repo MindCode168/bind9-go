@@ -1,0 +1,5904 @@
+{
+  "baseline": "bind-9.20.27",
+  "method": "static source discovery; not pytest collection or execution",
+  "suite_count": 174,
+  "static_function_candidate_count": 594,
+  "suites": [
+    {
+      "suite": "acl",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/acl/tests.sh",
+        "bin/tests/system/acl/tests_sh_acl.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/acl/tests_sh_acl.py",
+          "function": "test_acl",
+          "line": 25
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "additional",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/additional/tests.sh",
+        "bin/tests/system/additional/tests_sh_additional.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/additional/tests_sh_additional.py",
+          "function": "test_additional",
+          "line": 21
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "addzone",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/addzone/tests.sh",
+        "bin/tests/system/addzone/tests_rndc_deadlock.py",
+        "bin/tests/system/addzone/tests_rndc_modzone_without_add.py",
+        "bin/tests/system/addzone/tests_sh_addzone.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/addzone/tests_rndc_deadlock.py",
+          "function": "test_rndc_deadlock",
+          "line": 61
+        },
+        {
+          "file": "bin/tests/system/addzone/tests_rndc_modzone_without_add.py",
+          "function": "test_rndc_modzone_without_add",
+          "line": 26
+        },
+        {
+          "file": "bin/tests/system/addzone/tests_sh_addzone.py",
+          "function": "test_addzone",
+          "line": 42
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "suite": "allow_query",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/allow_query/tests.sh",
+        "bin/tests/system/allow_query/tests_sh_allow_query.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/allow_query/tests_sh_allow_query.py",
+          "function": "test_allow_query",
+          "line": 21
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "auth",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/auth/tests.sh",
+        "bin/tests/system/auth/tests_sh_auth.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/auth/tests_sh_auth.py",
+          "function": "test_auth",
+          "line": 22
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "autosign",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/autosign/tests.sh",
+        "bin/tests/system/autosign/tests_sh_autosign.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/autosign/tests_sh_autosign.py",
+          "function": "test_autosign",
+          "line": 154
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "bailiwick",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/bailiwick/tests_bailiwick.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/bailiwick/tests_bailiwick.py",
+          "function": "test_bailiwick_sibling_ns_referral",
+          "line": 81
+        },
+        {
+          "file": "bin/tests/system/bailiwick/tests_bailiwick.py",
+          "function": "test_bailiwick_unsolicited_authority",
+          "line": 89
+        },
+        {
+          "file": "bin/tests/system/bailiwick/tests_bailiwick.py",
+          "function": "test_bailiwick_parent_glue",
+          "line": 98
+        },
+        {
+          "file": "bin/tests/system/bailiwick/tests_bailiwick.py",
+          "function": "test_bailiwick_spoofed_dname",
+          "line": 111
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 4
+      }
+    },
+    {
+      "suite": "builtin",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/builtin/tests.sh",
+        "bin/tests/system/builtin/tests_sh_builtin.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/builtin/tests_sh_builtin.py",
+          "function": "test_builtin",
+          "line": 22
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "cacheclean",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/cacheclean/tests.sh",
+        "bin/tests/system/cacheclean/tests_sh_cacheclean.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/cacheclean/tests_sh_cacheclean.py",
+          "function": "test_cacheclean",
+          "line": 24
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "camp",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/camp/tests.sh",
+        "bin/tests/system/camp/tests_sh_camp.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/camp/tests_sh_camp.py",
+          "function": "test_camp",
+          "line": 24
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "cap_glues",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/cap_glues/tests_cap_glues.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/cap_glues/tests_cap_glues.py",
+          "function": "test_cap_glues",
+          "line": 15
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "case",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/case/tests.sh",
+        "bin/tests/system/case/tests_sh_case.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/case/tests_sh_case.py",
+          "function": "test_case",
+          "line": 26
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "catz",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/catz/tests.sh",
+        "bin/tests/system/catz/tests_sh_catz.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/catz/tests_sh_catz.py",
+          "function": "test_catz",
+          "line": 35
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "cdnxdomain",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/cdnxdomain/tests_cdnxdomain.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/cdnxdomain/tests_cdnxdomain.py",
+          "function": "test_cd1_nxdomain_keeps_secure_rrset",
+          "line": 111
+        },
+        {
+          "file": "bin/tests/system/cdnxdomain/tests_cdnxdomain.py",
+          "function": "test_cd1_nxdomain_uncached_type_answer",
+          "line": 135
+        },
+        {
+          "file": "bin/tests/system/cdnxdomain/tests_cdnxdomain.py",
+          "function": "test_cd1_nxdomain_expired_secure_does_not_block",
+          "line": 162
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "suite": "cds",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/cds/tests.sh",
+        "bin/tests/system/cds/tests_sh_cds.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/cds/tests_sh_cds.py",
+          "function": "test_cds",
+          "line": 34
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "chain",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/chain/tests.sh",
+        "bin/tests/system/chain/tests_sh_chain.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/chain/tests_sh_chain.py",
+          "function": "test_chain",
+          "line": 25
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "checkconf",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/checkconf/tests.sh",
+        "bin/tests/system/checkconf/tests_sh_checkconf.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/checkconf/tests_sh_checkconf.py",
+          "function": "test_checkconf",
+          "line": 35
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "checkconf_keys",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/checkconf_keys/tests_checkconf_keys.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/checkconf_keys/tests_checkconf_keys.py",
+          "function": "test_dnssecpolicy_keystore",
+          "line": 35
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "checkds",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/checkds/tests_checkds.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/checkds/tests_checkds.py",
+          "function": "test_checkds",
+          "line": 430
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 33
+      }
+    },
+    {
+      "suite": "checknames",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/checknames/tests.sh",
+        "bin/tests/system/checknames/tests_sh_checknames.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/checknames/tests_sh_checknames.py",
+          "function": "test_checknames",
+          "line": 29
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "checkzone",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/checkzone/tests.sh",
+        "bin/tests/system/checkzone/tests_sh_checkzone.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/checkzone/tests_sh_checkzone.py",
+          "function": "test_checkzone",
+          "line": 25
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "cipher_suites",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/cipher_suites/tests_cipher_suites.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/cipher_suites/tests_cipher_suites.py",
+          "function": "test_cipher_suites_tls_xfer",
+          "line": 85
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 16
+      }
+    },
+    {
+      "suite": "class",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/class/tests_class_chaos.py",
+        "bin/tests/system/class/tests_class_update.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/class/tests_class_chaos.py",
+          "function": "test_chaos_recursion",
+          "line": 25
+        },
+        {
+          "file": "bin/tests/system/class/tests_class_chaos.py",
+          "function": "test_chaos_auth",
+          "line": 31
+        },
+        {
+          "file": "bin/tests/system/class/tests_class_chaos.py",
+          "function": "test_chaos_forward",
+          "line": 37
+        },
+        {
+          "file": "bin/tests/system/class/tests_class_chaos.py",
+          "function": "test_chaos_notify",
+          "line": 43
+        },
+        {
+          "file": "bin/tests/system/class/tests_class_chaos.py",
+          "function": "test_query_class_none",
+          "line": 51
+        },
+        {
+          "file": "bin/tests/system/class/tests_class_update.py",
+          "function": "test_class_invalid",
+          "line": 47
+        },
+        {
+          "file": "bin/tests/system/class/tests_class_update.py",
+          "function": "test_class_chaosupdate",
+          "line": 93
+        },
+        {
+          "file": "bin/tests/system/class/tests_class_update.py",
+          "function": "test_class_undefined",
+          "line": 100
+        },
+        {
+          "file": "bin/tests/system/class/tests_class_update.py",
+          "function": "test_class_zero",
+          "line": 110
+        },
+        {
+          "file": "bin/tests/system/class/tests_class_update.py",
+          "function": "test_class_any",
+          "line": 120
+        },
+        {
+          "file": "bin/tests/system/class/tests_class_update.py",
+          "function": "test_class_none",
+          "line": 130
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 19
+      }
+    },
+    {
+      "suite": "cname_dname_negcache",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/cname_dname_negcache/tests_cname_negcache.py",
+        "bin/tests/system/cname_dname_negcache/tests_dname_negcache.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/cname_dname_negcache/tests_cname_negcache.py",
+          "function": "test_cname_negcache",
+          "line": 15
+        },
+        {
+          "file": "bin/tests/system/cname_dname_negcache/tests_dname_negcache.py",
+          "function": "test_dname_negcache",
+          "line": 15
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "cookie",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/cookie/tests.sh",
+        "bin/tests/system/cookie/tests_sh_cookie.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/cookie/tests_sh_cookie.py",
+          "function": "test_cookie",
+          "line": 27
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "cpu",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/cpu/tests.sh",
+        "bin/tests/system/cpu/tests_sh_cpu.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/cpu/tests_sh_cpu.py",
+          "function": "test_cpu",
+          "line": 29
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "database",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/database/tests_database.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/database/tests_database.py",
+          "function": "test_database",
+          "line": 18
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "dialup",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/dialup/tests_dialup_zone_transfer.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dialup/tests_dialup_zone_transfer.py",
+          "function": "test_dialup_zone_transfer",
+          "line": 28
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "digdelv",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/digdelv/tests_delv.py",
+        "bin/tests/system/digdelv/tests_dig.py",
+        "bin/tests/system/digdelv/tests_mdig.py",
+        "bin/tests/system/digdelv/tests_others.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_short",
+          "line": 40
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_split_width",
+          "line": 48
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_unknownformat",
+          "line": 56
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_4_and_6_mutually_exclusive",
+          "line": 63
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_malformed_query_name",
+          "line": 70
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_address_family_mismatch",
+          "line": 95
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_reverse_lookup",
+          "line": 108
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_tcp",
+          "line": 116
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_rrcomments",
+          "line": 142
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_short_rrcomments_line",
+          "line": 151
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_short_nosplit",
+          "line": 157
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_short_nosplit_norrcomments",
+          "line": 165
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_class_option",
+          "line": 182
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_q_m",
+          "line": 190
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_any_query",
+          "line": 201
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_trust_anchors",
+          "line": 216
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_refused_chasing_ds",
+          "line": 223
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_yaml_any",
+          "line": 229
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_yaml_negative",
+          "line": 246
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_ns_output",
+          "line": 257
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_ns_lookup",
+          "line": 300
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_delv.py",
+          "function": "test_ns_address_family",
+          "line": 312
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_update_response",
+          "line": 47
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_short",
+          "line": 56
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_split_width",
+          "line": 63
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_unknownformat",
+          "line": 71
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_reverse_lookup",
+          "line": 78
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_tcp",
+          "line": 86
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_dnskey_rrcomments",
+          "line": 101
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_soa_norrcomments",
+          "line": 110
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_short_nosplit",
+          "line": 117
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_short_rrcomments_line",
+          "line": 123
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_multi_flag_is_local",
+          "line": 130
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_noheader_only",
+          "line": 149
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_header_only",
+          "line": 163
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ttl_units",
+          "line": 180
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ttl_units_precedence",
+          "line": 194
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_class_chaos",
+          "line": 200
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_bad_escape",
+          "line": 206
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_q_m",
+          "line": 214
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_expandaaaa",
+          "line": 241
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_bufsize_zero",
+          "line": 248
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_bufsize_restores_default",
+          "line": 255
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_query_time_units",
+          "line": 269
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_yaml_timestamp_precision",
+          "line": 283
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_local_reserved_warning",
+          "line": 294
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_nocrypto",
+          "line": 300
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_coflag",
+          "line": 310
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_coflag_yaml",
+          "line": 317
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_header_flag_options",
+          "line": 330
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_zflag",
+          "line": 339
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_08_no_insist",
+          "line": 347
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_nsid",
+          "line": 361
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_update_lease",
+          "line": 368
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_update_lease_yaml",
+          "line": 374
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_update_lease_split",
+          "line": 382
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_update_lease_split_yaml",
+          "line": 388
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_llq",
+          "line": 401
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_llq_yaml",
+          "line": 413
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_key_tag_empty",
+          "line": 427
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_key_tag",
+          "line": 434
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_key_tag_yaml",
+          "line": 442
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_key_tag_malformed",
+          "line": 448
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_tag",
+          "line": 457
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_tag_yaml",
+          "line": 465
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_tag_bad_length",
+          "line": 479
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_chain",
+          "line": 487
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_chain_yaml",
+          "line": 493
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_expire",
+          "line": 500
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_expire_yaml",
+          "line": 506
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_keepalive",
+          "line": 513
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_keepalive_yaml",
+          "line": 519
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_ede",
+          "line": 535
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_ede_yaml",
+          "line": 550
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_ede_yaml_specials",
+          "line": 562
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_ede_yaml_invalid",
+          "line": 576
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsopt_malformed",
+          "line": 583
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ednsflags_reenables_edns",
+          "line": 591
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_showbadvers",
+          "line": 598
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_subnet",
+          "line": 608
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_subnet_last_wins",
+          "line": 615
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_subnet_prefix_lengths",
+          "line": 623
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_subnet_prefix_between_byte_boundaries",
+          "line": 634
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_subnet_zero",
+          "line": 650
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_subnet_zero_yaml",
+          "line": 660
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_subnet_yaml",
+          "line": 667
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_subnet_raw_zero",
+          "line": 673
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_subnet_raw_unknown_family",
+          "line": 681
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_origin_preserved_on_tcp_retries",
+          "line": 689
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_4_and_6_mutually_exclusive",
+          "line": 701
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ipv6_server_with_ipv4_only",
+          "line": 709
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_ipv4_server_with_ipv6_only",
+          "line": 718
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_axfr_retry_upon_tcp_eof",
+          "line": 747
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_axfr_no_retry_with_retry_0",
+          "line": 760
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_timeout_then_servfail",
+          "line": 777
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_comments_retry_comment",
+          "line": 784
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_short_comments_suppresses_retry_comment",
+          "line": 792
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_next_server_after_network_unreachable",
+          "line": 814
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_next_server_after_udp_read_error",
+          "line": 822
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_next_server_after_tcp_read_error",
+          "line": 829
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_next_server_after_tcp_connection_error",
+          "line": 836
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_next_server_after_read_timeout",
+          "line": 856
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_mapped_ipv6_server_refused",
+          "line": 862
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_qr_and_y_with_failed_query",
+          "line": 871
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_startup_banner_default",
+          "line": 879
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_nocmd_after_query_name",
+          "line": 892
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_yaml_valid_when_no_server_reached",
+          "line": 906
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_source_address_both_families_no_crash",
+          "line": 922
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_yaml_any_output",
+          "line": 933
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_yaml_ipv6_trailing_zeroes",
+          "line": 944
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_yaml_special_characters_in_qname",
+          "line": 955
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_dig.py",
+          "function": "test_yaml_character_values",
+          "line": 967
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_mdig.py",
+          "function": "test_tcp_with_source_address_and_port",
+          "line": 34
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_mdig.py",
+          "function": "test_ednsopt_malformed",
+          "line": 49
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_mdig.py",
+          "function": "test_dnskey_norrcomments",
+          "line": 57
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_mdig.py",
+          "function": "test_soa_norrcomments",
+          "line": 64
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_mdig.py",
+          "function": "test_yaml_output",
+          "line": 71
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_others.py",
+          "function": "test_nslookup_update_response",
+          "line": 28
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_others.py",
+          "function": "test_host_update_response",
+          "line": 39
+        },
+        {
+          "file": "bin/tests/system/digdelv/tests_others.py",
+          "function": "test_nsupdate_update_response",
+          "line": 49
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 210
+      }
+    },
+    {
+      "suite": "dispatch",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/dispatch/tests_connreset.py",
+        "bin/tests/system/dispatch/tests_tcponly.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dispatch/tests_connreset.py",
+          "function": "test_connreset",
+          "line": 26
+        },
+        {
+          "file": "bin/tests/system/dispatch/tests_tcponly.py",
+          "function": "test_tcponly_not_resolved",
+          "line": 24
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "dlzexternal",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/dlzexternal/tests.sh",
+        "bin/tests/system/dlzexternal/tests_sh_dlzexternal.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dlzexternal/tests_sh_dlzexternal.py",
+          "function": "test_dlzexternal",
+          "line": 30
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "dns64",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/dns64/tests.sh",
+        "bin/tests/system/dns64/tests_sh_dns64.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dns64/tests_sh_dns64.py",
+          "function": "test_dns64",
+          "line": 24
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "dns64_dname",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/dns64_dname/tests_dns64_dname.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dns64_dname/tests_dns64_dname.py",
+          "function": "test_dns64_partial_exclude_after_dname_restart",
+          "line": 40
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "dnssec",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/dnssec/tests.sh",
+        "bin/tests/system/dnssec/tests_sh_dnssec.py",
+        "bin/tests/system/dnssec/tests_validation.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dnssec/tests_sh_dnssec.py",
+          "function": "test_dnssec",
+          "line": 186
+        },
+        {
+          "file": "bin/tests/system/dnssec/tests_validation.py",
+          "function": "test_positive_validation_dname_at_apex",
+          "line": 49
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "dnssec_bypass",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/dnssec_bypass/tests_bypass.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dnssec_bypass/tests_bypass.py",
+          "function": "test_out_of_zone_nsec",
+          "line": 139
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "dnssec_cname_response",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/dnssec_cname_response/tests_cname_rejection.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dnssec_cname_response/tests_cname_rejection.py",
+          "function": "test_direct_metatype_query_does_not_crash_resolver",
+          "line": 94
+        },
+        {
+          "file": "bin/tests/system/dnssec_cname_response/tests_cname_rejection.py",
+          "function": "test_rrsig_lone_record_does_not_stall_resolver",
+          "line": 125
+        },
+        {
+          "file": "bin/tests/system/dnssec_cname_response/tests_cname_rejection.py",
+          "function": "test_cname_for_validator_dnskey_fetch",
+          "line": 145
+        },
+        {
+          "file": "bin/tests/system/dnssec_cname_response/tests_cname_rejection.py",
+          "function": "test_ds_cname_does_not_deadlock",
+          "line": 168
+        },
+        {
+          "file": "bin/tests/system/dnssec_cname_response/tests_cname_rejection.py",
+          "function": "test_unsolicited_nsec3_proofs_are_rejected",
+          "line": 193
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 8
+      }
+    },
+    {
+      "suite": "dnssec_nsec3",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/dnssec_nsec3/tests_dnssec_nsec3_delegation.py",
+        "bin/tests/system/dnssec_nsec3/tests_nsec3_wrong_zone.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dnssec_nsec3/tests_dnssec_nsec3_delegation.py",
+          "function": "test_forged_bogus_inner_nsec3",
+          "line": 117
+        },
+        {
+          "file": "bin/tests/system/dnssec_nsec3/tests_dnssec_nsec3_delegation.py",
+          "function": "test_resolver_rejects_bogus_inner_nsec3_downgrade",
+          "line": 123
+        },
+        {
+          "file": "bin/tests/system/dnssec_nsec3/tests_nsec3_wrong_zone.py",
+          "function": "test_forged_response",
+          "line": 119
+        },
+        {
+          "file": "bin/tests/system/dnssec_nsec3/tests_nsec3_wrong_zone.py",
+          "function": "test_resolver_rejects_wrong_zone_nsec3_noqname_proof",
+          "line": 127
+        },
+        {
+          "file": "bin/tests/system/dnssec_nsec3/tests_nsec3_wrong_zone.py",
+          "function": "test_resolver_accepts_own_zone_nsec3_wildcard_proof",
+          "line": 142
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 5
+      }
+    },
+    {
+      "suite": "dnssec_parent_rrsig",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/dnssec_parent_rrsig/tests_parent_rrsig.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dnssec_parent_rrsig/tests_parent_rrsig.py",
+          "function": "test_resolver_rejects_ancestor_signed_additional_replay",
+          "line": 100
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "dnssec_py",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/dnssec_py/tests_dnskey_malformed.py",
+        "bin/tests/system/dnssec_py/tests_dnskey_truncated_selfsigned.py",
+        "bin/tests/system/dnssec_py/tests_findnoqname_mismatch.py",
+        "bin/tests/system/dnssec_py/tests_mixed_ds.py",
+        "bin/tests/system/dnssec_py/tests_nsec3_answer.py",
+        "bin/tests/system/dnssec_py/tests_nsec3_iter_too_many.py",
+        "bin/tests/system/dnssec_py/tests_rrsig_labels_signer.py",
+        "bin/tests/system/dnssec_py/tests_rrsigs_extra_expired.py",
+        "bin/tests/system/dnssec_py/tests_sibling_ds.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dnssec_py/tests_dnskey_malformed.py",
+          "function": "test_malformed_ecdsa",
+          "line": 131
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_dnskey_malformed.py",
+          "function": "test_multiple_rrsigs",
+          "line": 164
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_dnskey_truncated_selfsigned.py",
+          "function": "test_truncated_revoked_dnskey",
+          "line": 51
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_dnskey_truncated_selfsigned.py",
+          "function": "test_truncated_active_dnskey",
+          "line": 61
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_findnoqname_mismatch.py",
+          "function": "test_malicious_findnoqname_addnoqname_mismatch",
+          "line": 101
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_findnoqname_mismatch.py",
+          "function": "test_resolver_findnoqname_addnoqname_mismatch",
+          "line": 124
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_mixed_ds.py",
+          "function": "test_mixed_ds",
+          "line": 63
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_nsec3_answer.py",
+          "function": "test_nodata",
+          "line": 106
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_nsec3_answer.py",
+          "function": "test_nodata_ds",
+          "line": 118
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_nsec3_answer.py",
+          "function": "test_nxdomain",
+          "line": 158
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_nsec3_answer.py",
+          "function": "test_cname_nxdomain",
+          "line": 172
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_nsec3_answer.py",
+          "function": "test_dname_nxdomain",
+          "line": 188
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_nsec3_answer.py",
+          "function": "test_ents",
+          "line": 206
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_nsec3_answer.py",
+          "function": "test_wildcard_synthesis",
+          "line": 224
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_nsec3_answer.py",
+          "function": "test_wildcard_nodata",
+          "line": 238
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_nsec3_iter_too_many.py",
+          "function": "test_excessive_nsec3_iterations_delegation",
+          "line": 39
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_rrsig_labels_signer.py",
+          "function": "test_rrsig_labels_underflow_rejected",
+          "line": 62
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_rrsig_labels_signer.py",
+          "function": "test_rrsig_labels_no_wildcard_cache_poison",
+          "line": 77
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_rrsigs_extra_expired.py",
+          "function": "test_regular_query",
+          "line": 90
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_rrsigs_extra_expired.py",
+          "function": "test_extra_expired_rrsigs",
+          "line": 97
+        },
+        {
+          "file": "bin/tests/system/dnssec_py/tests_sibling_ds.py",
+          "function": "test_sibling_ds_rejected",
+          "line": 60
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 28
+      }
+    },
+    {
+      "suite": "dnssec_wildcard",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/dnssec_wildcard/tests_dnssec_wildcard_additional.py",
+        "bin/tests/system/dnssec_wildcard/tests_replayed_parent_wildcard.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dnssec_wildcard/tests_dnssec_wildcard_additional.py",
+          "function": "test_direct_fromwildcard_additional_fixture",
+          "line": 101
+        },
+        {
+          "file": "bin/tests/system/dnssec_wildcard/tests_dnssec_wildcard_additional.py",
+          "function": "test_resolver_rejects_fromwildcard_additional_replay",
+          "line": 116
+        },
+        {
+          "file": "bin/tests/system/dnssec_wildcard/tests_replayed_parent_wildcard.py",
+          "function": "test_malicious_replay",
+          "line": 128
+        },
+        {
+          "file": "bin/tests/system/dnssec_wildcard/tests_replayed_parent_wildcard.py",
+          "function": "test_replayed_parent_wildcard",
+          "line": 157
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 4
+      }
+    },
+    {
+      "suite": "dnstap",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/dnstap/tests.sh",
+        "bin/tests/system/dnstap/tests_dnstap.py",
+        "bin/tests/system/dnstap/tests_sh_dnstap.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dnstap/tests_dnstap.py",
+          "function": "test_dnstap_dispatch_socket_addresses",
+          "line": 36
+        },
+        {
+          "file": "bin/tests/system/dnstap/tests_sh_dnstap.py",
+          "function": "test_dnstap",
+          "line": 34
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "doth",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/doth/tests.sh",
+        "bin/tests/system/doth/tests_gnutls.py",
+        "bin/tests/system/doth/tests_malicious.py",
+        "bin/tests/system/doth/tests_sh_doth.py",
+        "bin/tests/system/doth/tests_sslyze.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/doth/tests_gnutls.py",
+          "function": "test_gnutls_cli_query",
+          "line": 43
+        },
+        {
+          "file": "bin/tests/system/doth/tests_malicious.py",
+          "function": "test_settings_frame_flood",
+          "line": 29
+        },
+        {
+          "file": "bin/tests/system/doth/tests_sh_doth.py",
+          "function": "test_doth",
+          "line": 31
+        },
+        {
+          "file": "bin/tests/system/doth/tests_sslyze.py",
+          "function": "test_sslyze_doh",
+          "line": 76
+        },
+        {
+          "file": "bin/tests/system/doth/tests_sslyze.py",
+          "function": "test_sslyze_dot",
+          "line": 80
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 5
+      }
+    },
+    {
+      "suite": "dsdigest",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/dsdigest/tests_dsdigest.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dsdigest/tests_dsdigest.py",
+          "function": "test_dsdigest_good",
+          "line": 31
+        },
+        {
+          "file": "bin/tests/system/dsdigest/tests_dsdigest.py",
+          "function": "test_dsdigest_bad",
+          "line": 42
+        },
+        {
+          "file": "bin/tests/system/dsdigest/tests_dsdigest.py",
+          "function": "test_dsdigest_insecure",
+          "line": 53
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "suite": "dyndb",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/dyndb/tests.sh",
+        "bin/tests/system/dyndb/tests_sh_dyndb.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/dyndb/tests_sh_dyndb.py",
+          "function": "test_dyndb",
+          "line": 30
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "ecdsa",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/ecdsa/tests_ecdsa.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/ecdsa/tests_ecdsa.py",
+          "function": "test_ecdsa256",
+          "line": 43
+        },
+        {
+          "file": "bin/tests/system/ecdsa/tests_ecdsa.py",
+          "function": "test_ecdsa384",
+          "line": 51
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "eddsa",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/eddsa/tests.sh",
+        "bin/tests/system/eddsa/tests_sh_eddsa.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/eddsa/tests_sh_eddsa.py",
+          "function": "test_eddsa",
+          "line": 36
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "ednscompliance",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/ednscompliance/tests.sh",
+        "bin/tests/system/ednscompliance/tests_sh_ednscompliance.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/ednscompliance/tests_sh_ednscompliance.py",
+          "function": "test_ednscompliance",
+          "line": 21
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "emptyzones",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/emptyzones/tests_emptyzones.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/emptyzones/tests_emptyzones.py",
+          "function": "test_emptyzones",
+          "line": 15
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "enginepkcs11",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/enginepkcs11/tests.sh",
+        "bin/tests/system/enginepkcs11/tests_sh_enginepkcs11.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/enginepkcs11/tests_sh_enginepkcs11.py",
+          "function": "test_enginepkcs11",
+          "line": 71
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "failed",
+      "upstream_counts": {
+        "error": 1
+      }
+    },
+    {
+      "suite": "expiredglue",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/expiredglue/tests_expiredglue.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/expiredglue/tests_expiredglue.py",
+          "function": "test_expiredglue",
+          "line": 17
+        },
+        {
+          "file": "bin/tests/system/expiredglue/tests_expiredglue.py",
+          "function": "test_loopdetected",
+          "line": 48
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "fetchlimit",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/fetchlimit/tests.sh",
+        "bin/tests/system/fetchlimit/tests_sh_fetchlimit.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/fetchlimit/tests_sh_fetchlimit.py",
+          "function": "test_fetchlimit",
+          "line": 34
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "filters",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/filters/tests_filter_a_v4.py",
+        "bin/tests/system/filters/tests_filter_a_v6.py",
+        "bin/tests/system/filters/tests_filter_aaaa_v4.py",
+        "bin/tests/system/filters/tests_filter_aaaa_v6.py",
+        "bin/tests/system/filters/tests_filter_checkconf.py",
+        "bin/tests/system/filters/tests_filter_dns64.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/filters/tests_filter_a_v4.py",
+          "function": "test_filter_a_on_v4",
+          "line": 48
+        },
+        {
+          "file": "bin/tests/system/filters/tests_filter_a_v4.py",
+          "function": "test_filter_a_on_v4_via_v6",
+          "line": 62
+        },
+        {
+          "file": "bin/tests/system/filters/tests_filter_a_v6.py",
+          "function": "test_filter_a_on_v6",
+          "line": 69
+        },
+        {
+          "file": "bin/tests/system/filters/tests_filter_a_v6.py",
+          "function": "test_filter_a_on_v6_via_v4",
+          "line": 82
+        },
+        {
+          "file": "bin/tests/system/filters/tests_filter_aaaa_v4.py",
+          "function": "test_filter_aaaa_on_v4",
+          "line": 48
+        },
+        {
+          "file": "bin/tests/system/filters/tests_filter_aaaa_v4.py",
+          "function": "test_filter_aaaa_on_v4_via_v6",
+          "line": 62
+        },
+        {
+          "file": "bin/tests/system/filters/tests_filter_aaaa_v6.py",
+          "function": "test_filter_aaaa_on_v6",
+          "line": 69
+        },
+        {
+          "file": "bin/tests/system/filters/tests_filter_aaaa_v6.py",
+          "function": "test_filter_aaaa_on_v6_via_v4",
+          "line": 83
+        },
+        {
+          "file": "bin/tests/system/filters/tests_filter_checkconf.py",
+          "function": "test_filters_checkconf",
+          "line": 26
+        },
+        {
+          "file": "bin/tests/system/filters/tests_filter_dns64.py",
+          "function": "test_filter_dns64",
+          "line": 21
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 34
+      }
+    },
+    {
+      "suite": "formerr",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/formerr/tests_formerr.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/formerr/tests_formerr.py",
+          "function": "test_formerr",
+          "line": 509
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 19
+      }
+    },
+    {
+      "suite": "forward",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/forward/tests.sh",
+        "bin/tests/system/forward/tests_sh_forward.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/forward/tests_sh_forward.py",
+          "function": "test_forward",
+          "line": 32
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "fwdfirst",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/fwdfirst/tests_fwdfirst.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/fwdfirst/tests_fwdfirst.py",
+          "function": "test_forward_first_referral_ns_above_forward_zone_not_cached",
+          "line": 35
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "geoip2",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/geoip2/tests.sh",
+        "bin/tests/system/geoip2/tests_sh_geoip2.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/geoip2/tests_sh_geoip2.py",
+          "function": "test_geoip2",
+          "line": 30
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "glue",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/glue/tests_glue.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/glue/tests_glue.py",
+          "function": "test_glue_full_glue_set",
+          "line": 30
+        },
+        {
+          "file": "bin/tests/system/glue/tests_glue.py",
+          "function": "test_glue_no_glue_set",
+          "line": 61
+        },
+        {
+          "file": "bin/tests/system/glue/tests_glue.py",
+          "function": "test_glue_truncation",
+          "line": 98
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 8
+      }
+    },
+    {
+      "suite": "hooks",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/hooks/tests_async_plugin.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/hooks/tests_async_plugin.py",
+          "function": "test_async_hook",
+          "line": 15
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "host",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/host/tests.sh",
+        "bin/tests/system/host/tests_sh_host.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/host/tests_sh_host.py",
+          "function": "test_host",
+          "line": 23
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "idna",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/idna/tests.sh",
+        "bin/tests/system/idna/tests_sh_idna.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/idna/tests_sh_idna.py",
+          "function": "test_idna",
+          "line": 21
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "include_multiplecfg",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/include_multiplecfg/tests_include_multiplecfg.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/include_multiplecfg/tests_include_multiplecfg.py",
+          "function": "test_include_multiplecfg",
+          "line": 28
+        },
+        {
+          "file": "bin/tests/system/include_multiplecfg/tests_include_multiplecfg.py",
+          "function": "test_include_multiplecfg_checkconf",
+          "line": 37
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 4
+      }
+    },
+    {
+      "suite": "inline",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/inline/tests.sh",
+        "bin/tests/system/inline/tests_inline_incremental_updates.py",
+        "bin/tests/system/inline/tests_sh_inline.py",
+        "bin/tests/system/inline/tests_signed_zone_files.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/inline/tests_inline_incremental_updates.py",
+          "function": "test_inline_incremental_updates",
+          "line": 50
+        },
+        {
+          "file": "bin/tests/system/inline/tests_sh_inline.py",
+          "function": "test_inline",
+          "line": 40
+        },
+        {
+          "file": "bin/tests/system/inline/tests_signed_zone_files.py",
+          "function": "test_unsigned_serial_number",
+          "line": 58
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "suite": "integrity",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/integrity/tests.sh",
+        "bin/tests/system/integrity/tests_sh_integrity.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/integrity/tests_sh_integrity.py",
+          "function": "test_integrity",
+          "line": 21
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "ixfr",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/ixfr/tests.sh",
+        "bin/tests/system/ixfr/tests_sh_ixfr.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/ixfr/tests_sh_ixfr.py",
+          "function": "test_ixfr",
+          "line": 33
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "ixfr_nonminimal",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/ixfr_nonminimal/tests.sh",
+        "bin/tests/system/ixfr_nonminimal/tests_sh_ixfr_nonminimal.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/ixfr_nonminimal/tests_sh_ixfr_nonminimal.py",
+          "function": "test_my_ixfr_nonminimal",
+          "line": 26
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "journal",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/journal/tests.sh",
+        "bin/tests/system/journal/tests_sh_journal.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/journal/tests_sh_journal.py",
+          "function": "test_journal",
+          "line": 27
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "kasp",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/kasp/tests_kasp.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_case",
+          "line": 660
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_inherit_unsigned",
+          "line": 744
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_inherit_signed",
+          "line": 774
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_inherit_view",
+          "line": 804
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_default",
+          "line": 855
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_dynamic",
+          "line": 953
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_cds_cdnskey",
+          "line": 1079
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_checkds",
+          "line": 1117
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_checkds_doubleksk",
+          "line": 1159
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_checkds_csk",
+          "line": 1231
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_special_characters",
+          "line": 1270
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_insecure",
+          "line": 1283
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_bad_maxzonettl",
+          "line": 1309
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_dnssec_keygen",
+          "line": 1315
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_zsk_retired",
+          "line": 1517
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_purge_keys",
+          "line": 1651
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_reload_restart",
+          "line": 1678
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_kasp_manual_mode",
+          "line": 1736
+        },
+        {
+          "file": "bin/tests/system/kasp/tests_kasp.py",
+          "function": "test_root_case",
+          "line": 1833
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 62
+      }
+    },
+    {
+      "suite": "keepalive",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/keepalive/tests_keepalive.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/keepalive/tests_keepalive.py",
+          "function": "test_dig_tcp_keepalive_handling",
+          "line": 21
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "keyfromlabel",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/keyfromlabel/tests_keyfromlabel.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/keyfromlabel/tests_keyfromlabel.py",
+          "function": "test_keyfromlabel",
+          "line": 101
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "failed",
+      "upstream_counts": {
+        "failed": 4
+      }
+    },
+    {
+      "suite": "ksr",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/ksr/tests_ksr.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/ksr/tests_ksr.py",
+          "function": "test_ksr_errors",
+          "line": 625
+        },
+        {
+          "file": "bin/tests/system/ksr/tests_ksr.py",
+          "function": "test_ksr_common",
+          "line": 655
+        },
+        {
+          "file": "bin/tests/system/ksr/tests_ksr.py",
+          "function": "test_ksr_lastbundle",
+          "line": 843
+        },
+        {
+          "file": "bin/tests/system/ksr/tests_ksr.py",
+          "function": "test_ksr_inthemiddle",
+          "line": 920
+        },
+        {
+          "file": "bin/tests/system/ksr/tests_ksr.py",
+          "function": "test_ksr_rekey_logs_error",
+          "line": 1064
+        },
+        {
+          "file": "bin/tests/system/ksr/tests_ksr.py",
+          "function": "test_ksr_unlimited",
+          "line": 1071
+        },
+        {
+          "file": "bin/tests/system/ksr/tests_ksr.py",
+          "function": "test_ksr_twotone",
+          "line": 1188
+        },
+        {
+          "file": "bin/tests/system/ksr/tests_ksr.py",
+          "function": "test_ksr_kskroll",
+          "line": 1304
+        },
+        {
+          "file": "bin/tests/system/ksr/tests_ksr.py",
+          "function": "test_ksr_fast",
+          "line": 1376
+        },
+        {
+          "file": "bin/tests/system/ksr/tests_ksr.py",
+          "function": "test_ksr_oversize",
+          "line": 1457
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 10
+      }
+    },
+    {
+      "suite": "legacy",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/legacy/tests.sh",
+        "bin/tests/system/legacy/tests_sh_legacy.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/legacy/tests_sh_legacy.py",
+          "function": "test_legacy",
+          "line": 21
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "limits",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/limits/tests_limits.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/limits/tests_limits.py",
+          "function": "test_limits",
+          "line": 31
+        },
+        {
+          "file": "bin/tests/system/limits/tests_limits.py",
+          "function": "test_limit_exceeded",
+          "line": 45
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 6
+      }
+    },
+    {
+      "suite": "logfileconfig",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/logfileconfig/tests.sh",
+        "bin/tests/system/logfileconfig/tests_sh_logfileconfig.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/logfileconfig/tests_sh_logfileconfig.py",
+          "function": "test_logfileconfig",
+          "line": 34
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "masterfile",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/masterfile/tests_masterfile.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/masterfile/tests_masterfile.py",
+          "function": "test_masterfile_include_semantics",
+          "line": 20
+        },
+        {
+          "file": "bin/tests/system/masterfile/tests_masterfile.py",
+          "function": "test_masterfile_bind_8_compat_semantics",
+          "line": 41
+        },
+        {
+          "file": "bin/tests/system/masterfile/tests_masterfile.py",
+          "function": "test_masterfile_rfc_1035_semantics",
+          "line": 60
+        },
+        {
+          "file": "bin/tests/system/masterfile/tests_masterfile.py",
+          "function": "test_masterfile_missing_master_file",
+          "line": 79
+        },
+        {
+          "file": "bin/tests/system/masterfile/tests_masterfile.py",
+          "function": "test_masterfile_missing_master_file_servfail",
+          "line": 90
+        },
+        {
+          "file": "bin/tests/system/masterfile/tests_masterfile.py",
+          "function": "test_masterfile_owner_inheritance",
+          "line": 97
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 6
+      }
+    },
+    {
+      "suite": "masterformat",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/masterformat/tests.sh",
+        "bin/tests/system/masterformat/tests_sh_masterformat.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/masterformat/tests_sh_masterformat.py",
+          "function": "test_masterformat",
+          "line": 45
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "metadata",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/metadata/tests.sh",
+        "bin/tests/system/metadata/tests_sh_metadata.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/metadata/tests_sh_metadata.py",
+          "function": "test_metadata",
+          "line": 39
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "migrate2kasp",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/migrate2kasp/tests_migrate2kasp.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/migrate2kasp/tests_migrate2kasp.py",
+          "function": "test_migrate2kasp_case",
+          "line": 306
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 11
+      }
+    },
+    {
+      "suite": "mirror",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/mirror/tests.sh",
+        "bin/tests/system/mirror/tests_sh_mirror.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/mirror/tests_sh_mirror.py",
+          "function": "test_mirror",
+          "line": 33
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "mirror_root_zone",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/mirror_root_zone/tests_mirror_root_zone.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/mirror_root_zone/tests_mirror_root_zone.py",
+          "function": "test_mirror_root_zone",
+          "line": 19
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "failed",
+      "upstream_counts": {
+        "failed": 1
+      }
+    },
+    {
+      "suite": "mismatchtcp",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/mismatchtcp/tests_mismatchtcp.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/mismatchtcp/tests_mismatchtcp.py",
+          "function": "test_mismatch_tcp_fallback",
+          "line": 58
+        },
+        {
+          "file": "bin/tests/system/mismatchtcp/tests_mismatchtcp.py",
+          "function": "test_mismatch_counter",
+          "line": 74
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "mkeys",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/mkeys/tests.sh",
+        "bin/tests/system/mkeys/tests_sh_mkeys.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/mkeys/tests_sh_mkeys.py",
+          "function": "test_mkeys",
+          "line": 54
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "multisigner",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/multisigner/tests_multisigner.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/multisigner/tests_multisigner.py",
+          "function": "test_multisigner",
+          "line": 565
+        },
+        {
+          "file": "bin/tests/system/multisigner/tests_multisigner.py",
+          "function": "test_multisigner_update_any",
+          "line": 636
+        },
+        {
+          "file": "bin/tests/system/multisigner/tests_multisigner.py",
+          "function": "test_multisigner_secondary",
+          "line": 707
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "suite": "names",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/names/tests_names.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/names/tests_names.py",
+          "function": "test_names",
+          "line": 18
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "notify",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/notify/tests.sh",
+        "bin/tests/system/notify/tests_sh_notify.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/notify/tests_sh_notify.py",
+          "function": "test_notify",
+          "line": 37
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "nsec",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/nsec/tests_excessive_rrsigs.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nsec/tests_excessive_rrsigs.py",
+          "function": "test_excessive_rrsigs",
+          "line": 78
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "nsec3",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/nsec3/tests_nsec3_change.py",
+        "bin/tests/system/nsec3/tests_nsec3_initial.py",
+        "bin/tests/system/nsec3/tests_nsec3_length.py",
+        "bin/tests/system/nsec3/tests_nsec3_reconfig.py",
+        "bin/tests/system/nsec3/tests_nsec3_reload.py",
+        "bin/tests/system/nsec3/tests_nsec3_restart.py",
+        "bin/tests/system/nsec3/tests_nsec3_retransfer.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nsec3/tests_nsec3_change.py",
+          "function": "test_nsec3_case",
+          "line": 88
+        },
+        {
+          "file": "bin/tests/system/nsec3/tests_nsec3_initial.py",
+          "function": "test_nsec_case",
+          "line": 136
+        },
+        {
+          "file": "bin/tests/system/nsec3/tests_nsec3_initial.py",
+          "function": "test_nsec3_case",
+          "line": 296
+        },
+        {
+          "file": "bin/tests/system/nsec3/tests_nsec3_length.py",
+          "function": "test_nsec3_invalid_length",
+          "line": 29
+        },
+        {
+          "file": "bin/tests/system/nsec3/tests_nsec3_reconfig.py",
+          "function": "test_nsec_case",
+          "line": 158
+        },
+        {
+          "file": "bin/tests/system/nsec3/tests_nsec3_reconfig.py",
+          "function": "test_nsec3_case",
+          "line": 275
+        },
+        {
+          "file": "bin/tests/system/nsec3/tests_nsec3_reconfig.py",
+          "function": "test_nsec3_ent",
+          "line": 279
+        },
+        {
+          "file": "bin/tests/system/nsec3/tests_nsec3_reload.py",
+          "function": "test_nsec3_case",
+          "line": 32
+        },
+        {
+          "file": "bin/tests/system/nsec3/tests_nsec3_restart.py",
+          "function": "test_nsec3_case",
+          "line": 95
+        },
+        {
+          "file": "bin/tests/system/nsec3/tests_nsec3_retransfer.py",
+          "function": "test_nsec3_retransfer",
+          "line": 91
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 36
+      }
+    },
+    {
+      "suite": "nsec3_impersonation",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/nsec3_impersonation/tests_nsec3_impersonation.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nsec3_impersonation/tests_nsec3_impersonation.py",
+          "function": "test_attack_responses",
+          "line": 112
+        },
+        {
+          "file": "bin/tests/system/nsec3_impersonation/tests_nsec3_impersonation.py",
+          "function": "test_nsec3_impersonation",
+          "line": 143
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "nsec_grandparent",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/nsec_grandparent/tests_nsec_grandparent.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nsec_grandparent/tests_nsec_grandparent.py",
+          "function": "test_auth_serves_forged_grandparent_nsec",
+          "line": 147
+        },
+        {
+          "file": "bin/tests/system/nsec_grandparent/tests_nsec_grandparent.py",
+          "function": "test_resolver_rejects_grandparent_nsec_downgrade",
+          "line": 183
+        },
+        {
+          "file": "bin/tests/system/nsec_grandparent/tests_nsec_grandparent.py",
+          "function": "test_resolver_rejects_grandparent_nsec3_downgrade",
+          "line": 199
+        },
+        {
+          "file": "bin/tests/system/nsec_grandparent/tests_nsec_grandparent.py",
+          "function": "test_resolver_rejects_downgrade_from_cached_proof",
+          "line": 210
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 4
+      }
+    },
+    {
+      "suite": "nsec_ixfr",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/nsec_ixfr/tests_nsec_ixfr.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nsec_ixfr/tests_nsec_ixfr.py",
+          "function": "test_nsec_ixfr_empty_nonterminal",
+          "line": 32
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "nsec_piggyback",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/nsec_piggyback/tests_nsec_piggyback.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nsec_piggyback/tests_nsec_piggyback.py",
+          "function": "test_malicious_referral",
+          "line": 138
+        },
+        {
+          "file": "bin/tests/system/nsec_piggyback/tests_nsec_piggyback.py",
+          "function": "test_nsec_piggyback_cache_poisoning",
+          "line": 163
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "suite": "nsec_synthesis",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/nsec_synthesis/tests_nsec_child_next.py",
+        "bin/tests/system/nsec_synthesis/tests_nsec_exact_nodata.py",
+        "bin/tests/system/nsec_synthesis/tests_nsec_pending_cd.py",
+        "bin/tests/system/nsec_synthesis/tests_nsec_selfloop.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nsec_synthesis/tests_nsec_child_next.py",
+          "function": "test_direct_insecure_child_nsec_next_fixture",
+          "line": 125
+        },
+        {
+          "file": "bin/tests/system/nsec_synthesis/tests_nsec_child_next.py",
+          "function": "test_resolver_does_not_synth_from_insecure_child_nsec",
+          "line": 132
+        },
+        {
+          "file": "bin/tests/system/nsec_synthesis/tests_nsec_exact_nodata.py",
+          "function": "test_pending_exact_nodata_nsec_cache_poisoning",
+          "line": 119
+        },
+        {
+          "file": "bin/tests/system/nsec_synthesis/tests_nsec_pending_cd.py",
+          "function": "test_pending_trust_nsec_cd_cache_poisoning",
+          "line": 120
+        },
+        {
+          "file": "bin/tests/system/nsec_synthesis/tests_nsec_selfloop.py",
+          "function": "test_direct_child_self_loop_nsec_fixture",
+          "line": 130
+        },
+        {
+          "file": "bin/tests/system/nsec_synthesis/tests_nsec_selfloop.py",
+          "function": "test_resolver_does_not_synth_parent_nxdomain_from_child_nsec",
+          "line": 137
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 6
+      }
+    },
+    {
+      "suite": "nslookup",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/nslookup/tests.sh",
+        "bin/tests/system/nslookup/tests_sh_nslookup.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nslookup/tests_sh_nslookup.py",
+          "function": "test_nslookup",
+          "line": 23
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "nsprocessinglimit",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/nsprocessinglimit/tests_nsprocessinglimit.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nsprocessinglimit/tests_nsprocessinglimit.py",
+          "function": "test_selfpointedglue_nslimit",
+          "line": 55
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "nsupdate",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/nsupdate/tests.sh",
+        "bin/tests/system/nsupdate/tests_sh_nsupdate.py",
+        "bin/tests/system/nsupdate/tests_update_sig.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nsupdate/tests_sh_nsupdate.py",
+          "function": "test_nsupdate",
+          "line": 90
+        },
+        {
+          "file": "bin/tests/system/nsupdate/tests_update_sig.py",
+          "function": "test_tcp_self_sig_record",
+          "line": 90
+        },
+        {
+          "file": "bin/tests/system/nsupdate/tests_update_sig.py",
+          "function": "test_tcp_self_nxt_record",
+          "line": 132
+        },
+        {
+          "file": "bin/tests/system/nsupdate/tests_update_sig.py",
+          "function": "test_sig_covers_preserved_via_axfr",
+          "line": 167
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 4
+      }
+    },
+    {
+      "suite": "nta",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/nta/tests_nta.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_initial",
+          "line": 41
+        },
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_nta_validate_except",
+          "line": 56
+        },
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_nta_bogus_lifetimes",
+          "line": 68
+        },
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_nta_install",
+          "line": 84
+        },
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_nta_behavior",
+          "line": 109
+        },
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_nta_removals",
+          "line": 209
+        },
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_nta_restarts",
+          "line": 238
+        },
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_nta_regular",
+          "line": 279
+        },
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_nta_forced",
+          "line": 327
+        },
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_nta_clamping",
+          "line": 374
+        },
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_nta_forward",
+          "line": 411
+        },
+        {
+          "file": "bin/tests/system/nta/tests_nta.py",
+          "function": "test_nta_ede",
+          "line": 435
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 12
+      }
+    },
+    {
+      "suite": "nzd2nzf",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/nzd2nzf/tests_nzd2nzf.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/nzd2nzf/tests_nzd2nzf.py",
+          "function": "test_nzd2nzf",
+          "line": 29
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "optout",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/optout/tests_optout.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/optout/tests_optout.py",
+          "function": "test_optout",
+          "line": 84
+        },
+        {
+          "file": "bin/tests/system/optout/tests_optout.py",
+          "function": "test_optout_to_nsec",
+          "line": 103
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "padding",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/padding/tests.sh",
+        "bin/tests/system/padding/tests_sh_padding.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/padding/tests_sh_padding.py",
+          "function": "test_padding",
+          "line": 22
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "pending",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/pending/tests.sh",
+        "bin/tests/system/pending/tests_sh_pending.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/pending/tests_sh_pending.py",
+          "function": "test_pending",
+          "line": 30
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "pipelined",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/pipelined/tests.sh",
+        "bin/tests/system/pipelined/tests_sh_pipelined.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/pipelined/tests_sh_pipelined.py",
+          "function": "test_pipelined",
+          "line": 24
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "proxy",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/proxy/tests.sh",
+        "bin/tests/system/proxy/tests_sh_proxy.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/proxy/tests_sh_proxy.py",
+          "function": "test_proxy",
+          "line": 29
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "qmin",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/qmin/tests.sh",
+        "bin/tests/system/qmin/tests_sh_qmin.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/qmin/tests_sh_qmin.py",
+          "function": "test_qmin",
+          "line": 27
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "qpcache_rrsig_any",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/qpcache_rrsig_any/tests_qpcache_rrsig_any.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/qpcache_rrsig_any/tests_qpcache_rrsig_any.py",
+          "function": "test_rrsig_covers_metatype_is_servfail",
+          "line": 37
+        },
+        {
+          "file": "bin/tests/system/qpcache_rrsig_any/tests_qpcache_rrsig_any.py",
+          "function": "test_dig_nobesteffort_rejects_malformed_rrsig",
+          "line": 45
+        },
+        {
+          "file": "bin/tests/system/qpcache_rrsig_any/tests_qpcache_rrsig_any.py",
+          "function": "test_dig_besteffort_shows_malformed_rrsig",
+          "line": 62
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 24
+      }
+    },
+    {
+      "suite": "query_source",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/query_source/tests_querysource_none.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/query_source/tests_querysource_none.py",
+          "function": "test_querysource_none",
+          "line": 26
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "randomizens",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/randomizens/tests_randomizens.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/randomizens/tests_randomizens.py",
+          "function": "test_randomizens",
+          "line": 26
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "reclimit",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/reclimit/tests.sh",
+        "bin/tests/system/reclimit/tests_sh_reclimit.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/reclimit/tests_sh_reclimit.py",
+          "function": "test_reclimit",
+          "line": 36
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "redirect",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/redirect/tests.sh",
+        "bin/tests/system/redirect/tests_redirect_dns64.py",
+        "bin/tests/system/redirect/tests_sh_redirect.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/redirect/tests_redirect_dns64.py",
+          "function": "test_nxdomain_redirect_dns64_authoritative",
+          "line": 70
+        },
+        {
+          "file": "bin/tests/system/redirect/tests_redirect_dns64.py",
+          "function": "test_nxdomain_redirect_dns64_recursive",
+          "line": 79
+        },
+        {
+          "file": "bin/tests/system/redirect/tests_redirect_dns64.py",
+          "function": "test_nxdomain_redirect_dns64_synth_from_dnssec",
+          "line": 89
+        },
+        {
+          "file": "bin/tests/system/redirect/tests_sh_redirect.py",
+          "function": "test_redirect",
+          "line": 51
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 4
+      }
+    },
+    {
+      "suite": "resend_loop",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/resend_loop/tests_resend_loop.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/resend_loop/tests_resend_loop.py",
+          "function": "test_resend_loop_badcookie",
+          "line": 17
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "resolver",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/resolver/tests.sh",
+        "bin/tests/system/resolver/tests_resolver.py",
+        "bin/tests/system/resolver/tests_sh_resolver.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/resolver/tests_resolver.py",
+          "function": "test_resolver_cache_reloadfails",
+          "line": 19
+        },
+        {
+          "file": "bin/tests/system/resolver/tests_resolver.py",
+          "function": "test_resolver_dname_target_filter_attack",
+          "line": 48
+        },
+        {
+          "file": "bin/tests/system/resolver/tests_sh_resolver.py",
+          "function": "test_resolver",
+          "line": 43
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "suite": "rfc5011",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rfc5011/tests_rfc5011.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rfc5011/tests_rfc5011.py",
+          "function": "test_rfc5011_rootdnskeyrefresh",
+          "line": 24
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "rndc",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/rndc/tests.sh",
+        "bin/tests/system/rndc/tests_cve_2023_3341.py",
+        "bin/tests/system/rndc/tests_sh_rndc.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rndc/tests_cve_2023_3341.py",
+          "function": "test_cve_2023_3341",
+          "line": 36
+        },
+        {
+          "file": "bin/tests/system/rndc/tests_sh_rndc.py",
+          "function": "test_rndc",
+          "line": 42
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "rndc_confgen",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/rndc_confgen/tests_rndc_confgen.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rndc_confgen/tests_rndc_confgen.py",
+          "function": "test_rndc_confgen_default",
+          "line": 30
+        },
+        {
+          "file": "bin/tests/system/rndc_confgen/tests_rndc_confgen.py",
+          "function": "test_rndc_confgen_keyname_with_dots",
+          "line": 35
+        },
+        {
+          "file": "bin/tests/system/rndc_confgen/tests_rndc_confgen.py",
+          "function": "test_rndc_confgen_escapes_injection",
+          "line": 40
+        },
+        {
+          "file": "bin/tests/system/rndc_confgen/tests_rndc_confgen.py",
+          "function": "test_rndc_confgen_rejects_to_big_label",
+          "line": 45
+        },
+        {
+          "file": "bin/tests/system/rndc_confgen/tests_rndc_confgen.py",
+          "function": "test_tsig_keygen_default",
+          "line": 50
+        },
+        {
+          "file": "bin/tests/system/rndc_confgen/tests_rndc_confgen.py",
+          "function": "test_tsig_keygen_escapes_injection",
+          "line": 55
+        },
+        {
+          "file": "bin/tests/system/rndc_confgen/tests_rndc_confgen.py",
+          "function": "test_rndc_confgen_hmac_keysize",
+          "line": 83
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 18
+      }
+    },
+    {
+      "suite": "rollover",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover/tests_rollover_manual.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover/tests_rollover_manual.py",
+          "function": "test_rollover_manual",
+          "line": 148
+        },
+        {
+          "file": "bin/tests/system/rollover/tests_rollover_manual.py",
+          "function": "test_rollover_manual_zrrsig_rumoured",
+          "line": 306
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "rollover_algo_csk",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_algo_csk/tests_rollover_algo_csk_initial.py",
+        "bin/tests/system/rollover_algo_csk/tests_rollover_algo_csk_reconfig.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_algo_csk/tests_rollover_algo_csk_initial.py",
+          "function": "test_algoroll_csk_initial",
+          "line": 58
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_csk/tests_rollover_algo_csk_reconfig.py",
+          "function": "test_algoroll_csk_reconfig_step1",
+          "line": 88
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_csk/tests_rollover_algo_csk_reconfig.py",
+          "function": "test_algoroll_csk_reconfig_step2",
+          "line": 144
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_csk/tests_rollover_algo_csk_reconfig.py",
+          "function": "test_algoroll_csk_reconfig_step3",
+          "line": 181
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_csk/tests_rollover_algo_csk_reconfig.py",
+          "function": "test_algoroll_csk_reconfig_step4",
+          "line": 250
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_csk/tests_rollover_algo_csk_reconfig.py",
+          "function": "test_algoroll_csk_reconfig_step5",
+          "line": 305
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_csk/tests_rollover_algo_csk_reconfig.py",
+          "function": "test_algoroll_csk_reconfig_step6",
+          "line": 339
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 14
+      }
+    },
+    {
+      "suite": "rollover_algo_ksk_zsk",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_algo_ksk_zsk/tests_rollover_algo_ksk_zsk_initial.py",
+        "bin/tests/system/rollover_algo_ksk_zsk/tests_rollover_algo_ksk_zsk_reconfig.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_algo_ksk_zsk/tests_rollover_algo_ksk_zsk_initial.py",
+          "function": "test_algoroll_ksk_zsk_initial",
+          "line": 54
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_ksk_zsk/tests_rollover_algo_ksk_zsk_reconfig.py",
+          "function": "test_algoroll_ksk_zsk_reconfig_step1",
+          "line": 86
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_ksk_zsk/tests_rollover_algo_ksk_zsk_reconfig.py",
+          "function": "test_algoroll_ksk_zsk_reconfig_step2",
+          "line": 147
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_ksk_zsk/tests_rollover_algo_ksk_zsk_reconfig.py",
+          "function": "test_algoroll_ksk_zsk_reconfig_step3",
+          "line": 186
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_ksk_zsk/tests_rollover_algo_ksk_zsk_reconfig.py",
+          "function": "test_algoroll_ksk_zsk_reconfig_step4",
+          "line": 259
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_ksk_zsk/tests_rollover_algo_ksk_zsk_reconfig.py",
+          "function": "test_algoroll_ksk_zsk_reconfig_step5",
+          "line": 321
+        },
+        {
+          "file": "bin/tests/system/rollover_algo_ksk_zsk/tests_rollover_algo_ksk_zsk_reconfig.py",
+          "function": "test_algoroll_ksk_zsk_reconfig_step6",
+          "line": 357
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 14
+      }
+    },
+    {
+      "suite": "rollover_csk_roll1",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_csk_roll1/tests_rollover_csk_roll1.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_csk_roll1/tests_rollover_csk_roll1.py",
+          "function": "test_csk_roll1_step1",
+          "line": 95
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll1/tests_rollover_csk_roll1.py",
+          "function": "test_csk_roll1_step2",
+          "line": 126
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll1/tests_rollover_csk_roll1.py",
+          "function": "test_csk_roll1_step3",
+          "line": 184
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll1/tests_rollover_csk_roll1.py",
+          "function": "test_csk_roll1_step4",
+          "line": 271
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll1/tests_rollover_csk_roll1.py",
+          "function": "test_csk_roll1_step5",
+          "line": 336
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll1/tests_rollover_csk_roll1.py",
+          "function": "test_csk_roll1_step6",
+          "line": 369
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll1/tests_rollover_csk_roll1.py",
+          "function": "test_csk_roll1_step7",
+          "line": 405
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll1/tests_rollover_csk_roll1.py",
+          "function": "test_csk_roll1_step8",
+          "line": 437
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 16
+      }
+    },
+    {
+      "suite": "rollover_csk_roll2",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_csk_roll2/tests_rollover_csk_roll2.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_csk_roll2/tests_rollover_csk_roll2.py",
+          "function": "test_csk_roll2_step1",
+          "line": 98
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll2/tests_rollover_csk_roll2.py",
+          "function": "test_csk_roll2_step2",
+          "line": 129
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll2/tests_rollover_csk_roll2.py",
+          "function": "test_csk_roll2_step3",
+          "line": 187
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll2/tests_rollover_csk_roll2.py",
+          "function": "test_csk_roll2_step4",
+          "line": 274
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll2/tests_rollover_csk_roll2.py",
+          "function": "test_csk_roll2_step5",
+          "line": 313
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll2/tests_rollover_csk_roll2.py",
+          "function": "test_csk_roll2_step6",
+          "line": 377
+        },
+        {
+          "file": "bin/tests/system/rollover_csk_roll2/tests_rollover_csk_roll2.py",
+          "function": "test_csk_roll2_step7",
+          "line": 410
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 14
+      }
+    },
+    {
+      "suite": "rollover_dynamic2inline",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_dynamic2inline/tests_rollover_dynamic2inline.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_dynamic2inline/tests_rollover_dynamic2inline.py",
+          "function": "test_dynamic2inline",
+          "line": 19
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "rollover_enable_dnssec",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_enable_dnssec/tests_rollover_enable_dnssec.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_enable_dnssec/tests_rollover_enable_dnssec.py",
+          "function": "test_rollover_enable_dnssec_step1",
+          "line": 77
+        },
+        {
+          "file": "bin/tests/system/rollover_enable_dnssec/tests_rollover_enable_dnssec.py",
+          "function": "test_rollover_enable_dnssec_step2",
+          "line": 124
+        },
+        {
+          "file": "bin/tests/system/rollover_enable_dnssec/tests_rollover_enable_dnssec.py",
+          "function": "test_rollover_enable_dnssec_step3",
+          "line": 156
+        },
+        {
+          "file": "bin/tests/system/rollover_enable_dnssec/tests_rollover_enable_dnssec.py",
+          "function": "test_rollover_enable_dnssec_step4",
+          "line": 210
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 8
+      }
+    },
+    {
+      "suite": "rollover_going_insecure",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_going_insecure/tests_rollover_going_insecure_initial.py",
+        "bin/tests/system/rollover_going_insecure/tests_rollover_going_insecure_reconfig.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_going_insecure/tests_rollover_going_insecure_initial.py",
+          "function": "test_going_insecure_initial",
+          "line": 46
+        },
+        {
+          "file": "bin/tests/system/rollover_going_insecure/tests_rollover_going_insecure_reconfig.py",
+          "function": "test_going_insecure_reconfig_step1",
+          "line": 58
+        },
+        {
+          "file": "bin/tests/system/rollover_going_insecure/tests_rollover_going_insecure_reconfig.py",
+          "function": "test_going_insecure_reconfig_step2",
+          "line": 91
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 6
+      }
+    },
+    {
+      "suite": "rollover_ksk_3crowd",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_ksk_3crowd/tests_rollover_three_is_a_crowd.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_ksk_3crowd/tests_rollover_three_is_a_crowd.py",
+          "function": "test_rollover_ksk_three_is_a_crowd",
+          "line": 52
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "rollover_ksk_doubleksk",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_ksk_doubleksk/tests_rollover_ksk_doubleksk.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_ksk_doubleksk/tests_rollover_ksk_doubleksk.py",
+          "function": "test_ksk_doubleksk_step1",
+          "line": 81
+        },
+        {
+          "file": "bin/tests/system/rollover_ksk_doubleksk/tests_rollover_ksk_doubleksk.py",
+          "function": "test_ksk_doubleksk_step2",
+          "line": 113
+        },
+        {
+          "file": "bin/tests/system/rollover_ksk_doubleksk/tests_rollover_ksk_doubleksk.py",
+          "function": "test_ksk_doubleksk_step3",
+          "line": 172
+        },
+        {
+          "file": "bin/tests/system/rollover_ksk_doubleksk/tests_rollover_ksk_doubleksk.py",
+          "function": "test_ksk_doubleksk_step4",
+          "line": 252
+        },
+        {
+          "file": "bin/tests/system/rollover_ksk_doubleksk/tests_rollover_ksk_doubleksk.py",
+          "function": "test_ksk_doubleksk_step5",
+          "line": 318
+        },
+        {
+          "file": "bin/tests/system/rollover_ksk_doubleksk/tests_rollover_ksk_doubleksk.py",
+          "function": "test_ksk_doubleksk_step6",
+          "line": 353
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 12
+      }
+    },
+    {
+      "suite": "rollover_lifetime",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_lifetime/tests_rollover_lifetime_initial.py",
+        "bin/tests/system/rollover_lifetime/tests_rollover_lifetime_reconfig.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_lifetime/tests_rollover_lifetime_initial.py",
+          "function": "test_lifetime_initial",
+          "line": 31
+        },
+        {
+          "file": "bin/tests/system/rollover_lifetime/tests_rollover_lifetime_reconfig.py",
+          "function": "test_lifetime_reconfig",
+          "line": 46
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 8
+      }
+    },
+    {
+      "suite": "rollover_multisigner",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_multisigner/tests_rollover_multisigner.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_multisigner/tests_rollover_multisigner.py",
+          "function": "test_rollover_multisigner",
+          "line": 91
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "rollover_straight2none",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_straight2none/tests_rollover_straight2none_initial.py",
+        "bin/tests/system/rollover_straight2none/tests_rollover_straight2none_reconfig.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_straight2none/tests_rollover_straight2none_initial.py",
+          "function": "test_straight2none_initial",
+          "line": 46
+        },
+        {
+          "file": "bin/tests/system/rollover_straight2none/tests_rollover_straight2none_reconfig.py",
+          "function": "test_straight2none_reconfig",
+          "line": 55
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 4
+      }
+    },
+    {
+      "suite": "rollover_zsk_prepub",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rollover_zsk_prepub/tests_rollover_zsk_prepublication.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rollover_zsk_prepub/tests_rollover_zsk_prepublication.py",
+          "function": "test_zsk_prepub_step1",
+          "line": 88
+        },
+        {
+          "file": "bin/tests/system/rollover_zsk_prepub/tests_rollover_zsk_prepublication.py",
+          "function": "test_zsk_prepub_step2",
+          "line": 119
+        },
+        {
+          "file": "bin/tests/system/rollover_zsk_prepub/tests_rollover_zsk_prepublication.py",
+          "function": "test_zsk_prepub_step3",
+          "line": 176
+        },
+        {
+          "file": "bin/tests/system/rollover_zsk_prepub/tests_rollover_zsk_prepublication.py",
+          "function": "test_zsk_prepub_step4",
+          "line": 263
+        },
+        {
+          "file": "bin/tests/system/rollover_zsk_prepub/tests_rollover_zsk_prepublication.py",
+          "function": "test_zsk_prepub_step5",
+          "line": 324
+        },
+        {
+          "file": "bin/tests/system/rollover_zsk_prepub/tests_rollover_zsk_prepublication.py",
+          "function": "test_zsk_prepub_step6",
+          "line": 357
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 12
+      }
+    },
+    {
+      "suite": "rootkeysentinel",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rootkeysentinel/tests.sh",
+        "bin/tests/system/rootkeysentinel/tests_sh_rootkeysentinel.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rootkeysentinel/tests_sh_rootkeysentinel.py",
+          "function": "test_rootkeysentinel",
+          "line": 29
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "rpz",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/rpz/tests.sh",
+        "bin/tests/system/rpz/tests_sh_rpz.py",
+        "bin/tests/system/rpz/tests_sh_rpz_dnsrps.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rpz/tests_sh_rpz.py",
+          "function": "test_rpz",
+          "line": 69
+        },
+        {
+          "file": "bin/tests/system/rpz/tests_sh_rpz_dnsrps.py",
+          "function": "test_rpz_dnsrps",
+          "line": 74
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "partial_skipped",
+      "upstream_counts": {
+        "passed": 1,
+        "skipped": 1
+      }
+    },
+    {
+      "suite": "rpzextra",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/rpzextra/tests_rpzextra.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rpzextra/tests_rpzextra.py",
+          "function": "test_rpz_multiple_views",
+          "line": 70
+        },
+        {
+          "file": "bin/tests/system/rpzextra/tests_rpzextra.py",
+          "function": "test_rpz_passthru_logging",
+          "line": 92
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 16
+      }
+    },
+    {
+      "suite": "rpzrecurse",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/rpzrecurse/tests.sh",
+        "bin/tests/system/rpzrecurse/tests_sh_rpzrecurse.py",
+        "bin/tests/system/rpzrecurse/tests_sh_rpzrecurse_dnsrps.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rpzrecurse/tests_sh_rpzrecurse.py",
+          "function": "test_rpzrecurse",
+          "line": 28
+        },
+        {
+          "file": "bin/tests/system/rpzrecurse/tests_sh_rpzrecurse_dnsrps.py",
+          "function": "test_rpzrecurse_dnsrps",
+          "line": 33
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "partial_skipped",
+      "upstream_counts": {
+        "passed": 1,
+        "skipped": 1
+      }
+    },
+    {
+      "suite": "rrchecker",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/rrchecker/tests_rrchecker.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rrchecker/tests_rrchecker.py",
+          "function": "test_rrchecker_list_standard_names",
+          "line": 123
+        },
+        {
+          "file": "bin/tests/system/rrchecker/tests_rrchecker.py",
+          "function": "test_rrchecker_conversions",
+          "line": 142
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 8
+      }
+    },
+    {
+      "suite": "rrl",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/rrl/tests.sh",
+        "bin/tests/system/rrl/tests_sh_rrl.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rrl/tests_sh_rrl.py",
+          "function": "test_rrl",
+          "line": 26
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "rrsetorder",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/rrsetorder/tests.sh",
+        "bin/tests/system/rrsetorder/tests_sh_rrsetorder.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rrsetorder/tests_sh_rrsetorder.py",
+          "function": "test_rrsetorder",
+          "line": 22
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "rsabigexponent",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/rsabigexponent/tests_rsabigexponent.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/rsabigexponent/tests_rsabigexponent.py",
+          "function": "test_max_rsa_exponent_size_good",
+          "line": 37
+        },
+        {
+          "file": "bin/tests/system/rsabigexponent/tests_rsabigexponent.py",
+          "function": "test_max_rsa_exponent_size_bad",
+          "line": 43
+        },
+        {
+          "file": "bin/tests/system/rsabigexponent/tests_rsabigexponent.py",
+          "function": "test_rsa_big_exponent_keys_cant_load",
+          "line": 49
+        },
+        {
+          "file": "bin/tests/system/rsabigexponent/tests_rsabigexponent.py",
+          "function": "test_rsa_big_exponent_keys_cant_validate",
+          "line": 57
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 12
+      }
+    },
+    {
+      "suite": "runtime",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/runtime/tests.sh",
+        "bin/tests/system/runtime/tests_sh_runtime.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/runtime/tests_sh_runtime.py",
+          "function": "test_runtime",
+          "line": 25
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "selfpointedglue",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/selfpointedglue/tests_selfpointedglue.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/selfpointedglue/tests_selfpointedglue.py",
+          "function": "test_selfpointedglue",
+          "line": 58
+        },
+        {
+          "file": "bin/tests/system/selfpointedglue/tests_selfpointedglue.py",
+          "function": "test_selfpointedglue_adblimit",
+          "line": 85
+        },
+        {
+          "file": "bin/tests/system/selfpointedglue/tests_selfpointedglue.py",
+          "function": "test_selfpointedglue_adblimitlower",
+          "line": 114
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "suite": "selftest",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/selftest/tests_zone_analyzer.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/selftest/tests_zone_analyzer.py",
+          "function": "test_analyzer_attrs",
+          "line": 224
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 11
+      }
+    },
+    {
+      "suite": "serve_stale",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/serve_stale/tests.sh",
+        "bin/tests/system/serve_stale/tests_serve_stale_ncache.py",
+        "bin/tests/system/serve_stale/tests_sh_serve_stale.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/serve_stale/tests_serve_stale_ncache.py",
+          "function": "test_fresh_ncache_entry_is_not_refreshed",
+          "line": 67
+        },
+        {
+          "file": "bin/tests/system/serve_stale/tests_sh_serve_stale.py",
+          "function": "test_serve_stale",
+          "line": 37
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "suite": "sfcache",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/sfcache/tests.sh",
+        "bin/tests/system/sfcache/tests_sh_sfcache.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/sfcache/tests_sh_sfcache.py",
+          "function": "test_sfcache",
+          "line": 32
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "sfcache_cname",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/sfcache_cname/tests_sfcache_cname.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/sfcache_cname/tests_sfcache_cname.py",
+          "function": "test_sfcache_cname",
+          "line": 27
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "shutdown",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/shutdown/tests_shutdown.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/shutdown/tests_shutdown.py",
+          "function": "test_named_shutdown",
+          "line": 163
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "sig0",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/sig0/tests_sig0.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/sig0/tests_sig0.py",
+          "function": "test_sig0_acl_bypass",
+          "line": 111
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "smartsign",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/smartsign/tests.sh",
+        "bin/tests/system/smartsign/tests_sh_smartsign.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/smartsign/tests_sh_smartsign.py",
+          "function": "test_smartsign",
+          "line": 26
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "sortlist",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/sortlist/tests_sortlist.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/sortlist/tests_sortlist.py",
+          "function": "test_sortlist",
+          "line": 19
+        },
+        {
+          "file": "bin/tests/system/sortlist/tests_sortlist.py",
+          "function": "test_sortlist_compat",
+          "line": 47
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 5
+      }
+    },
+    {
+      "suite": "spf",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/spf/tests_spf_zones.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/spf/tests_spf_zones.py",
+          "function": "test_spf_log",
+          "line": 16
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "srtt",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/srtt/tests_srtt.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/srtt/tests_srtt.py",
+          "function": "test_srtt",
+          "line": 51
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "ssumaxtype",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/ssumaxtype/tests_ssumaxtype.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/ssumaxtype/tests_ssumaxtype.py",
+          "function": "test_ssu_max_basic",
+          "line": 72
+        },
+        {
+          "file": "bin/tests/system/ssumaxtype/tests_ssumaxtype.py",
+          "function": "test_ssu_max_across_updates",
+          "line": 85
+        },
+        {
+          "file": "bin/tests/system/ssumaxtype/tests_ssumaxtype.py",
+          "function": "test_ssu_max_cname_padding_bypass",
+          "line": 102
+        },
+        {
+          "file": "bin/tests/system/ssumaxtype/tests_ssumaxtype.py",
+          "function": "test_max_records_per_type",
+          "line": 141
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 4
+      }
+    },
+    {
+      "suite": "ssutoctou",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/ssutoctou/tests_ssutoctou.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/ssutoctou/tests_ssutoctou.py",
+          "function": "test_ssu_toctou_race",
+          "line": 73
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "staticstub",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/staticstub/tests.sh",
+        "bin/tests/system/staticstub/tests_sh_staticstub.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/staticstub/tests_sh_staticstub.py",
+          "function": "test_staticstub",
+          "line": 29
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "statistics",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/statistics/tests.sh",
+        "bin/tests/system/statistics/tests_sh_statistics.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/statistics/tests_sh_statistics.py",
+          "function": "test_statistics",
+          "line": 27
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "statschannel",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/statschannel/tests.sh",
+        "bin/tests/system/statschannel/tests_json.py",
+        "bin/tests/system/statschannel/tests_sh_statschannel.py",
+        "bin/tests/system/statschannel/tests_xml.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/statschannel/tests_json.py",
+          "function": "test_zone_timers_primary_json",
+          "line": 93
+        },
+        {
+          "file": "bin/tests/system/statschannel/tests_json.py",
+          "function": "test_zone_timers_secondary_json",
+          "line": 103
+        },
+        {
+          "file": "bin/tests/system/statschannel/tests_json.py",
+          "function": "test_zone_with_many_keys_json",
+          "line": 113
+        },
+        {
+          "file": "bin/tests/system/statschannel/tests_json.py",
+          "function": "test_traffic_json",
+          "line": 120
+        },
+        {
+          "file": "bin/tests/system/statschannel/tests_json.py",
+          "function": "test_json_response_repeated_requests",
+          "line": 125
+        },
+        {
+          "file": "bin/tests/system/statschannel/tests_sh_statschannel.py",
+          "function": "test_statschannel",
+          "line": 61
+        },
+        {
+          "file": "bin/tests/system/statschannel/tests_xml.py",
+          "function": "test_zone_timers_primary_xml",
+          "line": 123
+        },
+        {
+          "file": "bin/tests/system/statschannel/tests_xml.py",
+          "function": "test_zone_timers_secondary_xml",
+          "line": 133
+        },
+        {
+          "file": "bin/tests/system/statschannel/tests_xml.py",
+          "function": "test_zone_with_many_keys_xml",
+          "line": 143
+        },
+        {
+          "file": "bin/tests/system/statschannel/tests_xml.py",
+          "function": "test_traffic_xml",
+          "line": 150
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 10
+      }
+    },
+    {
+      "suite": "stress",
+      "scenario": "外部扩展与运行环境",
+      "entrypoints": [
+        "bin/tests/system/stress/tests_stress_update.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/stress/tests_stress_update.py",
+          "function": "test_update_stress",
+          "line": 55
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "stub",
+      "scenario": "递归、转发与缓存",
+      "entrypoints": [
+        "bin/tests/system/stub/tests_stub.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/stub/tests_stub.py",
+          "function": "test_stub_zones_availability",
+          "line": 29
+        },
+        {
+          "file": "bin/tests/system/stub/tests_stub.py",
+          "function": "test_stub_glue_record_with_minimal_response",
+          "line": 77
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "synthfromdnssec",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/synthfromdnssec/tests.sh",
+        "bin/tests/system/synthfromdnssec/tests_sh_synthfromdnssec.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/synthfromdnssec/tests_sh_synthfromdnssec.py",
+          "function": "test_synthfromdnssec",
+          "line": 60
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "tcp",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/tcp/tests_tcp.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/tcp/tests_tcp.py",
+          "function": "test_tcp_garbage",
+          "line": 284
+        },
+        {
+          "file": "bin/tests/system/tcp/tests_tcp.py",
+          "function": "test_tcp_garbage_response",
+          "line": 303
+        },
+        {
+          "file": "bin/tests/system/tcp/tests_tcp.py",
+          "function": "test_close_wait",
+          "line": 323
+        },
+        {
+          "file": "bin/tests/system/tcp/tests_tcp.py",
+          "function": "test_tcp_big",
+          "line": 357
+        },
+        {
+          "file": "bin/tests/system/tcp/tests_tcp.py",
+          "function": "test_tcp_request_statistics",
+          "line": 392
+        },
+        {
+          "file": "bin/tests/system/tcp/tests_tcp.py",
+          "function": "test_tcp_high_water",
+          "line": 418
+        },
+        {
+          "file": "bin/tests/system/tcp/tests_tcp.py",
+          "function": "test_long_tcp_messages",
+          "line": 494
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 7
+      }
+    },
+    {
+      "suite": "timeouts",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/timeouts/tests_tcp_timeouts.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/timeouts/tests_tcp_timeouts.py",
+          "function": "test_initial_timeout",
+          "line": 48
+        },
+        {
+          "file": "bin/tests/system/timeouts/tests_tcp_timeouts.py",
+          "function": "test_idle_timeout",
+          "line": 67
+        },
+        {
+          "file": "bin/tests/system/timeouts/tests_tcp_timeouts.py",
+          "function": "test_keepalive_timeout",
+          "line": 95
+        },
+        {
+          "file": "bin/tests/system/timeouts/tests_tcp_timeouts.py",
+          "function": "test_pipelining_timeout",
+          "line": 122
+        },
+        {
+          "file": "bin/tests/system/timeouts/tests_tcp_timeouts.py",
+          "function": "test_long_axfr",
+          "line": 156
+        },
+        {
+          "file": "bin/tests/system/timeouts/tests_tcp_timeouts.py",
+          "function": "test_send_timeout",
+          "line": 187
+        },
+        {
+          "file": "bin/tests/system/timeouts/tests_tcp_timeouts.py",
+          "function": "test_max_transfer_idle_out",
+          "line": 225
+        },
+        {
+          "file": "bin/tests/system/timeouts/tests_tcp_timeouts.py",
+          "function": "test_max_transfer_time_out",
+          "line": 257
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 8
+      }
+    },
+    {
+      "suite": "tkey",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/tkey/tests_cve_2026_3119.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/tkey/tests_cve_2026_3119.py",
+          "function": "test_tkey_cve_2026_3119",
+          "line": 49
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "tkeyleak",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/tkeyleak/tests_tkeyleak.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/tkeyleak/tests_tkeyleak.py",
+          "function": "test_tkey_gssapi_no_continuation",
+          "line": 121
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "tools",
+      "scenario": "运维管理、诊断与工具",
+      "entrypoints": [
+        "bin/tests/system/tools/tests.sh",
+        "bin/tests/system/tools/tests_sh_tools.py",
+        "bin/tests/system/tools/tests_tools_nsec3hash.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/tools/tests_sh_tools.py",
+          "function": "test_tools",
+          "line": 17
+        },
+        {
+          "file": "bin/tests/system/tools/tests_tools_nsec3hash.py",
+          "function": "test_nsec3_hashes",
+          "line": 49
+        },
+        {
+          "file": "bin/tests/system/tools/tests_tools_nsec3hash.py",
+          "function": "test_nsec3_empty_salt",
+          "line": 71
+        },
+        {
+          "file": "bin/tests/system/tools/tests_tools_nsec3hash.py",
+          "function": "test_nsec3_empty_salt_r",
+          "line": 90
+        },
+        {
+          "file": "bin/tests/system/tools/tests_tools_nsec3hash.py",
+          "function": "test_nsec3_missing_args",
+          "line": 117
+        },
+        {
+          "file": "bin/tests/system/tools/tests_tools_nsec3hash.py",
+          "function": "test_nsec3_bad_option",
+          "line": 122
+        },
+        {
+          "file": "bin/tests/system/tools/tests_tools_nsec3hash.py",
+          "function": "test_nsec3hash_acceptable_values",
+          "line": 132
+        },
+        {
+          "file": "bin/tests/system/tools/tests_tools_nsec3hash.py",
+          "function": "test_nsec3hash_salt_too_long",
+          "line": 155
+        },
+        {
+          "file": "bin/tests/system/tools/tests_tools_nsec3hash.py",
+          "function": "test_nsec3hash_too_many_iterations",
+          "line": 167
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 25
+      }
+    },
+    {
+      "suite": "transport_acl",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/transport_acl/tests.sh",
+        "bin/tests/system/transport_acl/tests_sh_transport_acl.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/transport_acl/tests_sh_transport_acl.py",
+          "function": "test_transport_acl",
+          "line": 22
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "transport_change",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/transport_change/tests.sh",
+        "bin/tests/system/transport_change/tests_sh_transport_change.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/transport_change/tests_sh_transport_change.py",
+          "function": "test_transport_change",
+          "line": 29
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "tsig",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/tsig/tests.sh",
+        "bin/tests/system/tsig/tests_badtime.py",
+        "bin/tests/system/tsig/tests_sh_tsig.py",
+        "bin/tests/system/tsig/tests_tsig_hypothesis.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/tsig/tests_badtime.py",
+          "function": "test_tsig_badtime",
+          "line": 48
+        },
+        {
+          "file": "bin/tests/system/tsig/tests_sh_tsig.py",
+          "function": "test_tsig",
+          "line": 25
+        },
+        {
+          "file": "bin/tests/system/tsig/tests_tsig_hypothesis.py",
+          "function": "test_tsig_fuzz_rdata",
+          "line": 97
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "suite": "tsiggss",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/tsiggss/tests.sh",
+        "bin/tests/system/tsiggss/tests_isc_spnego_flaws.py",
+        "bin/tests/system/tsiggss/tests_sh_tsiggss.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/tsiggss/tests_isc_spnego_flaws.py",
+          "function": "test_cve_2020_8625",
+          "line": 187
+        },
+        {
+          "file": "bin/tests/system/tsiggss/tests_isc_spnego_flaws.py",
+          "function": "test_cve_2021_25216",
+          "line": 202
+        },
+        {
+          "file": "bin/tests/system/tsiggss/tests_sh_tsiggss.py",
+          "function": "test_tsiggss",
+          "line": 36
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "suite": "ttl",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/ttl/tests_cache_ttl.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/ttl/tests_cache_ttl.py",
+          "function": "test_cache_ttl",
+          "line": 26
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 4
+      }
+    },
+    {
+      "suite": "unknown",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/unknown/tests.sh",
+        "bin/tests/system/unknown/tests_sh_unknown.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/unknown/tests_sh_unknown.py",
+          "function": "test_unknown",
+          "line": 28
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "upforwd",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/upforwd/tests.sh",
+        "bin/tests/system/upforwd/tests_sh_upforwd.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/upforwd/tests_sh_upforwd.py",
+          "function": "test_upforwd",
+          "line": 36
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "verify",
+      "scenario": "DNSSEC 与密钥管理",
+      "entrypoints": [
+        "bin/tests/system/verify/tests_verify.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_good_zone_files",
+          "line": 168
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_good_zone_nsec_next_name_case_mismatch",
+          "line": 172
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_bad_zone_files_dnskeyonly",
+          "line": 201
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_bad_zone_files_expired",
+          "line": 219
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_bad_zone_files_unexpected_nsec_rrset",
+          "line": 232
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_bad_zone_files_bad_nsec_record",
+          "line": 237
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_bad_zone_files_bad_bitmap",
+          "line": 242
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_bad_zone_files_missing_nsec3_record",
+          "line": 247
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_bad_zone_files_no_dnssec_keys",
+          "line": 252
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_bad_zone_files_unequal_nsec3_chains",
+          "line": 257
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_soa_not_at_top_error",
+          "line": 264
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_invalid_o_option_soa_not_at_top_error",
+          "line": 274
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_j_reads_journal_file",
+          "line": 284
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_rejects_bad_nsec3param_hash",
+          "line": 299
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_ignores_bad_nsec3param_hash_with_nsec",
+          "line": 314
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_ignores_bad_nsec3param_hash_with_good_nsec3param",
+          "line": 326
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_rejects_no_nsec_and_all_nsec3param_with_non_zero_flags",
+          "line": 338
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_ignores_nsec3param_non_zero_flags",
+          "line": 353
+        },
+        {
+          "file": "bin/tests/system/verify/tests_verify.py",
+          "function": "test_verify_rejects_nsec3param_with_nsec_only_key",
+          "line": 365
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 38
+      }
+    },
+    {
+      "suite": "views",
+      "scenario": "访问控制与 DNS 策略",
+      "entrypoints": [
+        "bin/tests/system/views/tests.sh",
+        "bin/tests/system/views/tests_sh_views.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/views/tests_sh_views.py",
+          "function": "test_views",
+          "line": 35
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "wildcard",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/wildcard/tests.sh",
+        "bin/tests/system/wildcard/tests_nonterminal_wildcard.py",
+        "bin/tests/system/wildcard/tests_sh_wildcard.py",
+        "bin/tests/system/wildcard/tests_wildcard.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/wildcard/tests_nonterminal_wildcard.py",
+          "function": "test_empty_nonterminal_under_wildcard_is_nodata",
+          "line": 66
+        },
+        {
+          "file": "bin/tests/system/wildcard/tests_nonterminal_wildcard.py",
+          "function": "test_wildcard_still_expands_without_blocking_ent",
+          "line": 81
+        },
+        {
+          "file": "bin/tests/system/wildcard/tests_sh_wildcard.py",
+          "function": "test_wildcard",
+          "line": 37
+        },
+        {
+          "file": "bin/tests/system/wildcard/tests_wildcard.py",
+          "function": "test_wildcard_rdtype_mismatch",
+          "line": 80
+        },
+        {
+          "file": "bin/tests/system/wildcard/tests_wildcard.py",
+          "function": "test_wildcard_match",
+          "line": 108
+        },
+        {
+          "file": "bin/tests/system/wildcard/tests_wildcard.py",
+          "function": "test_wildcard_with_star_not_synthesized",
+          "line": 140
+        },
+        {
+          "file": "bin/tests/system/wildcard/tests_wildcard.py",
+          "function": "test_name_in_between_wildcards",
+          "line": 159
+        },
+        {
+          "file": "bin/tests/system/wildcard/tests_wildcard.py",
+          "function": "test_name_nested_wildcard_subdomains_not_synthesized",
+          "line": 198
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 8
+      }
+    },
+    {
+      "suite": "xfer",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/xfer/tests_retransfer_with_force.py",
+        "bin/tests/system/xfer/tests_retransfer_with_transferstuck.py",
+        "bin/tests/system/xfer/tests_xfer.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/xfer/tests_retransfer_with_force.py",
+          "function": "test_wait_for_zone_retransfer",
+          "line": 26
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_retransfer_with_force.py",
+          "function": "test_cancel_ongoing_retransfer",
+          "line": 37
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_retransfer_with_force.py",
+          "function": "test_min_transfer_rate_in",
+          "line": 63
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_retransfer_with_force.py",
+          "function": "test_max_transfer_time_in",
+          "line": 70
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_retransfer_with_transferstuck.py",
+          "function": "test_retransfer_with_transferstuck",
+          "line": 29
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_zone_transfer_fallback_to_dns_after_dot_failed",
+          "line": 101
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_tsig_signed_zone_transfer",
+          "line": 106
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_zone_is_dumped_after_transfer",
+          "line": 119
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_multi_message_uncompressable_zone_transfers",
+          "line": 255
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_make_ns4_secondary_for_nil",
+          "line": 286
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_handle_ixfr_notimp",
+          "line": 308
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_under_signed_transfer",
+          "line": 378
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_handle_edns_notimp",
+          "line": 395
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_handle_edns_formerr",
+          "line": 406
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_edns_expire_from_secondary",
+          "line": 419
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_edns_expire_refresh",
+          "line": 428
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_tcp_message_compression_makes_difference",
+          "line": 438
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_mapped_zone",
+          "line": 462
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_axfr_too_many_records",
+          "line": 476
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_ixfr_too_many_records",
+          "line": 489
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_dig_and_named_axfr_stats",
+          "line": 509
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_transfer_source_option_uses_port_option_correctly",
+          "line": 546
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_xot_primary_try_next",
+          "line": 555
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_reconfiguration_when_zone_transfer_is_in_the_middle_of_soa_query",
+          "line": 573
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_malformed_private_dns_identifier_overrun",
+          "line": 609
+        },
+        {
+          "file": "bin/tests/system/xfer/tests_xfer.py",
+          "function": "test_ixfr_race",
+          "line": 620
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 33
+      }
+    },
+    {
+      "suite": "xfer_servers_list",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/xfer_servers_list/tests_xfer_servers_list.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/xfer_servers_list/tests_xfer_servers_list.py",
+          "function": "test_xfer_servers_list",
+          "line": 46
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "xferquota",
+      "scenario": "更新、传送与主从同步",
+      "entrypoints": [
+        "bin/tests/system/xferquota/tests_xferquota.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/xferquota/tests_xferquota.py",
+          "function": "test_xferquota",
+          "line": 41
+        },
+        {
+          "file": "bin/tests/system/xferquota/tests_xferquota.py",
+          "function": "test_xfrquota_unauthorized_no_starve",
+          "line": 101
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 2
+      }
+    },
+    {
+      "suite": "zero",
+      "scenario": "网络传输与协议健壮性",
+      "entrypoints": [
+        "bin/tests/system/zero/tests.sh",
+        "bin/tests/system/zero/tests_sh_zero.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/zero/tests_sh_zero.py",
+          "function": "test_zero",
+          "line": 25
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    },
+    {
+      "suite": "zonechecks",
+      "scenario": "权威 DNS 与区域数据",
+      "entrypoints": [
+        "bin/tests/system/zonechecks/tests.sh",
+        "bin/tests/system/zonechecks/tests_sh_zonechecks.py"
+      ],
+      "static_test_function_candidates": [
+        {
+          "file": "bin/tests/system/zonechecks/tests_sh_zonechecks.py",
+          "function": "test_zonechecks",
+          "line": 32
+        }
+      ],
+      "discovery_errors": [],
+      "go_status": "blocked_unimplemented",
+      "reason": "Go named and BIND command-line tools are not implemented",
+      "upstream_status": "passed",
+      "upstream_counts": {
+        "passed": 1
+      }
+    }
+  ]
+}

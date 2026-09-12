@@ -1,0 +1,18 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from upstream.Dockerfile
+#1 transferring dockerfile: 1.08kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ubuntu:24.04
+#2 ERROR: failed to authorize: failed to fetch anonymous token: Get "https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io": dial tcp [2a03:2880:f102:183:face:b00c:0:25de]:443: i/o timeout
+------
+ > [internal] load metadata for docker.io/library/ubuntu:24.04:
+------
+upstream.Dockerfile:1
+--------------------
+   1 | >>> FROM ubuntu:24.04
+   2 |     ENV DEBIAN_FRONTEND=noninteractive
+   3 |     RUN apt-get update && apt-get install -y --no-install-recommends \
+--------------------
+ERROR: failed to build: failed to solve: failed to fetch anonymous token: Get "https://auth.docker.io/token?scope=repository%3Alibrary%2Fubuntu%3Apull&service=registry.docker.io": dial tcp [2a03:2880:f102:183:face:b00c:0:25de]:443: i/o timeout

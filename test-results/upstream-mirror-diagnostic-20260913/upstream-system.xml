@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="12.844" timestamp="2026-09-12T16:54:52.509585+00:00" hostname="ed4fad81e7f8"><testcase classname="mirror_root_zone.tests_mirror_root_zone" name="test_mirror_root_zone" time="11.240"><failure message="isctest.log.watchlog.WatchLogTimeout: Timeout reached watching ns1/named.run for transfer\ of\ '\./IN'\ from\ .*#53: Transfer\ status:\ success">/src/bin/tests/system/mirror_root_zone/tests_mirror_root_zone.py:26: in test_mirror_root_zone
+    watch_log.wait_for_line(
+/src/bin/tests/system/isctest/log/watchlog.py:211: in wait_for_line
+    return self._wait_for_match(regexes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/isctest/log/watchlog.py:106: in _wait_for_match
+    raise WatchLogTimeout(
+E   isctest.log.watchlog.WatchLogTimeout: Timeout reached watching ns1/named.run for transfer\ of\ '\./IN'\ from\ .*#53: Transfer\ status:\ success</failure><system-out>--------------------------------- Captured Log ---------------------------------
+2026-09-12 16:54:53 INFO:mirror_root_zone switching to tmpdir: /src/bin/tests/system/mirror_root_zone-tmp-qraly9un
+2026-09-12 16:54:53 INFO:mirror_root_zone test started: /src/bin/tests/system/mirror_root_zone/tests_mirror_root_zone.py
+2026-09-12 16:54:53 INFO:mirror_root_zone using port range: &lt;19783, 19802&gt;
+</system-out></testcase></testsuite></testsuites>

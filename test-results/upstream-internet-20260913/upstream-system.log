@@ -1,0 +1,48 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /opt/testenv/bin/python3
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: /src/bin/tests/system
+configfile: pytest.ini
+plugins: flaky-3.8.1, xdist-3.8.0, hypothesis-6.168.0
+created: 2/2 workers
+2 workers [2 items]
+
+scheduling tests via LoadScopeScheduling
+
+rfc5011/tests_rfc5011.py::test_rfc5011_rootdnskeyrefresh 
+mirror_root_zone/tests_mirror_root_zone.py::test_mirror_root_zone 
+[gw1] [ 50%] PASSED rfc5011/tests_rfc5011.py::test_rfc5011_rootdnskeyrefresh 
+[gw0] [100%] FAILED mirror_root_zone/tests_mirror_root_zone.py::test_mirror_root_zone 
+
+=================================== FAILURES ===================================
+____________________________ test_mirror_root_zone _____________________________
+[gw0] linux -- Python 3.12.3 /opt/testenv/bin/python3
+/src/bin/tests/system/mirror_root_zone/tests_mirror_root_zone.py:26: in test_mirror_root_zone
+    watch_log.wait_for_line(
+/src/bin/tests/system/isctest/log/watchlog.py:211: in wait_for_line
+    return self._wait_for_match(regexes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/isctest/log/watchlog.py:106: in _wait_for_match
+    raise WatchLogTimeout(
+E   isctest.log.watchlog.WatchLogTimeout: Timeout reached watching ns1/named.run for transfer\ of\ '\./IN'\ from\ .*#53: Transfer\ status:\ success
+------------------------------ Captured log setup ------------------------------
+2026-09-12 16:53:48 INFO:mirror_root_zone switching to tmpdir: /src/bin/tests/system/mirror_root_zone-tmp-fm_7ua6n
+2026-09-12 16:53:48 INFO:mirror_root_zone test started: /src/bin/tests/system/mirror_root_zone/tests_mirror_root_zone.py
+2026-09-12 16:53:48 INFO:mirror_root_zone using port range: <19783, 19802>
+---------------------------- Captured log teardown -----------------------------
+2026-09-12 16:54:00 INFO:mirror_root_zone test artifacts in: mirror_root_zone-mirror_root_zone
+==================================== PASSES ====================================
+________________________ test_rfc5011_rootdnskeyrefresh ________________________
+[gw1] linux -- Python 3.12.3 /opt/testenv/bin/python3
+------------------------------ Captured log setup ------------------------------
+2026-09-12 16:53:48 INFO:rfc5011 switching to tmpdir: /src/bin/tests/system/rfc5011-tmp-ofumrkb8
+2026-09-12 16:53:48 INFO:rfc5011 test started: /src/bin/tests/system/rfc5011/tests_rfc5011.py
+2026-09-12 16:53:48 INFO:rfc5011 using port range: <20643, 20662>
+---------------------------- Captured log teardown -----------------------------
+2026-09-12 16:53:50 INFO:rfc5011 test artifacts in: rfc5011-rfc5011
+--------------- generated xml file: /results/upstream-system.xml ---------------
+=========================== short test summary info ============================
+PASSED rfc5011/tests_rfc5011.py::test_rfc5011_rootdnskeyrefresh
+FAILED mirror_root_zone/tests_mirror_root_zone.py::test_mirror_root_zone - isctest.log.watchlog.WatchLogTimeout: Timeout reached watching ns1/named.run for transfer\ of\ '\./IN'\ from\ .*#53: Transfer\ status:\ success
+========================= 1 failed, 1 passed in 13.28s =========================

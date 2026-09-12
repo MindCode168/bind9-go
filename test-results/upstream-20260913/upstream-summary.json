@@ -1,0 +1,5329 @@
+{
+  "subject": "upstream C BIND 9.20.27; not the Go port",
+  "unit_exit_code": 0,
+  "system_exit_code": 0,
+  "counts": {
+    "passed": 1049,
+    "failed": 0,
+    "error": 0,
+    "skipped": 14
+  },
+  "testcases": [
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_update_response",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_short[+short]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_short[+sh]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_split_width[+split=4]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_split_width[+sp=4]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_unknownformat",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_4_and_6_mutually_exclusive",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_malformed_query_name",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_address_family_mismatch[ipv4-server-with-6]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_address_family_mismatch[ipv6-server-with-4]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_reverse_lookup",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_tcp",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_rrcomments[multi-norrcomments-dnskey]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_rrcomments[multi-norrcomments-soa]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_rrcomments[rrcomments]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_rrcomments[short-rrcomments]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_short_rrcomments_line",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_short_nosplit",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_short_nosplit_norrcomments",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_short",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_split_width[+split=4]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_split_width[+sp=4]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_class_option[in]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_unknownformat",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_reverse_lookup",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_tcp",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_dnskey_rrcomments[multi-norrcomments]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_dnskey_rrcomments[rrcomments]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_class_option[ch-ignored]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_dnskey_rrcomments[short-rrcomments]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_soa_norrcomments",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_short_nosplit",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_short_rrcomments_line",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_multi_flag_is_local",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_q_m",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_noheader_only",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_header_only[default]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_header_only[with-class-and-type]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_any_query",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ttl_units[weeks]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ttl_units[days]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ttl_units[hours]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ttl_units[minutes]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ttl_units[seconds]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_trust_anchors[key-style]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ttl_units_precedence[nottlid-wins]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ttl_units_precedence[ttlunits-wins]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ttl_units_precedence[plain-seconds]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_class_chaos",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_bad_escape",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_q_m",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_trust_anchors[ds-style]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_expandaaaa[expandaaaa]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_expandaaaa[noexpandaaaa]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_expandaaaa[default]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_expandaaaa[short-expandaaaa]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_refused_chasing_ds",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_bufsize_zero",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_bufsize_restores_default",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_query_time_units[msec]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_query_time_units[usec]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_timestamp_precision[msec]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_yaml_any",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_timestamp_precision[usec]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_local_reserved_warning",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_nocrypto",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_coflag",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_yaml_negative[nodata]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_coflag_yaml",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_header_flag_options[+raflag]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_header_flag_options[+tcflag]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_yaml_negative[nxdomain]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_zflag",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_08_no_insist",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_nsid[number]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_ns_output",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_nsid[name]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_update_lease",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_update_lease_yaml",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_update_lease_split",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_ns_lookup[no-validation]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_update_lease_split_yaml",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_llq",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_llq_yaml",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_ns_lookup[no-validation-qmin]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_key_tag_empty",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_key_tag",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_key_tag_yaml",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_key_tag_malformed",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_ns_lookup[validation]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_tag[client-tag]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_tag[server-tag]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_tag_yaml[client-tag]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_tag_yaml[server-tag]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_ns_lookup[validation-qmin]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_tag_bad_length[client-tag-too-short]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_tag_bad_length[client-tag-too-long]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_tag_bad_length[server-tag-too-short]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_tag_bad_length[server-tag-too-long]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_ns_address_family[-4]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_chain",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_chain_yaml",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_expire",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_delv",
+      "name": "test_ns_address_family[-6]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_expire_yaml",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_keepalive",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_keepalive_yaml",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_ede[first-defined-code]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_ede[last-defined-code]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_ede[undefined-code]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_ede[empty]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_ede[too-short]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_ede_yaml[first-defined-code]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_ede_yaml[last-defined-code]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_ede_yaml[undefined-code]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_ede_yaml_specials",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_ede_yaml_invalid[empty]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_ede_yaml_invalid[too-short]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsopt_malformed",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_good_zone_files[ksk-only.nsec3]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ednsflags_reenables_edns",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_showbadvers",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_last_wins",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[1]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[2]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_good_zone_files[ksk-only.nsec]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[3]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[4]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[5]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[6]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[7]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_good_zone_files[ksk+zsk.nsec3.apex-dname]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[8]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[9]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[10]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[11]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[12]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_good_zone_files[ksk+zsk.nsec3]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[13]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[14]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[15]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[16]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[17]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[18]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_good_zone_files[ksk+zsk.nsec.apex-dname]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[19]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[20]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[21]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[22]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_good_zone_files[ksk+zsk.nsec]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[23]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_lengths[24]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_between_byte_boundaries[9]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_between_byte_boundaries[10]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_between_byte_boundaries[11]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_good_zone_files[ksk+zsk.optout]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_between_byte_boundaries[12]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_between_byte_boundaries[13]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_between_byte_boundaries[14]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_prefix_between_byte_boundaries[15]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_zero[+subnet=0/0]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_zero[+subnet=0]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_zero[+subnet=::/0]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_good_zone_files[zsk-only.nsec3]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_zero_yaml[+subnet=0/0]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_zero_yaml[+subnet=0]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_zero_yaml[+subnet=::/0]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_yaml",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_raw_zero",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_subnet_raw_unknown_family",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_good_zone_files[zsk-only.nsec]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_origin_preserved_on_tcp_retries",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_good_zone_nsec_next_name_case_mismatch",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_dnskeyonly[ksk-only.dnskeyonly]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_dnskeyonly[ksk+zsk.dnskeyonly]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_dnskeyonly[zsk-only.dnskeyonly]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_expired[ksk-only.nsec3.expired]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_expired[ksk-only.nsec.expired]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_expired[ksk+zsk.nsec3.expired]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_expired[ksk+zsk.nsec.expired]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_expired[ksk+zsk.nsec.ksk-expired]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_expired[zsk-only.nsec3.expired]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_expired[zsk-only.nsec.expired]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_expired[ksk+zsk.nsec3.ksk-expired]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_unexpected_nsec_rrset[ksk+zsk.nsec.out-of-zone-nsec]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_unexpected_nsec_rrset[ksk+zsk.nsec.below-bottom-of-zone-nsec]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_unexpected_nsec_rrset[ksk+zsk.nsec.below-dname-nsec]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_bad_nsec_record",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_bad_bitmap",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_missing_nsec3_record",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[rsasha1.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_no_dnssec_keys",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_bad_zone_files_unequal_nsec3_chains",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_soa_not_at_top_error",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_invalid_o_option_soa_not_at_top_error",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[rsasha1-nsec3.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_j_reads_journal_file",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_rejects_bad_nsec3param_hash",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_ignores_bad_nsec3param_hash_with_nsec",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[dnskey-ttl-mismatch.autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_ignores_bad_nsec3param_hash_with_good_nsec3param",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_rejects_no_nsec_and_all_nsec3param_with_non_zero_flags",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_ignores_nsec3param_non_zero_flags",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[expired-sigs.autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_4_and_6_mutually_exclusive",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ipv6_server_with_ipv4_only",
+      "status": "passed"
+    },
+    {
+      "classname": "verify.tests_verify",
+      "name": "test_verify_rejects_nsec3param_with_nsec_only_key",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ipv4_server_with_ipv6_only[+tcp]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_ipv4_server_with_ipv6_only[+notcp]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_axfr_retry_upon_tcp_eof[immediate-immediate]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_axfr_retry_upon_tcp_eof[partial-partial]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_axfr_retry_upon_tcp_eof[immediate-partial]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_axfr_retry_upon_tcp_eof[partial-immediate]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_axfr_retry_upon_tcp_eof[immediate-complete]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_axfr_retry_upon_tcp_eof[partial-complete]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_axfr_retry_upon_tcp_eof[tries-1-no-second-retry]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_axfr_no_retry_with_retry_0",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_timeout_then_servfail[udp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[fresh-sigs.autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_timeout_then_servfail[tcp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[unfresh-sigs.autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_zone_transfer_fallback_to_dns_after_dot_failed",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_tsig_signed_zone_transfer",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_zone_is_dumped_after_transfer",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_comments_retry_comment",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[keyfiles-missing.autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_short_comments_suppresses_retry_comment",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[ksk-missing.autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[zsk-missing.autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[dnssec-keygen.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[ecdsa256.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[ecdsa384.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[inherit.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_next_server_after_network_unreachable[udp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[keystore.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[legacy-keys.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[pregenerated.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[rsasha256.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[rsasha512.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[rumoured.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[secondary.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[some-keys.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[unlimited.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[ed25519.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_case[ed448.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_unsigned[unsigned.tld]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_unsigned[none.inherit.signed]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_unsigned[none.override.signed]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_unsigned[inherit.none.signed]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_unsigned[none.none.signed]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_unsigned[inherit.inherit.unsigned]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_unsigned[none.inherit.unsigned]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_unsigned[none.override.unsigned]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_unsigned[inherit.none.unsigned]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_unsigned[none.none.unsigned]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_signed[signed.tld]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_signed[override.inherit.signed]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[reference.explicit.dspublish.ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_signed[inherit.override.signed]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[resolver.explicit.dspublish.ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_signed[override.inherit.unsigned]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[resolver.explicit.dsremoved.ns5]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_signed[inherit.override.unsigned]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[no-ent.ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_signed[inherit.inherit.signed]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_signed[override.override.signed]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_signed[override.none.signed]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_signed[override.override.unsigned]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_multi_message_uncompressable_zone_transfers",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_signed[override.none.unsigned]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_view[1]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_view[2]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_make_ns4_secondary_for_nil",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_handle_ixfr_notimp",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_inherit_view[3]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_under_signed_transfer[unsigned]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_default",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_under_signed_transfer[badkeydata]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_under_signed_transfer[partial]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[no-ent.ns5]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_under_signed_transfer[unknownkey]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.explicit.dspublish.ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_under_signed_transfer[wrongkey]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[not-yet.explicit.dspublish.ns5]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[bad.explicit.dspublish.ns6]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_under_signed_transfer[wrongname]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.explicit.dspublish.ns2-4]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_under_signed_transfer[badmessageid]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[incomplete.explicit.dspublish.ns2-4-5]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_under_signed_transfer[soamismatch]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[bad.explicit.dspublish.ns2-4-6]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_handle_edns_notimp",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.yes.dspublish.ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_handle_edns_formerr",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[not-yet.yes.dspublish.ns5]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_edns_expire_from_secondary",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_edns_expire_refresh",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[bad.yes.dspublish.ns6]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.yes.dspublish.ns2-4]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[incomplete.yes.dspublish.ns2-4-5]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_dynamic",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[bad.yes.dspublish.ns2-4-6]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.explicit.dsremoved.ns5]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[still-there.explicit.dsremoved.ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[bad.explicit.dsremoved.ns6]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.explicit.dsremoved.ns5-7]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[incomplete.explicit.dsremoved.ns2-5-7]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[bad.explicit.dsremoved.ns5-6-7]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_tcp_message_compression_makes_difference",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.yes.dsremoved.ns5]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[still-there.yes.dsremoved.ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[bad.yes.dsremoved.ns6]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_mapped_zone",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.yes.dsremoved.ns5-7]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[incomplete.yes.dsremoved.ns2-5-7]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[bad.yes.dsremoved.ns5-6-7]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.no.dspublish.ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.no.dspublish.ns2-4]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.no.dsremoved.ns5]",
+      "status": "passed"
+    },
+    {
+      "classname": "checkds.tests_checkds",
+      "name": "test_checkds[good.no.dsremoved.ns5-7]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_axfr_too_many_records",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_ixfr_too_many_records",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_dig_and_named_axfr_stats",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_transfer_source_option_uses_port_option_correctly",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_xot_primary_try_next",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_reconfiguration_when_zone_transfer_is_in_the_middle_of_soa_query",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_rrsig_covers_metatype_is_servfail[ANY]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_rrsig_covers_metatype_is_servfail[AXFR]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_rrsig_covers_metatype_is_servfail[IXFR]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_rrsig_covers_metatype_is_servfail[MAILA]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_rrsig_covers_metatype_is_servfail[MAILB]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_rrsig_covers_metatype_is_servfail[OPT]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_rrsig_covers_metatype_is_servfail[TSIG]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_rrsig_covers_metatype_is_servfail[TKEY]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_nobesteffort_rejects_malformed_rrsig[ANY]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_nobesteffort_rejects_malformed_rrsig[AXFR]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_nobesteffort_rejects_malformed_rrsig[IXFR]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_nobesteffort_rejects_malformed_rrsig[MAILA]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_nobesteffort_rejects_malformed_rrsig[MAILB]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_nobesteffort_rejects_malformed_rrsig[OPT]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_nobesteffort_rejects_malformed_rrsig[TSIG]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_nobesteffort_rejects_malformed_rrsig[TKEY]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_besteffort_shows_malformed_rrsig[ANY]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_besteffort_shows_malformed_rrsig[AXFR]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_besteffort_shows_malformed_rrsig[IXFR]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_besteffort_shows_malformed_rrsig[MAILA]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_besteffort_shows_malformed_rrsig[MAILB]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_besteffort_shows_malformed_rrsig[OPT]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_besteffort_shows_malformed_rrsig[TSIG]",
+      "status": "passed"
+    },
+    {
+      "classname": "qpcache_rrsig_any.tests_qpcache_rrsig_any",
+      "name": "test_dig_besteffort_shows_malformed_rrsig[TKEY]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[*.w.example-R53BQ7CC2UVMUBFU5OCMM6PERS9TK9EN]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[2t7b4g4vsa5smi47k61mv5bv1a22bojr.example-KOHAR7MBB8DC2CE8A9QVL8HON4K53UHI]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[a.example-35MTHGPGCU1QG68FAB165KLNSNK3DPVL]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[ai.example-GJEQE526PLBF1G8MKLP59ENFD789NJGI]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[example-0P9MHAVEQVM6T7VBL5LOP2U3T2RP3TOM]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[ns1.example-2T7B4G4VSA5SMI47K61MV5BV1A22BOJR]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[ns2.example-Q04JKCEVQVMU85R014C7DKBA38O0JI5R]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[w.example-K8UDEMVP1J2F7EG6JEBPS17VP3N8I58H]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[x.w.example-B4UM86EGHHDS6NEA196SMVMLO4ORS995]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[x.y.w.example-2VPTU5TIMAMQTTGL4LUU9KG21E0AOR3S]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[xx.example-T644EBQK9BIBCNA874GIVR6JOJ62MLHV]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_hashes[y.w.example-JI6NEOAEPV8B5O6K4EV33ABHA8HT9FGC]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_empty_salt[salt_emptiness_args0]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_empty_salt[salt_emptiness_args1]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_empty_salt[salt_emptiness_args2]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_empty_salt[salt_emptiness_args3]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_empty_salt_r[]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_empty_salt_r[-]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_missing_args[args0]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_missing_args[args1]",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3_bad_option",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3hash_acceptable_values",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_cds_cdnskey",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_checkds",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_checkds_doubleksk",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_checkds_csk",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_special_characters",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_insecure",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_bad_maxzonettl",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_dnssec_keygen",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3hash_salt_too_long",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_tools_nsec3hash",
+      "name": "test_nsec3hash_too_many_iterations",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[nametoolong]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[twoquestionnames]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[twoquestiontypes]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[dupquestion]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[dupans]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[qtypeasanswer]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[noquestions]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[badnsec3owner]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[shortrecord]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[shortquestion]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[twoquestionclasses]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[badrecordname]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[wrongclass]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[keyclass]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[optwrongname]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[malformedrrsig]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[malformeddeltype]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[tsigwrongclass]",
+      "status": "passed"
+    },
+    {
+      "classname": "formerr.tests_formerr",
+      "name": "test_formerr[tsignotlast]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_malformed_private_dns_identifier_overrun",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_xfer",
+      "name": "test_ixfr_race",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_zsk_retired",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_default",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_keyname_with_dots",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_escapes_injection",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_rejects_to_big_label",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_tsig_keygen_default",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_tsig_keygen_escapes_injection",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha256-1]",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha256-256]",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha256-512]",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha384-1]",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha384-384]",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha384-513]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_next_server_after_network_unreachable[tcp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha384-768]",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha384-1024]",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha512-1]",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha512-512]",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha512-513]",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc_confgen.tests_rndc_confgen",
+      "name": "test_rndc_confgen_hmac_keysize[hmac-sha512-1024]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_purge_keys",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example.-2-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_reload_restart",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example.-3-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example.-4-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-aes-128.-2-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-aes-256.-3-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-chacha-20.-4-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-aes-256-2-2]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-chacha-20-2-2]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-aes-128-3-2]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-chacha-20-3-2]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-aes-128-4-2]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-aes-256-4-2]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-5-2]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-aes-128-5-2]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-aes-256-5-2]",
+      "status": "passed"
+    },
+    {
+      "classname": "cipher_suites.tests_cipher_suites",
+      "name": "test_cipher_suites_tls_xfer[example-chacha-20-5-2]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec_case[nsec-to-nsec3.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec_case[rsasha1-to-nsec3.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec_case[rsasha1-to-nsec3-wait.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec_case[nsec3-xfr-inline.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec_case[nsec3-dynamic-update-inline.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3-to-rsasha1.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3-to-rsasha1-ds.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_kasp_manual_mode",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3-dynamic.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3-change.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3-dynamic-change.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3-dynamic-to-inline.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3-inline-to-dynamic.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3-to-nsec.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3-to-optout.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "kasp.tests_kasp",
+      "name": "test_root_case",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3-from-optout.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_initial",
+      "name": "test_nsec3_case[nsec3-other.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step1[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step1[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[baddomain.-10.53.0.1-3]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[gooddomain.-10.53.0.1-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[allowed.-10.53.0.1-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[baddomain.-10.53.0.2-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[gooddomain.-10.53.0.2-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[allowed.-10.53.0.2-3]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[baddomain.-10.53.0.3-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[gooddomain.-10.53.0.3-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[allowed.-10.53.0.3-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[baddomain.-10.53.0.4-3]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[gooddomain.-10.53.0.4-3]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[allowed.-10.53.0.4-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[baddomain.-10.53.0.5-0]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[gooddomain.-10.53.0.5-3]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_multiple_views[allowed.-10.53.0.5-3]",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzextra.tests_rpzextra",
+      "name": "test_rpz_passthru_logging",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step2[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step2[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step3[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step3[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step4[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_invalid[33-254-0-\\x00\\x00\\x00\\x00\\x00\\x00\\x01]",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_invalid[33-254-0-\\x00]",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_invalid[36-254-0-]",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_invalid[26-254-0-]",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_invalid[22-254-0-]",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_invalid[23-254-0-]",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_invalid[31-254-0-]",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_chaosupdate[64-\\\\# 02 0000]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step4[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_chaosupdate[11-\\\\# 02 4142]",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_chaosupdate[11-\\\\# 02 4344]",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_undefined",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_zero",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_any",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_update",
+      "name": "test_class_none",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_nodata[ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_nodata[ns9]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_nodata_ds[ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step5[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step5[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step6[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step6[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step7[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_nxdomain[ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step7[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step8[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll1.tests_rollover_csk_roll1",
+      "name": "test_csk_roll1_step8[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_nxdomain[ns9]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_cname_nxdomain[ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_cname_nxdomain[ns9]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_dname_nxdomain[ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_dname_nxdomain[ns9]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step1[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step1[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec_case[rsasha1-to-nsec3.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step2[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec_case[rsasha1-to-nsec3-wait.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step2[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec_case[nsec3-to-rsasha1.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_ents[ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec_case[nsec3-to-rsasha1-ds.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec_case[nsec3-to-nsec.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec3_case[nsec-to-nsec3.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step3[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec3_case[nsec3.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec3_case[nsec3-dynamic.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step3[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec3_case[nsec3-dynamic-change.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec3_case[nsec3-dynamic-to-inline.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec3_case[nsec3-inline-to-dynamic.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec3_case[nsec3-other.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reconfig",
+      "name": "test_nsec3_ent",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step4[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step4[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step5[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_ents[ns9]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step5[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step6[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step6[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step7[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_csk_roll2.tests_rollover_csk_roll2",
+      "name": "test_csk_roll2_step7[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_wildcard_synthesis[ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_wildcard_synthesis[ns9]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_wildcard_nodata[ns2]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_answer",
+      "name": "test_wildcard_nodata[ns9]",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_initial",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_nta_validate_except",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_nta_bogus_lifetimes",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_nta_install",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_nta_behavior",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step1[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step1[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step2[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step2[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step3[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step3[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step4[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step4[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step5[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step5[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step6[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_reconfig",
+      "name": "test_algoroll_csk_reconfig_step6[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step1[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step1[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step1[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step2[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step1[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step2[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step2[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step3[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step2[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step3[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step3[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step3[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step4[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step4[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step4[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step4[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step5[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step5[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step5[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step6[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step5[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_reconfig",
+      "name": "test_algoroll_ksk_zsk_reconfig_step6[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step6[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_doubleksk.tests_rollover_ksk_doubleksk",
+      "name": "test_ksk_doubleksk_step6[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_max_rsa_exponent_size_good[0]",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_max_rsa_exponent_size_good[35]",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_max_rsa_exponent_size_good[666]",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_max_rsa_exponent_size_good[1024]",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_max_rsa_exponent_size_good[2048]",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_max_rsa_exponent_size_good[3072]",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_max_rsa_exponent_size_good[4096]",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_max_rsa_exponent_size_bad[1]",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_max_rsa_exponent_size_bad[34]",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_max_rsa_exponent_size_bad[4097]",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_rsa_big_exponent_keys_cant_load",
+      "status": "passed"
+    },
+    {
+      "classname": "rsabigexponent.tests_rsabigexponent",
+      "name": "test_rsa_big_exponent_keys_cant_validate",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_next_server_after_udp_read_error",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_next_server_after_tcp_read_error",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_next_server_after_tcp_connection_error",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_next_server_after_read_timeout[udp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step1[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step1[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step2[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step2[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step3[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "migrate2kasp.tests_migrate2kasp",
+      "name": "test_migrate2kasp_case[migrate.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "migrate2kasp.tests_migrate2kasp",
+      "name": "test_migrate2kasp_case[csk.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "migrate2kasp.tests_migrate2kasp",
+      "name": "test_migrate2kasp_case[csk-nosep.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_next_server_after_read_timeout[tcp]",
+      "status": "passed"
+    },
+    {
+      "classname": "migrate2kasp.tests_migrate2kasp",
+      "name": "test_migrate2kasp_case[rumoured.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "migrate2kasp.tests_migrate2kasp",
+      "name": "test_migrate2kasp_case[omnipresent.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "migrate2kasp.tests_migrate2kasp",
+      "name": "test_migrate2kasp_case[no-syncpublish.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "migrate2kasp.tests_migrate2kasp",
+      "name": "test_migrate2kasp_case[migrate-nomatch-algnum.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "migrate2kasp.tests_migrate2kasp",
+      "name": "test_migrate2kasp_case[migrate-nomatch-alglen.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "migrate2kasp.tests_migrate2kasp",
+      "name": "test_migrate2kasp_case[migrate-nomatch-kzc.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "migrate2kasp.tests_migrate2kasp",
+      "name": "test_migrate2kasp_case[view-rsasha256.kasp (external)]",
+      "status": "passed"
+    },
+    {
+      "classname": "migrate2kasp.tests_migrate2kasp",
+      "name": "test_migrate2kasp_case[view-rsasha256.kasp (internal)]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_mapped_ipv6_server_refused",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step3[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "selftest.tests_zone_analyzer",
+      "name": "test_analyzer_attrs[all_existing_names]",
+      "status": "passed"
+    },
+    {
+      "classname": "selftest.tests_zone_analyzer",
+      "name": "test_analyzer_attrs[delegations]",
+      "status": "passed"
+    },
+    {
+      "classname": "selftest.tests_zone_analyzer",
+      "name": "test_analyzer_attrs[dnames]",
+      "status": "passed"
+    },
+    {
+      "classname": "selftest.tests_zone_analyzer",
+      "name": "test_analyzer_attrs[ents]",
+      "status": "passed"
+    },
+    {
+      "classname": "selftest.tests_zone_analyzer",
+      "name": "test_analyzer_attrs[occluded]",
+      "status": "passed"
+    },
+    {
+      "classname": "selftest.tests_zone_analyzer",
+      "name": "test_analyzer_attrs[reachable]",
+      "status": "passed"
+    },
+    {
+      "classname": "selftest.tests_zone_analyzer",
+      "name": "test_analyzer_attrs[reachable_delegations]",
+      "status": "passed"
+    },
+    {
+      "classname": "selftest.tests_zone_analyzer",
+      "name": "test_analyzer_attrs[reachable_dnames]",
+      "status": "passed"
+    },
+    {
+      "classname": "selftest.tests_zone_analyzer",
+      "name": "test_analyzer_attrs[reachable_wildcard_parents]",
+      "status": "passed"
+    },
+    {
+      "classname": "selftest.tests_zone_analyzer",
+      "name": "test_analyzer_attrs[reachable_wildcards]",
+      "status": "passed"
+    },
+    {
+      "classname": "selftest.tests_zone_analyzer",
+      "name": "test_analyzer_attrs[wildcards]",
+      "status": "passed"
+    },
+    {
+      "classname": "ksr.tests_ksr",
+      "name": "test_ksr_errors",
+      "status": "passed"
+    },
+    {
+      "classname": "ksr.tests_ksr",
+      "name": "test_ksr_common",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_nta_removals",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_nta_restarts",
+      "status": "passed"
+    },
+    {
+      "classname": "ksr.tests_ksr",
+      "name": "test_ksr_lastbundle",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step4[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step4[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step5[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step5[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step6[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_zsk_prepub.tests_rollover_zsk_prepublication",
+      "name": "test_zsk_prepub_step6[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "ksr.tests_ksr",
+      "name": "test_ksr_inthemiddle",
+      "status": "passed"
+    },
+    {
+      "classname": "ksr.tests_ksr",
+      "name": "test_ksr_rekey_logs_error",
+      "status": "passed"
+    },
+    {
+      "classname": "ksr.tests_ksr",
+      "name": "test_ksr_unlimited",
+      "status": "passed"
+    },
+    {
+      "classname": "timeouts.tests_tcp_timeouts",
+      "name": "test_initial_timeout",
+      "status": "passed"
+    },
+    {
+      "classname": "timeouts.tests_tcp_timeouts",
+      "name": "test_idle_timeout",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_qr_and_y_with_failed_query",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_startup_banner_default",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_nocmd_after_query_name",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_valid_when_no_server_reached",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_nta_regular",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_source_address_both_families_no_crash",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_any_output",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_ipv6_trailing_zeroes",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_special_characters_in_qname[yaml]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_special_characters_in_qname['.yaml]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_special_characters_in_qname[[.yaml]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_special_characters_in_qname[{.yaml]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_special_characters_in_qname[&.yaml]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_special_characters_in_qname[#.yaml]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_dig",
+      "name": "test_yaml_character_values",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_cname_response.tests_cname_rejection",
+      "name": "test_direct_metatype_query_does_not_crash_resolver[DNSKEY]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_cname_response.tests_cname_rejection",
+      "name": "test_direct_metatype_query_does_not_crash_resolver[NSEC]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_cname_response.tests_cname_rejection",
+      "name": "test_direct_metatype_query_does_not_crash_resolver[NSEC3]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_cname_response.tests_cname_rejection",
+      "name": "test_direct_metatype_query_does_not_crash_resolver[RRSIG]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_cname_response.tests_cname_rejection",
+      "name": "test_rrsig_lone_record_does_not_stall_resolver",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_cname_response.tests_cname_rejection",
+      "name": "test_cname_for_validator_dnskey_fetch",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_cname_response.tests_cname_rejection",
+      "name": "test_ds_cname_does_not_deadlock",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_cname_response.tests_cname_rejection",
+      "name": "test_unsolicited_nsec3_proofs_are_rejected",
+      "status": "passed"
+    },
+    {
+      "classname": "timeouts.tests_tcp_timeouts",
+      "name": "test_keepalive_timeout",
+      "status": "passed"
+    },
+    {
+      "classname": "ksr.tests_ksr",
+      "name": "test_ksr_twotone",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v4",
+      "name": "test_filter_a_on_v4[auth]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v4",
+      "name": "test_filter_a_on_v4[auth-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v4",
+      "name": "test_filter_a_on_v4[recurs]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v4",
+      "name": "test_filter_a_on_v4[recurs-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v4",
+      "name": "test_filter_a_on_v4_via_v6[auth]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v4",
+      "name": "test_filter_a_on_v4_via_v6[auth-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v4",
+      "name": "test_filter_a_on_v4_via_v6[recurs]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v4",
+      "name": "test_filter_a_on_v4_via_v6[recurs-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "ksr.tests_ksr",
+      "name": "test_ksr_kskroll",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v6",
+      "name": "test_filter_a_on_v6[auth]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v6",
+      "name": "test_filter_a_on_v6[auth-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v6",
+      "name": "test_filter_a_on_v6[recurs]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v6",
+      "name": "test_filter_a_on_v6[recurs-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v6",
+      "name": "test_filter_a_on_v6_via_v4[auth]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v6",
+      "name": "test_filter_a_on_v6_via_v4[auth-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v6",
+      "name": "test_filter_a_on_v6_via_v4[recurs]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_a_v6",
+      "name": "test_filter_a_on_v6_via_v4[recurs-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "ksr.tests_ksr",
+      "name": "test_ksr_fast",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v4",
+      "name": "test_filter_aaaa_on_v4[auth]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v4",
+      "name": "test_filter_aaaa_on_v4[auth-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v4",
+      "name": "test_filter_aaaa_on_v4[recurs]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v4",
+      "name": "test_filter_aaaa_on_v4[recurs-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v4",
+      "name": "test_filter_aaaa_on_v4_via_v6[auth]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v4",
+      "name": "test_filter_aaaa_on_v4_via_v6[auth-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v4",
+      "name": "test_filter_aaaa_on_v4_via_v6[recurs]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v4",
+      "name": "test_filter_aaaa_on_v4_via_v6[recurs-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "ksr.tests_ksr",
+      "name": "test_ksr_oversize",
+      "status": "passed"
+    },
+    {
+      "classname": "glue.tests_glue",
+      "name": "test_glue_full_glue_set",
+      "status": "passed"
+    },
+    {
+      "classname": "glue.tests_glue",
+      "name": "test_glue_no_glue_set",
+      "status": "passed"
+    },
+    {
+      "classname": "glue.tests_glue",
+      "name": "test_glue_truncation[foo.subdomain-a.tc-test-unsigned.-False]",
+      "status": "passed"
+    },
+    {
+      "classname": "glue.tests_glue",
+      "name": "test_glue_truncation[foo.subdomain-aaaa.tc-test-unsigned.-False]",
+      "status": "passed"
+    },
+    {
+      "classname": "glue.tests_glue",
+      "name": "test_glue_truncation[foo.subdomain-both.tc-test-unsigned.-False]",
+      "status": "passed"
+    },
+    {
+      "classname": "glue.tests_glue",
+      "name": "test_glue_truncation[foo.subdomain-a.tc-test-signed.-True]",
+      "status": "passed"
+    },
+    {
+      "classname": "glue.tests_glue",
+      "name": "test_glue_truncation[foo.subdomain-aaaa.tc-test-signed.-True]",
+      "status": "passed"
+    },
+    {
+      "classname": "glue.tests_glue",
+      "name": "test_glue_truncation[foo.subdomain-both.tc-test-signed.-True]",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_nta_forced",
+      "status": "passed"
+    },
+    {
+      "classname": "timeouts.tests_tcp_timeouts",
+      "name": "test_pipelining_timeout",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v6",
+      "name": "test_filter_aaaa_on_v6[auth]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v6",
+      "name": "test_filter_aaaa_on_v6[auth-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v6",
+      "name": "test_filter_aaaa_on_v6[recurs]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v6",
+      "name": "test_filter_aaaa_on_v6[recurs-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v6",
+      "name": "test_filter_aaaa_on_v6_via_v4[auth]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v6",
+      "name": "test_filter_aaaa_on_v6_via_v4[auth-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v6",
+      "name": "test_filter_aaaa_on_v6_via_v4[recurs]",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_aaaa_v6",
+      "name": "test_filter_aaaa_on_v6_via_v4[recurs-break-dnssec]",
+      "status": "passed"
+    },
+    {
+      "classname": "rrchecker.tests_rrchecker",
+      "name": "test_rrchecker_list_standard_names[-C-expected_result0]",
+      "status": "passed"
+    },
+    {
+      "classname": "rrchecker.tests_rrchecker",
+      "name": "test_rrchecker_list_standard_names[-T-expected_result1]",
+      "status": "passed"
+    },
+    {
+      "classname": "rrchecker.tests_rrchecker",
+      "name": "test_rrchecker_list_standard_names[-P-expected_result2]",
+      "status": "passed"
+    },
+    {
+      "classname": "rrchecker.tests_rrchecker",
+      "name": "test_rrchecker_conversions[-p]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_enable_dnssec.tests_rollover_enable_dnssec",
+      "name": "test_rollover_enable_dnssec_step1[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_enable_dnssec.tests_rollover_enable_dnssec",
+      "name": "test_rollover_enable_dnssec_step1[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rrchecker.tests_rrchecker",
+      "name": "test_rrchecker_conversions[-u]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_enable_dnssec.tests_rollover_enable_dnssec",
+      "name": "test_rollover_enable_dnssec_step2[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_enable_dnssec.tests_rollover_enable_dnssec",
+      "name": "test_rollover_enable_dnssec_step2[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_enable_dnssec.tests_rollover_enable_dnssec",
+      "name": "test_rollover_enable_dnssec_step3[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_enable_dnssec.tests_rollover_enable_dnssec",
+      "name": "test_rollover_enable_dnssec_step3[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_enable_dnssec.tests_rollover_enable_dnssec",
+      "name": "test_rollover_enable_dnssec_step4[autosign]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_enable_dnssec.tests_rollover_enable_dnssec",
+      "name": "test_rollover_enable_dnssec_step4[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rrchecker.tests_rrchecker",
+      "name": "test_rrchecker_conversions[multi-line at class]",
+      "status": "passed"
+    },
+    {
+      "classname": "tcp.tests_tcp",
+      "name": "test_tcp_garbage",
+      "status": "passed"
+    },
+    {
+      "classname": "tcp.tests_tcp",
+      "name": "test_tcp_garbage_response",
+      "status": "passed"
+    },
+    {
+      "classname": "tcp.tests_tcp",
+      "name": "test_close_wait",
+      "status": "passed"
+    },
+    {
+      "classname": "tcp.tests_tcp",
+      "name": "test_tcp_big",
+      "status": "passed"
+    },
+    {
+      "classname": "tcp.tests_tcp",
+      "name": "test_tcp_request_statistics",
+      "status": "passed"
+    },
+    {
+      "classname": "rrchecker.tests_rrchecker",
+      "name": "test_rrchecker_conversions[ multi-line at type]",
+      "status": "passed"
+    },
+    {
+      "classname": "rrchecker.tests_rrchecker",
+      "name": "test_rrchecker_conversions[multi-line at data]",
+      "status": "passed"
+    },
+    {
+      "classname": "tcp.tests_tcp",
+      "name": "test_tcp_high_water",
+      "status": "passed"
+    },
+    {
+      "classname": "tcp.tests_tcp",
+      "name": "test_long_tcp_messages",
+      "status": "passed"
+    },
+    {
+      "classname": "timeouts.tests_tcp_timeouts",
+      "name": "test_long_axfr",
+      "status": "passed"
+    },
+    {
+      "classname": "limits.tests_limits",
+      "name": "test_limits[1000-1000]",
+      "status": "passed"
+    },
+    {
+      "classname": "limits.tests_limits",
+      "name": "test_limits[2000-2000]",
+      "status": "passed"
+    },
+    {
+      "classname": "limits.tests_limits",
+      "name": "test_limits[3000-3000]",
+      "status": "passed"
+    },
+    {
+      "classname": "masterfile.tests_masterfile",
+      "name": "test_masterfile_include_semantics",
+      "status": "passed"
+    },
+    {
+      "classname": "masterfile.tests_masterfile",
+      "name": "test_masterfile_bind_8_compat_semantics",
+      "status": "passed"
+    },
+    {
+      "classname": "masterfile.tests_masterfile",
+      "name": "test_masterfile_rfc_1035_semantics",
+      "status": "passed"
+    },
+    {
+      "classname": "masterfile.tests_masterfile",
+      "name": "test_masterfile_missing_master_file",
+      "status": "passed"
+    },
+    {
+      "classname": "masterfile.tests_masterfile",
+      "name": "test_masterfile_missing_master_file_servfail",
+      "status": "passed"
+    },
+    {
+      "classname": "masterfile.tests_masterfile",
+      "name": "test_masterfile_owner_inheritance",
+      "status": "passed"
+    },
+    {
+      "classname": "limits.tests_limits",
+      "name": "test_limits[4000-4000]",
+      "status": "passed"
+    },
+    {
+      "classname": "limits.tests_limits",
+      "name": "test_limits[a-maximum-rrset-4091]",
+      "status": "passed"
+    },
+    {
+      "classname": "limits.tests_limits",
+      "name": "test_limit_exceeded",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_chaos",
+      "name": "test_chaos_recursion",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_chaos",
+      "name": "test_chaos_auth",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_chaos",
+      "name": "test_chaos_forward",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_chaos",
+      "name": "test_chaos_notify",
+      "status": "passed"
+    },
+    {
+      "classname": "class.tests_class_chaos",
+      "name": "test_query_class_none",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_nta_clamping",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_mdig",
+      "name": "test_tcp_with_source_address_and_port",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_mdig",
+      "name": "test_ednsopt_malformed",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_mdig",
+      "name": "test_dnskey_norrcomments",
+      "status": "passed"
+    },
+    {
+      "classname": "sortlist.tests_sortlist",
+      "name": "test_sortlist",
+      "status": "passed"
+    },
+    {
+      "classname": "sortlist.tests_sortlist",
+      "name": "test_sortlist_compat[10.53.0.2-possible_results0]",
+      "status": "passed"
+    },
+    {
+      "classname": "sortlist.tests_sortlist",
+      "name": "test_sortlist_compat[10.53.0.3-possible_results1]",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_mdig",
+      "name": "test_soa_norrcomments",
+      "status": "passed"
+    },
+    {
+      "classname": "sortlist.tests_sortlist",
+      "name": "test_sortlist_compat[10.53.0.4-possible_results2]",
+      "status": "passed"
+    },
+    {
+      "classname": "sortlist.tests_sortlist",
+      "name": "test_sortlist_compat[10.53.0.5-possible_results3]",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_nta_forward",
+      "status": "passed"
+    },
+    {
+      "classname": "nta.tests_nta",
+      "name": "test_nta_ede",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_mdig",
+      "name": "test_yaml_output",
+      "status": "passed"
+    },
+    {
+      "classname": "bailiwick.tests_bailiwick",
+      "name": "test_bailiwick_sibling_ns_referral",
+      "status": "passed"
+    },
+    {
+      "classname": "bailiwick.tests_bailiwick",
+      "name": "test_bailiwick_unsolicited_authority",
+      "status": "passed"
+    },
+    {
+      "classname": "bailiwick.tests_bailiwick",
+      "name": "test_bailiwick_parent_glue",
+      "status": "passed"
+    },
+    {
+      "classname": "wildcard.tests_wildcard",
+      "name": "test_wildcard_rdtype_mismatch",
+      "status": "passed"
+    },
+    {
+      "classname": "wildcard.tests_wildcard",
+      "name": "test_wildcard_match",
+      "status": "passed"
+    },
+    {
+      "classname": "statschannel.tests_json",
+      "name": "test_zone_timers_primary_json",
+      "status": "passed"
+    },
+    {
+      "classname": "statschannel.tests_json",
+      "name": "test_zone_timers_secondary_json",
+      "status": "passed"
+    },
+    {
+      "classname": "statschannel.tests_json",
+      "name": "test_zone_with_many_keys_json",
+      "status": "passed"
+    },
+    {
+      "classname": "statschannel.tests_json",
+      "name": "test_traffic_json",
+      "status": "passed"
+    },
+    {
+      "classname": "statschannel.tests_json",
+      "name": "test_json_response_repeated_requests",
+      "status": "passed"
+    },
+    {
+      "classname": "wildcard.tests_wildcard",
+      "name": "test_wildcard_with_star_not_synthesized",
+      "status": "passed"
+    },
+    {
+      "classname": "wildcard.tests_wildcard",
+      "name": "test_name_in_between_wildcards",
+      "status": "passed"
+    },
+    {
+      "classname": "keyfromlabel.tests_keyfromlabel",
+      "name": "test_keyfromlabel[rsasha256-rsa-2048]",
+      "status": "skipped"
+    },
+    {
+      "classname": "keyfromlabel.tests_keyfromlabel",
+      "name": "test_keyfromlabel[rsasha512-rsa-2048]",
+      "status": "skipped"
+    },
+    {
+      "classname": "keyfromlabel.tests_keyfromlabel",
+      "name": "test_keyfromlabel[ecdsap256sha256-EC-prime256v1]",
+      "status": "skipped"
+    },
+    {
+      "classname": "keyfromlabel.tests_keyfromlabel",
+      "name": "test_keyfromlabel[ecdsap384sha384-EC-prime384v1]",
+      "status": "skipped"
+    },
+    {
+      "classname": "timeouts.tests_tcp_timeouts",
+      "name": "test_send_timeout",
+      "status": "passed"
+    },
+    {
+      "classname": "wildcard.tests_wildcard",
+      "name": "test_name_nested_wildcard_subdomains_not_synthesized",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_going_insecure.tests_rollover_going_insecure_reconfig",
+      "name": "test_going_insecure_reconfig_step1[going-insecure.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_going_insecure.tests_rollover_going_insecure_reconfig",
+      "name": "test_going_insecure_reconfig_step1[going-insecure-dynamic.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_going_insecure.tests_rollover_going_insecure_reconfig",
+      "name": "test_going_insecure_reconfig_step2[going-insecure.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_going_insecure.tests_rollover_going_insecure_reconfig",
+      "name": "test_going_insecure_reconfig_step2[going-insecure-dynamic.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_grandparent.tests_nsec_grandparent",
+      "name": "test_auth_serves_forged_grandparent_nsec",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_grandparent.tests_nsec_grandparent",
+      "name": "test_resolver_rejects_grandparent_nsec_downgrade",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_grandparent.tests_nsec_grandparent",
+      "name": "test_resolver_rejects_grandparent_nsec3_downgrade",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_grandparent.tests_nsec_grandparent",
+      "name": "test_resolver_rejects_downgrade_from_cached_proof",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_lifetime.tests_rollover_lifetime_initial",
+      "name": "test_lifetime_initial[shorter-lifetime]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_lifetime.tests_rollover_lifetime_initial",
+      "name": "test_lifetime_initial[longer-lifetime]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_lifetime.tests_rollover_lifetime_initial",
+      "name": "test_lifetime_initial[limit-lifetime]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_lifetime.tests_rollover_lifetime_initial",
+      "name": "test_lifetime_initial[unlimit-lifetime]",
+      "status": "passed"
+    },
+    {
+      "classname": "ssumaxtype.tests_ssumaxtype",
+      "name": "test_ssu_max_basic",
+      "status": "passed"
+    },
+    {
+      "classname": "ssumaxtype.tests_ssumaxtype",
+      "name": "test_ssu_max_across_updates",
+      "status": "passed"
+    },
+    {
+      "classname": "ssumaxtype.tests_ssumaxtype",
+      "name": "test_ssu_max_cname_padding_bypass",
+      "status": "passed"
+    },
+    {
+      "classname": "ssumaxtype.tests_ssumaxtype",
+      "name": "test_max_records_per_type",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_lifetime.tests_rollover_lifetime_reconfig",
+      "name": "test_lifetime_reconfig[shorter-lifetime]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_lifetime.tests_rollover_lifetime_reconfig",
+      "name": "test_lifetime_reconfig[longer-lifetime]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_lifetime.tests_rollover_lifetime_reconfig",
+      "name": "test_lifetime_reconfig[limit-lifetime]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_lifetime.tests_rollover_lifetime_reconfig",
+      "name": "test_lifetime_reconfig[unlimit-lifetime]",
+      "status": "passed"
+    },
+    {
+      "classname": "timeouts.tests_tcp_timeouts",
+      "name": "test_max_transfer_idle_out",
+      "status": "skipped"
+    },
+    {
+      "classname": "timeouts.tests_tcp_timeouts",
+      "name": "test_max_transfer_time_out",
+      "status": "skipped"
+    },
+    {
+      "classname": "statschannel.tests_xml",
+      "name": "test_zone_timers_primary_xml",
+      "status": "passed"
+    },
+    {
+      "classname": "statschannel.tests_xml",
+      "name": "test_zone_timers_secondary_xml",
+      "status": "passed"
+    },
+    {
+      "classname": "statschannel.tests_xml",
+      "name": "test_zone_with_many_keys_xml",
+      "status": "passed"
+    },
+    {
+      "classname": "statschannel.tests_xml",
+      "name": "test_traffic_xml",
+      "status": "passed"
+    },
+    {
+      "classname": "ttl.tests_cache_ttl",
+      "name": "test_cache_ttl[min-example.-SOA-60]",
+      "status": "passed"
+    },
+    {
+      "classname": "ttl.tests_cache_ttl",
+      "name": "test_cache_ttl[min-example.-MX-30]",
+      "status": "passed"
+    },
+    {
+      "classname": "ttl.tests_cache_ttl",
+      "name": "test_cache_ttl[max-example.-SOA-120]",
+      "status": "passed"
+    },
+    {
+      "classname": "ttl.tests_cache_ttl",
+      "name": "test_cache_ttl[max-example.-MX-60]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_retransfer_with_force",
+      "name": "test_wait_for_zone_retransfer",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_retransfer_with_force",
+      "name": "test_cancel_ongoing_retransfer",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_others",
+      "name": "test_nslookup_update_response",
+      "status": "passed"
+    },
+    {
+      "classname": "nsupdate.tests_update_sig",
+      "name": "test_tcp_self_sig_record",
+      "status": "passed"
+    },
+    {
+      "classname": "nsupdate.tests_update_sig",
+      "name": "test_tcp_self_nxt_record",
+      "status": "passed"
+    },
+    {
+      "classname": "nsupdate.tests_update_sig",
+      "name": "test_sig_covers_preserved_via_axfr",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_others",
+      "name": "test_host_update_response",
+      "status": "passed"
+    },
+    {
+      "classname": "cdnxdomain.tests_cdnxdomain",
+      "name": "test_cd1_nxdomain_keeps_secure_rrset",
+      "status": "passed"
+    },
+    {
+      "classname": "cdnxdomain.tests_cdnxdomain",
+      "name": "test_cd1_nxdomain_uncached_type_answer",
+      "status": "passed"
+    },
+    {
+      "classname": "cdnxdomain.tests_cdnxdomain",
+      "name": "test_cd1_nxdomain_expired_secure_does_not_block",
+      "status": "passed"
+    },
+    {
+      "classname": "digdelv.tests_others",
+      "name": "test_nsupdate_update_response",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_nsec3.tests_nsec3_wrong_zone",
+      "name": "test_forged_response",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_nsec3.tests_nsec3_wrong_zone",
+      "name": "test_resolver_rejects_wrong_zone_nsec3_noqname_proof",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_nsec3.tests_nsec3_wrong_zone",
+      "name": "test_resolver_accepts_own_zone_nsec3_wildcard_proof",
+      "status": "passed"
+    },
+    {
+      "classname": "dsdigest.tests_dsdigest",
+      "name": "test_dsdigest_good",
+      "status": "passed"
+    },
+    {
+      "classname": "dsdigest.tests_dsdigest",
+      "name": "test_dsdigest_bad",
+      "status": "passed"
+    },
+    {
+      "classname": "dsdigest.tests_dsdigest",
+      "name": "test_dsdigest_insecure",
+      "status": "passed"
+    },
+    {
+      "classname": "multisigner.tests_multisigner",
+      "name": "test_multisigner",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_piggyback.tests_nsec_piggyback",
+      "name": "test_malicious_referral",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_piggyback.tests_nsec_piggyback",
+      "name": "test_nsec_piggyback_cache_poisoning[nodata]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_piggyback.tests_nsec_piggyback",
+      "name": "test_nsec_piggyback_cache_poisoning[nxdomain]",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_retransfer_with_force",
+      "name": "test_min_transfer_rate_in",
+      "status": "passed"
+    },
+    {
+      "classname": "redirect.tests_redirect_dns64",
+      "name": "test_nxdomain_redirect_dns64_authoritative",
+      "status": "passed"
+    },
+    {
+      "classname": "redirect.tests_redirect_dns64",
+      "name": "test_nxdomain_redirect_dns64_recursive",
+      "status": "passed"
+    },
+    {
+      "classname": "redirect.tests_redirect_dns64",
+      "name": "test_nxdomain_redirect_dns64_synth_from_dnssec",
+      "status": "passed"
+    },
+    {
+      "classname": "multisigner.tests_multisigner",
+      "name": "test_multisigner_update_any",
+      "status": "passed"
+    },
+    {
+      "classname": "doth.tests_sslyze",
+      "name": "test_sslyze_doh",
+      "status": "skipped"
+    },
+    {
+      "classname": "doth.tests_sslyze",
+      "name": "test_sslyze_dot",
+      "status": "skipped"
+    },
+    {
+      "classname": "xfer.tests_retransfer_with_force",
+      "name": "test_max_transfer_time_in",
+      "status": "passed"
+    },
+    {
+      "classname": "multisigner.tests_multisigner",
+      "name": "test_multisigner_secondary",
+      "status": "passed"
+    },
+    {
+      "classname": "resolver.tests_resolver",
+      "name": "test_resolver_cache_reloadfails",
+      "status": "passed"
+    },
+    {
+      "classname": "selfpointedglue.tests_selfpointedglue",
+      "name": "test_selfpointedglue",
+      "status": "passed"
+    },
+    {
+      "classname": "selfpointedglue.tests_selfpointedglue",
+      "name": "test_selfpointedglue_adblimit",
+      "status": "passed"
+    },
+    {
+      "classname": "selfpointedglue.tests_selfpointedglue",
+      "name": "test_selfpointedglue_adblimitlower",
+      "status": "passed"
+    },
+    {
+      "classname": "resolver.tests_resolver",
+      "name": "test_resolver_dname_target_filter_attack",
+      "status": "passed"
+    },
+    {
+      "classname": "dialup.tests_dialup_zone_transfer",
+      "name": "test_dialup_zone_transfer[2]",
+      "status": "passed"
+    },
+    {
+      "classname": "serve_stale.tests_serve_stale_ncache",
+      "name": "test_fresh_ncache_entry_is_not_refreshed[nodata]",
+      "status": "passed"
+    },
+    {
+      "classname": "serve_stale.tests_serve_stale_ncache",
+      "name": "test_fresh_ncache_entry_is_not_refreshed[nxdomain]",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_dnskey_truncated_selfsigned",
+      "name": "test_truncated_revoked_dnskey",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_dnskey_truncated_selfsigned",
+      "name": "test_truncated_active_dnskey",
+      "status": "passed"
+    },
+    {
+      "classname": "bailiwick.tests_bailiwick",
+      "name": "test_bailiwick_spoofed_dname",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_findnoqname_mismatch",
+      "name": "test_malicious_findnoqname_addnoqname_mismatch",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_findnoqname_mismatch",
+      "name": "test_resolver_findnoqname_addnoqname_mismatch",
+      "status": "passed"
+    },
+    {
+      "classname": "include_multiplecfg.tests_include_multiplecfg",
+      "name": "test_include_multiplecfg[zone1.com.]",
+      "status": "passed"
+    },
+    {
+      "classname": "include_multiplecfg.tests_include_multiplecfg",
+      "name": "test_include_multiplecfg[zone2.com.]",
+      "status": "passed"
+    },
+    {
+      "classname": "include_multiplecfg.tests_include_multiplecfg",
+      "name": "test_include_multiplecfg[mars.com.]",
+      "status": "passed"
+    },
+    {
+      "classname": "include_multiplecfg.tests_include_multiplecfg",
+      "name": "test_include_multiplecfg_checkconf",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_rrsig_labels_signer",
+      "name": "test_rrsig_labels_underflow_rejected",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_rrsig_labels_signer",
+      "name": "test_rrsig_labels_no_wildcard_cache_poison",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_rrsigs_extra_expired",
+      "name": "test_regular_query",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_rrsigs_extra_expired",
+      "name": "test_extra_expired_rrsigs",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_wildcard.tests_dnssec_wildcard_additional",
+      "name": "test_direct_fromwildcard_additional_fixture",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_wildcard.tests_dnssec_wildcard_additional",
+      "name": "test_resolver_rejects_fromwildcard_additional_replay",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_wildcard.tests_replayed_parent_wildcard",
+      "name": "test_malicious_replay",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_wildcard.tests_replayed_parent_wildcard",
+      "name": "test_replayed_parent_wildcard",
+      "status": "passed"
+    },
+    {
+      "classname": "ecdsa.tests_ecdsa",
+      "name": "test_ecdsa256",
+      "status": "passed"
+    },
+    {
+      "classname": "ecdsa.tests_ecdsa",
+      "name": "test_ecdsa384",
+      "status": "passed"
+    },
+    {
+      "classname": "expiredglue.tests_expiredglue",
+      "name": "test_expiredglue",
+      "status": "passed"
+    },
+    {
+      "classname": "fwdfirst.tests_fwdfirst",
+      "name": "test_forward_first_referral_ns_above_forward_zone_not_cached[ns4]",
+      "status": "passed"
+    },
+    {
+      "classname": "fwdfirst.tests_fwdfirst",
+      "name": "test_forward_first_referral_ns_above_forward_zone_not_cached[ns5]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_restart",
+      "name": "test_nsec3_case[nsec3.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_restart",
+      "name": "test_nsec3_case[nsec3-other.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "expiredglue.tests_expiredglue",
+      "name": "test_loopdetected",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3_impersonation.tests_nsec3_impersonation",
+      "name": "test_attack_responses",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3_impersonation.tests_nsec3_impersonation",
+      "name": "test_nsec3_impersonation",
+      "status": "passed"
+    },
+    {
+      "classname": "mismatchtcp.tests_mismatchtcp",
+      "name": "test_mismatch_tcp_fallback",
+      "status": "passed"
+    },
+    {
+      "classname": "mismatchtcp.tests_mismatchtcp",
+      "name": "test_mismatch_counter",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_synthesis.tests_nsec_child_next",
+      "name": "test_direct_insecure_child_nsec_next_fixture",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_synthesis.tests_nsec_child_next",
+      "name": "test_resolver_does_not_synth_from_insecure_child_nsec",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_synthesis.tests_nsec_selfloop",
+      "name": "test_direct_child_self_loop_nsec_fixture",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_synthesis.tests_nsec_selfloop",
+      "name": "test_resolver_does_not_synth_parent_nxdomain_from_child_nsec",
+      "status": "passed"
+    },
+    {
+      "classname": "optout.tests_optout",
+      "name": "test_optout",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover.tests_rollover_manual",
+      "name": "test_rollover_manual",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover.tests_rollover_manual",
+      "name": "test_rollover_manual_zrrsig_rumoured",
+      "status": "passed"
+    },
+    {
+      "classname": "optout.tests_optout",
+      "name": "test_optout_to_nsec",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_initial",
+      "name": "test_algoroll_ksk_zsk_initial[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_ksk_zsk.tests_rollover_algo_ksk_zsk_initial",
+      "name": "test_algoroll_ksk_zsk_initial[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_going_insecure.tests_rollover_going_insecure_initial",
+      "name": "test_going_insecure_initial[going-insecure.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_going_insecure.tests_rollover_going_insecure_initial",
+      "name": "test_going_insecure_initial[going-insecure-dynamic.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_initial",
+      "name": "test_algoroll_csk_initial[kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_algo_csk.tests_rollover_algo_csk_initial",
+      "name": "test_algoroll_csk_initial[manual]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_straight2none.tests_rollover_straight2none_reconfig",
+      "name": "test_straight2none_reconfig[going-straight-to-none.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_straight2none.tests_rollover_straight2none_reconfig",
+      "name": "test_straight2none_reconfig[going-straight-to-none-dynamic.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_straight2none.tests_rollover_straight2none_initial",
+      "name": "test_straight2none_initial[going-straight-to-none.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_straight2none.tests_rollover_straight2none_initial",
+      "name": "test_straight2none_initial[going-straight-to-none-dynamic.kasp]",
+      "status": "passed"
+    },
+    {
+      "classname": "shutdown.tests_shutdown",
+      "name": "test_named_shutdown[rndc]",
+      "status": "passed"
+    },
+    {
+      "classname": "stub.tests_stub",
+      "name": "test_stub_zones_availability",
+      "status": "passed"
+    },
+    {
+      "classname": "stub.tests_stub",
+      "name": "test_stub_glue_record_with_minimal_response",
+      "status": "passed"
+    },
+    {
+      "classname": "shutdown.tests_shutdown",
+      "name": "test_named_shutdown[sigterm]",
+      "status": "passed"
+    },
+    {
+      "classname": "wildcard.tests_nonterminal_wildcard",
+      "name": "test_empty_nonterminal_under_wildcard_is_nodata",
+      "status": "passed"
+    },
+    {
+      "classname": "wildcard.tests_nonterminal_wildcard",
+      "name": "test_wildcard_still_expands_without_blocking_ent",
+      "status": "passed"
+    },
+    {
+      "classname": "dialup.tests_dialup_zone_transfer",
+      "name": "test_dialup_zone_transfer[3]",
+      "status": "passed"
+    },
+    {
+      "classname": "xferquota.tests_xferquota",
+      "name": "test_xferquota",
+      "status": "passed"
+    },
+    {
+      "classname": "tsiggss.tests_isc_spnego_flaws",
+      "name": "test_cve_2020_8625",
+      "status": "passed"
+    },
+    {
+      "classname": "tsiggss.tests_isc_spnego_flaws",
+      "name": "test_cve_2021_25216",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_dnskey_malformed",
+      "name": "test_malformed_ecdsa",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_dnskey_malformed",
+      "name": "test_multiple_rrsigs",
+      "status": "passed"
+    },
+    {
+      "classname": "doth.tests_gnutls",
+      "name": "test_gnutls_cli_query",
+      "status": "skipped"
+    },
+    {
+      "classname": "doth.tests_malicious",
+      "name": "test_settings_frame_flood",
+      "status": "passed"
+    },
+    {
+      "classname": "doth.tests_sh_doth",
+      "name": "test_doth",
+      "status": "passed"
+    },
+    {
+      "classname": "nsupdate.tests_sh_nsupdate",
+      "name": "test_nsupdate",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_nsec3.tests_dnssec_nsec3_delegation",
+      "name": "test_forged_bogus_inner_nsec3",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_nsec3.tests_dnssec_nsec3_delegation",
+      "name": "test_resolver_rejects_bogus_inner_nsec3_downgrade",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzrecurse.tests_sh_rpzrecurse",
+      "name": "test_rpzrecurse",
+      "status": "passed"
+    },
+    {
+      "classname": "xferquota.tests_xferquota",
+      "name": "test_xfrquota_unauthorized_no_starve",
+      "status": "passed"
+    },
+    {
+      "classname": "catz.tests_sh_catz",
+      "name": "test_catz",
+      "status": "passed"
+    },
+    {
+      "classname": "proxy.tests_sh_proxy",
+      "name": "test_proxy",
+      "status": "passed"
+    },
+    {
+      "classname": "acl.tests_sh_acl",
+      "name": "test_acl",
+      "status": "passed"
+    },
+    {
+      "classname": "resolver.tests_sh_resolver",
+      "name": "test_resolver",
+      "status": "passed"
+    },
+    {
+      "classname": "rpz.tests_sh_rpz",
+      "name": "test_rpz",
+      "status": "passed"
+    },
+    {
+      "classname": "additional.tests_sh_additional",
+      "name": "test_additional",
+      "status": "passed"
+    },
+    {
+      "classname": "addzone.tests_rndc_modzone_without_add",
+      "name": "test_rndc_modzone_without_add",
+      "status": "passed"
+    },
+    {
+      "classname": "auth.tests_sh_auth",
+      "name": "test_auth",
+      "status": "passed"
+    },
+    {
+      "classname": "autosign.tests_sh_autosign",
+      "name": "test_autosign",
+      "status": "passed"
+    },
+    {
+      "classname": "rpzrecurse.tests_sh_rpzrecurse_dnsrps",
+      "name": "test_rpzrecurse_dnsrps",
+      "status": "skipped"
+    },
+    {
+      "classname": "serve_stale.tests_sh_serve_stale",
+      "name": "test_serve_stale",
+      "status": "passed"
+    },
+    {
+      "classname": "builtin.tests_sh_builtin",
+      "name": "test_builtin",
+      "status": "passed"
+    },
+    {
+      "classname": "cacheclean.tests_sh_cacheclean",
+      "name": "test_cacheclean",
+      "status": "passed"
+    },
+    {
+      "classname": "case.tests_sh_case",
+      "name": "test_case",
+      "status": "passed"
+    },
+    {
+      "classname": "cds.tests_sh_cds",
+      "name": "test_cds",
+      "status": "passed"
+    },
+    {
+      "classname": "addzone.tests_rndc_deadlock",
+      "name": "test_rndc_deadlock",
+      "status": "passed"
+    },
+    {
+      "classname": "chain.tests_sh_chain",
+      "name": "test_chain",
+      "status": "passed"
+    },
+    {
+      "classname": "rpz.tests_sh_rpz_dnsrps",
+      "name": "test_rpz_dnsrps",
+      "status": "skipped"
+    },
+    {
+      "classname": "addzone.tests_sh_addzone",
+      "name": "test_addzone",
+      "status": "passed"
+    },
+    {
+      "classname": "checkconf.tests_sh_checkconf",
+      "name": "test_checkconf",
+      "status": "passed"
+    },
+    {
+      "classname": "checkzone.tests_sh_checkzone",
+      "name": "test_checkzone",
+      "status": "passed"
+    },
+    {
+      "classname": "allow_query.tests_sh_allow_query",
+      "name": "test_allow_query",
+      "status": "passed"
+    },
+    {
+      "classname": "checknames.tests_sh_checknames",
+      "name": "test_checknames",
+      "status": "passed"
+    },
+    {
+      "classname": "checkconf_keys.tests_checkconf_keys",
+      "name": "test_dnssecpolicy_keystore",
+      "status": "passed"
+    },
+    {
+      "classname": "cpu.tests_sh_cpu",
+      "name": "test_cpu",
+      "status": "passed"
+    },
+    {
+      "classname": "dispatch.tests_connreset",
+      "name": "test_connreset",
+      "status": "passed"
+    },
+    {
+      "classname": "cname_dname_negcache.tests_dname_negcache",
+      "name": "test_dname_negcache",
+      "status": "passed"
+    },
+    {
+      "classname": "dispatch.tests_tcponly",
+      "name": "test_tcponly_not_resolved",
+      "status": "passed"
+    },
+    {
+      "classname": "cname_dname_negcache.tests_cname_negcache",
+      "name": "test_cname_negcache",
+      "status": "passed"
+    },
+    {
+      "classname": "database.tests_database",
+      "name": "test_database",
+      "status": "passed"
+    },
+    {
+      "classname": "dns64_dname.tests_dns64_dname",
+      "name": "test_dns64_partial_exclude_after_dname_restart",
+      "status": "passed"
+    },
+    {
+      "classname": "cookie.tests_sh_cookie",
+      "name": "test_cookie",
+      "status": "passed"
+    },
+    {
+      "classname": "dlzexternal.tests_sh_dlzexternal",
+      "name": "test_dlzexternal",
+      "status": "passed"
+    },
+    {
+      "classname": "dns64.tests_sh_dns64",
+      "name": "test_dns64",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_nsec3_iter_too_many",
+      "name": "test_excessive_nsec3_iterations_delegation",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec.tests_validation",
+      "name": "test_positive_validation_dname_at_apex",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_sibling_ds",
+      "name": "test_sibling_ds_rejected",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_bypass.tests_bypass",
+      "name": "test_out_of_zone_nsec",
+      "status": "passed"
+    },
+    {
+      "classname": "dnstap.tests_sh_dnstap",
+      "name": "test_dnstap",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_py.tests_mixed_ds",
+      "name": "test_mixed_ds",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec.tests_sh_dnssec",
+      "name": "test_dnssec",
+      "status": "passed"
+    },
+    {
+      "classname": "dyndb.tests_sh_dyndb",
+      "name": "test_dyndb",
+      "status": "passed"
+    },
+    {
+      "classname": "eddsa.tests_sh_eddsa",
+      "name": "test_eddsa",
+      "status": "passed"
+    },
+    {
+      "classname": "emptyzones.tests_emptyzones",
+      "name": "test_emptyzones",
+      "status": "passed"
+    },
+    {
+      "classname": "ednscompliance.tests_sh_ednscompliance",
+      "name": "test_ednscompliance",
+      "status": "passed"
+    },
+    {
+      "classname": "enginepkcs11.tests_sh_enginepkcs11",
+      "name": "test_enginepkcs11",
+      "status": "skipped"
+    },
+    {
+      "classname": "filters.tests_filter_checkconf",
+      "name": "test_filters_checkconf",
+      "status": "passed"
+    },
+    {
+      "classname": "fetchlimit.tests_sh_fetchlimit",
+      "name": "test_fetchlimit",
+      "status": "passed"
+    },
+    {
+      "classname": "forward.tests_sh_forward",
+      "name": "test_forward",
+      "status": "passed"
+    },
+    {
+      "classname": "geoip2.tests_sh_geoip2",
+      "name": "test_geoip2",
+      "status": "passed"
+    },
+    {
+      "classname": "host.tests_sh_host",
+      "name": "test_host",
+      "status": "passed"
+    },
+    {
+      "classname": "idna.tests_sh_idna",
+      "name": "test_idna",
+      "status": "passed"
+    },
+    {
+      "classname": "filters.tests_filter_dns64",
+      "name": "test_filter_dns64",
+      "status": "passed"
+    },
+    {
+      "classname": "hooks.tests_async_plugin",
+      "name": "test_async_hook",
+      "status": "passed"
+    },
+    {
+      "classname": "inline.tests_inline_incremental_updates",
+      "name": "test_inline_incremental_updates",
+      "status": "passed"
+    },
+    {
+      "classname": "inline.tests_sh_inline",
+      "name": "test_inline",
+      "status": "passed"
+    },
+    {
+      "classname": "inline.tests_signed_zone_files",
+      "name": "test_unsigned_serial_number",
+      "status": "passed"
+    },
+    {
+      "classname": "ixfr.tests_sh_ixfr",
+      "name": "test_ixfr",
+      "status": "passed"
+    },
+    {
+      "classname": "journal.tests_sh_journal",
+      "name": "test_journal",
+      "status": "passed"
+    },
+    {
+      "classname": "keepalive.tests_keepalive",
+      "name": "test_dig_tcp_keepalive_handling",
+      "status": "passed"
+    },
+    {
+      "classname": "legacy.tests_sh_legacy",
+      "name": "test_legacy",
+      "status": "passed"
+    },
+    {
+      "classname": "dnssec_parent_rrsig.tests_parent_rrsig",
+      "name": "test_resolver_rejects_ancestor_signed_additional_replay",
+      "status": "passed"
+    },
+    {
+      "classname": "dnstap.tests_dnstap",
+      "name": "test_dnstap_dispatch_socket_addresses",
+      "status": "passed"
+    },
+    {
+      "classname": "metadata.tests_sh_metadata",
+      "name": "test_metadata",
+      "status": "passed"
+    },
+    {
+      "classname": "integrity.tests_sh_integrity",
+      "name": "test_integrity",
+      "status": "passed"
+    },
+    {
+      "classname": "ixfr_nonminimal.tests_sh_ixfr_nonminimal",
+      "name": "test_my_ixfr_nonminimal",
+      "status": "passed"
+    },
+    {
+      "classname": "mkeys.tests_sh_mkeys",
+      "name": "test_mkeys",
+      "status": "passed"
+    },
+    {
+      "classname": "mirror.tests_sh_mirror",
+      "name": "test_mirror",
+      "status": "passed"
+    },
+    {
+      "classname": "mirror_root_zone.tests_mirror_root_zone",
+      "name": "test_mirror_root_zone",
+      "status": "skipped"
+    },
+    {
+      "classname": "nsec.tests_excessive_rrsigs",
+      "name": "test_excessive_rrsigs",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_change",
+      "name": "test_nsec3_case",
+      "status": "passed"
+    },
+    {
+      "classname": "logfileconfig.tests_sh_logfileconfig",
+      "name": "test_logfileconfig",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_length",
+      "name": "test_nsec3_invalid_length",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_reload",
+      "name": "test_nsec3_case",
+      "status": "passed"
+    },
+    {
+      "classname": "masterformat.tests_sh_masterformat",
+      "name": "test_masterformat",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_ixfr.tests_nsec_ixfr",
+      "name": "test_nsec_ixfr_empty_nonterminal",
+      "status": "passed"
+    },
+    {
+      "classname": "camp.tests_sh_camp",
+      "name": "test_camp",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_synthesis.tests_nsec_exact_nodata",
+      "name": "test_pending_exact_nodata_nsec_cache_poisoning",
+      "status": "passed"
+    },
+    {
+      "classname": "cap_glues.tests_cap_glues",
+      "name": "test_cap_glues",
+      "status": "passed"
+    },
+    {
+      "classname": "nsprocessinglimit.tests_nsprocessinglimit",
+      "name": "test_selfpointedglue_nslimit",
+      "status": "passed"
+    },
+    {
+      "classname": "nslookup.tests_sh_nslookup",
+      "name": "test_nslookup",
+      "status": "passed"
+    },
+    {
+      "classname": "nzd2nzf.tests_nzd2nzf",
+      "name": "test_nzd2nzf",
+      "status": "passed"
+    },
+    {
+      "classname": "padding.tests_sh_padding",
+      "name": "test_padding",
+      "status": "passed"
+    },
+    {
+      "classname": "pending.tests_sh_pending",
+      "name": "test_pending",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec3.tests_nsec3_retransfer",
+      "name": "test_nsec3_retransfer",
+      "status": "passed"
+    },
+    {
+      "classname": "pipelined.tests_sh_pipelined",
+      "name": "test_pipelined",
+      "status": "passed"
+    },
+    {
+      "classname": "qmin.tests_sh_qmin",
+      "name": "test_qmin",
+      "status": "passed"
+    },
+    {
+      "classname": "query_source.tests_querysource_none",
+      "name": "test_querysource_none",
+      "status": "passed"
+    },
+    {
+      "classname": "nsec_synthesis.tests_nsec_pending_cd",
+      "name": "test_pending_trust_nsec_cd_cache_poisoning",
+      "status": "passed"
+    },
+    {
+      "classname": "redirect.tests_sh_redirect",
+      "name": "test_redirect",
+      "status": "passed"
+    },
+    {
+      "classname": "randomizens.tests_randomizens",
+      "name": "test_randomizens",
+      "status": "passed"
+    },
+    {
+      "classname": "rfc5011.tests_rfc5011",
+      "name": "test_rfc5011_rootdnskeyrefresh",
+      "status": "skipped"
+    },
+    {
+      "classname": "rndc.tests_cve_2023_3341",
+      "name": "test_cve_2023_3341",
+      "status": "passed"
+    },
+    {
+      "classname": "rndc.tests_sh_rndc",
+      "name": "test_rndc",
+      "status": "passed"
+    },
+    {
+      "classname": "names.tests_names",
+      "name": "test_names",
+      "status": "passed"
+    },
+    {
+      "classname": "notify.tests_sh_notify",
+      "name": "test_notify",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_ksk_3crowd.tests_rollover_three_is_a_crowd",
+      "name": "test_rollover_ksk_three_is_a_crowd",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_multisigner.tests_rollover_multisigner",
+      "name": "test_rollover_multisigner",
+      "status": "passed"
+    },
+    {
+      "classname": "runtime.tests_sh_runtime",
+      "name": "test_runtime",
+      "status": "passed"
+    },
+    {
+      "classname": "rollover_dynamic2inline.tests_rollover_dynamic2inline",
+      "name": "test_dynamic2inline",
+      "status": "passed"
+    },
+    {
+      "classname": "rootkeysentinel.tests_sh_rootkeysentinel",
+      "name": "test_rootkeysentinel",
+      "status": "passed"
+    },
+    {
+      "classname": "sfcache.tests_sh_sfcache",
+      "name": "test_sfcache",
+      "status": "passed"
+    },
+    {
+      "classname": "sig0.tests_sig0",
+      "name": "test_sig0_acl_bypass",
+      "status": "passed"
+    },
+    {
+      "classname": "smartsign.tests_sh_smartsign",
+      "name": "test_smartsign",
+      "status": "passed"
+    },
+    {
+      "classname": "reclimit.tests_sh_reclimit",
+      "name": "test_reclimit",
+      "status": "passed"
+    },
+    {
+      "classname": "rrl.tests_sh_rrl",
+      "name": "test_rrl",
+      "status": "passed"
+    },
+    {
+      "classname": "sfcache_cname.tests_sfcache_cname",
+      "name": "test_sfcache_cname",
+      "status": "passed"
+    },
+    {
+      "classname": "spf.tests_spf_zones",
+      "name": "test_spf_log",
+      "status": "passed"
+    },
+    {
+      "classname": "statschannel.tests_sh_statschannel",
+      "name": "test_statschannel",
+      "status": "passed"
+    },
+    {
+      "classname": "stress.tests_stress_update",
+      "name": "test_update_stress",
+      "status": "passed"
+    },
+    {
+      "classname": "synthfromdnssec.tests_sh_synthfromdnssec",
+      "name": "test_synthfromdnssec",
+      "status": "passed"
+    },
+    {
+      "classname": "rrsetorder.tests_sh_rrsetorder",
+      "name": "test_rrsetorder",
+      "status": "passed"
+    },
+    {
+      "classname": "resend_loop.tests_resend_loop",
+      "name": "test_resend_loop_badcookie",
+      "status": "passed"
+    },
+    {
+      "classname": "tkey.tests_cve_2026_3119",
+      "name": "test_tkey_cve_2026_3119",
+      "status": "passed"
+    },
+    {
+      "classname": "ssutoctou.tests_ssutoctou",
+      "name": "test_ssu_toctou_race",
+      "status": "passed"
+    },
+    {
+      "classname": "tkeyleak.tests_tkeyleak",
+      "name": "test_tkey_gssapi_no_continuation",
+      "status": "passed"
+    },
+    {
+      "classname": "transport_change.tests_sh_transport_change",
+      "name": "test_transport_change",
+      "status": "passed"
+    },
+    {
+      "classname": "statistics.tests_sh_statistics",
+      "name": "test_statistics",
+      "status": "passed"
+    },
+    {
+      "classname": "tsig.tests_sh_tsig",
+      "name": "test_tsig",
+      "status": "passed"
+    },
+    {
+      "classname": "transport_acl.tests_sh_transport_acl",
+      "name": "test_transport_acl",
+      "status": "passed"
+    },
+    {
+      "classname": "tsig.tests_tsig_hypothesis",
+      "name": "test_tsig_fuzz_rdata",
+      "status": "passed"
+    },
+    {
+      "classname": "tools.tests_sh_tools",
+      "name": "test_tools",
+      "status": "passed"
+    },
+    {
+      "classname": "tsig.tests_badtime",
+      "name": "test_tsig_badtime",
+      "status": "passed"
+    },
+    {
+      "classname": "tsiggss.tests_sh_tsiggss",
+      "name": "test_tsiggss",
+      "status": "passed"
+    },
+    {
+      "classname": "srtt.tests_srtt",
+      "name": "test_srtt",
+      "status": "passed"
+    },
+    {
+      "classname": "unknown.tests_sh_unknown",
+      "name": "test_unknown",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer_servers_list.tests_xfer_servers_list",
+      "name": "test_xfer_servers_list",
+      "status": "passed"
+    },
+    {
+      "classname": "upforwd.tests_sh_upforwd",
+      "name": "test_upforwd",
+      "status": "passed"
+    },
+    {
+      "classname": "views.tests_sh_views",
+      "name": "test_views",
+      "status": "passed"
+    },
+    {
+      "classname": "zero.tests_sh_zero",
+      "name": "test_zero",
+      "status": "passed"
+    },
+    {
+      "classname": "zonechecks.tests_sh_zonechecks",
+      "name": "test_zonechecks",
+      "status": "passed"
+    },
+    {
+      "classname": "staticstub.tests_sh_staticstub",
+      "name": "test_staticstub",
+      "status": "passed"
+    },
+    {
+      "classname": "wildcard.tests_sh_wildcard",
+      "name": "test_wildcard",
+      "status": "passed"
+    },
+    {
+      "classname": "xfer.tests_retransfer_with_transferstuck",
+      "name": "test_retransfer_with_transferstuck",
+      "status": "passed"
+    }
+  ],
+  "all_selected_tests_passed": false
+}

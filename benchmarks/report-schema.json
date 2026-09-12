@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "_note": "Illustrative data shape, not JSON Schema or real measurements. Zero placeholders must never be reported as test results.",
+  "run_complete": false,
+  "title": "BIND 与 Go DNS 服务器性能测试报告",
+  "comparison_status": "blocked_go_server_missing",
+  "created_at": "ISO 8601",
+  "baseline": {"name": "ISC BIND", "version": "9.20.27"},
+  "go_server": {"status": "unimplemented", "reason": "No main package, DNS listener or server executable", "metrics": null},
+  "environment": {},
+  "methodology": {
+    "tool": "dnsperf",
+    "duration_seconds": 5,
+    "warmup_seconds": 2,
+    "repetitions": 3,
+    "rates_qps": [10000, 50000, 100000],
+    "zone_records": 10003,
+    "queried_a_records": 10000,
+    "transports": ["udp", "tcp"],
+    "workloads": ["positive_a", "nxdomain"],
+    "client_threads": 2,
+    "client_sockets": 16,
+    "max_outstanding": 256,
+    "server_cpus": "0,1",
+    "client_cpus": "2,3",
+    "timeout_seconds": 1
+  },
+  "runs": [{
+    "transport": "udp", "workload": "positive_a", "target_qps": 10000,
+    "repeat": 1, "queries_sent": 0, "queries_completed": 0, "queries_lost": 0,
+    "runtime_seconds": 0.0, "sent_qps": 0.0,
+    "qps": 0.0, "latency_avg_ms": 0.0, "latency_min_ms": 0.0, "latency_max_ms": 0.0,
+    "latency_stddev_ms": 0.0, "loss_percent": 0.0,
+    "server_cpu_percent": 0.0, "server_rss_peak_mib": 0.0,
+    "resource_window_seconds": 0.0, "resource_samples": 0,
+    "response_codes": {}, "valid": false, "exit_code": 0,
+    "log": "relative/path.log", "sample_log": "relative/path-resources.json"
+  }],
+  "limitations": [],
+  "artifacts": {}
+}

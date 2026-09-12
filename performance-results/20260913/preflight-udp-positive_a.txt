@@ -1,0 +1,22 @@
+
+; <<>> DiG 9.20.27 <<>> @127.0.0.1 -p 5300 w00000.bench.test. A +norecurse +notcp
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 31350
+;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: b376e81c9452a434010000006aa586239792581e408dfe22 (good)
+;; QUESTION SECTION:
+;w00000.bench.test.		IN	A
+
+;; ANSWER SECTION:
+w00000.bench.test.	300	IN	A	192.0.2.123
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.1#5300(127.0.0.1) (UDP)
+;; WHEN: Sat Sep 12 17:04:35 UTC 2026
+;; MSG SIZE  rcvd: 90
+

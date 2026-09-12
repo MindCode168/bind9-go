@@ -1,0 +1,11 @@
+{
+  "subject": "full compiled BIND 9.20.27 libdns/libisc",
+  "status": "passed",
+  "serial_input_pairs": 8273,
+  "ttl_parse_cases": 20046,
+  "ttl_format_cases": 8240,
+  "fixture_sha256": {
+    "internal/ttl/testdata/upstream.json": "5b1976584881ff40d23f6faaaf1a21520fd7e1b58d58cd0e919a9bb392e5c4b3",
+    "internal/serial/testdata/upstream.txt": "8d14bfa82c66271db17adaf617f81b759fea2eaacfee30f5137c1d27f1623d50"
+  }
+}

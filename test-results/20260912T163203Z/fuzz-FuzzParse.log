@@ -1,0 +1,8 @@
+fuzz: elapsed: 0s, gathering baseline coverage: 0/7 completed
+fuzz: elapsed: 0s, gathering baseline coverage: 7/7 completed, now fuzzing with 2 workers
+fuzz: elapsed: 3s, execs: 302308 (100734/sec), new interesting: 22 (total: 29)
+fuzz: elapsed: 6s, execs: 638490 (112098/sec), new interesting: 23 (total: 30)
+fuzz: elapsed: 9s, execs: 981669 (114356/sec), new interesting: 24 (total: 31)
+fuzz: elapsed: 10s, execs: 1084303 (94920/sec), new interesting: 24 (total: 31)
+PASS
+ok  	bind-go/internal/ttl	10.489s

@@ -1,0 +1,23 @@
+DNS Performance Testing Tool
+Version 2.14.0
+
+[Status] Command line: dnsperf -f inet -m udp -s 127.0.0.1 -p 5300 -d /results/positive_a.txt -T 2 -c 16 -q 256 -Q 10000 -l 5 -t 1 -O suppress=timeouts
+[Status] Sending queries (to 127.0.0.1:5300)
+[Status] Started at: Sat Sep 12 17:07:11 2026
+[Status] Stopping after 5.000000 seconds
+[Status] Testing complete (time limit)
+
+Statistics:
+
+  Queries sent:         49993
+  Queries completed:    49993 (100.00%)
+  Queries lost:         0 (0.00%)
+
+  Response codes:       NOERROR 49993 (100.00%)
+  Average packet size:  request 35, response 51
+  Run time (s):         5.000024
+  Queries per second:   9998.552007
+
+  Average Latency (s):  0.000106 (min 0.000010, max 0.013201)
+  Latency StdDev (s):   0.000507
+

@@ -1,0 +1,14 @@
+{
+  "host_cpu": "Apple M4",
+  "host_logical_cpus": 10,
+  "host_memory_bytes": 17179869184,
+  "host_os": "macOS 26.6.2",
+  "docker_vcpus": 10,
+  "docker_memory_bytes": 8217059328,
+  "docker_kernel": "6.12.76-linuxkit",
+  "docker_version": "29.3.1",
+  "docker_architecture": "aarch64",
+  "benchmark_image_id": "sha256:a5904378c86b48e56f64561772857bae5c4d70067087b23b63be2902d49229df",
+  "other_running_containers": 1,
+  "isolation_note": "Existing non-test container and host background activity were not stopped or controlled"
+}

@@ -1,0 +1,193 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /opt/testenv/bin/python3
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: /src/bin/tests/system
+configfile: pytest.ini
+plugins: flaky-3.8.1, xdist-3.8.0, hypothesis-6.168.0
+created: 2/2 workers
+2 workers [5 items]
+
+scheduling tests via LoadScopeScheduling
+
+enginepkcs11/tests_sh_enginepkcs11.py::test_enginepkcs11 
+keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[rsasha256-rsa-2048] 
+[gw1] [ 20%] FAILED keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[rsasha256-rsa-2048] 
+keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[rsasha512-rsa-2048] 
+enginepkcs11/tests_sh_enginepkcs11.py::test_enginepkcs11 
+[gw1] [ 40%] FAILED keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[rsasha512-rsa-2048] 
+keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[ecdsap256sha256-EC-prime256v1] 
+[gw1] [ 60%] FAILED keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[ecdsap256sha256-EC-prime256v1] 
+keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[ecdsap384sha384-EC-prime384v1] 
+enginepkcs11/tests_sh_enginepkcs11.py::test_enginepkcs11 
+[gw1] [ 80%] FAILED keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[ecdsap384sha384-EC-prime384v1] 
+enginepkcs11/tests_sh_enginepkcs11.py::test_enginepkcs11 
+[gw0] [100%] ERROR enginepkcs11/tests_sh_enginepkcs11.py::test_enginepkcs11 
+
+==================================== ERRORS ====================================
+_____________________ ERROR at setup of test_enginepkcs11 ______________________
+[gw0] linux -- Python 3.12.3 /opt/testenv/bin/python3
+/src/bin/tests/system/conftest.py:591: in setup_test
+    isctest.run.shell(f"{system_test_dir}/setup.sh")
+/src/bin/tests/system/isctest/run.py:136: in shell
+    _run_script(os.environ["SHELL"], script, args)
+/src/bin/tests/system/isctest/run.py:130: in _run_script
+    raise subprocess.CalledProcessError(returncode, command)
+E   subprocess.CalledProcessError: Command '['/bin/bash', '/src/bin/tests/system/enginepkcs11-tmp-w1kwkwqe/setup.sh']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+/opt/testenv/lib/python3.12/site-packages/flaky/flaky_pytest_plugin.py:146: in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/conftest.py:639: in system_test
+    setup_test()
+/src/bin/tests/system/conftest.py:594: in setup_test
+    pytest.fail(f"setup.sh exited with {exc.returncode}")
+E   Failed: setup.sh exited with 1
+------------------------------ Captured log setup ------------------------------
+2026-09-12 16:47:11 INFO:enginepkcs11 switching to tmpdir: /src/bin/tests/system/enginepkcs11-tmp-k256wyzk
+2026-09-12 16:47:11 INFO:enginepkcs11 test started: /src/bin/tests/system/enginepkcs11/tests_sh_enginepkcs11.py
+2026-09-12 16:47:11 INFO:enginepkcs11 using port range: <19043, 19062>
+2026-09-12 16:47:11 INFO:enginepkcs11     1025825914
+2026-09-12 16:47:11 INFO:enginepkcs11     I:Generate keys rsasha256 rsa:2048 for zone rsasha256.example
+2026-09-12 16:47:12 INFO:enginepkcs11     I:Get ZSK rsasha256 rsasha256.example rsa:2048
+2026-09-12 16:47:12 ERROR:enginepkcs11 Failed to run test setup.sh
+---------------------------- Captured log teardown -----------------------------
+2026-09-12 16:47:12 INFO:enginepkcs11 test artifacts in: enginepkcs11-sh_enginepkcs11
+------------------------------ Captured log setup ------------------------------
+2026-09-12 16:47:12 INFO:enginepkcs11 switching to tmpdir: /src/bin/tests/system/enginepkcs11-tmp-xg_sr4m9
+2026-09-12 16:47:12 INFO:enginepkcs11 test started: /src/bin/tests/system/enginepkcs11/tests_sh_enginepkcs11.py
+2026-09-12 16:47:12 INFO:enginepkcs11 using port range: <19043, 19062>
+2026-09-12 16:47:12 INFO:enginepkcs11     46605084
+2026-09-12 16:47:12 INFO:enginepkcs11     I:Generate keys rsasha256 rsa:2048 for zone rsasha256.example
+2026-09-12 16:47:12 INFO:enginepkcs11     I:Get ZSK rsasha256 rsasha256.example rsa:2048
+2026-09-12 16:47:12 ERROR:enginepkcs11 Failed to run test setup.sh
+---------------------------- Captured log teardown -----------------------------
+2026-09-12 16:47:12 INFO:enginepkcs11 test artifacts in: enginepkcs11-sh_enginepkcs11
+------------------------------ Captured log setup ------------------------------
+2026-09-12 16:47:12 INFO:enginepkcs11 switching to tmpdir: /src/bin/tests/system/enginepkcs11-tmp-z9_2nxo8
+2026-09-12 16:47:12 INFO:enginepkcs11 test started: /src/bin/tests/system/enginepkcs11/tests_sh_enginepkcs11.py
+2026-09-12 16:47:12 INFO:enginepkcs11 using port range: <19043, 19062>
+2026-09-12 16:47:12 INFO:enginepkcs11     869185234
+2026-09-12 16:47:12 INFO:enginepkcs11     I:Generate keys rsasha256 rsa:2048 for zone rsasha256.example
+2026-09-12 16:47:12 INFO:enginepkcs11     I:Get ZSK rsasha256 rsasha256.example rsa:2048
+2026-09-12 16:47:12 ERROR:enginepkcs11 Failed to run test setup.sh
+---------------------------- Captured log teardown -----------------------------
+2026-09-12 16:47:12 INFO:enginepkcs11 test artifacts in: enginepkcs11-sh_enginepkcs11
+------------------------------ Captured log setup ------------------------------
+2026-09-12 16:47:12 INFO:enginepkcs11 switching to tmpdir: /src/bin/tests/system/enginepkcs11-tmp-5sqkj4dj
+2026-09-12 16:47:12 INFO:enginepkcs11 test started: /src/bin/tests/system/enginepkcs11/tests_sh_enginepkcs11.py
+2026-09-12 16:47:12 INFO:enginepkcs11 using port range: <19043, 19062>
+2026-09-12 16:47:12 INFO:enginepkcs11     1448303538
+2026-09-12 16:47:12 INFO:enginepkcs11     I:Generate keys rsasha256 rsa:2048 for zone rsasha256.example
+2026-09-12 16:47:13 INFO:enginepkcs11     I:Get ZSK rsasha256 rsasha256.example rsa:2048
+2026-09-12 16:47:13 ERROR:enginepkcs11 Failed to run test setup.sh
+---------------------------- Captured log teardown -----------------------------
+2026-09-12 16:47:13 INFO:enginepkcs11 test artifacts in: enginepkcs11-sh_enginepkcs11
+------------------------------ Captured log setup ------------------------------
+2026-09-12 16:47:13 INFO:enginepkcs11 switching to tmpdir: /src/bin/tests/system/enginepkcs11-tmp-w1kwkwqe
+2026-09-12 16:47:13 INFO:enginepkcs11 test started: /src/bin/tests/system/enginepkcs11/tests_sh_enginepkcs11.py
+2026-09-12 16:47:13 INFO:enginepkcs11 using port range: <19043, 19062>
+2026-09-12 16:47:13 INFO:enginepkcs11     1838008553
+2026-09-12 16:47:13 INFO:enginepkcs11     I:Generate keys rsasha256 rsa:2048 for zone rsasha256.example
+2026-09-12 16:47:13 INFO:enginepkcs11     I:Get ZSK rsasha256 rsasha256.example rsa:2048
+2026-09-12 16:47:13 ERROR:enginepkcs11 Failed to run test setup.sh
+=================================== FAILURES ===================================
+____________________ test_keyfromlabel[rsasha256-rsa-2048] _____________________
+[gw1] linux -- Python 3.12.3 /opt/testenv/bin/python3
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:161: in test_keyfromlabel
+    zsk_file = keyfromlabel(alg_name, zone, "keyfromlabel-zsk", "")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:144: in keyfromlabel
+    cmd = isctest.run.cmd(keyfrlab_command)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/isctest/run.py:82: in cmd
+    raise exc
+/src/bin/tests/system/isctest/run.py:66: in cmd
+    proc = subprocess.run(
+/usr/lib/python3.12/subprocess.py:571: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'rsasha256', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-rsasha256.example;pin-source=pin', 'rsasha256.example']' died with <Signals.SIGSEGV: 11>.
+------------------------------ Captured log setup ------------------------------
+2026-09-12 16:47:11 INFO:keyfromlabel switching to tmpdir: /src/bin/tests/system/keyfromlabel-tmp-jmikdn6s
+2026-09-12 16:47:11 INFO:keyfromlabel test started: /src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py
+2026-09-12 16:47:11 INFO:keyfromlabel using port range: <19583, 19602>
+____________________ test_keyfromlabel[rsasha512-rsa-2048] _____________________
+[gw1] linux -- Python 3.12.3 /opt/testenv/bin/python3
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:161: in test_keyfromlabel
+    zsk_file = keyfromlabel(alg_name, zone, "keyfromlabel-zsk", "")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:144: in keyfromlabel
+    cmd = isctest.run.cmd(keyfrlab_command)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/isctest/run.py:82: in cmd
+    raise exc
+/src/bin/tests/system/isctest/run.py:66: in cmd
+    proc = subprocess.run(
+/usr/lib/python3.12/subprocess.py:571: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'rsasha512', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-rsasha512.example;pin-source=pin', 'rsasha512.example']' died with <Signals.SIGSEGV: 11>.
+_______________ test_keyfromlabel[ecdsap256sha256-EC-prime256v1] _______________
+[gw1] linux -- Python 3.12.3 /opt/testenv/bin/python3
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:161: in test_keyfromlabel
+    zsk_file = keyfromlabel(alg_name, zone, "keyfromlabel-zsk", "")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:144: in keyfromlabel
+    cmd = isctest.run.cmd(keyfrlab_command)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/isctest/run.py:82: in cmd
+    raise exc
+/src/bin/tests/system/isctest/run.py:66: in cmd
+    proc = subprocess.run(
+/usr/lib/python3.12/subprocess.py:571: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'ecdsap256sha256', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-ecdsap256sha256.example;pin-source=pin', 'ecdsap256sha256.example']' died with <Signals.SIGSEGV: 11>.
+_______________ test_keyfromlabel[ecdsap384sha384-EC-prime384v1] _______________
+[gw1] linux -- Python 3.12.3 /opt/testenv/bin/python3
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:161: in test_keyfromlabel
+    zsk_file = keyfromlabel(alg_name, zone, "keyfromlabel-zsk", "")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/keyfromlabel/tests_keyfromlabel.py:144: in keyfromlabel
+    cmd = isctest.run.cmd(keyfrlab_command)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/src/bin/tests/system/isctest/run.py:82: in cmd
+    raise exc
+/src/bin/tests/system/isctest/run.py:66: in cmd
+    proc = subprocess.run(
+/usr/lib/python3.12/subprocess.py:571: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'ecdsap384sha384', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-ecdsap384sha384.example;pin-source=pin', 'ecdsap384sha384.example']' died with <Signals.SIGSEGV: 11>.
+---------------------------- Captured log teardown -----------------------------
+2026-09-12 16:47:12 INFO:keyfromlabel test artifacts in: keyfromlabel-keyfromlabel
+--------------- generated xml file: /results/upstream-system.xml ---------------
+===Flaky Test Report===
+
+test_enginepkcs11 failed (4 runs remaining out of 5).
+	<class 'Failed'>
+	setup.sh exited with 1
+	[<TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:361>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/flaky/flaky_pytest_plugin.py:146>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_hooks.py:512>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_manager.py:120>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:167>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/logging.py:858>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/capture.py:895>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:121>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:170>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:536>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/python.py:1710>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:806>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:630>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:726>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:1232>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_hooks.py:512>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_manager.py:120>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:167>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/setuponly.py:36>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:121>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:1328>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:998>, <TracebackEntry /src/bin/tests/system/conftest.py:639>, <TracebackEntry /src/bin/tests/system/conftest.py:594>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/outcomes.py:162>]
+test_enginepkcs11 failed (3 runs remaining out of 5).
+	<class 'Failed'>
+	setup.sh exited with 1
+	[<TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:361>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/flaky/flaky_pytest_plugin.py:146>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_hooks.py:512>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_manager.py:120>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:167>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/logging.py:858>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/capture.py:895>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:121>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:170>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:536>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/python.py:1710>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:806>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:630>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:726>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:1232>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_hooks.py:512>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_manager.py:120>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:167>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/setuponly.py:36>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:121>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:1328>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:998>, <TracebackEntry /src/bin/tests/system/conftest.py:639>, <TracebackEntry /src/bin/tests/system/conftest.py:594>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/outcomes.py:162>]
+test_enginepkcs11 failed (2 runs remaining out of 5).
+	<class 'Failed'>
+	setup.sh exited with 1
+	[<TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:361>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/flaky/flaky_pytest_plugin.py:146>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_hooks.py:512>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_manager.py:120>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:167>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/logging.py:858>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/capture.py:895>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:121>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:170>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:536>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/python.py:1710>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:806>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:630>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:726>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:1232>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_hooks.py:512>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_manager.py:120>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:167>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/setuponly.py:36>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:121>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:1328>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:998>, <TracebackEntry /src/bin/tests/system/conftest.py:639>, <TracebackEntry /src/bin/tests/system/conftest.py:594>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/outcomes.py:162>]
+test_enginepkcs11 failed (1 runs remaining out of 5).
+	<class 'Failed'>
+	setup.sh exited with 1
+	[<TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:361>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/flaky/flaky_pytest_plugin.py:146>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_hooks.py:512>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_manager.py:120>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:167>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/logging.py:858>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/capture.py:895>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:121>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:170>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:536>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/python.py:1710>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:806>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:630>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:726>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:1232>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_hooks.py:512>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_manager.py:120>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:167>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/setuponly.py:36>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:121>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:1328>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:998>, <TracebackEntry /src/bin/tests/system/conftest.py:639>, <TracebackEntry /src/bin/tests/system/conftest.py:594>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/outcomes.py:162>]
+test_enginepkcs11 failed; it passed 0 out of the required 1 times.
+	<class 'Failed'>
+	setup.sh exited with 1
+	[<TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:361>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/flaky/flaky_pytest_plugin.py:146>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_hooks.py:512>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_manager.py:120>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:167>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/logging.py:858>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/capture.py:895>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:121>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:170>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/runner.py:536>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/python.py:1710>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:806>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:630>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:726>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:1232>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_hooks.py:512>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_manager.py:120>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:167>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:139>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/setuponly.py:36>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/pluggy/_callers.py:121>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:1328>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/fixtures.py:998>, <TracebackEntry /src/bin/tests/system/conftest.py:639>, <TracebackEntry /src/bin/tests/system/conftest.py:594>, <TracebackEntry /opt/testenv/lib/python3.12/site-packages/_pytest/outcomes.py:162>]
+
+===End Flaky Test Report===
+=========================== short test summary info ============================
+ERROR enginepkcs11/tests_sh_enginepkcs11.py::test_enginepkcs11 - Failed: setup.sh exited with 1
+FAILED keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[rsasha256-rsa-2048] - subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'rsasha256', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-rsasha256.example;pin-source=pin', 'rsasha256.example']' died with <Signals.SIGSEGV: 11>.
+FAILED keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[rsasha512-rsa-2048] - subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'rsasha512', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-rsasha512.example;pin-source=pin', 'rsasha512.example']' died with <Signals.SIGSEGV: 11>.
+FAILED keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[ecdsap256sha256-EC-prime256v1] - subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'ecdsap256sha256', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-ecdsap256sha256.example;pin-source=pin', 'ecdsap256sha256.example']' died with <Signals.SIGSEGV: 11>.
+FAILED keyfromlabel/tests_keyfromlabel.py::test_keyfromlabel[ecdsap384sha384-EC-prime384v1] - subprocess.CalledProcessError: Command '['/src/bin/dnssec/dnssec-keyfromlabel', '-a', 'ecdsap384sha384', '-y', '-l', 'pkcs11:token=softhsm2-keyfromlabel;object=keyfromlabel-zsk-ecdsap384sha384.example;pin-source=pin', 'ecdsap384sha384.example']' died with <Signals.SIGSEGV: 11>.
+========================== 4 failed, 1 error in 2.75s ==========================

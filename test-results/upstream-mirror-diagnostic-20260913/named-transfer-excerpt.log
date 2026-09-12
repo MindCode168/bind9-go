@@ -1,0 +1,146 @@
+12-Sep-2026 16:54:54.063 failed to generate session key for dynamic DNS: permission denied
+12-Sep-2026 16:54:54.065 managed-keys-zone: loading from master file managed-keys.bind failed: file not found
+12-Sep-2026 16:54:54.069 dispatch 0xffff79730000: UDP response 0xffff64370140: connected: network unreachable
+12-Sep-2026 16:54:54.069 dispatch 0xffff79730000: UDP response 0xffff64370140: connect callback: network unreachable
+12-Sep-2026 16:54:54.069 req_connected: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.069 req_sendevent: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.069 zone ./IN: refresh: request result: network unreachable
+12-Sep-2026 16:54:54.069 zone ./IN: refresh: failure trying primary 2801:1b8:10::b#53 (source ::#0): network unreachable
+12-Sep-2026 16:54:54.069 dispatch 0xffff79730100: UDP response 0xffff64370280: connected: network unreachable
+12-Sep-2026 16:54:54.069 dispatch 0xffff79730100: UDP response 0xffff64370280: connect callback: network unreachable
+12-Sep-2026 16:54:54.069 req_connected: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.069 req_sendevent: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.069 zone ./IN: refresh: request result: network unreachable
+12-Sep-2026 16:54:54.069 zone ./IN: refresh: failure trying primary 2001:500:2::c#53 (source ::#0): network unreachable
+12-Sep-2026 16:54:54.069 dispatch 0xffff79730200: UDP response 0xffff643703c0: connected: network unreachable
+12-Sep-2026 16:54:54.069 dispatch 0xffff79730200: UDP response 0xffff643703c0: connect callback: network unreachable
+12-Sep-2026 16:54:54.069 req_connected: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.069 req_sendevent: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.069 zone ./IN: refresh: request result: network unreachable
+12-Sep-2026 16:54:54.069 zone ./IN: refresh: failure trying primary 2001:500:2f::f#53 (source ::#0): network unreachable
+12-Sep-2026 16:54:54.069 dispatch 0xffff79730300: UDP response 0xffff64370500: connected: network unreachable
+12-Sep-2026 16:54:54.069 dispatch 0xffff79730300: UDP response 0xffff64370500: connect callback: network unreachable
+12-Sep-2026 16:54:54.069 req_connected: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.069 req_sendevent: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.069 zone ./IN: refresh: request result: network unreachable
+12-Sep-2026 16:54:54.069 zone ./IN: refresh: failure trying primary 2001:500:12::d0d#53 (source ::#0): network unreachable
+12-Sep-2026 16:54:54.069 dispatch 0xffff79730400: UDP response 0xffff64370640: connected: network unreachable
+12-Sep-2026 16:54:54.069 dispatch 0xffff79730400: UDP response 0xffff64370640: connect callback: network unreachable
+12-Sep-2026 16:54:54.069 req_connected: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.069 req_sendevent: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.069 zone ./IN: refresh: request result: network unreachable
+12-Sep-2026 16:54:54.069 zone ./IN: refresh: failure trying primary 2001:7fd::1#53 (source ::#0): network unreachable
+12-Sep-2026 16:54:54.070 dispatch 0xffff79730500: UDP response 0xffff64370780: connected: network unreachable
+12-Sep-2026 16:54:54.070 dispatch 0xffff79730500: UDP response 0xffff64370780: connect callback: network unreachable
+12-Sep-2026 16:54:54.070 req_connected: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.070 req_sendevent: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.070 zone ./IN: refresh: request result: network unreachable
+12-Sep-2026 16:54:54.070 zone ./IN: refresh: failure trying primary 2620:0:2830:202::132#53 (source ::#0): network unreachable
+12-Sep-2026 16:54:54.070 dispatch 0xffff79730600: UDP response 0xffff643708c0: connected: network unreachable
+12-Sep-2026 16:54:54.070 dispatch 0xffff79730600: UDP response 0xffff643708c0: connect callback: network unreachable
+12-Sep-2026 16:54:54.070 req_connected: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.070 req_sendevent: request 0xffff797c0000: network unreachable
+12-Sep-2026 16:54:54.070 zone ./IN: refresh: request result: network unreachable
+12-Sep-2026 16:54:54.070 zone ./IN: refresh: failure trying primary 2620:0:2d0:202::132#53 (source ::#0): network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120000: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120000: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120140: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120140: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120280: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120280: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2001:503:ba3e::2:30#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff641203c0: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff641203c0: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120500: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120500: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2001:500:a8::e#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120640: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120640: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120780: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120780: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2001:7fd::1#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff641208c0: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff641208c0: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120a00: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120a00: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2001:500:2::c#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120b40: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120b40: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2801:1b8:10::b#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120c80: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120c80: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2801:1b8:10::b#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120dc0: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120dc0: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120f00: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64120f00: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2001:500:1::53#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121040: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121040: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121180: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121180: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2001:500:2f::f#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff641212c0: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff641212c0: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121400: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121400: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121540: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121540: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121680: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121680: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2001:dc3::35#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff641217c0: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff641217c0: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121900: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121900: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2001:7fe::53#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121a40: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121a40: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:500:2d::d#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121b80: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121b80: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2001:500:2d::d#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121cc0: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121cc0: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121e00: connected: network unreachable
+12-Sep-2026 16:54:54.071 dispatch 0xffff80aed600: UDP response 0xffff64121e00: connect callback: network unreachable
+12-Sep-2026 16:54:54.071 network unreachable resolving './NS/IN': 2001:500:9f::42#53
+12-Sep-2026 16:54:54.264 dispatch 0xffff80aed600: UDP response 0xffff64122bc0: connected: network unreachable
+12-Sep-2026 16:54:54.264 dispatch 0xffff80aed600: UDP response 0xffff64122bc0: connect callback: network unreachable
+12-Sep-2026 16:54:54.264 network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+12-Sep-2026 16:54:54.264 dispatch 0xffff80aed600: UDP response 0xffff64122d00: connected: network unreachable
+12-Sep-2026 16:54:54.264 dispatch 0xffff80aed600: UDP response 0xffff64122d00: connect callback: network unreachable
+12-Sep-2026 16:54:54.264 network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+12-Sep-2026 16:54:54.264 dispatch 0xffff80aed600: UDP response 0xffff64122e40: connected: network unreachable
+12-Sep-2026 16:54:54.264 dispatch 0xffff80aed600: UDP response 0xffff64122e40: connect callback: network unreachable
+12-Sep-2026 16:54:54.264 network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+12-Sep-2026 16:54:54.304 zone ./IN: Transfer started.
+12-Sep-2026 16:54:54.545 0xffff65980000: transfer of './IN' from 170.247.170.2#53: connected using 170.247.170.2#53
+12-Sep-2026 16:54:54.545 0xffff65980000: transfer of './IN' from 170.247.170.2#53: sending AXFR request, QID 5968
+12-Sep-2026 16:54:54.546 0xffff65980000: transfer of './IN' from 170.247.170.2#53: sent request data
+12-Sep-2026 16:54:55.493 0xffff65980000: transfer of './IN' from 170.247.170.2#53: received 16432 bytes
+12-Sep-2026 16:54:55.498 0xffff65980000: transfer of './IN' from 170.247.170.2#53: got nonincremental response
+12-Sep-2026 16:54:55.499 0xffff65980000: transfer of './IN' from 170.247.170.2#53: received 16411 bytes
+12-Sep-2026 16:54:56.267 0xffff65980000: transfer of './IN' from 170.247.170.2#53: received 16410 bytes
+12-Sep-2026 16:54:56.801 0xffff65980000: transfer of './IN' from 170.247.170.2#53: received 16660 bytes
+12-Sep-2026 16:54:57.159 0xffff65980000: transfer of './IN' from 170.247.170.2#53: received 16692 bytes
+12-Sep-2026 16:54:58.091 0xffff65980000: transfer of './IN' from 170.247.170.2#53: received 16541 bytes
+12-Sep-2026 16:54:59.341 0xffff65980000: transfer of './IN' from 170.247.170.2#53: received 16614 bytes
+12-Sep-2026 16:55:00.405 0xffff65980000: transfer of './IN' from 170.247.170.2#53: received 16730 bytes
+12-Sep-2026 16:55:00.410 0xffff65980000: transfer of './IN' from 170.247.170.2#53: failed while receiving responses: end of file
+12-Sep-2026 16:55:00.410 zone ./IN: zone transfer finished: end of file, expire=604115
+12-Sep-2026 16:55:00.410 0xffff65980000: transfer of './IN' from 170.247.170.2#53: Transfer status: end of file
+12-Sep-2026 16:55:00.410 0xffff65980000: transfer of './IN' from 170.247.170.2#53: Transfer completed: 8 messages, 2320 records, 132490 bytes, 5.865 secs (22589 bytes/sec) (serial 2026091200, expire option 604115)
+12-Sep-2026 16:55:00.410 0xffff65980000: transfer of './IN' from 170.247.170.2#53: freeing transfer context

@@ -1,0 +1,14 @@
+Usage: dnsperf ... -O <name>[=<value>] ...
+
+Available long options:
+  tls-sni=<tls_sni>: the TLS SNI to use for TLS connections
+  qps-threshold-wait=<microseconds>: minimum threshold for enabling wait in rate limiting (default: 4294967295)
+  latency-histogram: collect and print detailed latency histograms
+  verbose-interval-stats: print detailed statistics for each stats_interval
+  num-queries-per-conn=<queries>: Number of queries to send per connection
+  suppress=<message[,message,...]>: suppress messages/warnings, see man-page for list of message types
+  doh-method=<doh_method>: the HTTP method to use for DNS-over-HTTPS: GET or POST (default: GET)
+  doh-uri=<doh_uri>: the URI to use for DNS-over-HTTPS (default: https://localhost/dns-query)
+DNS Performance Testing Tool
+Version 2.14.0
+

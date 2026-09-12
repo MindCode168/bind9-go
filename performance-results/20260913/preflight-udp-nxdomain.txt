@@ -1,0 +1,22 @@
+
+; <<>> DiG 9.20.27 <<>> @127.0.0.1 -p 5300 absent00000.bench.test. A +norecurse +notcp
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 18624
+;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: ababde5524fe547a010000006aa586233a0c86437e569cc0 (good)
+;; QUESTION SECTION:
+;absent00000.bench.test.		IN	A
+
+;; AUTHORITY SECTION:
+bench.test.		300	IN	SOA	ns.bench.test. hostmaster.bench.test. 1 3600 600 86400 300
+
+;; Query time: 1 msec
+;; SERVER: 127.0.0.1#5300(127.0.0.1) (UDP)
+;; WHEN: Sat Sep 12 17:04:35 UTC 2026
+;; MSG SIZE  rcvd: 129
+

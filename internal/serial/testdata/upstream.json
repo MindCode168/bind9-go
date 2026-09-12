@@ -1,0 +1,18 @@
+{
+  "upstream": "bind-9.20.27",
+  "source": "lib/isc/serial.c",
+  "source_sha256": "572bd77801dc9a2d3ae6cd4be07ed70fb7c066e634950e445d6d3df4892cefb5",
+  "fixture_sha256": "8d14bfa82c66271db17adaf617f81b759fea2eaacfee30f5137c1d27f1623d50",
+  "cases": 8273,
+  "columns": [
+    "a",
+    "b",
+    "lt",
+    "gt",
+    "le",
+    "ge",
+    "eq",
+    "ne"
+  ],
+  "method": "clang; upstream function bodies unchanged; project header omitted"
+}

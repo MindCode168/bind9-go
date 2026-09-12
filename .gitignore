@@ -1,0 +1,10 @@
+/upstream/
+/.cache/
+/bin/
+/test-results/**/upstream-logs.tar.gz
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example

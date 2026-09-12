@@ -1,0 +1,34 @@
+BIND 9.20.27 (Stable Release) <id:74d0754>
+running on Linux aarch64 6.12.76-linuxkit #1 SMP Sun Mar  8 14:41:59 UTC 2026 (Ubuntu 24.04.5 LTS)
+built by make with  '--disable-maintainer-mode' '--with-cmocka=yes' '--enable-dnstap' '--enable-fixed-rrset' '--with-libidn2=yes' '--with-json-c=yes' '--with-libxml2=yes' '--with-libnghttp2=yes'
+compiled by GCC 13.3.0
+compiled with OpenSSL version: OpenSSL 3.0.13 30 Jan 2024
+linked to OpenSSL version: OpenSSL 3.0.13 30 Jan 2024
+compiled with libuv version: 1.48.0
+linked to libuv version: 1.48.0
+compiled with liburcu version: 0.14.0
+compiled with jemalloc version: 5.3.0
+compiled with libnghttp2 version: 1.59.0
+linked to libnghttp2 version: 1.59.0
+compiled with libxml2 version: 2.9.14
+linked to libxml2 version: 20914
+compiled with json-c version: 0.17
+linked to json-c version: 0.17
+compiled with zlib version: 1.3
+linked to zlib version: 1.3
+linked to maxminddb version: 1.9.1
+compiled with protobuf-c version: 1.4.1
+linked to protobuf-c version: 1.4.1
+threads support is enabled
+DNSSEC algorithms: RSASHA1 NSEC3RSASHA1 RSASHA256 RSASHA512 ECDSAP256SHA256 ECDSAP384SHA384 ED25519 ED448
+DS algorithms: SHA-1 SHA-256 SHA-384
+HMAC algorithms: HMAC-MD5 HMAC-SHA1 HMAC-SHA224 HMAC-SHA256 HMAC-SHA384 HMAC-SHA512
+TKEY mode 2 support (Diffie-Hellman): no
+TKEY mode 3 support (GSS-API): yes
+
+default paths:
+  named configuration:  /usr/local/etc/named.conf
+  rndc configuration:   /usr/local/etc/rndc.conf
+  nsupdate session key: /usr/local/var/run/named/session.key
+  named PID file:       /usr/local/var/run/named/named.pid
+  geoip-directory:      /usr/share/GeoIP

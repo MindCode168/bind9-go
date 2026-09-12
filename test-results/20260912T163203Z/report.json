@@ -1,0 +1,142 @@
+{
+  "run_id": "20260912T163203Z",
+  "baseline": "BIND 9.20.27",
+  "checks": [
+    {
+      "name": "toolchain",
+      "argv": [
+        "/Users/pengziqiang/Documents/网页小游戏/bind-go/.cache/toolchain/go/bin/go",
+        "version"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "seconds": 0.143,
+      "log": "toolchain.log"
+    },
+    {
+      "name": "unit-race-coverage",
+      "argv": [
+        "/Users/pengziqiang/Documents/网页小游戏/bind-go/.cache/toolchain/go/bin/go",
+        "test",
+        "-count=1",
+        "-race",
+        "-covermode=atomic",
+        "-coverprofile=/Users/pengziqiang/Documents/网页小游戏/bind-go/test-results/20260912T163203Z/coverage.out",
+        "-json",
+        "./..."
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "seconds": 4.346,
+      "log": "unit-race-coverage.log"
+    },
+    {
+      "name": "coverage-functions",
+      "argv": [
+        "/Users/pengziqiang/Documents/网页小游戏/bind-go/.cache/toolchain/go/bin/go",
+        "tool",
+        "cover",
+        "-func",
+        "/Users/pengziqiang/Documents/网页小游戏/bind-go/test-results/20260912T163203Z/coverage.out"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "seconds": 0.05,
+      "log": "coverage-functions.log"
+    },
+    {
+      "name": "vet",
+      "argv": [
+        "/Users/pengziqiang/Documents/网页小游戏/bind-go/.cache/toolchain/go/bin/go",
+        "vet",
+        "./..."
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "seconds": 0.146,
+      "log": "vet.log"
+    },
+    {
+      "name": "fuzz-FuzzCompare",
+      "argv": [
+        "/Users/pengziqiang/Documents/网页小游戏/bind-go/.cache/toolchain/go/bin/go",
+        "test",
+        "./internal/serial",
+        "-run",
+        "^$",
+        "-fuzz",
+        "FuzzCompare",
+        "-fuzztime",
+        "10s",
+        "-parallel",
+        "2"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "seconds": 10.894,
+      "log": "fuzz-FuzzCompare.log"
+    },
+    {
+      "name": "fuzz-FuzzRoundTrip",
+      "argv": [
+        "/Users/pengziqiang/Documents/网页小游戏/bind-go/.cache/toolchain/go/bin/go",
+        "test",
+        "./internal/ttl",
+        "-run",
+        "^$",
+        "-fuzz",
+        "FuzzRoundTrip",
+        "-fuzztime",
+        "10s",
+        "-parallel",
+        "2"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "seconds": 12.488,
+      "log": "fuzz-FuzzRoundTrip.log"
+    },
+    {
+      "name": "fuzz-FuzzParse",
+      "argv": [
+        "/Users/pengziqiang/Documents/网页小游戏/bind-go/.cache/toolchain/go/bin/go",
+        "test",
+        "./internal/ttl",
+        "-run",
+        "^$",
+        "-fuzz",
+        "FuzzParse",
+        "-fuzztime",
+        "10s",
+        "-parallel",
+        "2"
+      ],
+      "exit_code": 0,
+      "status": "passed",
+      "seconds": 11.027,
+      "log": "fuzz-FuzzParse.log"
+    }
+  ],
+  "go_checks_passed": true,
+  "go_system_suites_passed": 0,
+  "go_system_suites_blocked": 174,
+  "release_ready": false,
+  "blocking_reasons": [
+    "DNS server and CLI features are not implemented",
+    "All upstream service-level tests remain unexecuted against Go"
+  ],
+  "source_sha256": {
+    "internal/serial/oracle_test.go": "9a895af204f8a619843dd92f8c3fb6d23c541bd5cd7213e36f1bf008fafb5e7f",
+    "internal/serial/serial.go": "cf932b26b3baacb0a8174d40b52c69e83e66604ce10c5c3f99ee89f57dfa0ffb",
+    "internal/serial/serial_test.go": "c3de6ebc1acd826e3651ad097209a477733b0482157484f1d4b79b7f3f32984f",
+    "internal/ttl/oracle_test.go": "77ea54de4f6d7712ed585bc2007a5d1c1f70cad2025dcb413ee7ef02f34a3550",
+    "internal/ttl/ttl.go": "b0de54a752379cbac98a7d108f94ebeb99723371c22a91873ddd2b7c191cab6a",
+    "internal/ttl/ttl_test.go": "ad9da6b89a0cbc68f163bf0adbb0d23b5e428a3eef875105f3a85113d059ce2a",
+    "tools/inventory.py": "d0351624c9d11665a78c468eb1570356a8f1aa1093b078dba1c2c89027d9d2e0",
+    "tools/run_validation.py": "b1d7e7afb071a9b245e75ddaa3fc813c35b39a0b32eee1efd18c0ee8d8f9ff90",
+    "tools/serial_oracle.py": "eb21e115675ab8f3c5ba963a1b52a2cb5c4a94e9705e5632560778aa945a2487",
+    "tools/test_catalog.py": "7de14f88b8e7e1a004d27be59a445baa98d061b146105efdb7df91add06c572d",
+    "tools/ttl_oracle.py": "c08e6683446640fd9e4078616cb90c0d11aa71ea22f59ee70eba8a3e2d0c9d42"
+  },
+  "scope_note": "Local synthetic and upstream fixtures; no real user production data used"
+}

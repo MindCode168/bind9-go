@@ -1,0 +1,2058 @@
+[
+  {
+    "suite": "acl",
+    "entrypoints": [
+      "bin/tests/system/acl/tests.sh",
+      "bin/tests/system/acl/tests_sh_acl.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "additional",
+    "entrypoints": [
+      "bin/tests/system/additional/tests.sh",
+      "bin/tests/system/additional/tests_sh_additional.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "addzone",
+    "entrypoints": [
+      "bin/tests/system/addzone/tests.sh",
+      "bin/tests/system/addzone/tests_rndc_deadlock.py",
+      "bin/tests/system/addzone/tests_rndc_modzone_without_add.py",
+      "bin/tests/system/addzone/tests_sh_addzone.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 3
+    }
+  },
+  {
+    "suite": "allow_query",
+    "entrypoints": [
+      "bin/tests/system/allow_query/tests.sh",
+      "bin/tests/system/allow_query/tests_sh_allow_query.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "auth",
+    "entrypoints": [
+      "bin/tests/system/auth/tests.sh",
+      "bin/tests/system/auth/tests_sh_auth.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "autosign",
+    "entrypoints": [
+      "bin/tests/system/autosign/tests.sh",
+      "bin/tests/system/autosign/tests_sh_autosign.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "bailiwick",
+    "entrypoints": [
+      "bin/tests/system/bailiwick/tests_bailiwick.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 4
+    }
+  },
+  {
+    "suite": "builtin",
+    "entrypoints": [
+      "bin/tests/system/builtin/tests.sh",
+      "bin/tests/system/builtin/tests_sh_builtin.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "cacheclean",
+    "entrypoints": [
+      "bin/tests/system/cacheclean/tests.sh",
+      "bin/tests/system/cacheclean/tests_sh_cacheclean.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "camp",
+    "entrypoints": [
+      "bin/tests/system/camp/tests.sh",
+      "bin/tests/system/camp/tests_sh_camp.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "cap_glues",
+    "entrypoints": [
+      "bin/tests/system/cap_glues/tests_cap_glues.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "case",
+    "entrypoints": [
+      "bin/tests/system/case/tests.sh",
+      "bin/tests/system/case/tests_sh_case.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "catz",
+    "entrypoints": [
+      "bin/tests/system/catz/tests.sh",
+      "bin/tests/system/catz/tests_sh_catz.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "cdnxdomain",
+    "entrypoints": [
+      "bin/tests/system/cdnxdomain/tests_cdnxdomain.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 3
+    }
+  },
+  {
+    "suite": "cds",
+    "entrypoints": [
+      "bin/tests/system/cds/tests.sh",
+      "bin/tests/system/cds/tests_sh_cds.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "chain",
+    "entrypoints": [
+      "bin/tests/system/chain/tests.sh",
+      "bin/tests/system/chain/tests_sh_chain.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "checkconf",
+    "entrypoints": [
+      "bin/tests/system/checkconf/tests.sh",
+      "bin/tests/system/checkconf/tests_sh_checkconf.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "checkconf_keys",
+    "entrypoints": [
+      "bin/tests/system/checkconf_keys/tests_checkconf_keys.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "checkds",
+    "entrypoints": [
+      "bin/tests/system/checkds/tests_checkds.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 33
+    }
+  },
+  {
+    "suite": "checknames",
+    "entrypoints": [
+      "bin/tests/system/checknames/tests.sh",
+      "bin/tests/system/checknames/tests_sh_checknames.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "checkzone",
+    "entrypoints": [
+      "bin/tests/system/checkzone/tests.sh",
+      "bin/tests/system/checkzone/tests_sh_checkzone.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "cipher_suites",
+    "entrypoints": [
+      "bin/tests/system/cipher_suites/tests_cipher_suites.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 16
+    }
+  },
+  {
+    "suite": "class",
+    "entrypoints": [
+      "bin/tests/system/class/tests_class_chaos.py",
+      "bin/tests/system/class/tests_class_update.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 19
+    }
+  },
+  {
+    "suite": "cname_dname_negcache",
+    "entrypoints": [
+      "bin/tests/system/cname_dname_negcache/tests_cname_negcache.py",
+      "bin/tests/system/cname_dname_negcache/tests_dname_negcache.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "cookie",
+    "entrypoints": [
+      "bin/tests/system/cookie/tests.sh",
+      "bin/tests/system/cookie/tests_sh_cookie.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "cpu",
+    "entrypoints": [
+      "bin/tests/system/cpu/tests.sh",
+      "bin/tests/system/cpu/tests_sh_cpu.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "database",
+    "entrypoints": [
+      "bin/tests/system/database/tests_database.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "dialup",
+    "entrypoints": [
+      "bin/tests/system/dialup/tests_dialup_zone_transfer.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "digdelv",
+    "entrypoints": [
+      "bin/tests/system/digdelv/tests_delv.py",
+      "bin/tests/system/digdelv/tests_dig.py",
+      "bin/tests/system/digdelv/tests_mdig.py",
+      "bin/tests/system/digdelv/tests_others.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 210
+    }
+  },
+  {
+    "suite": "dispatch",
+    "entrypoints": [
+      "bin/tests/system/dispatch/tests_connreset.py",
+      "bin/tests/system/dispatch/tests_tcponly.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "dlzexternal",
+    "entrypoints": [
+      "bin/tests/system/dlzexternal/tests.sh",
+      "bin/tests/system/dlzexternal/tests_sh_dlzexternal.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "dns64",
+    "entrypoints": [
+      "bin/tests/system/dns64/tests.sh",
+      "bin/tests/system/dns64/tests_sh_dns64.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "dns64_dname",
+    "entrypoints": [
+      "bin/tests/system/dns64_dname/tests_dns64_dname.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "dnssec",
+    "entrypoints": [
+      "bin/tests/system/dnssec/tests.sh",
+      "bin/tests/system/dnssec/tests_sh_dnssec.py",
+      "bin/tests/system/dnssec/tests_validation.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "dnssec_bypass",
+    "entrypoints": [
+      "bin/tests/system/dnssec_bypass/tests_bypass.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "dnssec_cname_response",
+    "entrypoints": [
+      "bin/tests/system/dnssec_cname_response/tests_cname_rejection.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 8
+    }
+  },
+  {
+    "suite": "dnssec_nsec3",
+    "entrypoints": [
+      "bin/tests/system/dnssec_nsec3/tests_dnssec_nsec3_delegation.py",
+      "bin/tests/system/dnssec_nsec3/tests_nsec3_wrong_zone.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 5
+    }
+  },
+  {
+    "suite": "dnssec_parent_rrsig",
+    "entrypoints": [
+      "bin/tests/system/dnssec_parent_rrsig/tests_parent_rrsig.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "dnssec_py",
+    "entrypoints": [
+      "bin/tests/system/dnssec_py/tests_dnskey_malformed.py",
+      "bin/tests/system/dnssec_py/tests_dnskey_truncated_selfsigned.py",
+      "bin/tests/system/dnssec_py/tests_findnoqname_mismatch.py",
+      "bin/tests/system/dnssec_py/tests_mixed_ds.py",
+      "bin/tests/system/dnssec_py/tests_nsec3_answer.py",
+      "bin/tests/system/dnssec_py/tests_nsec3_iter_too_many.py",
+      "bin/tests/system/dnssec_py/tests_rrsig_labels_signer.py",
+      "bin/tests/system/dnssec_py/tests_rrsigs_extra_expired.py",
+      "bin/tests/system/dnssec_py/tests_sibling_ds.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 28
+    }
+  },
+  {
+    "suite": "dnssec_wildcard",
+    "entrypoints": [
+      "bin/tests/system/dnssec_wildcard/tests_dnssec_wildcard_additional.py",
+      "bin/tests/system/dnssec_wildcard/tests_replayed_parent_wildcard.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 4
+    }
+  },
+  {
+    "suite": "dnstap",
+    "entrypoints": [
+      "bin/tests/system/dnstap/tests.sh",
+      "bin/tests/system/dnstap/tests_dnstap.py",
+      "bin/tests/system/dnstap/tests_sh_dnstap.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "doth",
+    "entrypoints": [
+      "bin/tests/system/doth/tests.sh",
+      "bin/tests/system/doth/tests_gnutls.py",
+      "bin/tests/system/doth/tests_malicious.py",
+      "bin/tests/system/doth/tests_sh_doth.py",
+      "bin/tests/system/doth/tests_sslyze.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 5
+    }
+  },
+  {
+    "suite": "dsdigest",
+    "entrypoints": [
+      "bin/tests/system/dsdigest/tests_dsdigest.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 3
+    }
+  },
+  {
+    "suite": "dyndb",
+    "entrypoints": [
+      "bin/tests/system/dyndb/tests.sh",
+      "bin/tests/system/dyndb/tests_sh_dyndb.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "ecdsa",
+    "entrypoints": [
+      "bin/tests/system/ecdsa/tests_ecdsa.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "eddsa",
+    "entrypoints": [
+      "bin/tests/system/eddsa/tests.sh",
+      "bin/tests/system/eddsa/tests_sh_eddsa.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "ednscompliance",
+    "entrypoints": [
+      "bin/tests/system/ednscompliance/tests.sh",
+      "bin/tests/system/ednscompliance/tests_sh_ednscompliance.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "emptyzones",
+    "entrypoints": [
+      "bin/tests/system/emptyzones/tests_emptyzones.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "enginepkcs11",
+    "entrypoints": [
+      "bin/tests/system/enginepkcs11/tests.sh",
+      "bin/tests/system/enginepkcs11/tests_sh_enginepkcs11.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "failed",
+    "upstream_counts": {
+      "error": 1
+    }
+  },
+  {
+    "suite": "expiredglue",
+    "entrypoints": [
+      "bin/tests/system/expiredglue/tests_expiredglue.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "fetchlimit",
+    "entrypoints": [
+      "bin/tests/system/fetchlimit/tests.sh",
+      "bin/tests/system/fetchlimit/tests_sh_fetchlimit.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "filters",
+    "entrypoints": [
+      "bin/tests/system/filters/tests_filter_a_v4.py",
+      "bin/tests/system/filters/tests_filter_a_v6.py",
+      "bin/tests/system/filters/tests_filter_aaaa_v4.py",
+      "bin/tests/system/filters/tests_filter_aaaa_v6.py",
+      "bin/tests/system/filters/tests_filter_checkconf.py",
+      "bin/tests/system/filters/tests_filter_dns64.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 34
+    }
+  },
+  {
+    "suite": "formerr",
+    "entrypoints": [
+      "bin/tests/system/formerr/tests_formerr.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 19
+    }
+  },
+  {
+    "suite": "forward",
+    "entrypoints": [
+      "bin/tests/system/forward/tests.sh",
+      "bin/tests/system/forward/tests_sh_forward.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "fwdfirst",
+    "entrypoints": [
+      "bin/tests/system/fwdfirst/tests_fwdfirst.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "geoip2",
+    "entrypoints": [
+      "bin/tests/system/geoip2/tests.sh",
+      "bin/tests/system/geoip2/tests_sh_geoip2.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "glue",
+    "entrypoints": [
+      "bin/tests/system/glue/tests_glue.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 8
+    }
+  },
+  {
+    "suite": "hooks",
+    "entrypoints": [
+      "bin/tests/system/hooks/tests_async_plugin.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "host",
+    "entrypoints": [
+      "bin/tests/system/host/tests.sh",
+      "bin/tests/system/host/tests_sh_host.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "idna",
+    "entrypoints": [
+      "bin/tests/system/idna/tests.sh",
+      "bin/tests/system/idna/tests_sh_idna.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "include_multiplecfg",
+    "entrypoints": [
+      "bin/tests/system/include_multiplecfg/tests_include_multiplecfg.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 4
+    }
+  },
+  {
+    "suite": "inline",
+    "entrypoints": [
+      "bin/tests/system/inline/tests.sh",
+      "bin/tests/system/inline/tests_inline_incremental_updates.py",
+      "bin/tests/system/inline/tests_sh_inline.py",
+      "bin/tests/system/inline/tests_signed_zone_files.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 3
+    }
+  },
+  {
+    "suite": "integrity",
+    "entrypoints": [
+      "bin/tests/system/integrity/tests.sh",
+      "bin/tests/system/integrity/tests_sh_integrity.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "ixfr",
+    "entrypoints": [
+      "bin/tests/system/ixfr/tests.sh",
+      "bin/tests/system/ixfr/tests_sh_ixfr.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "ixfr_nonminimal",
+    "entrypoints": [
+      "bin/tests/system/ixfr_nonminimal/tests.sh",
+      "bin/tests/system/ixfr_nonminimal/tests_sh_ixfr_nonminimal.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "journal",
+    "entrypoints": [
+      "bin/tests/system/journal/tests.sh",
+      "bin/tests/system/journal/tests_sh_journal.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "kasp",
+    "entrypoints": [
+      "bin/tests/system/kasp/tests_kasp.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 62
+    }
+  },
+  {
+    "suite": "keepalive",
+    "entrypoints": [
+      "bin/tests/system/keepalive/tests_keepalive.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "keyfromlabel",
+    "entrypoints": [
+      "bin/tests/system/keyfromlabel/tests_keyfromlabel.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "failed",
+    "upstream_counts": {
+      "failed": 4
+    }
+  },
+  {
+    "suite": "ksr",
+    "entrypoints": [
+      "bin/tests/system/ksr/tests_ksr.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 10
+    }
+  },
+  {
+    "suite": "legacy",
+    "entrypoints": [
+      "bin/tests/system/legacy/tests.sh",
+      "bin/tests/system/legacy/tests_sh_legacy.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "limits",
+    "entrypoints": [
+      "bin/tests/system/limits/tests_limits.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 6
+    }
+  },
+  {
+    "suite": "logfileconfig",
+    "entrypoints": [
+      "bin/tests/system/logfileconfig/tests.sh",
+      "bin/tests/system/logfileconfig/tests_sh_logfileconfig.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "masterfile",
+    "entrypoints": [
+      "bin/tests/system/masterfile/tests_masterfile.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 6
+    }
+  },
+  {
+    "suite": "masterformat",
+    "entrypoints": [
+      "bin/tests/system/masterformat/tests.sh",
+      "bin/tests/system/masterformat/tests_sh_masterformat.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "metadata",
+    "entrypoints": [
+      "bin/tests/system/metadata/tests.sh",
+      "bin/tests/system/metadata/tests_sh_metadata.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "migrate2kasp",
+    "entrypoints": [
+      "bin/tests/system/migrate2kasp/tests_migrate2kasp.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 11
+    }
+  },
+  {
+    "suite": "mirror",
+    "entrypoints": [
+      "bin/tests/system/mirror/tests.sh",
+      "bin/tests/system/mirror/tests_sh_mirror.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "mirror_root_zone",
+    "entrypoints": [
+      "bin/tests/system/mirror_root_zone/tests_mirror_root_zone.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "failed",
+    "upstream_counts": {
+      "failed": 1
+    }
+  },
+  {
+    "suite": "mismatchtcp",
+    "entrypoints": [
+      "bin/tests/system/mismatchtcp/tests_mismatchtcp.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "mkeys",
+    "entrypoints": [
+      "bin/tests/system/mkeys/tests.sh",
+      "bin/tests/system/mkeys/tests_sh_mkeys.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "multisigner",
+    "entrypoints": [
+      "bin/tests/system/multisigner/tests_multisigner.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 3
+    }
+  },
+  {
+    "suite": "names",
+    "entrypoints": [
+      "bin/tests/system/names/tests_names.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "notify",
+    "entrypoints": [
+      "bin/tests/system/notify/tests.sh",
+      "bin/tests/system/notify/tests_sh_notify.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "nsec",
+    "entrypoints": [
+      "bin/tests/system/nsec/tests_excessive_rrsigs.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "nsec3",
+    "entrypoints": [
+      "bin/tests/system/nsec3/tests_nsec3_change.py",
+      "bin/tests/system/nsec3/tests_nsec3_initial.py",
+      "bin/tests/system/nsec3/tests_nsec3_length.py",
+      "bin/tests/system/nsec3/tests_nsec3_reconfig.py",
+      "bin/tests/system/nsec3/tests_nsec3_reload.py",
+      "bin/tests/system/nsec3/tests_nsec3_restart.py",
+      "bin/tests/system/nsec3/tests_nsec3_retransfer.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 36
+    }
+  },
+  {
+    "suite": "nsec3_impersonation",
+    "entrypoints": [
+      "bin/tests/system/nsec3_impersonation/tests_nsec3_impersonation.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "nsec_grandparent",
+    "entrypoints": [
+      "bin/tests/system/nsec_grandparent/tests_nsec_grandparent.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 4
+    }
+  },
+  {
+    "suite": "nsec_ixfr",
+    "entrypoints": [
+      "bin/tests/system/nsec_ixfr/tests_nsec_ixfr.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "nsec_piggyback",
+    "entrypoints": [
+      "bin/tests/system/nsec_piggyback/tests_nsec_piggyback.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 3
+    }
+  },
+  {
+    "suite": "nsec_synthesis",
+    "entrypoints": [
+      "bin/tests/system/nsec_synthesis/tests_nsec_child_next.py",
+      "bin/tests/system/nsec_synthesis/tests_nsec_exact_nodata.py",
+      "bin/tests/system/nsec_synthesis/tests_nsec_pending_cd.py",
+      "bin/tests/system/nsec_synthesis/tests_nsec_selfloop.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 6
+    }
+  },
+  {
+    "suite": "nslookup",
+    "entrypoints": [
+      "bin/tests/system/nslookup/tests.sh",
+      "bin/tests/system/nslookup/tests_sh_nslookup.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "nsprocessinglimit",
+    "entrypoints": [
+      "bin/tests/system/nsprocessinglimit/tests_nsprocessinglimit.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "nsupdate",
+    "entrypoints": [
+      "bin/tests/system/nsupdate/tests.sh",
+      "bin/tests/system/nsupdate/tests_sh_nsupdate.py",
+      "bin/tests/system/nsupdate/tests_update_sig.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 4
+    }
+  },
+  {
+    "suite": "nta",
+    "entrypoints": [
+      "bin/tests/system/nta/tests_nta.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 12
+    }
+  },
+  {
+    "suite": "nzd2nzf",
+    "entrypoints": [
+      "bin/tests/system/nzd2nzf/tests_nzd2nzf.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "optout",
+    "entrypoints": [
+      "bin/tests/system/optout/tests_optout.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "padding",
+    "entrypoints": [
+      "bin/tests/system/padding/tests.sh",
+      "bin/tests/system/padding/tests_sh_padding.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "pending",
+    "entrypoints": [
+      "bin/tests/system/pending/tests.sh",
+      "bin/tests/system/pending/tests_sh_pending.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "pipelined",
+    "entrypoints": [
+      "bin/tests/system/pipelined/tests.sh",
+      "bin/tests/system/pipelined/tests_sh_pipelined.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "proxy",
+    "entrypoints": [
+      "bin/tests/system/proxy/tests.sh",
+      "bin/tests/system/proxy/tests_sh_proxy.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "qmin",
+    "entrypoints": [
+      "bin/tests/system/qmin/tests.sh",
+      "bin/tests/system/qmin/tests_sh_qmin.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "qpcache_rrsig_any",
+    "entrypoints": [
+      "bin/tests/system/qpcache_rrsig_any/tests_qpcache_rrsig_any.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 24
+    }
+  },
+  {
+    "suite": "query_source",
+    "entrypoints": [
+      "bin/tests/system/query_source/tests_querysource_none.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "randomizens",
+    "entrypoints": [
+      "bin/tests/system/randomizens/tests_randomizens.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "reclimit",
+    "entrypoints": [
+      "bin/tests/system/reclimit/tests.sh",
+      "bin/tests/system/reclimit/tests_sh_reclimit.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "redirect",
+    "entrypoints": [
+      "bin/tests/system/redirect/tests.sh",
+      "bin/tests/system/redirect/tests_redirect_dns64.py",
+      "bin/tests/system/redirect/tests_sh_redirect.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 4
+    }
+  },
+  {
+    "suite": "resend_loop",
+    "entrypoints": [
+      "bin/tests/system/resend_loop/tests_resend_loop.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "resolver",
+    "entrypoints": [
+      "bin/tests/system/resolver/tests.sh",
+      "bin/tests/system/resolver/tests_resolver.py",
+      "bin/tests/system/resolver/tests_sh_resolver.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 3
+    }
+  },
+  {
+    "suite": "rfc5011",
+    "entrypoints": [
+      "bin/tests/system/rfc5011/tests_rfc5011.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "rndc",
+    "entrypoints": [
+      "bin/tests/system/rndc/tests.sh",
+      "bin/tests/system/rndc/tests_cve_2023_3341.py",
+      "bin/tests/system/rndc/tests_sh_rndc.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "rndc_confgen",
+    "entrypoints": [
+      "bin/tests/system/rndc_confgen/tests_rndc_confgen.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 18
+    }
+  },
+  {
+    "suite": "rollover",
+    "entrypoints": [
+      "bin/tests/system/rollover/tests_rollover_manual.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "rollover_algo_csk",
+    "entrypoints": [
+      "bin/tests/system/rollover_algo_csk/tests_rollover_algo_csk_initial.py",
+      "bin/tests/system/rollover_algo_csk/tests_rollover_algo_csk_reconfig.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 14
+    }
+  },
+  {
+    "suite": "rollover_algo_ksk_zsk",
+    "entrypoints": [
+      "bin/tests/system/rollover_algo_ksk_zsk/tests_rollover_algo_ksk_zsk_initial.py",
+      "bin/tests/system/rollover_algo_ksk_zsk/tests_rollover_algo_ksk_zsk_reconfig.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 14
+    }
+  },
+  {
+    "suite": "rollover_csk_roll1",
+    "entrypoints": [
+      "bin/tests/system/rollover_csk_roll1/tests_rollover_csk_roll1.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 16
+    }
+  },
+  {
+    "suite": "rollover_csk_roll2",
+    "entrypoints": [
+      "bin/tests/system/rollover_csk_roll2/tests_rollover_csk_roll2.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 14
+    }
+  },
+  {
+    "suite": "rollover_dynamic2inline",
+    "entrypoints": [
+      "bin/tests/system/rollover_dynamic2inline/tests_rollover_dynamic2inline.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "rollover_enable_dnssec",
+    "entrypoints": [
+      "bin/tests/system/rollover_enable_dnssec/tests_rollover_enable_dnssec.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 8
+    }
+  },
+  {
+    "suite": "rollover_going_insecure",
+    "entrypoints": [
+      "bin/tests/system/rollover_going_insecure/tests_rollover_going_insecure_initial.py",
+      "bin/tests/system/rollover_going_insecure/tests_rollover_going_insecure_reconfig.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 6
+    }
+  },
+  {
+    "suite": "rollover_ksk_3crowd",
+    "entrypoints": [
+      "bin/tests/system/rollover_ksk_3crowd/tests_rollover_three_is_a_crowd.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "rollover_ksk_doubleksk",
+    "entrypoints": [
+      "bin/tests/system/rollover_ksk_doubleksk/tests_rollover_ksk_doubleksk.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 12
+    }
+  },
+  {
+    "suite": "rollover_lifetime",
+    "entrypoints": [
+      "bin/tests/system/rollover_lifetime/tests_rollover_lifetime_initial.py",
+      "bin/tests/system/rollover_lifetime/tests_rollover_lifetime_reconfig.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 8
+    }
+  },
+  {
+    "suite": "rollover_multisigner",
+    "entrypoints": [
+      "bin/tests/system/rollover_multisigner/tests_rollover_multisigner.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "rollover_straight2none",
+    "entrypoints": [
+      "bin/tests/system/rollover_straight2none/tests_rollover_straight2none_initial.py",
+      "bin/tests/system/rollover_straight2none/tests_rollover_straight2none_reconfig.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 4
+    }
+  },
+  {
+    "suite": "rollover_zsk_prepub",
+    "entrypoints": [
+      "bin/tests/system/rollover_zsk_prepub/tests_rollover_zsk_prepublication.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 12
+    }
+  },
+  {
+    "suite": "rootkeysentinel",
+    "entrypoints": [
+      "bin/tests/system/rootkeysentinel/tests.sh",
+      "bin/tests/system/rootkeysentinel/tests_sh_rootkeysentinel.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "rpz",
+    "entrypoints": [
+      "bin/tests/system/rpz/tests.sh",
+      "bin/tests/system/rpz/tests_sh_rpz.py",
+      "bin/tests/system/rpz/tests_sh_rpz_dnsrps.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "partial_skipped",
+    "upstream_counts": {
+      "passed": 1,
+      "skipped": 1
+    }
+  },
+  {
+    "suite": "rpzextra",
+    "entrypoints": [
+      "bin/tests/system/rpzextra/tests_rpzextra.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 16
+    }
+  },
+  {
+    "suite": "rpzrecurse",
+    "entrypoints": [
+      "bin/tests/system/rpzrecurse/tests.sh",
+      "bin/tests/system/rpzrecurse/tests_sh_rpzrecurse.py",
+      "bin/tests/system/rpzrecurse/tests_sh_rpzrecurse_dnsrps.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "partial_skipped",
+    "upstream_counts": {
+      "passed": 1,
+      "skipped": 1
+    }
+  },
+  {
+    "suite": "rrchecker",
+    "entrypoints": [
+      "bin/tests/system/rrchecker/tests_rrchecker.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 8
+    }
+  },
+  {
+    "suite": "rrl",
+    "entrypoints": [
+      "bin/tests/system/rrl/tests.sh",
+      "bin/tests/system/rrl/tests_sh_rrl.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "rrsetorder",
+    "entrypoints": [
+      "bin/tests/system/rrsetorder/tests.sh",
+      "bin/tests/system/rrsetorder/tests_sh_rrsetorder.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "rsabigexponent",
+    "entrypoints": [
+      "bin/tests/system/rsabigexponent/tests_rsabigexponent.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 12
+    }
+  },
+  {
+    "suite": "runtime",
+    "entrypoints": [
+      "bin/tests/system/runtime/tests.sh",
+      "bin/tests/system/runtime/tests_sh_runtime.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "selfpointedglue",
+    "entrypoints": [
+      "bin/tests/system/selfpointedglue/tests_selfpointedglue.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 3
+    }
+  },
+  {
+    "suite": "selftest",
+    "entrypoints": [
+      "bin/tests/system/selftest/tests_zone_analyzer.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 11
+    }
+  },
+  {
+    "suite": "serve_stale",
+    "entrypoints": [
+      "bin/tests/system/serve_stale/tests.sh",
+      "bin/tests/system/serve_stale/tests_serve_stale_ncache.py",
+      "bin/tests/system/serve_stale/tests_sh_serve_stale.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 3
+    }
+  },
+  {
+    "suite": "sfcache",
+    "entrypoints": [
+      "bin/tests/system/sfcache/tests.sh",
+      "bin/tests/system/sfcache/tests_sh_sfcache.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "sfcache_cname",
+    "entrypoints": [
+      "bin/tests/system/sfcache_cname/tests_sfcache_cname.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "shutdown",
+    "entrypoints": [
+      "bin/tests/system/shutdown/tests_shutdown.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "sig0",
+    "entrypoints": [
+      "bin/tests/system/sig0/tests_sig0.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "smartsign",
+    "entrypoints": [
+      "bin/tests/system/smartsign/tests.sh",
+      "bin/tests/system/smartsign/tests_sh_smartsign.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "sortlist",
+    "entrypoints": [
+      "bin/tests/system/sortlist/tests_sortlist.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 5
+    }
+  },
+  {
+    "suite": "spf",
+    "entrypoints": [
+      "bin/tests/system/spf/tests_spf_zones.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "srtt",
+    "entrypoints": [
+      "bin/tests/system/srtt/tests_srtt.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "ssumaxtype",
+    "entrypoints": [
+      "bin/tests/system/ssumaxtype/tests_ssumaxtype.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 4
+    }
+  },
+  {
+    "suite": "ssutoctou",
+    "entrypoints": [
+      "bin/tests/system/ssutoctou/tests_ssutoctou.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "staticstub",
+    "entrypoints": [
+      "bin/tests/system/staticstub/tests.sh",
+      "bin/tests/system/staticstub/tests_sh_staticstub.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "statistics",
+    "entrypoints": [
+      "bin/tests/system/statistics/tests.sh",
+      "bin/tests/system/statistics/tests_sh_statistics.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "statschannel",
+    "entrypoints": [
+      "bin/tests/system/statschannel/tests.sh",
+      "bin/tests/system/statschannel/tests_json.py",
+      "bin/tests/system/statschannel/tests_sh_statschannel.py",
+      "bin/tests/system/statschannel/tests_xml.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 10
+    }
+  },
+  {
+    "suite": "stress",
+    "entrypoints": [
+      "bin/tests/system/stress/tests_stress_update.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "stub",
+    "entrypoints": [
+      "bin/tests/system/stub/tests_stub.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "synthfromdnssec",
+    "entrypoints": [
+      "bin/tests/system/synthfromdnssec/tests.sh",
+      "bin/tests/system/synthfromdnssec/tests_sh_synthfromdnssec.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "tcp",
+    "entrypoints": [
+      "bin/tests/system/tcp/tests_tcp.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 7
+    }
+  },
+  {
+    "suite": "timeouts",
+    "entrypoints": [
+      "bin/tests/system/timeouts/tests_tcp_timeouts.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 8
+    }
+  },
+  {
+    "suite": "tkey",
+    "entrypoints": [
+      "bin/tests/system/tkey/tests_cve_2026_3119.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "tkeyleak",
+    "entrypoints": [
+      "bin/tests/system/tkeyleak/tests_tkeyleak.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "tools",
+    "entrypoints": [
+      "bin/tests/system/tools/tests.sh",
+      "bin/tests/system/tools/tests_sh_tools.py",
+      "bin/tests/system/tools/tests_tools_nsec3hash.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 25
+    }
+  },
+  {
+    "suite": "transport_acl",
+    "entrypoints": [
+      "bin/tests/system/transport_acl/tests.sh",
+      "bin/tests/system/transport_acl/tests_sh_transport_acl.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "transport_change",
+    "entrypoints": [
+      "bin/tests/system/transport_change/tests.sh",
+      "bin/tests/system/transport_change/tests_sh_transport_change.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "tsig",
+    "entrypoints": [
+      "bin/tests/system/tsig/tests.sh",
+      "bin/tests/system/tsig/tests_badtime.py",
+      "bin/tests/system/tsig/tests_sh_tsig.py",
+      "bin/tests/system/tsig/tests_tsig_hypothesis.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 3
+    }
+  },
+  {
+    "suite": "tsiggss",
+    "entrypoints": [
+      "bin/tests/system/tsiggss/tests.sh",
+      "bin/tests/system/tsiggss/tests_isc_spnego_flaws.py",
+      "bin/tests/system/tsiggss/tests_sh_tsiggss.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 3
+    }
+  },
+  {
+    "suite": "ttl",
+    "entrypoints": [
+      "bin/tests/system/ttl/tests_cache_ttl.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 4
+    }
+  },
+  {
+    "suite": "unknown",
+    "entrypoints": [
+      "bin/tests/system/unknown/tests.sh",
+      "bin/tests/system/unknown/tests_sh_unknown.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "upforwd",
+    "entrypoints": [
+      "bin/tests/system/upforwd/tests.sh",
+      "bin/tests/system/upforwd/tests_sh_upforwd.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "verify",
+    "entrypoints": [
+      "bin/tests/system/verify/tests_verify.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 38
+    }
+  },
+  {
+    "suite": "views",
+    "entrypoints": [
+      "bin/tests/system/views/tests.sh",
+      "bin/tests/system/views/tests_sh_views.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "wildcard",
+    "entrypoints": [
+      "bin/tests/system/wildcard/tests.sh",
+      "bin/tests/system/wildcard/tests_nonterminal_wildcard.py",
+      "bin/tests/system/wildcard/tests_sh_wildcard.py",
+      "bin/tests/system/wildcard/tests_wildcard.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 8
+    }
+  },
+  {
+    "suite": "xfer",
+    "entrypoints": [
+      "bin/tests/system/xfer/tests_retransfer_with_force.py",
+      "bin/tests/system/xfer/tests_retransfer_with_transferstuck.py",
+      "bin/tests/system/xfer/tests_xfer.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 33
+    }
+  },
+  {
+    "suite": "xfer_servers_list",
+    "entrypoints": [
+      "bin/tests/system/xfer_servers_list/tests_xfer_servers_list.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "xferquota",
+    "entrypoints": [
+      "bin/tests/system/xferquota/tests_xferquota.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 2
+    }
+  },
+  {
+    "suite": "zero",
+    "entrypoints": [
+      "bin/tests/system/zero/tests.sh",
+      "bin/tests/system/zero/tests_sh_zero.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  },
+  {
+    "suite": "zonechecks",
+    "entrypoints": [
+      "bin/tests/system/zonechecks/tests.sh",
+      "bin/tests/system/zonechecks/tests_sh_zonechecks.py"
+    ],
+    "go_status": "blocked_unimplemented",
+    "upstream_status": "passed",
+    "upstream_counts": {
+      "passed": 1
+    }
+  }
+]

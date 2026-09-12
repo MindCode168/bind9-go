@@ -1,0 +1,136 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from provider.Dockerfile
+#1 transferring dockerfile: 859B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/bind9-go-upstream-extended:9.20.27
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/bind9-go-upstream-extended:9.20.27@sha256:7b2562e45ca10f5b6fff57394b4208ba594279e92579394690de1b069e48a183
+#4 resolve docker.io/library/bind9-go-upstream-extended:9.20.27@sha256:7b2562e45ca10f5b6fff57394b4208ba594279e92579394690de1b069e48a183 done
+#4 DONE 0.0s
+
+#5 [2/5] RUN python3 -m pip install --no-cache-dir meson ninja
+#5 CACHED
+
+#6 [internal] load build context
+#6 transferring context: 42B done
+#6 DONE 0.0s
+
+#7 [3/5] RUN curl --fail --location --max-time 120     https://codeload.github.com/openssl-projects/pkcs11-provider/tar.gz/refs/tags/v0.6     -o /tmp/pkcs11-provider.tar.gz &&     sha256sum /tmp/pkcs11-provider.tar.gz > /src/pkcs11-provider.sha256 &&     tar -xzf /tmp/pkcs11-provider.tar.gz -C /opt &&     meson setup /opt/pkcs11-build /opt/pkcs11-provider-0.6 &&     meson compile -C /opt/pkcs11-build -j4 &&     meson install -C /opt/pkcs11-build
+#7 0.119   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#7 0.119                                  Dload  Upload   Total   Spent    Left  Speed
+#7 0.119   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 13135    0 13135    0     0  12102      0 --:--:--  0:00:01 --:--:-- 12094100  195k    0  195k    0     0   123k      0 --:--:--  0:00:01 --:--:--  123k
+#7 2.051 The Meson build system
+#7 2.051 Version: 1.12.0
+#7 2.051 Source dir: /opt/pkcs11-provider-0.6
+#7 2.051 Build dir: /opt/pkcs11-build
+#7 2.051 Build type: native build
+#7 2.051 Project name: pkcs11-provider
+#7 2.051 Project version: 0.6
+#7 2.051 C compiler for the host machine: cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+#7 2.051 C linker for the host machine: cc ld.bfd 2.42
+#7 2.051 Host machine cpu family: aarch64
+#7 2.051 Host machine cpu: aarch64
+#7 2.051 Compiler for C supports arguments -Wwrite-strings: YES 
+#7 2.051 Compiler for C supports arguments -Wpointer-arith: YES 
+#7 2.051 Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+#7 2.051 Compiler for C supports arguments -Wformat: YES 
+#7 2.051 Compiler for C supports arguments -Wshadow: YES 
+#7 2.051 Compiler for C supports arguments -Wno-unused-parameter: YES 
+#7 2.051 Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+#7 2.051 Compiler for C supports arguments -Werror=missing-prototypes: YES 
+#7 2.051 Compiler for C supports arguments -Werror=format-security: YES 
+#7 2.051 Compiler for C supports arguments -Werror=parentheses: YES 
+#7 2.051 Compiler for C supports arguments -Werror=implicit: YES 
+#7 2.051 Compiler for C supports arguments -Werror=strict-prototypes: YES 
+#7 2.051 Compiler for C supports arguments -fno-strict-aliasing: YES 
+#7 2.051 Compiler for C supports arguments -fno-delete-null-pointer-checks: YES 
+#7 2.051 Compiler for C supports arguments -fdiagnostics-show-option: YES 
+#7 2.051 Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+#7 2.051 Run-time dependency libcrypto found: YES 3.0.13
+#7 2.051 Run-time dependency libssl found: YES 3.0.13
+#7 2.051 Did not find CMake 'cmake'
+#7 2.051 Found CMake: NO
+#7 2.051 Run-time dependency p11-kit-1 found: NO  (tried pkg-config and cmake)
+#7 2.051 Has header "dlfcn.h" : YES 
+#7 2.051 Configuring config.h using configuration
+#7 2.051 Compiler for C supports link arguments -Wl,--version-script,/opt/pkcs11-provider-0.6/src/provider.map: YES 
+#7 2.051 Run-time dependency nss-softokn found: NO  (tried pkg-config and cmake)
+#7 2.051 Run-time dependency nss found: NO  (tried pkg-config and cmake)
+#7 2.051 Program setup.sh found: YES (/opt/pkcs11-provider-0.6/tests/setup.sh)
+#7 2.051 Program valgrind found: NO
+#7 2.051 Program test-wrapper found: YES (/opt/pkcs11-provider-0.6/tests/test-wrapper)
+#7 2.051 Build targets in project: 10
+#7 2.051 
+#7 2.051 Found ninja-1.13.2.git.kitware.jobserver-pipe-1 at /opt/testenv/bin/ninja
+#7 2.166 ninja: Entering directory `/opt/pkcs11-build'
+#7 2.219 [1/20] Compiling C object src/pkcs11.so.p/decoder.c.o
+#7 2.221 [2/20] Compiling C object src/pkcs11.so.p/debug.c.o
+#7 2.230 [3/20] Compiling C object src/pkcs11.so.p/asymmetric_cipher.c.o
+#7 2.235 [4/20] Compiling C object src/pkcs11.so.p/encoder.c.o
+#7 2.274 [5/20] Compiling C object src/pkcs11.so.p/exchange.c.o
+#7 2.277 [6/20] Compiling C object src/pkcs11.so.p/digests.c.o
+#7 2.293 [7/20] Compiling C object src/pkcs11.so.p/kdf.c.o
+#7 2.307 [8/20] Compiling C object src/pkcs11.so.p/pk11_uri.c.o
+#7 2.323 [9/20] Compiling C object src/pkcs11.so.p/keymgmt.c.o
+#7 2.360 [10/20] Compiling C object src/pkcs11.so.p/interface.c.o
+#7 2.364 [11/20] Compiling C object src/pkcs11.so.p/random.c.o
+#7 2.398 [12/20] Compiling C object src/pkcs11.so.p/provider.c.o
+#7 2.420 [13/20] Compiling C object src/pkcs11.so.p/session.c.o
+#7 2.430 [14/20] Compiling C object src/pkcs11.so.p/objects.c.o
+#7 2.449 [15/20] Compiling C object src/pkcs11.so.p/slot.c.o
+#7 2.449 [16/20] Compiling C object src/pkcs11.so.p/signature.c.o
+#7 2.466 [17/20] Compiling C object src/pkcs11.so.p/tls.c.o
+#7 2.470 [18/20] Compiling C object src/pkcs11.so.p/store.c.o
+#7 2.515 [19/20] Compiling C object src/pkcs11.so.p/util.c.o
+#7 2.537 [20/20] Linking target src/pkcs11.so
+#7 2.538 INFO: autodetecting backend as ninja
+#7 2.538 INFO: calculating backend command to run: /opt/testenv/bin/ninja -C /opt/pkcs11-build -j 4
+#7 2.655 ninja: Entering directory `/opt/pkcs11-build'
+#7 2.655 ninja: no work to do.
+#7 2.662 Installing src/pkcs11.so to /usr/lib/aarch64-linux-gnu/ossl-modules
+#7 2.662 Installing /opt/pkcs11-provider-0.6/docs/provider-pkcs11.7 to /usr/local/share/man/man7
+#7 DONE 2.8s
+
+#8 [4/5] COPY openssl-provider.cnf /src/openssl-provider.cnf
+#8 DONE 0.0s
+
+#9 [5/5] RUN openssl list -providers && /src/bin/tests/system/feature-test --md5
+#9 0.149 Providers:
+#9 0.149   default
+#9 0.149     name: OpenSSL Default Provider
+#9 0.149     version: 3.0.13
+#9 0.149     status: active
+#9 0.149   pkcs11
+#9 0.149     name: PKCS#11 Provider
+#9 0.149     version: 3.0.13
+#9 0.149     status: active
+#9 0.157 Segmentation fault
+#9 ERROR: process "/bin/sh -c openssl list -providers && /src/bin/tests/system/feature-test --md5" did not complete successfully: exit code: 139
+------
+ > [5/5] RUN openssl list -providers && /src/bin/tests/system/feature-test --md5:
+0.149 Providers:
+0.149   default
+0.149     name: OpenSSL Default Provider
+0.149     version: 3.0.13
+0.149     status: active
+0.149   pkcs11
+0.149     name: PKCS#11 Provider
+0.149     version: 3.0.13
+0.149     status: active
+0.157 Segmentation fault
+------
+provider.Dockerfile:15
+--------------------
+  13 |     COPY openssl-provider.cnf /src/openssl-provider.cnf
+  14 |     ENV OPENSSL_CONF=/src/openssl-provider.cnf
+  15 | >>> RUN openssl list -providers && /src/bin/tests/system/feature-test --md5
+  16 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c openssl list -providers && /src/bin/tests/system/feature-test --md5" did not complete successfully: exit code: 139

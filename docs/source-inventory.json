@@ -1,0 +1,5610 @@
+{
+  "source_directory": "bind-9.20.27",
+  "total_files": 5224,
+  "c_header_files": 883,
+  "c_header_lines": 463998,
+  "components": {
+    "bin/check": {
+      "files": 4,
+      "lines": 2091
+    },
+    "bin/confgen": {
+      "files": 8,
+      "lines": 1012
+    },
+    "bin/delv": {
+      "files": 1,
+      "lines": 2355
+    },
+    "bin/dig": {
+      "files": 6,
+      "lines": 10872
+    },
+    "bin/dnssec": {
+      "files": 12,
+      "lines": 12711
+    },
+    "bin/named": {
+      "files": 37,
+      "lines": 34087
+    },
+    "bin/nsupdate": {
+      "files": 1,
+      "lines": 3580
+    },
+    "bin/plugins": {
+      "files": 2,
+      "lines": 1745
+    },
+    "bin/rndc": {
+      "files": 3,
+      "lines": 1136
+    },
+    "bin/tests": {
+      "files": 28,
+      "lines": 9338
+    },
+    "bin/tools": {
+      "files": 7,
+      "lines": 3483
+    },
+    "doc/misc": {
+      "files": 1,
+      "lines": 192
+    },
+    "fuzz": {
+      "files": 15,
+      "lines": 2144
+    },
+    "lib/dns": {
+      "files": 391,
+      "lines": 220499
+    },
+    "lib/isc": {
+      "files": 193,
+      "lines": 60391
+    },
+    "lib/isccc": {
+      "files": 15,
+      "lines": 3264
+    },
+    "lib/isccfg": {
+      "files": 16,
+      "lines": 18958
+    },
+    "lib/ns": {
+      "files": 25,
+      "lines": 26242
+    },
+    "tests/bench": {
+      "files": 9,
+      "lines": 2830
+    },
+    "tests/dns": {
+      "files": 39,
+      "lines": 19500
+    },
+    "tests/include": {
+      "files": 4,
+      "lines": 603
+    },
+    "tests/isc": {
+      "files": 54,
+      "lines": 22714
+    },
+    "tests/isccfg": {
+      "files": 3,
+      "lines": 655
+    },
+    "tests/libtest": {
+      "files": 4,
+      "lines": 1623
+    },
+    "tests/ns": {
+      "files": 5,
+      "lines": 1973
+    }
+  },
+  "system_test_directories": [
+    "_common",
+    "acl",
+    "additional",
+    "addzone",
+    "allow_query",
+    "auth",
+    "autosign",
+    "bailiwick",
+    "builtin",
+    "cacheclean",
+    "camp",
+    "cap_glues",
+    "case",
+    "catz",
+    "cdnxdomain",
+    "cds",
+    "chain",
+    "checkconf",
+    "checkconf_keys",
+    "checkds",
+    "checknames",
+    "checkzone",
+    "cipher_suites",
+    "class",
+    "cname_dname_negcache",
+    "cookie",
+    "cpu",
+    "database",
+    "dialup",
+    "digdelv",
+    "dispatch",
+    "dlzexternal",
+    "dns64",
+    "dns64_dname",
+    "dnssec",
+    "dnssec_bypass",
+    "dnssec_cname_response",
+    "dnssec_nsec3",
+    "dnssec_parent_rrsig",
+    "dnssec_py",
+    "dnssec_wildcard",
+    "dnstap",
+    "doth",
+    "dsdigest",
+    "dyndb",
+    "ecdsa",
+    "eddsa",
+    "ednscompliance",
+    "emptyzones",
+    "enginepkcs11",
+    "expiredglue",
+    "fetchlimit",
+    "filters",
+    "formerr",
+    "forward",
+    "fwdfirst",
+    "geoip2",
+    "glue",
+    "hooks",
+    "host",
+    "idna",
+    "include_multiplecfg",
+    "inline",
+    "integrity",
+    "isctest",
+    "ixfr",
+    "ixfr_nonminimal",
+    "journal",
+    "kasp",
+    "keepalive",
+    "keyfromlabel",
+    "ksr",
+    "legacy",
+    "limits",
+    "logfileconfig",
+    "masterfile",
+    "masterformat",
+    "metadata",
+    "migrate2kasp",
+    "mirror",
+    "mirror_root_zone",
+    "mismatchtcp",
+    "mkeys",
+    "multisigner",
+    "names",
+    "notify",
+    "nsec",
+    "nsec3",
+    "nsec3_impersonation",
+    "nsec_grandparent",
+    "nsec_ixfr",
+    "nsec_piggyback",
+    "nsec_synthesis",
+    "nslookup",
+    "nsprocessinglimit",
+    "nsupdate",
+    "nta",
+    "nzd2nzf",
+    "optout",
+    "padding",
+    "pending",
+    "pipelined",
+    "proxy",
+    "qmin",
+    "qpcache_rrsig_any",
+    "query_source",
+    "randomizens",
+    "reclimit",
+    "redirect",
+    "resend_loop",
+    "resolver",
+    "rfc5011",
+    "rndc",
+    "rndc_confgen",
+    "rollover",
+    "rollover_algo_csk",
+    "rollover_algo_ksk_zsk",
+    "rollover_csk_roll1",
+    "rollover_csk_roll2",
+    "rollover_dynamic2inline",
+    "rollover_enable_dnssec",
+    "rollover_going_insecure",
+    "rollover_ksk_3crowd",
+    "rollover_ksk_doubleksk",
+    "rollover_lifetime",
+    "rollover_multisigner",
+    "rollover_straight2none",
+    "rollover_zsk_prepub",
+    "rootkeysentinel",
+    "rpz",
+    "rpzextra",
+    "rpzrecurse",
+    "rrchecker",
+    "rrl",
+    "rrsetorder",
+    "rsabigexponent",
+    "runtime",
+    "selfpointedglue",
+    "selftest",
+    "serve_stale",
+    "sfcache",
+    "sfcache_cname",
+    "shutdown",
+    "sig0",
+    "smartsign",
+    "sortlist",
+    "spf",
+    "srtt",
+    "ssumaxtype",
+    "ssutoctou",
+    "staticstub",
+    "statistics",
+    "statschannel",
+    "stress",
+    "stub",
+    "synthfromdnssec",
+    "tcp",
+    "timeouts",
+    "tkey",
+    "tkeyleak",
+    "tools",
+    "transport_acl",
+    "transport_change",
+    "tsig",
+    "tsiggss",
+    "ttl",
+    "unknown",
+    "upforwd",
+    "verify",
+    "views",
+    "wildcard",
+    "xfer",
+    "xfer_servers_list",
+    "xferquota",
+    "zero",
+    "zonechecks"
+  ],
+  "source_files": [
+    {
+      "path": "bin/check/check-tool.c",
+      "lines": 688,
+      "sha256": "c0da13267f3a7b0e2d156aa9de32fd94adea90846c5aa749386c6c5726a966dd",
+      "status": "unported"
+    },
+    {
+      "path": "bin/check/check-tool.h",
+      "lines": 52,
+      "sha256": "8ac849c4446b9c0ae32643922fe322bc0f7cadd814b0404878fc520fdb38ffd5",
+      "status": "unported"
+    },
+    {
+      "path": "bin/check/named-checkconf.c",
+      "lines": 775,
+      "sha256": "2bb3ed90ffc0fa01a6c9272d8db83b5d5cda619e7373c08b436ae74809aa7928",
+      "status": "unported"
+    },
+    {
+      "path": "bin/check/named-checkzone.c",
+      "lines": 576,
+      "sha256": "bffc2bbc01a12da9385d899e88d57bf964e4664e5574f7657c3c9309599aba0d",
+      "status": "unported"
+    },
+    {
+      "path": "bin/confgen/include/confgen/os.h",
+      "lines": 33,
+      "sha256": "4dad0d7c5176d4f014d95d4b6fb3c0f957206233678d1c3040d98c8a81721eec",
+      "status": "unported"
+    },
+    {
+      "path": "bin/confgen/keygen.c",
+      "lines": 206,
+      "sha256": "2c020cf8b2559f262cd7233bc4ee688e1e53bcb14213024ca78434b13ada1aa8",
+      "status": "unported"
+    },
+    {
+      "path": "bin/confgen/keygen.h",
+      "lines": 44,
+      "sha256": "f91929c2c7ffe080b72103191b9fa6228f5ab74c8b30e94d3925230606748233",
+      "status": "unported"
+    },
+    {
+      "path": "bin/confgen/os.c",
+      "lines": 36,
+      "sha256": "cd79acbef6a700af5f35caab5e387aa98efa218c9c57192cf605241b4ed35273",
+      "status": "unported"
+    },
+    {
+      "path": "bin/confgen/rndc-confgen.c",
+      "lines": 297,
+      "sha256": "66dd6fdca70244a7a252563003a127b93473d536be9c0ecb3bc0d9a9371caea1",
+      "status": "unported"
+    },
+    {
+      "path": "bin/confgen/tsig-keygen.c",
+      "lines": 303,
+      "sha256": "6b31fd983e4a3396cc28163fecb954b473966db7b8ff85e91a3b6a7792bd129f",
+      "status": "unported"
+    },
+    {
+      "path": "bin/confgen/util.c",
+      "lines": 51,
+      "sha256": "8169985c0c3df4598a727eae96396a79f704297a75fba1d94ddca444f1c4b587",
+      "status": "unported"
+    },
+    {
+      "path": "bin/confgen/util.h",
+      "lines": 42,
+      "sha256": "3cf2b136b5ccd3caaf6579c90535ab41a5d1b38fe3a4ab9f91ff5f24577f538d",
+      "status": "unported"
+    },
+    {
+      "path": "bin/delv/delv.c",
+      "lines": 2355,
+      "sha256": "b604fd79d1f7dc8cd39b6af8c032322a9b0944c88e11777e6a1ef6f5fac6197d",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dig/dig.c",
+      "lines": 3476,
+      "sha256": "a3f12f3b1b3ed3c4a2b9148268b3a10405aee82230adbe8886785ce49b1f576b",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dig/dighost.c",
+      "lines": 4952,
+      "sha256": "41c66ee10e74cc8bf3ee341a694930827355fe4f915c9ed37355c7c1473c81b0",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dig/dighost.h",
+      "lines": 470,
+      "sha256": "3cf07a37e642b41438e5a0dbdccc5c28cc79067277a3a904766700dd17cc1123",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dig/host.c",
+      "lines": 932,
+      "sha256": "d87f2f593e0a0091f36bac8d31d7cc59d44638b1e2f07fb9597577cd8eda5989",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dig/nslookup.c",
+      "lines": 984,
+      "sha256": "f0a09eca81c225a9681a44cf552c7578ee0aac4885635155a50f42dedcf41850",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dig/readline.h",
+      "lines": 58,
+      "sha256": "529355414bf5a08f1bd68b96d2b94f0f00eea51115a195ce4cfd82a771adc4a2",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssec-cds.c",
+      "lines": 1361,
+      "sha256": "53980e8d753fcb9773572198d6a49837617fdaa3fb82920a2f0be7fe65dd5be0",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssec-dsfromkey.c",
+      "lines": 575,
+      "sha256": "2069e38b826c0bfc2f97ea90fd45281f41935a2b59b5abe5e1c225942a74c502",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssec-importkey.c",
+      "lines": 479,
+      "sha256": "a84347e91f3c1aa1babb7a79848c1361f8f3b66cc3cfec5eb65e0d0c602ca28d",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssec-keyfromlabel.c",
+      "lines": 776,
+      "sha256": "89cdc8e8643c447855c3c3a777ebfacb1dd56024a9856caa7c7eb623f615b952",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssec-keygen.c",
+      "lines": 1353,
+      "sha256": "c32b4050fadbd96aab77fd3149bdc6a8360c5068d02fbcbcea33cbdc942e578f",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssec-ksr.c",
+      "lines": 1476,
+      "sha256": "b74960c8013f5e66ad676084cb4f6f933778ff775e6917ed1d4cc79eab427ba7",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssec-revoke.c",
+      "lines": 263,
+      "sha256": "966536982941fe14153f99337074a4dd4de7c9c1f520107afdf25a718e41b3c6",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssec-settime.c",
+      "lines": 967,
+      "sha256": "c3d699418f0611f26ce98536fcdb27cc5662fcc0b092f8a6639e6090bd78d6a4",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssec-signzone.c",
+      "lines": 4272,
+      "sha256": "6eacb5517c2fba741c40c1fd4f8461ae0d943e537a59685b6a09f8c53d510505",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssec-verify.c",
+      "lines": 349,
+      "sha256": "71b7dfe690a29bad654f425ee3ab2af49e84ef4047bed597cea5c73d93b00c88",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssectool.c",
+      "lines": 717,
+      "sha256": "7fe94143fc2b75c1893d368e398f5d5d850869fa342171bd51d21aa516b75fdb",
+      "status": "unported"
+    },
+    {
+      "path": "bin/dnssec/dnssectool.h",
+      "lines": 123,
+      "sha256": "56c12c188069b7926b6a28027ac35d018570a14648c16393c16b2beedf8f1933",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/builtin.c",
+      "lines": 1293,
+      "sha256": "9aa5a40617fa1a07142e4cc5cb0bd6ea38881e6efb85771b78758493aa261435",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/config.c",
+      "lines": 1013,
+      "sha256": "4d880025fd61c88365df8327154ccf8123ca4e992914f93e94f23cd4ef91a242",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/control.c",
+      "lines": 310,
+      "sha256": "8b4895af4ed3ccc4e47daa62aba36efe70b2fd0d675c2050a16a3d37fd318870",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/controlconf.c",
+      "lines": 1375,
+      "sha256": "28e187018bab891b4c2b673012971f9ef1dd551fc7a95f4511d590f524b64ad3",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/dlz_dlopen_driver.c",
+      "lines": 551,
+      "sha256": "478dc59c9821d937ee4ff133abd05080bbc999aa18e9ce8021208eb1ea70c2ce",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/fuzz.c",
+      "lines": 782,
+      "sha256": "550497dce5554cd9eb3ea44911ca4e1a0f0cf594de36cb94f917ecf08d79b1a5",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/geoip.c",
+      "lines": 146,
+      "sha256": "2a76bb717c2e387cc03fc2c58a4bef8d8d9f9e43bcb3bde927966723eea40163",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/dlz/dlz_dlopen_driver.h",
+      "lines": 20,
+      "sha256": "01b020bea1974bf669ceb615b1e1e8ee6688ea30f73e4b7a6eb0a324f71a092e",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/builtin.h",
+      "lines": 35,
+      "sha256": "88ce61a5e1d34be91d951e62ba4b2166c00690565f37e9b54c17c8840aef8924",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/config.h",
+      "lines": 69,
+      "sha256": "b2981274c9e715eb6af07d81c2fcc8b9bdb9c200eb94df4c2595be44e7f1e9d0",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/control.h",
+      "lines": 111,
+      "sha256": "b59b575f08b5c06de2955624106e1fa0fe83c5364c890d64c617120e02c8d548",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/fuzz.h",
+      "lines": 22,
+      "sha256": "d90499e3812caefb75a2a281c5d2004d8b80920884abc5e145cabfe5c88dacd2",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/geoip.h",
+      "lines": 28,
+      "sha256": "7b31419db010ee99d1be245439414cea8f8a5d1b384bf0561963581008515233",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/globals.h",
+      "lines": 150,
+      "sha256": "6766451d78be77a9f2db1fe444a52ccc59cb6ce5ec592912db379f3960b54b6c",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/log.h",
+      "lines": 84,
+      "sha256": "1f0e5cac60eeca4a6ed3e618f8e77c8528a9d8cebe3546e20d8b480beee3e0ef",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/logconf.h",
+      "lines": 25,
+      "sha256": "ce89672192b94d72f7e04dca94ca23ed0bdb6523f5b73158f76b283ececb4b73",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/main.h",
+      "lines": 39,
+      "sha256": "617aeb75eec5de6032cf8200334ee686c78b59a788dbffce08397a6d94925930",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/os.h",
+      "lines": 88,
+      "sha256": "30bc0d51564f3cfda19a20927ee2cdc1e2fce1c38532fdcaaab3f9a194f12857",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/server.h",
+      "lines": 412,
+      "sha256": "0fb0851a505990d6252967ae9bb4b0cd9d760b17b8524c71968ffe885ea02f1d",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/smf_globals.h",
+      "lines": 38,
+      "sha256": "975d17b16a2b81e205896b2e86dbe78f8267c0914ba53f8426ee67aa99d48a60",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/statschannel.h",
+      "lines": 52,
+      "sha256": "2dbc71d0042572fd46b9e03297330965dd126b46e11c5ff4d0a36200668a9af7",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/tkeyconf.h",
+      "lines": 43,
+      "sha256": "09115f9874c1f7ce47181c2c2774f74cc0b1713617ba4446504ede2bae07415a",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/transportconf.h",
+      "lines": 43,
+      "sha256": "1ab1b83136902a7227a97eea762081dc0a7bd22ee53f4b6ce63418fa64d39fc4",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/tsigconf.h",
+      "lines": 41,
+      "sha256": "5953be8269a6842b4160021a13f4ddbfb39cdb927f418854598f4687cb80269e",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/types.h",
+      "lines": 38,
+      "sha256": "1bca3555db08938d5fc8094a22049ec584ec3b511e0eddf3fbe4e8ef57dc23bf",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/include/named/zoneconf.h",
+      "lines": 80,
+      "sha256": "97ed8b3bbab97d6efa2e2cfee8c0dfafbf5dce095d546aa253d4cf52220e8239",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/log.c",
+      "lines": 257,
+      "sha256": "b8bf7c439fd3973016acfa0a46548de35c8e90c1517b7ffc68b8c12b62395b5c",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/logconf.c",
+      "lines": 365,
+      "sha256": "5e85070d338559d56f486d0a145a37da9329b37d68920a881a0d49583fd17cfe",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/main.c",
+      "lines": 1682,
+      "sha256": "fa70dc918e1256d9e8c32017ec2646d89a8cfd187ce90cd84f904397142d69ca",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/os.c",
+      "lines": 1025,
+      "sha256": "8c3ed9491b7db9c54e4ea1ccd837b131d6994474e418530bae4fc4d86bc3f866",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/server.c",
+      "lines": 17079,
+      "sha256": "9df402c9a3439fde79e8ae0a5a8a21e585703127f289f246f0003648bbf0fdc7",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/statschannel.c",
+      "lines": 4180,
+      "sha256": "c80bc1a6e66d7a85c114676f1f185f5f08f24594c5a653f1c8a3aa6ff47934c0",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/tkeyconf.c",
+      "lines": 77,
+      "sha256": "1ae6c7da7fcbd90f96282e772203a445b5c1c3a1bf151ef64190c9f631da11f2",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/transportconf.c",
+      "lines": 255,
+      "sha256": "56b93591a53c6281a5dd7f92f78df5c5871e976f21e047c8eb4461132731b757",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/tsigconf.c",
+      "lines": 180,
+      "sha256": "158d5459b095cea5df18a13796788b9623c9a15f9e2e6ca152795798ea0d7695",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/xsl_p.h",
+      "lines": 16,
+      "sha256": "ce4c31e9c4c9031d4e8d278a73091cebe9819141962e9ebfee738e9368262704",
+      "status": "unported"
+    },
+    {
+      "path": "bin/named/zoneconf.c",
+      "lines": 2083,
+      "sha256": "47f174024d32a65d58856a312997c302ba240a53370628aa5330059ebfecafa0",
+      "status": "unported"
+    },
+    {
+      "path": "bin/nsupdate/nsupdate.c",
+      "lines": 3580,
+      "sha256": "07471e3ade15beadaf7af4468a8ab8c14ee1049f7a9b73250e75a138746f731a",
+      "status": "unported"
+    },
+    {
+      "path": "bin/plugins/filter-a.c",
+      "lines": 871,
+      "sha256": "93b35fb14f1acde0c6750f90f680ef3e5a1bd3505b36f6ff7d93adc89eb3ff8d",
+      "status": "unported"
+    },
+    {
+      "path": "bin/plugins/filter-aaaa.c",
+      "lines": 874,
+      "sha256": "70cd33f590d761bc0f32d3d8f9f3c2278f582ed3751100250f5a7348ccdce8b8",
+      "status": "unported"
+    },
+    {
+      "path": "bin/rndc/rndc.c",
+      "lines": 1044,
+      "sha256": "5fbccda460b66ea47edc665acf6b530d99b9afce34b39b081984b48cc2a9d8ad",
+      "status": "unported"
+    },
+    {
+      "path": "bin/rndc/util.c",
+      "lines": 50,
+      "sha256": "ae268f5f5b30f3fe4ddaf29ec4439eb750c83e9ee820f1690381a7e8cfa45090",
+      "status": "unported"
+    },
+    {
+      "path": "bin/rndc/util.h",
+      "lines": 42,
+      "sha256": "3cf2b136b5ccd3caaf6579c90535ab41a5d1b38fe3a4ab9f91ff5f24577f538d",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dlzexternal/driver/driver.c",
+      "lines": 851,
+      "sha256": "1b83c1cf2b59b3f5027ee87193b65f57cd68f082ea7ba65e90ae115968fef51d",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dlzexternal/driver/driver.h",
+      "lines": 35,
+      "sha256": "e3ec126acf65a2ebd90b874dfc6fff5dd2b1328d92fa9f90744f8838d7580e93",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/db.c",
+      "lines": 646,
+      "sha256": "7481af1e26f4ae4091cb9205acd154288e0505a99ab34cdd6b3afe086feffdcf",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/db.h",
+      "lines": 47,
+      "sha256": "fffb98f1d69ec0291dfa32b1454c6a944e57b92b205880716790fd7b12ee0a2b",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/driver.c",
+      "lines": 164,
+      "sha256": "1c08c761ac5dea4243798d05d9fae38eb5121a77ff2777e8a7c9a538db15b931",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/instance.c",
+      "lines": 228,
+      "sha256": "67860151190ba0d3aeb03c4b3625c63b89453f0787de025edcb6a0e0658ac351",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/instance.h",
+      "lines": 73,
+      "sha256": "e60974cad23ef20b8f2d348d135faaefb086e9bcb0eb7483bee4c2abe1e8fd2f",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/log.c",
+      "lines": 44,
+      "sha256": "f318bd1b2d7019b993dde74fa4e9c97b665c4a1156e3c5821ce7811995d80b72",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/log.h",
+      "lines": 45,
+      "sha256": "60b6d3c5936d33ed92e3900bb59949d7a4a592ca54c85cc64411c37e271994bf",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/syncptr.c",
+      "lines": 322,
+      "sha256": "0885fedba41130fee787a0abd1db1c247a9d8e1600346b0a58840ca3853564c3",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/syncptr.h",
+      "lines": 46,
+      "sha256": "bb3a3ff6f21926ced92d926995ca29437149ddafc9b4be5c52d9925d3bf0c586",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/util.h",
+      "lines": 40,
+      "sha256": "4783fdf8e10895298362497bf193684e8b7a8b7a72a35c7a5a2e4e05e3ebcf3f",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/zone.c",
+      "lines": 258,
+      "sha256": "854bf4d08a4d9e5958095cd6c667e6917e6b991ffccb5a85d82c15540946f002",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/dyndb/driver/zone.h",
+      "lines": 45,
+      "sha256": "36d834ac305c323b6619d07f3a68ffa85747bc5015805e3a603d7936b2172647",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/feature-test.c",
+      "lines": 274,
+      "sha256": "90da238bfdc80acd11accfbcdd15406e1aa6ff7590ceda4eba9a5e2931502605",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/hooks/driver/test-async.c",
+      "lines": 342,
+      "sha256": "db01c6fa66e3e951da5d861c274c5595efc98d4361f2f2a6fcb709796beed5f1",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/makejournal.c",
+      "lines": 162,
+      "sha256": "116535bef67794fe3d6c93704345f93b554f089149e473ce80ca0798ac6a2876",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/pipelined/pipequeries.c",
+      "lines": 304,
+      "sha256": "637e1d08efbceb206b7fa5889f3bffe80460bbee33ba2ec64d75544541dfc5ae",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/rndc/gencheck.c",
+      "lines": 88,
+      "sha256": "4eacba5b4b8442ddf66b52401c668bdd80d2921c660b4abc8f99e55061c366b2",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/rpz/dnsrps.c",
+      "lines": 153,
+      "sha256": "0d4c83876b96192ae33c3c0b336690867b6d0a7b4618df5f5aa64d343ceff66e",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/rpz/testlib/dummylib.c",
+      "lines": 2230,
+      "sha256": "0be867f576e20c4db349b87102cd4dbd9ebe4e0429363e7d23815c4e5dc354b0",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/rpz/testlib/test-data.c",
+      "lines": 1495,
+      "sha256": "d81a37f3305a2570537f77d8bc1a8142902d902d3aaf93c113f795e73f73d5d3",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/rpz/testlib/test-data.h",
+      "lines": 140,
+      "sha256": "ae52431cda38666b4c2cbb7cc34105c3c742cbb23d16d472ec22f0a37c1bd923",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/rpz/testlib/trpz.h",
+      "lines": 58,
+      "sha256": "b20ac7ab0b12ca93fe4ebf5ede7b75a6fb1a0cc3b3ac9d430ff0232992576af8",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/system/rsabigexponent/bigkey.c",
+      "lines": 154,
+      "sha256": "9bb06fe2df778ed473880373ad3aac360a2f7ca12e0ac6d7d7e2b6983d94001f",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/test_client.c",
+      "lines": 435,
+      "sha256": "7c1740ff7d9a73afd1cc6bb320a0165b0d139c303b54730473e7417823c6fa05",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/test_server.c",
+      "lines": 307,
+      "sha256": "8bc4bf6f57d14af8f1aeae75e6fbb442b20f9670a2b86d29cd591d5a4b28f730",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tests/wire_test.c",
+      "lines": 352,
+      "sha256": "aa913bb7325ce2b215506e712f5bd2c9bcb4dd005e8745abac684e99044df152",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tools/arpaname.c",
+      "lines": 47,
+      "sha256": "e07fa00c3e3fb964c29a0f318ea34449e17a6d82e8b2de455a1d9ab781c535c9",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tools/dnstap-read.c",
+      "lines": 436,
+      "sha256": "b825534e2e6466e5f85bba99fd33b687bed5bdc69a8372da0e1a74287b67fcb9",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tools/mdig.c",
+      "lines": 2216,
+      "sha256": "4289f8bf7a5e4897c41f6d0573eea619a6f6b0c68fc141a3c2ded0e13a8088bb",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tools/named-journalprint.c",
+      "lines": 133,
+      "sha256": "3d5334f3b9dd382fa2de713669257caf0cc0225f344db929a64209420cd5b3ec",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tools/named-nzd2nzf.c",
+      "lines": 101,
+      "sha256": "9bcbb7ce6c4722f38392338068935c13ab71988c59f2ee6c88c106c4926810b2",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tools/named-rrchecker.c",
+      "lines": 347,
+      "sha256": "e61d1f7429126775c8587361d671dcfc9b4879873dac0fbf6ec68aa381395fc0",
+      "status": "unported"
+    },
+    {
+      "path": "bin/tools/nsec3hash.c",
+      "lines": 203,
+      "sha256": "28e723948ed072adbca2867a0e84f35166a445990406103137440c937e94dce0",
+      "status": "unported"
+    },
+    {
+      "path": "doc/misc/cfg_test.c",
+      "lines": 192,
+      "sha256": "02d80a68361ee61d3d96c6503c4532e309b3a0e6968efb87177855f770525fd3",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/dns_master_load.c",
+      "lines": 79,
+      "sha256": "b586508fb5dbe432da84711f124658e2c6cda0bca119d63032cbd357242ff4cd",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/dns_message_checksig.c",
+      "lines": 481,
+      "sha256": "40f78817e6765b8578cbf7489baff63fca1672095fed639d2a734e6b8439c818",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/dns_message_parse.c",
+      "lines": 185,
+      "sha256": "f20dddc8a16e8ac8f948f3a696999028aa0392aad3541a14705eed9f3f144c98",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/dns_name_fromtext_target.c",
+      "lines": 51,
+      "sha256": "be578f56fb378dc287114e54d4bd291214420593ca551fbb4ea6a49e2ecf984f",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/dns_name_fromwire.c",
+      "lines": 103,
+      "sha256": "54896007fedb9571cd06f6bab4636093af30da140ef14b54556a9a27b381a36d",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/dns_qp.c",
+      "lines": 223,
+      "sha256": "67b8ceb5ff36d3cea122e4329dfb80e8dc88c45e1b425543a2f68722e4e5081e",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/dns_qpkey_name.c",
+      "lines": 79,
+      "sha256": "2c17f57c0b4999a20ac68b8cd648836fd90c865ff4c212a2f7c845a4b86ed0e9",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/dns_rdata_fromtext.c",
+      "lines": 150,
+      "sha256": "48cba210effeff52dd3e76b0fe1a6dfaa317c123859b70ee9b5a68aa78bb3736",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/dns_rdata_fromwire_text.c",
+      "lines": 215,
+      "sha256": "ed17a73e2a243bd74753fc5efd48a30fafc198fd0b505422f6aa4ffc0d015764",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/fuzz.h",
+      "lines": 39,
+      "sha256": "401ed5172f58c6c95919f57e6102e615e450dc984e7831d65097ebf64692c5eb",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/isc_lex_getmastertoken.c",
+      "lines": 76,
+      "sha256": "80d0bc468f0ac1978934f1cf35b50104f80129b8c24b0d26f0cdbc35f2ad9fb5",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/isc_lex_gettoken.c",
+      "lines": 55,
+      "sha256": "6a099387afd517dee55cba6aac6f067eee2d5281499e5676b2141323bc9b0cc2",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/main.c",
+      "lines": 164,
+      "sha256": "ffc2b8a72394bfe31741def11915bb5224952eadaa82b92916265c67c85e7088",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/old.c",
+      "lines": 223,
+      "sha256": "621940b519f36df7b8a877473948a22d4d59665ddba99243ffdcf5eb4ef28ce5",
+      "status": "unported"
+    },
+    {
+      "path": "fuzz/old.h",
+      "lines": 21,
+      "sha256": "462c23136396d84e2186db0faae78391aea9f6b7f7a457d0dc4b2111fc9646a1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/acl.c",
+      "lines": 798,
+      "sha256": "792cc72451e21f3a9baf004a953cc68dc0c28859761ccaaa40315704b3808ad1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/adb.c",
+      "lines": 3575,
+      "sha256": "13dcc0abd464485afd1a016663bcfb79dd62edc39502134a11798b41f33493f2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/badcache.c",
+      "lines": 400,
+      "sha256": "9e2cce290d9c7efa62edbc8606e857d01b37f36c487223d9cdf05395a62594f9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/byaddr.c",
+      "lines": 84,
+      "sha256": "f9f4d86a203d193d8cfcf8df0f9e96083d42f047a0dd1b7eca383b60f787d981",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/cache.c",
+      "lines": 790,
+      "sha256": "be65d806127d8319865c467ce43dabd2004886446540d97bfefc057894ed0e87",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/callbacks.c",
+      "lines": 102,
+      "sha256": "4b3701533cef38013a2c06d73e438e9500b997a43db52be8133b25a3dd86ec22",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/catz.c",
+      "lines": 2687,
+      "sha256": "a554ac1f02cb9b10fcfff37fc9fb40d20d4bad3efc85adf04caa66d1c493dc64",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/client.c",
+      "lines": 1065,
+      "sha256": "780bb9954770f48ca4220dc3546849ef03d2562ee1faa780adef5a54b60ee1c4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/clientinfo.c",
+      "lines": 42,
+      "sha256": "75087fa59468d882a7e99e11302473176ad2e92f618882ee4828916e7e007cb7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/compress.c",
+      "lines": 364,
+      "sha256": "ed164fe456b84e91bc7831939d78d142c6668289b2c30b150591c4e36bde3a99",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/db.c",
+      "lines": 1527,
+      "sha256": "ef98a3a4b122707bcdc699c0eeab43f2814a568d13176b6288f64d4a9939f187",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/db_p.h",
+      "lines": 225,
+      "sha256": "6b5dbba118ab7376b5f3732c7d39e26a3ca3d87f0cbe87f18f2a240a9583eb0b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dbiterator.c",
+      "lines": 138,
+      "sha256": "0eed35c0cfa5ecac1461da47b8e6ca3ebacf38c077968611d031fffb19fcde28",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/diff.c",
+      "lines": 748,
+      "sha256": "11dab7d6cc48eea282da7d200e9d2548d8e8e17798364e7a40207ef0c7c3001d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dispatch.c",
+      "lines": 2450,
+      "sha256": "2031c032d021266072661a54918dbdc7fcb59653b28d2ff15f3a6035d92529dd",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dlz.c",
+      "lines": 530,
+      "sha256": "51e12f6297f4da0e0a0377a5be380fe6297cce54384ad2414f3c8d159bf4f7e5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dns64.c",
+      "lines": 484,
+      "sha256": "01176df73c791b946cffa19f515c682c65b8af7eb165026edd11c3704d551ba2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dnsrps.c",
+      "lines": 933,
+      "sha256": "cb33ded3dafc970d8e9a52e735f4991e027a3e5137c39ca4a626a3ae6ae4436b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dnssec.c",
+      "lines": 2510,
+      "sha256": "3e27e6858be6c0af4c0880eca78c9fd25f236b092168070d87604cf8d0d428a3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dnstap.c",
+      "lines": 1376,
+      "sha256": "1f45a4ece8db9a08e13f755889b9629a7d3397d6c21a0e17b1c4db23258cda89",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/ds.c",
+      "lines": 135,
+      "sha256": "06a1d50cc213230840ed07b3608c38deba65962ed007e98702b4fbbfbc040fc2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dst_api.c",
+      "lines": 2732,
+      "sha256": "1c97d18db4fa5ae0172fa56a5fd1a6f48106f00125a734b8ca8d7a6dc8bd2da7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dst_internal.h",
+      "lines": 255,
+      "sha256": "f0a5648febb5036165ced8aa98c047b583ccb0b2c8db54d0347ff7a545f69405",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dst_openssl.h",
+      "lines": 62,
+      "sha256": "dc5e998c6bf937a14702685dc5898a39eab13aa7d890f4f9d42575ca7acbdfe6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dst_parse.c",
+      "lines": 778,
+      "sha256": "0273af33687f1629de6186198775e2344159bb89395036f603eebc392f433c2a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dst_parse.h",
+      "lines": 129,
+      "sha256": "912d81745fc941e250eb8e23346b9b3f9c09a0f8d9ea5dcdabed83021c24e73a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/dyndb.c",
+      "lines": 312,
+      "sha256": "fdc6ec8b43166347821b877ed53bddb4b16ff4a601034f00dcfe4cbbdb8c4dfc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/ecs.c",
+      "lines": 112,
+      "sha256": "5a56d5a8cda34422799b881bf9259b9f83b7f666374ffa845f5114e8648e7bdc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/ede.c",
+      "lines": 181,
+      "sha256": "12ad76ce198ccd27f917c8743b5c4e912cd09a98ec0e3371f48d3ce1d50228d4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/fixedname.c",
+      "lines": 39,
+      "sha256": "9a1f2e1760d667b22cf5f95f236a954df5e331298094bbefb358d4e5436e375d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/forward.c",
+      "lines": 251,
+      "sha256": "b8bf737986db30632c0249b944417097cc64f130c82c535795934043488be5c4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/gen.c",
+      "lines": 1030,
+      "sha256": "0ce1ad04e80c92a04c01aedfe472bd190e848195359fa4bdcd10323238699a98",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/geoip2.c",
+      "lines": 382,
+      "sha256": "6e968b8e22f7e45236bb8198d8a9053031c6db757d01a0f9f72a922dd61d3040",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/gssapi_link.c",
+      "lines": 363,
+      "sha256": "f87387358b0b48d589ad66bb51626d4311e0a5f44dae403eb8f02de66dbf8cf5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/gssapictx.c",
+      "lines": 964,
+      "sha256": "7dc8659b9f6241a3b949e6f8003727aab66a32094ac6e573550e0873a45c2368",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/hmac_link.c",
+      "lines": 530,
+      "sha256": "37af075734f016f256eeb3fffa48106cfc01d365fcc76340dcc3236ea8148449",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/acl.h",
+      "lines": 317,
+      "sha256": "696d45b0c938ad633798e313132158e1a5841866b24e769794137ccadfcdd363",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/adb.h",
+      "lines": 761,
+      "sha256": "0c86df4de6fdf9b310ea9bf4f610c34cb6fb6a5a2620d0d161520dd38dd61e13",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/badcache.h",
+      "lines": 150,
+      "sha256": "cf21c8ba9361fdd92e9c7319d23d4a1a6f2d532e4bdcaac8b19561a1e34ea26f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/bit.h",
+      "lines": 25,
+      "sha256": "c9ee7d8e94d4083a7bc85ecec3d936c0b856777c7c5d103b3a600bedd1e37bdf",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/byaddr.h",
+      "lines": 60,
+      "sha256": "36db22b0aa995dca6b2df2e348117372b8cb7d474ec31412e2f9a44536e1f38d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/cache.h",
+      "lines": 277,
+      "sha256": "260d5e1ae4acc2f9d7a6d6829770a58da9ae0e6809653738e4d62f5dd10356b6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/callbacks.h",
+      "lines": 104,
+      "sha256": "0e4884fb090f1607dda30eb799fcac2c53f985ed77e1471c7ab6043803b19280",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/catz.h",
+      "lines": 468,
+      "sha256": "477026e8697fe48373b6c67b26b60e794b2c14daea8b7c18db7bfca10b88381f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/cert.h",
+      "lines": 60,
+      "sha256": "41698eced1a868bdc4cf507881ff3fa8dc92bf849560606b2252e73f5c5a7814",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/client.h",
+      "lines": 296,
+      "sha256": "ad40bde035563375cea5c0afd5de1ffa021391566cf51d5f9333af5b7b66d162",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/clientinfo.h",
+      "lines": 102,
+      "sha256": "5669c6cae6ab6bbc66ab0ce623c4b777657848415c9c33f7152f7511dceae946",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/compress.h",
+      "lines": 232,
+      "sha256": "28d80119f81a7fedf5135878a477299d70c9e187b96f092757936512c083a496",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/db.h",
+      "lines": 1924,
+      "sha256": "656536a9b2c221fc74193eb7c14947f729ef62f744c522dd3b4114157814726b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/dbiterator.h",
+      "lines": 318,
+      "sha256": "f4d9b2d486f64c5b0fefd00e4bb9ba340b16096379baff1e7ec477be5f416c88",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/diff.h",
+      "lines": 312,
+      "sha256": "4074b6133e529faf1d3d1f7897a049b26628edba89ceef9278b7ff6f871d3ebe",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/dispatch.h",
+      "lines": 424,
+      "sha256": "beef5fc408e1f9e87336f024ef3394c571f02de78dff2a68cedd24b36fd22081",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/dlz.h",
+      "lines": 333,
+      "sha256": "ea689a2ae79f24bbde03674ef644700ffd457fb51a1f82a363d84ffa1cf7df99",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/dlz_dlopen.h",
+      "lines": 156,
+      "sha256": "a9bda3db9e21be3cb00084e3ebedb7a3853a8f7ce6a395752dfc66b4ce257074",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/dns64.h",
+      "lines": 194,
+      "sha256": "1c35edd351cc0d112267bd9b3b03d815fe7893828fa862424df0a4b2934da971",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/dnsrps.h",
+      "lines": 113,
+      "sha256": "03a27e8b3e37fb92ca4d40cb04da274b34793d210efa32ed8c43dd39716f613e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/dnssec.h",
+      "lines": 440,
+      "sha256": "66afbe22ad9aed4f3ee568f462886247a75c2b18070efc70c0f152b1ff3970d7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/dnstap.h",
+      "lines": 382,
+      "sha256": "83f7398917dd9e8da413576ddc221685caa51cb53893a07ba78982d4e41eb181",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/ds.h",
+      "lines": 68,
+      "sha256": "c20e687b0d63fb39feaee38eedfb0e354280eeb30648e79d50ee9880abbed2ae",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/dsdigest.h",
+      "lines": 69,
+      "sha256": "4295cf35afcb156cd64836a2e5ed1a319f7a0bca0bc8e2dd48a6b07d3757e7d4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/dsync.h",
+      "lines": 27,
+      "sha256": "7c85748aacf4cf99307d0b3ede08bacdaf1cd8f609098a25e0fdc087174f24dd",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/dyndb.h",
+      "lines": 158,
+      "sha256": "c4e0590febefe3059909450cde71517b0ccfd4d04bd5c08d73ed66ceda8e1274",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/ecs.h",
+      "lines": 81,
+      "sha256": "0a0ee040f4cd354ee9fcc6c884c6a11b69957e2da5d0ebd308e103e94ab1783d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/ede.h",
+      "lines": 157,
+      "sha256": "fd12696ddf68dc76d7a661176aff22d6fa9a1f70e5ac5bd5bd4dbd0c7a2b5404",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/edns.h",
+      "lines": 26,
+      "sha256": "85206b20ff2837d2f04a633f887d998f9586a114844ac6d65d0affd7be2eba84",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/fixedname.h",
+      "lines": 82,
+      "sha256": "e3cdc6ee3ee8561ff6f7af130d31d71a9ba4a0e454f845a4c45be34b280ede02",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/forward.h",
+      "lines": 125,
+      "sha256": "22666512d605ce82fcb524b5d043c906099007c166e39d9c3798ae5d6c7b139c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/geoip.h",
+      "lines": 111,
+      "sha256": "26f8222e4d6871f1461e9fcf6bed4b941175a973d36295a0ecdd5dd06d7dc202",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/ipkeylist.h",
+      "lines": 88,
+      "sha256": "43cb6da7e5c64cba817d22c4b39cc5a026c0f02285c2645d607aa54eba5e0c6c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/iptable.h",
+      "lines": 77,
+      "sha256": "ec17e31fff50f9db157f88fd094a8d53c63ea138a3a990a5b9794656d5533d5e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/journal.h",
+      "lines": 338,
+      "sha256": "ee6700707782613fc91101198a9652f282d64137564cbe3c9233d74a9918b575",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/kasp.h",
+      "lines": 947,
+      "sha256": "03231289a1ad358697030ed8f12816578e9ac18b1a1df35c6a6b270ecee49581",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/keydata.h",
+      "lines": 48,
+      "sha256": "ae5f67e05690116929f4bf69aeeda504a59afff463e3ba0ff6d8bf379737389a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/keyflags.h",
+      "lines": 45,
+      "sha256": "b6f912c19da5cef6b18ce76cb4ca7c073a7846eba891b2ba53170c8105227ee8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/keymgr.h",
+      "lines": 204,
+      "sha256": "034fee3ae5e57e61f2c228701e78df1ff0c35fc8d6bca25d1fcd7e1e2abd2fd2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/keystore.h",
+      "lines": 220,
+      "sha256": "3964c7dee01a2f9b096b34bf752238618d0dd1e8e8b5b75d0fbcd1ae2a5f9fca",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/keytable.h",
+      "lines": 299,
+      "sha256": "3114ca2b1d27e11544d6ee28a1a3d1434862ceef02dd63c8c292888de831db4a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/keyvalues.h",
+      "lines": 94,
+      "sha256": "c51fecf89f79dc6bda61506366d17b692ad58ea3833ee75b6cb06c01304f1b9d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/librpz.h",
+      "lines": 949,
+      "sha256": "b968d1df0d54b531a55dd10472b417e56f033dda336b9ff87cd3b914dfbe1706",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/log.h",
+      "lines": 113,
+      "sha256": "5e8ee00dec10b11b8b834557f25b21da6a209de2807dbdd945231fb431d24408",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/master.h",
+      "lines": 232,
+      "sha256": "d41826434c81d5d8b542611428000da207674805bc9461bc48d18b23663b9f21",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/masterdump.h",
+      "lines": 353,
+      "sha256": "a8a0a3a68307bfe030fea0773641f23e1e6ada8299cefe16c567cbf66e9e0e01",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/message.h",
+      "lines": 1493,
+      "sha256": "2b023d559a1535d8ec2a77349ccfb5cc92340ab21cae6c7a8795716b045317a7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/name.h",
+      "lines": 1359,
+      "sha256": "99c00cf4180d11307c4d36c10e9d5d5d509a4e0ed253bfe682c68ab50c9d7ff2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/nametree.h",
+      "lines": 193,
+      "sha256": "a97057c684cd3d76f7c0ad922a75f77d8d21b0908b945baf7beaabdc4cf125f6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/ncache.h",
+      "lines": 184,
+      "sha256": "a39300f678612e3fd843f518afc0d2452b54a55428cbedc126d8292d463ec187",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/nsec.h",
+      "lines": 139,
+      "sha256": "0066185d1fc24501dfca6c3383028ae2a519929a7bba652e5634fae7a8c359ea",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/nsec3.h",
+      "lines": 275,
+      "sha256": "3e91684048b31953e9d0c58bf2609461dcb490532ed648611400098c7c53559a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/nta.h",
+      "lines": 184,
+      "sha256": "cabd6d4c2ce61681580e6ffb88fc48fde37c8e90347d7030b96e7867f30b3360",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/opcode.h",
+      "lines": 43,
+      "sha256": "2e8861e60d9335f9b52eeab57356e2525cd280abdd58a63788a863396f5c59e8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/order.h",
+      "lines": 90,
+      "sha256": "a3b835ec86e96611cb85560dba23d6861bccd72325ec06401fb7852a2f9a1708",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/peer.h",
+      "lines": 214,
+      "sha256": "ea762b2d3155bf18dbf6d274138e747e1ad73a8de5e22bc1e5b1876e5e8e6590",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/private.h",
+      "lines": 73,
+      "sha256": "cff7f9ea8f7fbabc9d908ef7eb30f00030af3eda11878f3241a17f47e8d6450e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/qp.h",
+      "lines": 882,
+      "sha256": "390212af21677f8ce4f43d301f2ffcf5686e8b93e5b00266be1c35852eeb5703",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rbt.h",
+      "lines": 854,
+      "sha256": "47a3edb53b1df8736fcc889b86b8a060ffa4a825f1b33bdba0cf4c9e42d51fb2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rcode.h",
+      "lines": 107,
+      "sha256": "0dc8475319078a0d4fb5f58e7e9170c88ce82cc046b2e40fc310e7d6d2dc098d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rdata.h",
+      "lines": 827,
+      "sha256": "58341b10c0ac710face556e1a80ade45a60e7bbb05e76177cf1b279347b41d9e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rdataclass.h",
+      "lines": 91,
+      "sha256": "6f4263c6feb6f4d1a843c3918359a3e7883fb64489b85ed7aa6c37f6dd9900ec",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rdatalist.h",
+      "lines": 155,
+      "sha256": "83f0ec594119dac1728578d591d78e625b1f9c65a100ff9178fa2c6cf2ed19aa",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rdataset.h",
+      "lines": 707,
+      "sha256": "2821ffdfa5d265ccbef28407b1e669263316de3e43363e00ded1673caa32665f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rdatasetiter.h",
+      "lines": 170,
+      "sha256": "30ce35e92a75002c84bc79edca1746b2f405b03aca55d4a047f1b6e14dfbc7c4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rdataslab.h",
+      "lines": 329,
+      "sha256": "58fa71af0f9ae2d97ec1c87037dced79fad5a7401e70cc42756a1312bb40e6d6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rdatatype.h",
+      "lines": 102,
+      "sha256": "fec26c908e15d777b2c75834e3459f7d057c64ad945be88b963a09e1586ad839",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/remote.h",
+      "lines": 219,
+      "sha256": "068942772ddc7200c78b17cce0afe0860857c29364c3ca6fa2cb626405e8894b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/request.h",
+      "lines": 309,
+      "sha256": "c32a82968d460db84faae39ee2070bbdd450120b10614d630efd1c149c29cbb5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/resolver.h",
+      "lines": 653,
+      "sha256": "b9d34aa9d055b2a50f0e92804ac31bcaf48a3688e0a3b8e61ca83f9fa15c455c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/result.h",
+      "lines": 31,
+      "sha256": "1380bb1534adfa10e7ab28684da9e19bc8a115df1055ba5098f5a5692f63ceef",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rootns.h",
+      "lines": 36,
+      "sha256": "e15ed003881ce696e5235360a2f75e8a474a5969a7bd0abfa2083fb7541bfb22",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rpz.h",
+      "lines": 442,
+      "sha256": "408e46a5fc648ebcbabfe2eb07e848283b91b0197da96ec435303f4efa833d86",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rriterator.h",
+      "lines": 179,
+      "sha256": "f9e85082b9daf2a1c0562699e95596c884151d872884503faa38556acdb559e2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/rrl.h",
+      "lines": 269,
+      "sha256": "09fd2f8d93495717e6ed47c64cb3819d7994d60ad89cadfd925ca1bb012c8184",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/sdlz.h",
+      "lines": 356,
+      "sha256": "5521fe67f62dfe4bd8755ff2e63bac02c86840e134c2e8dfb465425fbc97160f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/secalg.h",
+      "lines": 69,
+      "sha256": "381181add453e961300b8e814c730a92e6d3d8782531922279d7c9cda2e5614f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/secproto.h",
+      "lines": 62,
+      "sha256": "760f96579ee9a838e9bf652741d53fda0015fd9e8f4d465eb677c6f49033389d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/skr.h",
+      "lines": 149,
+      "sha256": "9ada232b198c1163feae1e425f05ec19fa8a3c6aca7b154f1f31611c5cf2e34b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/soa.h",
+      "lines": 93,
+      "sha256": "4225abc0df81d9f7e2a1943554249bfa62985ea9cc7ea0a95646e7de516c5da1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/ssu.h",
+      "lines": 261,
+      "sha256": "4ed99a4e2faf2e80a31ff6a1c62919271fb7f18660855346067471fe20f6fe0d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/stats.h",
+      "lines": 519,
+      "sha256": "6986463ef5c3d69b7426045d631b63369770a7b4d495c3800faf4f9768c32394",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/time.h",
+      "lines": 70,
+      "sha256": "7903facfb385ef0eaf29a82c37ff4b33b4efdc21d971353944da2395108429e9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/tkey.h",
+      "lines": 141,
+      "sha256": "d9f5d8bb9ebbdf9061b86851a500a1591a0f38b195b57676bf8d86c5f41d478b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/trace.h",
+      "lines": 32,
+      "sha256": "b541c78aa9b5c77f66f535aababce71fcddcef1a069385d72b328843b9e0de24",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/transport.h",
+      "lines": 206,
+      "sha256": "c94a764973930b9336bc50c354c84f8e99db70355d750f61238550049bf2f011",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/tsig.h",
+      "lines": 324,
+      "sha256": "c90580bc1e0d6fe33b85dab3f162dab7ff142ce92f4a0f03d9a6a5c7aeee4645",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/ttl.h",
+      "lines": 77,
+      "sha256": "087271cc460892e05c2f583860fc7a1f575a8785d37acc53e7a554fea5906d42",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/types.h",
+      "lines": 475,
+      "sha256": "37b7eed182081af978c25abe2c9d8f3c0d639c06af1b0971d44f576e95516219",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/update.h",
+      "lines": 75,
+      "sha256": "e8aef5b7d4a047d10175a99d58a6b63b715c09328c098ea1afc7b18ea05d25ec",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/validator.h",
+      "lines": 281,
+      "sha256": "650db5ef35dfca6f60fe9cfb9c4ac58cfadebe6037dfdf87c8997fbf30ac6fbe",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/view.h",
+      "lines": 1359,
+      "sha256": "7afb01280221ea473a0f6ca05144e99fe46097fddb58ecb13772cfdd67e375f9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/xfrin.h",
+      "lines": 241,
+      "sha256": "21a67d07fef8f8d94a071a16b816b9a32971058f2b152b0d6606122e081d4bc6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/zone.h",
+      "lines": 2822,
+      "sha256": "e97288f3f906f9f8cc1c6680b4b8817f077c318e1a29c37b00e4c0c94e52589f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/zonekey.h",
+      "lines": 35,
+      "sha256": "7f319e3a388d110235ebb4334f638b1d256c0b33c92f8cc5d8fb20451f812f2c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/zoneverify.h",
+      "lines": 50,
+      "sha256": "601817b0ac8503b0373c7ee25ba3676534ae0942bace9d930e9888d107df266c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dns/zt.h",
+      "lines": 219,
+      "sha256": "6a15d373b7a604879a77c80c53243d77c598b63e7bf8d438f08e4f2a6d7e0c8e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dst/dst.h",
+      "lines": 1273,
+      "sha256": "825dee7da4f754b739ec20c91e7d789e4c286a2e8fe41b629ff03b7a5c04ced3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/dst/gssapi.h",
+      "lines": 189,
+      "sha256": "c16d988f3f1a30cb24f50117ed2e4d022909cf76dc40ccfd31ffb17ad29aba4f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/include/irs/resconf.h",
+      "lines": 140,
+      "sha256": "e711f40bb5e92399e8d6baee082b5302c76a39021d5adf2cd4180bb81aafb8b5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/ipkeylist.c",
+      "lines": 189,
+      "sha256": "f2cc5501ac57a5088ba8ea9ad3dc750a3f12586abf3ea0b1daf99bdbb9ab4065",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/iptable.c",
+      "lines": 148,
+      "sha256": "fbde92836ad6ef580ae6c8947a6791422e155a4db7f0a6315072bef4f4e42517",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/journal.c",
+      "lines": 2838,
+      "sha256": "17b4bb875ae0c8369f6c05f3476681ed704ec81f57849895a288aa3e65a1d2f1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/kasp.c",
+      "lines": 716,
+      "sha256": "8971584fe5f7478ebc5ca348fd6955fed7667d988723faf352e90ec0cf9e478e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/key.c",
+      "lines": 262,
+      "sha256": "4fd0a30520f785a6ec233b3b9814c716793c50d4aa6787838e7aa947b598055d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/keydata.c",
+      "lines": 76,
+      "sha256": "5f56f4ea280b7552dbb6d00282b741a0bf3d0274b65890819353793e8b3ea37d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/keymgr.c",
+      "lines": 3048,
+      "sha256": "8b1aefeab08f65e998c83b4a12a75d14e4b9c397c859760b7c5fb527be56f97c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/keystore.c",
+      "lines": 292,
+      "sha256": "7cf253a676fd60b5437c28977f2f6cb634d616ceba7fbeb864a3c131fc0b32b1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/keytable.c",
+      "lines": 854,
+      "sha256": "9fbe82a327c219bfd49dcfa962af521d4b0e212d16e3e95ba9fd4bdbaa71b86f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/log.c",
+      "lines": 69,
+      "sha256": "93640db37725f6b67237d38413dafe18f7ff0e81972b96ed9b14479c98090811",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/master.c",
+      "lines": 3040,
+      "sha256": "daf1070e9d6085aff4f0b62866ca7ab1893a2d8dfa664f04eaa91a4369d2fadd",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/masterdump.c",
+      "lines": 1987,
+      "sha256": "54c21e95740d069585dd3216aa695abf354f6a4ebe8e1f9ee1cfc54f41b84879",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/message.c",
+      "lines": 5169,
+      "sha256": "cafc89f37e7936dd515cf63d7ca554d02122ad39e1c1a2d29d4e30c1281e2a01",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/name.c",
+      "lines": 2288,
+      "sha256": "28207547d534bb23b43670f767665c187d49431746f3a748e6146e4f8ac667f1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/nametree.c",
+      "lines": 329,
+      "sha256": "eb923826f54aad6c2bd8e248a87dac0177e26fd60b4c34378cbe7327704da344",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/ncache.c",
+      "lines": 748,
+      "sha256": "34d47128192d6c8b3db92e541b0c9bf6b3508d1f8af73bf6aed57c6dce858e73",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/nsec.c",
+      "lines": 550,
+      "sha256": "a27cf5cf6f0a524c5b8bbe6f80a630bfd103fc3eb7296d5b6cdec942b6550706",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/nsec3.c",
+      "lines": 2192,
+      "sha256": "1617dfeb9b4f1ec1f5e684b3910e56ca0508c176b6d5fda81bb99a7799d7d1b6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/nta.c",
+      "lines": 680,
+      "sha256": "c587b14fb491904e320b10af2fe6eb782c634829167651f140a7df5060da6e1b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/openssl_link.c",
+      "lines": 398,
+      "sha256": "16172cda99d913b92ed802b867cc842f31a3469a771bcbea2cffcf59c2f91b6b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/openssl_shim.c",
+      "lines": 158,
+      "sha256": "dac70e175b6a7b4bf1805c437aac92b9a60dfbd1bdfd1a3a823f4aa5ec181063",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/openssl_shim.h",
+      "lines": 100,
+      "sha256": "5cd2f096bdfd804e81014ed0601c3f231db19f68355893a3c16a876c54d98a88",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/opensslecdsa_link.c",
+      "lines": 1160,
+      "sha256": "c9b747dd840006cd80088f1295b09bb2ba8b60adce73d0e89f46dfe550b8d5fa",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/openssleddsa_link.c",
+      "lines": 666,
+      "sha256": "474cb7a105eecaf822f6751b896decbf90fca76246c4dd87361a1490a0d53afc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/opensslrsa_link.c",
+      "lines": 1430,
+      "sha256": "d1b84288aa6d782476671a695c2b8cba4b0e4cdfe9da3d9ea51866f1c57f5870",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/order.c",
+      "lines": 150,
+      "sha256": "da4f866b1e3cc86b1e238c0590004979aa759194c40b7fe97f31c584c75c4127",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/peer.c",
+      "lines": 516,
+      "sha256": "4213578bd9e43700be4c0cf7dd4f083b61a34fc61e2d846b867663353155dc81",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/private.c",
+      "lines": 393,
+      "sha256": "42f627f77a53cacf68e736f11433746e6e2fdb8b0ba314dbb500c61b769e8f7f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/qp.c",
+      "lines": 2411,
+      "sha256": "af19e42fbde8c67e804bfefe383ac489737be9e8c7e2a4deb8cad8fa2568db04",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/qp_p.h",
+      "lines": 945,
+      "sha256": "3b1de8680481021314f93f86c21b423b0e2ebd5dd758205b14d9d57ddcbdb0b3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/qpcache.c",
+      "lines": 4478,
+      "sha256": "4dbf8a9dc282992d69159ba95a8ab83090c5aea6541261bc03eea51c008926fc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/qpcache_p.h",
+      "lines": 52,
+      "sha256": "92506354fb09cf19b1969e617b08e955e8b5f315c2b5c18614c40cd34273ae93",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/qpzone.c",
+      "lines": 5609,
+      "sha256": "9673182975dd5e1e12e751a020ed2ac26fbc5fc655faba2d8da5ad1258b1222e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/qpzone_p.h",
+      "lines": 51,
+      "sha256": "9da295bf57cd0de69ac1135b469e1ca2384666a7c38b696a09675bfba79f80fb",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rbt-cachedb.c",
+      "lines": 1710,
+      "sha256": "db1232d079221a0f7c1690a9c601dd3d02441e291d7a1266f1502a038d44f090",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rbt-zonedb.c",
+      "lines": 2427,
+      "sha256": "719c2587e6ac6528716c8c7024c007fb8263681891fbd9fba7f874da5a81b048",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rbt.c",
+      "lines": 2943,
+      "sha256": "26bea06ffdbe6d9609b50804ed48ab2402bb062be7017961556509926a568287",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rbtdb.c",
+      "lines": 5134,
+      "sha256": "03e49181c2106ef21e293b4e434d81d7d9033b409f1a041bbb8b0980508b29b0",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rbtdb_p.h",
+      "lines": 501,
+      "sha256": "84d4edc7d02f5dfd4f8055ef2f12a707ce0d0f623d75533a5bbf5788f7d3b7c3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rcode.c",
+      "lines": 610,
+      "sha256": "56181261d58e42b376086dcb68c2ea8bb53e9d36f4437d09442852bfe65e9322",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/any_255/tsig_250.c",
+      "lines": 606,
+      "sha256": "892560cbb3552399b777247d42fa287ecda2963805e074d0b0699525d4320d8a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/any_255/tsig_250.h",
+      "lines": 29,
+      "sha256": "0a04754077f50f3c188a41cf6124f43e3d78be7feaac2bd57cd41b5ded9029f3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/ch_3/a_1.c",
+      "lines": 325,
+      "sha256": "acdb4a999995eabb18457f688e51a35010240f73a22eb378b4632a4dc3c9d99e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/ch_3/a_1.h",
+      "lines": 28,
+      "sha256": "7af36662704059fbd8e9c5eb89231895f5e033faf1fbad5778db97cdc646b35e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/afsdb_18.c",
+      "lines": 316,
+      "sha256": "e81d6dd891ae1d64d4de2751d4e89428c970b1e014b20ca155c5b76098471da4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/afsdb_18.h",
+      "lines": 24,
+      "sha256": "3be8899bb036794eb9fc13f68be6cbfe1f5c4a22db8348c10792cf8b41a85334",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/amtrelay_260.c",
+      "lines": 466,
+      "sha256": "17d5d241ead52da2818870ef24b2d79b9d69c631a764689495a1a5cd2c617888",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/amtrelay_260.h",
+      "lines": 27,
+      "sha256": "d4ca87864aea967d3af7950d4421509145bc51a7dc30f6bcb742eca8fc9f1fd4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/avc_258.c",
+      "lines": 143,
+      "sha256": "c49ed96a90e629468f9b692787b8b7344ea2b049614b50d5249768e992ad7065",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/avc_258.h",
+      "lines": 30,
+      "sha256": "c200fa40ffc78580acd73c37d0b02144d3127de446c7a471d6535ea32a629190",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/brid_68.c",
+      "lines": 211,
+      "sha256": "fc69f511080857f2826a5a6cccf91c17f5cf72366b8f6eac5e62969a5b9b5c24",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/brid_68.h",
+      "lines": 21,
+      "sha256": "654dffffcb72a57800ec27546d85751aa901af80021032c8db44b9b9b525d867",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/caa_257.c",
+      "lines": 611,
+      "sha256": "4cdf4bb5c0fb458d4c021b63910de5812a00bb02513f6dee670e3867ba7c3583",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/caa_257.h",
+      "lines": 24,
+      "sha256": "06e306a6d0f92f1e8279554e4e178f84a1b369558ffe3e2fc7021a94a76483ed",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/cdnskey_60.c",
+      "lines": 162,
+      "sha256": "b88843627cf12e698f8ade655f2d44adf7ef16903df82f1cf453f253076f0235",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/cdnskey_60.h",
+      "lines": 17,
+      "sha256": "0a6177a99962200ab194bfc2257a574acef86f416a68273de4ed228d3988c426",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/cds_59.c",
+      "lines": 165,
+      "sha256": "65cd905ad3479701d2f6cf0b3cb40bc35ad658ca9897205440402608362da5ff",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/cds_59.h",
+      "lines": 17,
+      "sha256": "a3e8c7b7833bd596bc6dedae8d3adc8783db9bff140d74cb57a9b6e05e46c0b8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/cert_37.c",
+      "lines": 278,
+      "sha256": "3c25ddcd3dc792dd4714b62a9d7c5c94cc593e4199f17c6e480ffc763f672344",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/cert_37.h",
+      "lines": 25,
+      "sha256": "2a575350e4463699ba6c389b23e8618dd055a7373412c9afe032ced2237047d1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/cname_5.c",
+      "lines": 229,
+      "sha256": "0fb5d5aac1c143c6a31a38eeb5d116cd6e302a92226682e56f2ae0376dd7f061",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/cname_5.h",
+      "lines": 20,
+      "sha256": "b02e2a2061c14e0af0be86b27c9edb648ee67eaf7f1e3b1236ac2afe8b76b92c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/csync_62.c",
+      "lines": 264,
+      "sha256": "21402650fa41c6e47ea63824cf44354140b4dd307b35d3f09f02c13b7aea30d4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/csync_62.h",
+      "lines": 27,
+      "sha256": "fb71e04b92e0c0a9de245b72d0c82d668e113925217e34a0e2cbf349216566f9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/dlv_32769.c",
+      "lines": 161,
+      "sha256": "3888d6b61b2597ada100757d2831d65aa5379529b482a9a332fe6bc9d90e9424",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/dlv_32769.h",
+      "lines": 17,
+      "sha256": "03c92a27e3a2a13dd0c088e449944c26c030e0a7cbd022974e89157284593f9a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/dname_39.c",
+      "lines": 229,
+      "sha256": "50bf3e2ac9c468d9e6b86124f3d8daa667468b792afebbca25c221fb0dc5cd87",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/dname_39.h",
+      "lines": 23,
+      "sha256": "abe0cf7bf62047b93fd7ff1559c48f0864ed295431062048cea93815a360fac8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/dnskey_48.c",
+      "lines": 163,
+      "sha256": "bcf7580ca17a7db55b96225b5e6909bc0e66d338ead5a72fb4dc41b9ecf09b92",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/dnskey_48.h",
+      "lines": 20,
+      "sha256": "d2a11fc6c66050ab6aaf0b391c13018c0f055079de83886f5687265733696a44",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/doa_259.c",
+      "lines": 335,
+      "sha256": "c9c2388d10e7f34ffe8ae57bba96d74fe78464963c8f7de879ad7258f2482939",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/doa_259.h",
+      "lines": 26,
+      "sha256": "cfd0c0b5082ef9db08b808aa5bd562e50219a2fefa85a19d5666c710b60388d1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ds_43.c",
+      "lines": 379,
+      "sha256": "9b8e6e5d2e72113007e51e208c9d2b451fdf7236bba106876f2ac604f1cacbeb",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ds_43.h",
+      "lines": 26,
+      "sha256": "431feab3d1a1271aa700e44605cd26083e69bc74b7608980276deb8fe6de5016",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/dsync_66.c",
+      "lines": 359,
+      "sha256": "9a30ffd893fee6a7da86def3977f6acf68432766694387f4197bcb7cfe6b0429",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/dsync_66.h",
+      "lines": 24,
+      "sha256": "b908a3e44a8e8880a312fdedae7eb6ec0ce13b8bfe626d1632127ab2bdd9e1ee",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/eui48_108.c",
+      "lines": 209,
+      "sha256": "fe6cc5a24417d4491d1e2e9da565549e628103fe541f97f615037e4895e43d27",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/eui48_108.h",
+      "lines": 20,
+      "sha256": "b39c48afa604119734030e986e07f878f620a23d3f551c63c25f71a9e4d097bc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/eui64_109.c",
+      "lines": 212,
+      "sha256": "4d1643a4082ab4b9346a0b070af72566cf1272eb4a0e4cc9db93ca0d92774522",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/eui64_109.h",
+      "lines": 20,
+      "sha256": "eba2b9ceb92b8a224072b599cc7dfe8a25b68817c7462b57949fcd7198081871",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/gpos_27.c",
+      "lines": 234,
+      "sha256": "fe01831adb667f6d6ca678de1d42fbd590e9927ca904bccafd2865eca231fe76",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/gpos_27.h",
+      "lines": 28,
+      "sha256": "90612c22040a145162c2fd76a982d74fb84f4103c92879b5f844d5c0987f72a5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/hhit_67.c",
+      "lines": 211,
+      "sha256": "c967726dae7c32006ee56972f28a09a2dae52d1de29fa7c75ec9a2d3d89b40ba",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/hhit_67.h",
+      "lines": 21,
+      "sha256": "e378d4e8e9ab6fa6e495e291f056f383a4ec184fbae9fae1cc16580c60dfa7b7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/hinfo_13.c",
+      "lines": 202,
+      "sha256": "d5b86bebd332dc19647b8521fcbe14215b9e2decce8f28edf49a42b8342ceb21",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/hinfo_13.h",
+      "lines": 23,
+      "sha256": "f1191742865ba0ec2a298859e8af66498024e3fb4f8bac1e33c02e10132af239",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/hip_55.c",
+      "lines": 500,
+      "sha256": "66d6c0bafbf1f314e8bf35f6d403b422b27b941f2f64508f457fa5a0ee1bc261",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/hip_55.h",
+      "lines": 39,
+      "sha256": "b5f512b00bd4cc1d296a997930e2f197c036066aab268322437ecb742b6a1be9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ipseckey_45.c",
+      "lines": 515,
+      "sha256": "06e6edbd9273774179a86b74681e684c5e6d90c49fa145d67939b4489226191e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ipseckey_45.h",
+      "lines": 27,
+      "sha256": "64060154af86d5e90485d6b3cbe964ebaab66d2b17b08c40f35a84bfbde4817d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/isdn_20.c",
+      "lines": 233,
+      "sha256": "8f6e2c8b242b759152d4742bbe714654e5624c2aa44055323535706d0e2e7eea",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/isdn_20.h",
+      "lines": 26,
+      "sha256": "ca8535fd92634ac8958ba76cb54a14c71177181cc7a54f367bfd7b58ef62291d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/key_25.c",
+      "lines": 487,
+      "sha256": "4b860b77da4c2b965a72ce0a253f1354ac89a8abce8a9ffa97689d514788322c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/key_25.h",
+      "lines": 27,
+      "sha256": "6953b50581f2f26f54b032316fa0148f8a29769800ea90b332165f68c9fd5389",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/keydata_65533.c",
+      "lines": 460,
+      "sha256": "8cdd0d63e4c25d014d90e373ea2325fddbbafcb1b308de73cd488b4f57186358",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/keydata_65533.h",
+      "lines": 27,
+      "sha256": "2472b40ee89f6d155e465f11cadf975218297f67028ac06672d0030c64a4a80c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/l32_105.c",
+      "lines": 230,
+      "sha256": "fef72101eec08f4dc4f179886e64d3b03f2faec6cfe09ce960ea10816336b88f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/l32_105.h",
+      "lines": 21,
+      "sha256": "dab8d6ac4e8a2a66dc264fbb615f243857a2a5a6456b06bfd288ebfff3aae95e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/l64_106.c",
+      "lines": 224,
+      "sha256": "53553a1da3b216b7a0d11b2a067a28c05ade157751eb7005c74559a4942b938e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/l64_106.h",
+      "lines": 21,
+      "sha256": "bd9fab97eec3d63048081a32733a6fff406496e408048769ec68bab6174aabfe",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/loc_29.c",
+      "lines": 836,
+      "sha256": "4219d97242fd35b2f11982af646d1a9987540023a9641f40519c64dc272c66fc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/loc_29.h",
+      "lines": 34,
+      "sha256": "b5259967cddfbda8d05bcbe9411738285613c26cbcc8a743c05a7084f5818f26",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/lp_107.c",
+      "lines": 277,
+      "sha256": "aae302f3cafe6930c2085d346155d6899f9bd8d0f93408d9ba226e5c3d2fbfdf",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/lp_107.h",
+      "lines": 22,
+      "sha256": "3623ec0e924ccae30a1677d173c43826f926ea8aa3530f117800fa02acbc0a31",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/mb_7.c",
+      "lines": 232,
+      "sha256": "33aa1686e995207c60643a3ed23bd3ef1a0542f358c8e06fdd1e73fe2dd72a28",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/mb_7.h",
+      "lines": 21,
+      "sha256": "37dd9e6cbade5e3d1077b12c3ad1c37d457575afce12a984d749f06500b0a42a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/md_3.c",
+      "lines": 234,
+      "sha256": "74069a9f6648ffbd8204743c0009951ffb129665147a6c06bdfc1f8885cd6234",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/md_3.h",
+      "lines": 21,
+      "sha256": "4f62a3d80ae3fbade545fb1d8a3437b000be5d945180472a6efc75caae315b53",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/mf_4.c",
+      "lines": 233,
+      "sha256": "caf9bf5e2e074ebedd36b42f3848f31a23eccade90a8497ecd1b8356bbf3828a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/mf_4.h",
+      "lines": 21,
+      "sha256": "cdb433b357927541a1401478849926fdfbcceab96f6dd6502bdeb2870c485617",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/mg_8.c",
+      "lines": 227,
+      "sha256": "97a781f543b73a0c1a9a795904312387e88575f955142017d66ffe6e07587cfc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/mg_8.h",
+      "lines": 21,
+      "sha256": "20b817582dacbfa87477889274d4218e18bb9675a19010bac9a3b514635b5e7d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/minfo_14.c",
+      "lines": 324,
+      "sha256": "32ff2c939015d6b327ad2f64c4552859b3b2247877e429eda49b4d01bf273fe2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/minfo_14.h",
+      "lines": 22,
+      "sha256": "b509374d101fbc8bcd1b26e795c28528a6d2bc7ea81b8e21fb2f863dc7400d6a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/mr_9.c",
+      "lines": 228,
+      "sha256": "41672cb7e61b6cd7fe775a1d0303d5af4141f9c8e1db548c2fd698daedcf960b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/mr_9.h",
+      "lines": 21,
+      "sha256": "dd23ba8ec40afe36226e9941bada1a5d852388c169c3830010a7a12be045eddb",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/mx_15.c",
+      "lines": 358,
+      "sha256": "af6edcaa95b64d0ad586123bc630ee794c9b8bcb5c1e6e3266c525a7d833aed6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/mx_15.h",
+      "lines": 22,
+      "sha256": "00332d13b8ba1afabac2396a4cc2822b4485e93049b40cba5f9e3b94875a415e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/naptr_35.c",
+      "lines": 716,
+      "sha256": "f878fff6cbf67539862fb6422af4bc59b30c8e25704800ed8d362fc3b8c9db69",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/naptr_35.h",
+      "lines": 31,
+      "sha256": "3aa2cf8ee624ec98379faae639ec127ae217cf1af42ec686492c53f7f59c73c4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/nid_104.c",
+      "lines": 224,
+      "sha256": "eea365dc0d0d3450ed86662095db65991840b5046e5a1801b8eda79991ac53ed",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/nid_104.h",
+      "lines": 21,
+      "sha256": "b403431ffe762612ed4a0245597fb394040b3592f89ab325f7d4f56f2ada55a8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ninfo_56.c",
+      "lines": 168,
+      "sha256": "fc41957a6cdee824179c14ad657c28c7049042f3e0b89a16b596b0cb97484f5f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ninfo_56.h",
+      "lines": 33,
+      "sha256": "7b3e439b72e016132053afa90516c17964a6e28f7931f3c7a07da124f9601831",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ns_2.c",
+      "lines": 254,
+      "sha256": "3786d26ebbfa0e2be54e03edf202c203b45ae366426a60c7c68340744b682f94",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ns_2.h",
+      "lines": 21,
+      "sha256": "4a02a5fc396a439bbb259b3a862552da26cfdc0c21ef1a6863892ff7044f23b8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/nsec3_50.c",
+      "lines": 428,
+      "sha256": "5a33025a9a609d484f35004ab9e489626cd8b8de7f1f8c48ec9dc9d3afcaa62a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/nsec3_50.h",
+      "lines": 109,
+      "sha256": "18ecf967d771b4721b4b57fbef7369861fdfe94a6839cb7104ee3738f08f3060",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/nsec3param_51.c",
+      "lines": 316,
+      "sha256": "967275bf254ed26124f03dadfcb88857e7aa9ed22a5a990694d2ce2c17fd8412",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/nsec3param_51.h",
+      "lines": 29,
+      "sha256": "0bdad126a961e23a522d014b446a3802403bea89f20f22562d442ea58fcf57f9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/nsec_47.c",
+      "lines": 279,
+      "sha256": "598ab149f47bcc62b12ba8aafe188f25944c2739ea197a8bd9e71c16a098f807",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/nsec_47.h",
+      "lines": 25,
+      "sha256": "3ac61862cc373981f359e46c93d12f71918de17b7dd41b443ddddfa382e25845",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/null_10.c",
+      "lines": 180,
+      "sha256": "d9674c56f28a5bc5fe840758d6dc156c75fda22abf21a0816dd21455df95b201",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/null_10.h",
+      "lines": 22,
+      "sha256": "53cee54a8f894ff075d1e0b7491250836173eca0390f649680c0f8e870ce3823",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/nxt_30.c",
+      "lines": 339,
+      "sha256": "3b3c5fe3575057c9d864946d137d039bc48a685d70c24b3f0d9c6cb6e43d81b2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/nxt_30.h",
+      "lines": 25,
+      "sha256": "2b553d2588e5ac713417da03bcc1a4373dc595a02b306a55a70ae8a68b0ddf51",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/openpgpkey_61.c",
+      "lines": 240,
+      "sha256": "3bd5f2cc9236e16bd14e45322ffae77ae0fc61da29c58f57699d649210be43ad",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/openpgpkey_61.h",
+      "lines": 21,
+      "sha256": "5e4a5b5477ce877ae2802cdbc4e619a53e2f2873357fdef8c2202055d0afc834",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/opt_41.c",
+      "lines": 472,
+      "sha256": "fae2a5a4dd2dba0ca240a44a158cf5e9e0eb4697e94d72d3577cdadb7d809c8a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/opt_41.h",
+      "lines": 46,
+      "sha256": "071223dfc77bef1b948cbfca5371de974e1ed6d67d76291325dd45685eba55d4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/proforma.c",
+      "lines": 165,
+      "sha256": "bd64cb2c22b87266f500867117893f8f888e6b5d7fb2f2a2980b842ee3436854",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/proforma.h",
+      "lines": 22,
+      "sha256": "126df8cb0e1b18cfd95169701234f63ec362883a26f7ebf92ccc12417cc47430",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ptr_12.c",
+      "lines": 277,
+      "sha256": "5904c2224ae690c18a52a340494d939875badaf855dee82ac87f7e23b84abbf1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ptr_12.h",
+      "lines": 21,
+      "sha256": "882ae60556e80f5ea468b2443e697b4df407f363b90e64a806f97e1efac11bcc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/resinfo_261.c",
+      "lines": 144,
+      "sha256": "0aa322d5c9ee84fcfa684f91a9f3c5da8c1d6750765b646b14581322737913ac",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/resinfo_261.h",
+      "lines": 33,
+      "sha256": "123c2eab7dcfa3cde6ac16c20cf5db852c85b9539b1a0c163c8598dbed1c8e87",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/rkey_57.c",
+      "lines": 159,
+      "sha256": "24bbf25bff793d706f016f9d88912a0be6b06ce89d9c41c8d7a8e7c5aef541b7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/rkey_57.h",
+      "lines": 16,
+      "sha256": "d9d8334182e9dd10ad057937de46d9e3afa3c3115897091e1956340f21f66de5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/rp_17.c",
+      "lines": 312,
+      "sha256": "bca83de1bf1740493d3ec549e7a26e7d87d54d9d92b2e3e9f5669633725f3091",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/rp_17.h",
+      "lines": 24,
+      "sha256": "2110b63bc03dffed94d8410cfe4aeb3ad59c73d1595d491e943cb2f19a30d2a0",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/rrsig_46.c",
+      "lines": 683,
+      "sha256": "113acbd25681578a840d295b72a7351612f18390a1be9295c2252f4537030e2d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/rrsig_46.h",
+      "lines": 31,
+      "sha256": "858b1d383ca42e8f6186ac6467a7320119a2babd7196cd0f0f890093e295d473",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/rt_21.c",
+      "lines": 323,
+      "sha256": "68bee438806296dd7bad169269c7f9691ce07c57f8720bd299b5366ea1d4664b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/rt_21.h",
+      "lines": 24,
+      "sha256": "7544cdf1d395b7ff17ba3b9523d586bdee386307dc07c84d3e64eadde983abe3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/sig_24.c",
+      "lines": 628,
+      "sha256": "5ad4606ddba7e656366c0c2e4e004c9f8555d0ed90b05dba31ba28730d4cfd4b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/sig_24.h",
+      "lines": 32,
+      "sha256": "8a4ff1ef70c3917ee8928b7d109035fa34e22a7dd6fe18b39699f7e7f3f4f06d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/sink_40.c",
+      "lines": 276,
+      "sha256": "c961f9da53833b1041ff43e098f3e6bfd9f29c861f3a3d495c970e3c3bbb5de2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/sink_40.h",
+      "lines": 24,
+      "sha256": "6c27c8cadee57c8fefff2d8d1d68ad94fa8c7c51cdf1ba769388ec54693beb87",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/smimea_53.c",
+      "lines": 151,
+      "sha256": "8cb9174441819cd7d7dc307a8258aabf8dc4ad5fba2d95c31bd57c0f4993e95b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/smimea_53.h",
+      "lines": 16,
+      "sha256": "3255fe7086c088b0b170d4b02315efb91f13b298bb217535af71c22b786b03fa",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/soa_6.c",
+      "lines": 445,
+      "sha256": "2b7ccdfacd13701b3c380e1352b9f3f38aeb8240c86798a0c850c1b1acc468f4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/soa_6.h",
+      "lines": 27,
+      "sha256": "afe34a902308e0f0ae06782d9f3332f45609904df650d2125679bcc11da6b68b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/spf_99.c",
+      "lines": 144,
+      "sha256": "39564a112b7762b7defef4a77ef610ef37003194ee2ad2f0046336d8a9106296",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/spf_99.h",
+      "lines": 33,
+      "sha256": "5120969329d873909f4ccaf261d4d75115b7d5b159329a525066704812e395f0",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/sshfp_44.c",
+      "lines": 290,
+      "sha256": "80f67f8d1c711831a1778a4abd9a755c1bf4b9d7454bf4f3b48abf07ba4230c5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/sshfp_44.h",
+      "lines": 26,
+      "sha256": "4d52d340165848aa85694fb076bbc8bb9ac499044d6a5dd2a437d2c3a23dac7a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ta_32768.c",
+      "lines": 161,
+      "sha256": "73a404929c3e504261a0814ab7af6eef7685c8219b580f56d4928cdf21e549c9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/ta_32768.h",
+      "lines": 19,
+      "sha256": "634e97dd8815bda4295cb3d70d65ba071d535a55f971590f47e07d2cb6b415e6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/talink_58.c",
+      "lines": 258,
+      "sha256": "e6c250d6f0fae3c64f0b01e7611d71d018dded89fcabdcdd8eb812b6e3a0c2cd",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/talink_58.h",
+      "lines": 25,
+      "sha256": "01e41844ee601a4904c3183ecd46c633b421192605d7f4760dff1c6eabe61a89",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/tkey_249.c",
+      "lines": 564,
+      "sha256": "fe15c9672f40c88c878da6e2a02e0e3b5ed76381c2a184e4a8497357349eaa9d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/tkey_249.h",
+      "lines": 31,
+      "sha256": "46c9c759137687aaff2aaec117f06497c068d0b21a055ec00ba9326d437f37d3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/tlsa_52.c",
+      "lines": 333,
+      "sha256": "faae8548af8df7fa835c2350d0b2c90d84c3874f1ee84ec839f50ca27f527736",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/tlsa_52.h",
+      "lines": 27,
+      "sha256": "ab1bffb9a57c3ccc552d0bd2b63c5a3821d2252cd308e3818d1d3fac09f93389",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/txt_16.c",
+      "lines": 353,
+      "sha256": "300ce5864d451058d8f386471549bd5420fcfad2a109612d7c044656acfdf828",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/txt_16.h",
+      "lines": 43,
+      "sha256": "e9dd38594cc0cc48374b3547f94fcbc9051ac3409f2713160e760c5a2caf618b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/uri_256.c",
+      "lines": 306,
+      "sha256": "e81921f30f9820ebaa325b1f109cd39304ea60c36b0726022404ec29b7c87881",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/uri_256.h",
+      "lines": 23,
+      "sha256": "59dcf884b282aae4a0992308daf0aab9cd455623c671bb0801d4ee36395d43a0",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/wallet_262.c",
+      "lines": 168,
+      "sha256": "2f85d502a76f5db32eac6a37b3bb8f3efc343f2dbe8fdfe2b0dbdf073b1ce6c2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/wallet_262.h",
+      "lines": 33,
+      "sha256": "793be38968550e205999ca5d3ba1a4ab4fa3865f01a3c163922e139337856fe8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/x25_19.c",
+      "lines": 226,
+      "sha256": "7d40c001a04ed001b9e5457df43cbcbcfedbd64354dae8c8aa988e81d997db5b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/x25_19.h",
+      "lines": 24,
+      "sha256": "b39b65251ff43733657d21b56e4a7b686fd3400c455b3c7f40475072d15b091f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/zonemd_63.c",
+      "lines": 344,
+      "sha256": "28d709ebec2d0de630f7e887a7503491b4fda969ecbf1685826a6df257199b84",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/generic/zonemd_63.h",
+      "lines": 31,
+      "sha256": "550e4a0698dedfd66392710d7e996c685953742582743df4572d199c082011d9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/hs_4/a_1.c",
+      "lines": 230,
+      "sha256": "47a678580a26621b5c717ea6bf6957c1111a84cb19be9512d95f656d2b07a648",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/hs_4/a_1.h",
+      "lines": 20,
+      "sha256": "b64e2b3010f212c71e17287269099ceff9afa62b2bf1355f0aea69cf089cad3c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/a6_38.c",
+      "lines": 486,
+      "sha256": "db1751906fb845b2fd302b4fcaae884a3de4eea7e0b64e3718a0ee2605f43027",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/a6_38.h",
+      "lines": 25,
+      "sha256": "747528ca572516ea130972dc2c622b2cc881fa136ccf122fbf099db9ce314962",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/a_1.c",
+      "lines": 276,
+      "sha256": "8e47e1ce8706cd79cbfe180b20f64659c6542cbfd39bd9cdd36ef463009c0473",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/a_1.h",
+      "lines": 20,
+      "sha256": "3dbbb05231c3e52266c8c0ffa05f8c613b9b51e7bb75c698b4403312b9b65698",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/aaaa_28.c",
+      "lines": 263,
+      "sha256": "4b6e62f42559f0b5bbf4ed1f32144799e6c3ffe012e6c3c167d01a9b2676b76f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/aaaa_28.h",
+      "lines": 22,
+      "sha256": "42f57fccfa12c9d3fbb50908e8f513ede1a192be8cb54d05370fbbebbbbe0fcd",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/apl_42.c",
+      "lines": 478,
+      "sha256": "4be928945be1aa9b9a62ce755a50a6863095930f0161e6ebcdab2df73355c61f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/apl_42.h",
+      "lines": 50,
+      "sha256": "a2232055600a0def75e69c5130dba06684f3d8aa833c4fb8482546e2164a8908",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/atma_34.c",
+      "lines": 311,
+      "sha256": "cab2877271ce00c50c8aeaaa6e256dbaf73de4914abd7cb55426c195d2dc7571",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/atma_34.h",
+      "lines": 25,
+      "sha256": "688f8addd6c21454e6e3837dfcb1111d3a23076e4a3f5ec047094bc5d2e74710",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/dhcid_49.c",
+      "lines": 230,
+      "sha256": "f51064c3f934292dc1bd9e3ecffae600b22b99c9dd4abbdf2817610c707b32cc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/dhcid_49.h",
+      "lines": 22,
+      "sha256": "3e06f1ccd0c0bb8087fba16bbfd93a0133fcdba258bc5cc90ac821b216b90e48",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/eid_31.c",
+      "lines": 218,
+      "sha256": "a7cb068a8c664eaf59cba00c989745fe0a0ad88b28633466dd9c5fed03492f8d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/eid_31.h",
+      "lines": 25,
+      "sha256": "7fd17119ffe6de455d7d43310b0ace2fd6a300ccf1ae00052a43b7d49acb0b6f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/https_65.c",
+      "lines": 183,
+      "sha256": "2bbe1e551408b9d56dbafa5caa953cff3e381b655ea6d1e25bb174ef1ad07a8c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/https_65.h",
+      "lines": 32,
+      "sha256": "e8e33ee4a0214b22e06f787b408ba49a7b79b333cb70885669d3dd96a2b0f7b9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/kx_36.c",
+      "lines": 290,
+      "sha256": "fbdfc164b6596d855fb3929dc0f1e73b54bb7b93f15d4e5873dbd5a96613eebf",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/kx_36.h",
+      "lines": 24,
+      "sha256": "976f0e0efbfc96cb737bf01afaaddbaacd14098eae570d091263bfa02eca1933",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/nimloc_32.c",
+      "lines": 218,
+      "sha256": "fed9d71457d6473f8a2ffc3d6ec6bde840d7a8f50c1b7c017a4fd8fa14173775",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/nimloc_32.h",
+      "lines": 25,
+      "sha256": "ed79700b36960a6ef6fea026a8ed2ea47c919bb759404c177e0350d0b4e46018",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/nsap-ptr_23.c",
+      "lines": 242,
+      "sha256": "134c5d9dc49ed0f61957494831f65900c5e1a38625ee3d874ac07f561108a49e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/nsap-ptr_23.h",
+      "lines": 23,
+      "sha256": "5bdfced1d17277be48b6c7fc7c5b4775b077377189ad05f9aa3c2d7a89b5119b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/nsap_22.c",
+      "lines": 253,
+      "sha256": "4f8d39c4d5867874dc9453863fdb949156862d136476fc06a2e05bd93032590c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/nsap_22.h",
+      "lines": 24,
+      "sha256": "f4df8d6ded188bc0d5d3d22733b78151bd40b4a3e68d17fa167bb963d501d29e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/px_26.c",
+      "lines": 372,
+      "sha256": "69142951471a475d0a28df3dc3341ba2e3adba60201d560c4349f05aa2e1833f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/px_26.h",
+      "lines": 25,
+      "sha256": "6d6909a734d581e39a21aa1b661fccd76770c5ed9b57e50846ccdaf86e0c35b8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/srv_33.c",
+      "lines": 412,
+      "sha256": "4d40ff2d5339fec5d0f8b1eacc29fcef41e231f4b5726351541ef7a76b645514",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/srv_33.h",
+      "lines": 26,
+      "sha256": "620081ecc91a4bc80999351e61db55ad2bdde0946fe8fbf5bb9781797b06cafe",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/svcb_64.c",
+      "lines": 1302,
+      "sha256": "6fa05078f67318afa956fadb0a9657371c1309fd5c280e97d8b9a3388fc6a2ae",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/svcb_64.h",
+      "lines": 37,
+      "sha256": "d2f48397559ecda33006cc108a10626d6df72ab0fa06b05681cf552f5b015428",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/wks_11.c",
+      "lines": 393,
+      "sha256": "14a459d4342e0d7e95ee49f3ba52a2e4f3fb04b7023c1d61691adb3c5226e9b4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/in_1/wks_11.h",
+      "lines": 23,
+      "sha256": "e00e78a228797c218d6948ba5ccbac165adc6c6fc925e2d590260a05f28fcb79",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/rdatastructpre.h",
+      "lines": 35,
+      "sha256": "8be27b78c369a0a3ddd6b8f903716013d55bd8ba763057a279cb6b8a5b29ae41",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata/rdatastructsuf.h",
+      "lines": 14,
+      "sha256": "8dcc204035a6d46c49dfeb8d54a83f62dbe976c4f635856ef1781d9152d187fa",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdata.c",
+      "lines": 2657,
+      "sha256": "cb01746be1f6b90ee8d16e94e66186648e02e7444d9de586b96196eafb6a75b4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdatalist.c",
+      "lines": 433,
+      "sha256": "ee6df0a532cd58e7dd0ecd6ec7da089bc2431847ea080bd2a1c95a0eb5ceecd6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdataset.c",
+      "lines": 718,
+      "sha256": "98823e85a444a3b5397e56faf129419856e6fa121c010887807abe4e4788bf12",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdatasetiter.c",
+      "lines": 71,
+      "sha256": "89b04adffcc5821e8387ee9128508e83f34883f905260c0e7dc9b0ec6a359793",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rdataslab.c",
+      "lines": 1518,
+      "sha256": "9a6038c2f19408c065488492b18defd9d1e5877db49ba9feac34625b5445b27e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/remote.c",
+      "lines": 372,
+      "sha256": "5b19093e0c28fb1062b04f0ad04d605f6a6b2b877ee07b49b12395f52626b6d0",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/request.c",
+      "lines": 1040,
+      "sha256": "8d28d12eb87e22129e4520c18dc2c0ab1790f05c623993a4ce6d2f6a6f87d620",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/resconf.c",
+      "lines": 715,
+      "sha256": "dc5c5b55668c35b89b1e1918676f7b3328e96306e9db76fcf68374a4ae2d9984",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/resolver.c",
+      "lines": 11631,
+      "sha256": "f3cb02218c2f10c88cb99f02e5a16f2b12eb40e4daae531163566b85f88fc9ae",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/result.c",
+      "lines": 119,
+      "sha256": "a629b38aa4f9fae79bf9e21c4fbce80654ac72e85abaa9797b5050527501160f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rootns.c",
+      "lines": 603,
+      "sha256": "37846ce58bb3caf2e81d5c17ce9e95ff2d4cab4c79b963842dcfab46b5b0971d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rpz.c",
+      "lines": 2752,
+      "sha256": "3dc0c5d740764ed1b5a8ca9dc5edfa41740f09519cc5c380c4769494ec2b3184",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rriterator.c",
+      "lines": 216,
+      "sha256": "dfc284762de64fa39b32176d925c4a557a39b9fe7b5fcdd7699b0d26b42d811c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/rrl.c",
+      "lines": 1348,
+      "sha256": "71aa6232438176f31d1654da962431a7a28031c342b700980a545448396c21d7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/sdlz.c",
+      "lines": 1975,
+      "sha256": "3f16277578df0aec501bb2ce1679c8c957b032da732617e7ad8f211f3955676c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/skr.c",
+      "lines": 441,
+      "sha256": "2464db873e37b38e30030100a4383aad77caea672dab7440307a070019641918",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/soa.c",
+      "lines": 137,
+      "sha256": "500be571ca109a80d77a2fb30ee2a7484f5fb47f15442162e1ab2f942ff9fffa",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/ssu.c",
+      "lines": 714,
+      "sha256": "d7cc3ace9d9564085eac7aba5e75461554335dc00e7a6bed66a2c6a867192ff7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/ssu_external.c",
+      "lines": 254,
+      "sha256": "42735b76b2c331d4ddb72ec5dfb445a09b8fb6cd569605379f12000c34a417d8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/stats.c",
+      "lines": 608,
+      "sha256": "17e6a0aa6c35971b8b24fa59c1170d0f6ce0a78ada063bac75cefb9321fd2ad9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/time.c",
+      "lines": 215,
+      "sha256": "440b7b9ee1d9cc02db73b22db7baae22cedc926d2d6e4edecd7f581418742430",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/tkey.c",
+      "lines": 711,
+      "sha256": "485615210ab914ca49f55bef677de87261fac64ab09e4c25c24f9be5cd932b49",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/transport.c",
+      "lines": 774,
+      "sha256": "03d7de020a9ca20c99695a5966a227012d3745edf65314793ce8282f3dbdd747",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/tsig.c",
+      "lines": 1664,
+      "sha256": "3e846bf1cea5356c8f5c0796a0cbab2a47a296346b390872ee269beb14094725",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/tsig_p.h",
+      "lines": 36,
+      "sha256": "a3d497b9acdfabd99d1783c2aaa65eadc913fd551081f2f2f57be20f247a8cb9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/ttl.c",
+      "lines": 215,
+      "sha256": "4f932348027df6f338fa191f8a0c769bc429fdcecf7b3027bd9dffe2d160fad7",
+      "status": "partially_ported_differential_tested",
+      "go_package": "internal/ttl",
+      "limitations": [
+        "Go string output instead of bounded C buffer"
+      ],
+      "unit_tested": true,
+      "differential_tested": true,
+      "system_tested": false,
+      "oracle_parse_cases": 20046,
+      "oracle_format_cases": 8240,
+      "full_compiled_upstream_oracle_verified": true,
+      "tested_platforms": [
+        "darwin/arm64",
+        "linux/arm64"
+      ]
+    },
+    {
+      "path": "lib/dns/update.c",
+      "lines": 2167,
+      "sha256": "8718ceb0cac768532213c7d41ac551b92368717d79d1c40d76591a50feffae56",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/validator.c",
+      "lines": 4177,
+      "sha256": "555e74662babe25707dd0db2c7865226439a1b26a7d9ff9c36187244913a8537",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/view.c",
+      "lines": 2474,
+      "sha256": "3e55115af45191cbd122f626c334f4d532963c47945e3f3fa280b12699bd1d5e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/xfrin.c",
+      "lines": 2254,
+      "sha256": "4cc24115fb69d00f4457ca7babbf396da470c38df286a30acfa65387d91ebfc4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/zone.c",
+      "lines": 24958,
+      "sha256": "624b237b42939eb51a55697141714adec118bd54d06a24adfef5f28592401dcf",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/zone_p.h",
+      "lines": 44,
+      "sha256": "77ca1641f11bf0e70515ffee40039518cbf1823f5c373c8d208408bc6ee1973a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/zonekey.c",
+      "lines": 54,
+      "sha256": "1caf738336a664e3ef04a1c08f86a7e24232702919151faecae824a790910d17",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/zoneverify.c",
+      "lines": 2060,
+      "sha256": "8f4dc9b2574790505c6ef107473d4452b5ad0d6cba8f4ee6279f770515217ca5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/dns/zt.c",
+      "lines": 542,
+      "sha256": "028773e124ec3f2a4562e16fc417a7a3f5b392da123c5fd4a7440a5baa0bdb98",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/ascii.c",
+      "lines": 67,
+      "sha256": "7442f907ad2e4c47f8855207a01e87bb8f65d4cc6e21fe74f46834221f17421b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/assertions.c",
+      "lines": 110,
+      "sha256": "96f5426d4a0a89536c1104d45516a45450aab167fcd95e5c8f1a65f231d07388",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/async.c",
+      "lines": 122,
+      "sha256": "f634eec2358eb3f9e185fd80490318bb2146622406ef8965536d7d67da474bd5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/async_p.h",
+      "lines": 26,
+      "sha256": "4ee0ae1958d90fddfdcd582fac8077dcffb4189bdf3f6bd3a8314c1602200174",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/backtrace.c",
+      "lines": 118,
+      "sha256": "d95a5fb45de65f126ac51146682196ccfba53591dad014d5118e78181cf7c074",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/base32.c",
+      "lines": 426,
+      "sha256": "01c935b9b45b16346ecd367a2d5f8f38e116c21d41555a9b8ea78f54e22f098b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/base64.c",
+      "lines": 263,
+      "sha256": "d1a7c3b4f4362fb3cf71d0389b1560dd09abee474045e794d2c13a6e2e8e31f3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/commandline.c",
+      "lines": 264,
+      "sha256": "13b191e9c7ea6a83d748ea17ef1e0d89a19b507bd1a59067e721f49d9b99c75f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/condition.c",
+      "lines": 65,
+      "sha256": "724ae056469aa88ef05cfd3ac84831e23329755677006eb7698f010ebc0c86c9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/counter.c",
+      "lines": 119,
+      "sha256": "1a2c08848e71fb91072ff77d9bb8a314df97652bb7600439a1d8b15af6aeb761",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/crc64.c",
+      "lines": 140,
+      "sha256": "497b632ffddcaf0ad19bb00d98c13c3b7c654bca1afeb3129269fc2bf06ff8b8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/dir.c",
+      "lines": 194,
+      "sha256": "a83b63cc07b83bae62221faf92517a626f412f1c6741b39467b71dc962edf36c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/errno.c",
+      "lines": 24,
+      "sha256": "5cf638148e9c9cbe4bcb191c0cbca2ba255af159a66936a64730327a7fac56ca",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/errno2result.c",
+      "lines": 133,
+      "sha256": "010d4950f6d27092d70f9809838755deec32b5e8b0a98a53d3a37447f52d9249",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/errno2result.h",
+      "lines": 34,
+      "sha256": "45584ae79d02a11225c2cf6aad4f4c62262759a38dbe0df5048b0d082d6c8260",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/error.c",
+      "lines": 90,
+      "sha256": "6ac90da630621aa21ea0f01bdd39e5c4bdc323ed6202b7992c63758b45864cc3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/file.c",
+      "lines": 774,
+      "sha256": "37fa88ee5c3dc467a1a142f89146c0f985109bfaee77ff5b4c3b12ca08f1eb15",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/fips.c",
+      "lines": 55,
+      "sha256": "e765922f8d51229bd9b2d553fdda890c7dcc9ade62e66f7e14d05760993ff537",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/getaddresses.c",
+      "lines": 163,
+      "sha256": "0a60a622ce103ce408eca557445ec8276242ce5dbb0cdf230b5613643b35adeb",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/hash.c",
+      "lines": 98,
+      "sha256": "737fa65b8f2778a4ce4d19cb5682d26e19e02f028582ba2cae014075e151047a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/hashmap.c",
+      "lines": 722,
+      "sha256": "aeeaee6256669f4d72c4ac6c3de80560a70fd4ac1d9d2e12c43cc9adc92a4d2c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/heap.c",
+      "lines": 278,
+      "sha256": "bb4e4fb7c481b541d235cfaa8ce5b40cb4d74d8e6a7e70fdd3cb5b6e98d04de1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/hex.c",
+      "lines": 222,
+      "sha256": "4b506d708cd1ddce31af106241ea34988ade9a4ef0b25c9fa79a05c58cb2da99",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/histo.c",
+      "lines": 571,
+      "sha256": "bd029f3593cc5aa3a8eee4d774cb92fc2850d9e6718605491b3ff62b6aa02f57",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/hmac.c",
+      "lines": 168,
+      "sha256": "0768dad20fc29a90b5feb0af07c4aa69b758c8025db1372caaf6c4f7d3c4dfa0",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/ht.c",
+      "lines": 575,
+      "sha256": "6fcc7f23c862105836ef143a3672f9d73a28fbdbeec82dddc9ee1ce94e6531e7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/httpd.c",
+      "lines": 1119,
+      "sha256": "1e45724a0f11b62911342286e3722e9827cd22b1f5a9c23a500be9e2f0162806",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/ascii.h",
+      "lines": 188,
+      "sha256": "d46423f687f16d2469c3395e104e0c35f4b617fd8d7e5f530bd9e303b8322008",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/assertions.h",
+      "lines": 73,
+      "sha256": "19f135a681be75ea55e47384ec94eb3936a13f03dfeb335e15d5dd8840e8c99b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/async.h",
+      "lines": 53,
+      "sha256": "dc26ea2557d3a4ee564d68c3c249c82b9d95de00af187430efb63add8d4ce4c7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/atomic.h",
+      "lines": 79,
+      "sha256": "50c05859dcc474142b81eaad03b961fb36faad6f1c1f66e71dc683ad5b102f70",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/attributes.h",
+      "lines": 124,
+      "sha256": "dfb5d8b2173ae79b41619de7790b44cc59b60162104ea4bea9b6f301931b1430",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/backtrace.h",
+      "lines": 114,
+      "sha256": "a7a8c0937daed4f36cef8e629fa74d1a34a46bffbb9c59416dee1095ec75f241",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/barrier.h",
+      "lines": 84,
+      "sha256": "083777be4adb948b64ca0b288b131e3801cc55c4a47d0e6f9c212ded273f2f11",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/base32.h",
+      "lines": 143,
+      "sha256": "6c7af037bc4020e036d0f8d2787b0f287a5b2a5f97697de8904a1bf4137e66c1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/base64.h",
+      "lines": 101,
+      "sha256": "8f2bd77c16313ff3e716090e207e449834ad5e7291db534874aff30c2d30fa74",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/buffer.h",
+      "lines": 1261,
+      "sha256": "a13929f15c7f785422f7a32eb950d185afa451538b6288456c5a3a6f1fbc87e0",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/commandline.h",
+      "lines": 56,
+      "sha256": "69fc3165cc90eb2097c3fd15d6b4aba12a50978ce8af33e828079c5c187c2142",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/condition.h",
+      "lines": 102,
+      "sha256": "65094d968cccce190f5c69b506b0c48e5e6922ceff029a6cdee257b2eba296d8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/counter.h",
+      "lines": 90,
+      "sha256": "9fee9045e2d28490873585296314b9ff71ce5124bbe02c0025a62887c0070d0e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/crc64.h",
+      "lines": 55,
+      "sha256": "e45df563f120de5b7f306019afbb9dd911965ea12eefe66c81084ccc79e2724d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/dir.h",
+      "lines": 70,
+      "sha256": "9f55042ca0a58713305521a04827c2af13020be7d2e7352b0034fb3151533a38",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/dnsstream.h",
+      "lines": 588,
+      "sha256": "2c7cd1f4b56cb037a0a72237a2553092bfb1f186df3d4e0ef97fe492f55e4616",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/endian.h",
+      "lines": 266,
+      "sha256": "71663addd8bebc4a663355222d5ffc2b33e5e59665f923d8128e61d4419052d3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/errno.h",
+      "lines": 27,
+      "sha256": "1c0f6807dd0d2b6a5e0589e75a2bd6a6465033bba03ed3cefe87cb76d7940306",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/error.h",
+      "lines": 45,
+      "sha256": "d67a2215a873185f3aea08b349ce2c2c7aa51e806c7ca995a3d2b03b83278bd2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/file.h",
+      "lines": 373,
+      "sha256": "803d52c362ddd63d3046678ef50be77cb7d2a82cb9d6ffbbe158b64d54071dcc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/fips.h",
+      "lines": 45,
+      "sha256": "d9762eabc8b35e2d97b981b9c4a359b2099e86d612cabdc195de943371166713",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/formatcheck.h",
+      "lines": 33,
+      "sha256": "9fe360866b10b4869acdc2f8dbf012727e73ddda68780db53b44c0d4f7d9ae76",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/fuzz.h",
+      "lines": 23,
+      "sha256": "898441e672be766b9d44657c99a00049ee0ef5b59a35254d346ba82a3b3aa83b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/getaddresses.h",
+      "lines": 52,
+      "sha256": "0857da42d99fe1add656ff800c81d95b5fb43f1ebc6134ed981b71bef9a2a4ad",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/hash.h",
+      "lines": 122,
+      "sha256": "39875a018d70f59a67952f3f0cf7c6fc6bbc5a231a4667d24b7c2c943cc7aea2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/hashmap.h",
+      "lines": 189,
+      "sha256": "3d8c0d431dbb5a33703f4e655d3c6eaab738b3b4e6cdf12765f24bfa82a14ee9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/heap.h",
+      "lines": 161,
+      "sha256": "dd79703e03ac427349dda645b2e81d67e78d45fa33e7f1594b4eb56ebe807d97",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/hex.h",
+      "lines": 114,
+      "sha256": "83f46f8bc0b22ee4f0af391f79bd70d3f5c4d0929232fa5e5638b5a2d085a102",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/histo.h",
+      "lines": 391,
+      "sha256": "a4354ffb3c182f10a87866a66ad1bdf670fb7b6da0c6a5a19b7de433c52f8dcd",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/hmac.h",
+      "lines": 148,
+      "sha256": "d40ab32d2c614b3a72f94015d55142dd0dca825b86fde423f440701a726a4d7c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/ht.h",
+      "lines": 191,
+      "sha256": "40b522ede4bc3aad7755b2f3ef87a9b13aeb5e7029875fb4fbf7582967d9bfda",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/httpd.h",
+      "lines": 60,
+      "sha256": "6f27d452844d57ce3a3d611498b7f2cddf66700ffda7fe0158aa341cea153e2a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/interfaceiter.h",
+      "lines": 127,
+      "sha256": "dceac99346fc14705cb27d602249d47d1ae6bfd00dad2bd9e4615c4a7a319e01",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/iterated_hash.h",
+      "lines": 35,
+      "sha256": "3887621f7b0dc077bba480bb3727bbda69e25db7698c9214723178cc802c03ba",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/job.h",
+      "lines": 66,
+      "sha256": "dd200fd1063589eeb6dd66b4ef10187c1c68dce9ae6096bc78bac0a6c75ba294",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/lang.h",
+      "lines": 24,
+      "sha256": "2106649cfb503a44887aa682aa132dfb9bb2804484afb93405162f30718cc6e4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/lex.h",
+      "lines": 444,
+      "sha256": "ac84b9832d94dd47d4fef7cc9780a7b4d7fdd747d5c33f9dd06dba0bd6694158",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/list.h",
+      "lines": 258,
+      "sha256": "a6d8c4b072519e8bae700a3a559655a8484ec0c32b9f7dbb3b9a1a2ec8a2d2ad",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/log.h",
+      "lines": 854,
+      "sha256": "93b37b0e4a98b0fabbe6d134e2276823642d057eeea88a4ca399fb68819cf014",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/loop.h",
+      "lines": 231,
+      "sha256": "24e66de3ddba0e75c446396874c0c97162de026fa7e13e2054e0c8f56491378c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/magic.h",
+      "lines": 31,
+      "sha256": "0f36dbc8846b4601ad92ed9978317b6b325ba41d93699e3358c446ca174b3e87",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/managers.h",
+      "lines": 29,
+      "sha256": "a899e7754eaac5312b501b39bf05af8be6664c2580ba6aa922aaf590825e3a97",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/md.h",
+      "lines": 208,
+      "sha256": "56e568164ac5ff9a270874d1db62ccef4b28f5d873313799223e2639d28413fb",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/mem.h",
+      "lines": 545,
+      "sha256": "53391be1a13638a452f724dc8fc0bcd787fb5d1ac97a23448c6d19cf87dd56b5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/meminfo.h",
+      "lines": 30,
+      "sha256": "3cd3846241d8711eea3c8ae97904f9d14f3dda0736a2c3a6d3caf678f2445777",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/mutex.h",
+      "lines": 93,
+      "sha256": "7ddd0dcbfd69ef6dda89be1774eb8241c8d02d7fbf3897ecd09299c75807ae9c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/mutexblock.h",
+      "lines": 54,
+      "sha256": "4082c04ae7c5aa452023a76af7c486e08ace2e552ea438106d665412d2863882",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/net.h",
+      "lines": 268,
+      "sha256": "6419f7b1de7e258594d3018930e32d0ceb9e57509a52c38c791d563c7d25e9f5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/netaddr.h",
+      "lines": 193,
+      "sha256": "c17c9fbbaa8f01f9bfb1ffa94e204de970107def84d1e16a081b336a206b2f62",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/netmgr.h",
+      "lines": 906,
+      "sha256": "09d44d67c272f81dcaab4cfb2c4c6fccc55c0395525a3c26cc0421f1ffa270a3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/netscope.h",
+      "lines": 36,
+      "sha256": "b7441a7b846f84a6b5cfcc2dab6ec60033e8166d4d159d8e886bde69108c074e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/nonce.h",
+      "lines": 36,
+      "sha256": "48225449f3edc8801aa1a462e263c99d6539affad02c3d066e352b6057d144ac",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/once.h",
+      "lines": 30,
+      "sha256": "747c5e4ed4e748e336d78d900f6932c9327300966de6d769ad2457af09972c64",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/os.h",
+      "lines": 59,
+      "sha256": "5d42ec94ae06567b3812559a63532f7a4fc16e4f92cd20b1ff3467156f1a2358",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/overflow.h",
+      "lines": 95,
+      "sha256": "1934e077d6dd43bd3b6c4e23ad0bdb9c58e3ae9d6430d35f5213006cb6669bce",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/parseint.h",
+      "lines": 57,
+      "sha256": "fa71e89534bedf8ceb2276bb5a2e3033548183b61d8a5beb2b894404d314bf8b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/pause.h",
+      "lines": 42,
+      "sha256": "4f6a95a366ede3e06c2993a11d702da9c7b35adce219ce24ef3db1a84ec24657",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/portset.h",
+      "lines": 135,
+      "sha256": "881a123606e90af7bf8b90167d4bd0fe16d633eb1b57cc95fc080f384552f322",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/proxy2.h",
+      "lines": 855,
+      "sha256": "b3dd8d63dcc7c85f22e8160af66d534e159a9edb7468600da1fbe640663f4bc5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/queue.h",
+      "lines": 105,
+      "sha256": "7ae222a49c43e6762216e39cd50fa0c3fb63cd75efd0e97bf5b73aa1b7a2f844",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/quota.h",
+      "lines": 146,
+      "sha256": "5a4ee8b899083970a49255833b6a4e7ea8e012c841417a2f41958facade2e331",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/radix.h",
+      "lines": 221,
+      "sha256": "76f87c04753f333a8666346df5e1954eb7f8f85f1245152d04719a8a7980a853",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/random.h",
+      "lines": 82,
+      "sha256": "29f0cf7e9e7409a91adc780e3a6bb8955b09392f985bda5fc1ab54361d0b2e1e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/ratelimiter.h",
+      "lines": 142,
+      "sha256": "d6327fd36ca0f037ac9faed25d2739caef77112f1e982af3c1b3da8a39b6bd93",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/refcount.h",
+      "lines": 239,
+      "sha256": "0a61309709a503f15456264c6e76b6bb0df89aed67c2cbd8911ff4af1d818213",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/regex.h",
+      "lines": 33,
+      "sha256": "aa0985c8e4da2ea22388e560c21851a04997349f2baf93c9a4f5c2cc2e73dcbb",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/region.h",
+      "lines": 97,
+      "sha256": "73661b4a787ecf0ffc090571a10242a444b5250af2dda9641c3040583d3a774e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/result.h",
+      "lines": 300,
+      "sha256": "d8879429be1d7992c4eeba7108dbbdb663a60de3462e759ad57077cc5a023fa0",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/rwlock.h",
+      "lines": 264,
+      "sha256": "8de789cbb366f75ec8b82bb23d38302e39b4f011e741bc46b0f069a7b1ccbd7c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/safe.h",
+      "lines": 44,
+      "sha256": "823d97e3b604038438282da07e194c3a545c5824d3d890416401790b1f167e84",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/serial.h",
+      "lines": 69,
+      "sha256": "6a1b463077b543597f5a076434390f1495f7c52b387b8f2f8af5b77cf7439576",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/signal.h",
+      "lines": 55,
+      "sha256": "6f3e802994418595a9445b0b2c50ce032d0421c1e4efdd8b891a469d7ecb75e4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/siphash.h",
+      "lines": 433,
+      "sha256": "fc234ba3efa3fe7013059b8ff70c2f804fa1bf99425f5e10ceff5f4f3d6f88d8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/sockaddr.h",
+      "lines": 251,
+      "sha256": "37ad1c088b3deda023313882e4818af27a37923dd669a1979517abf775951be6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/spinlock.h",
+      "lines": 125,
+      "sha256": "1bfa93584076d9b6f01739786c690d2d581c3cfc3cd6f13ca972b83e24f6b875",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/stats.h",
+      "lines": 228,
+      "sha256": "37fff9afdc93052b91ee00974f48ef8c1d7951cae742606719dc6871d3b6d552",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/stdio.h",
+      "lines": 71,
+      "sha256": "48fe639ba222fa8270336c1d726537bafafe5b38dec7195492a1204080b852e8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/stdtime.h",
+      "lines": 53,
+      "sha256": "01e536fd171f34d50b5617ba374f686539b9830f70bc96b4b06e5211a4b8363f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/strerr.h",
+      "lines": 33,
+      "sha256": "75b590322a321d241504d973becb2c4058d6738de532f19efb4af6695e6ba669",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/string.h",
+      "lines": 42,
+      "sha256": "50307f2fcc8db2a7c689b8ba934d4a9068c0128ee356ba79f0567ac6699e59e9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/symtab.h",
+      "lines": 135,
+      "sha256": "7bfde05e26ba451a90273a9b5199edc8d315783ed4f3ed0e56888ae76a5b14ea",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/syslog.h",
+      "lines": 38,
+      "sha256": "7cee9915ebf6e91b5e6934a704313dcdfd93547d79d615f3127354357b988ad0",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/thread.h",
+      "lines": 59,
+      "sha256": "dbc32000dcf28ac779005d50e2757699bc862bcc20ba5ebf41fa9940908cb5f0",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/tid.h",
+      "lines": 49,
+      "sha256": "fb77cf5653e6500360f94414baa6e7554add694e4d29bc297823aa2395c176c5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/time.h",
+      "lines": 504,
+      "sha256": "c1f1f9955f4d0fb34452d7fbb79cad1ef0ab269ce81d4fe76167904538d386ac",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/timer.h",
+      "lines": 169,
+      "sha256": "cd28594bc229a0be05fb5e3ef36ea509025ec0e7f84169df41cd0769d1bdd414",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/tls.h",
+      "lines": 625,
+      "sha256": "baa15e6f77d511a98c6ec18bb345ff3eedd212fda3d9e38f404e16cca22cc1ea",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/tm.h",
+      "lines": 39,
+      "sha256": "b2a556d3cd9cee568161105575651e4ea8ecabe8d5f35856ae2f06ab14121b9e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/types.h",
+      "lines": 122,
+      "sha256": "ac0025e76c41738d76da919f75ef4e2044d52f642e2a0057f42009f5cf271bff",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/urcu.h",
+      "lines": 194,
+      "sha256": "809e5face62ce26e51d36c7b4148b3a36270073833198492a8d58d16ccd6183a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/url.h",
+      "lines": 87,
+      "sha256": "d2778c31cf1270b35ba984b7083205c4d26a0a3df5eaef7608dbd2021d0b4dc9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/utf8.h",
+      "lines": 43,
+      "sha256": "65cbbe909873f78a6bf9c05ba40da9ce6336356666118425a346cee30d64f11a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/util.h",
+      "lines": 452,
+      "sha256": "68ecd236cd6b38a5bda87fc2b068aac995944e2cb9f823dbfe9af41e0af66419",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/uv.h",
+      "lines": 119,
+      "sha256": "7ebd413b0923ce064e7fa00f209bef24b86cf4129fed65fc0e2e141da12906eb",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/work.h",
+      "lines": 128,
+      "sha256": "291a36efe8bf1b1b45f005e0e30de98abf8f7ba73f90508228b3865f7977682d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/include/isc/xml.h",
+      "lines": 25,
+      "sha256": "a54678bdfc1c085297709230d7e4c443aa2689e4de29e03fdd90b43abc942b78",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/interfaceiter.c",
+      "lines": 368,
+      "sha256": "5165a24bace275cfddc02e2036489b4bf2ce6efee368de22cecc92b5ec92893d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/iterated_hash.c",
+      "lines": 177,
+      "sha256": "0e0e18ab94a510f1af8a2b5160b068d1880a79ea4781f52a6b2920f38aebdce4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/jemalloc_shim.h",
+      "lines": 89,
+      "sha256": "4fe8adb4c978deb55a10565e4f60ad1effd5cc7e063f808b5463fd5a12da2722",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/job.c",
+      "lines": 92,
+      "sha256": "dca159958ecccf9799493e9d5ffb9396cdebbd875be5a208276b87f98754f0bf",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/job_p.h",
+      "lines": 43,
+      "sha256": "9b8d3a48ad1304a0af5eba91795627b29c54712cac1bcf177fcbdcf3ea68a7b2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/lex.c",
+      "lines": 1133,
+      "sha256": "f85797df1d873ca91013cce84350f7a5b935a35e8b951bf289b04bc99c3e233f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/lib.c",
+      "lines": 72,
+      "sha256": "170db9348b44a26f89ec6b6db12dad52f8b46f96dfe9063a089c730b41fc437d",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/log.c",
+      "lines": 1877,
+      "sha256": "39eaac98011b2488970286b2644fec468314a270def3999a033d4311a6191dcd",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/loop.c",
+      "lines": 660,
+      "sha256": "1abb71aa2e6f16dc16f91b6d76bf326ac3638598c72b2969f78ef6e3437b68d8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/loop_p.h",
+      "lines": 150,
+      "sha256": "1d1aa954e72ad7b8c7c3a275e2185026ddd944405fe3cbf615f73ccf10829f1a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/managers.c",
+      "lines": 52,
+      "sha256": "82a1d4ca52fe20ea04b4aa74b0cd6d295cb725a2ed5a5aa75c6821ce7f1ddbcc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/md.c",
+      "lines": 228,
+      "sha256": "b7fc02243b6fc0cc7b56bf68a51ef6eec1205e8a6c2341a77848d65b2683cde5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/mem.c",
+      "lines": 1645,
+      "sha256": "d26db3192e6bfdc2abb83509c53a0ee2cdaa0659bbb31336397828c2a53c83a1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/mem_p.h",
+      "lines": 36,
+      "sha256": "1ca9137cc1ff119c518e6b7aafcf6fdf05fec0b14343994264ada29ba31b2c3b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/meminfo.c",
+      "lines": 50,
+      "sha256": "eba596377cf138cfc73ee76c153bcd765d6b3cca23a58f0409896379b4a9f0bc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/mutex.c",
+      "lines": 54,
+      "sha256": "f67a77330ca94522b2e7f17471575bc5bd580af4a19d82084fdd054136c7fbf2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/mutex_p.h",
+      "lines": 22,
+      "sha256": "c1a352194772898efa5ede0507fa9f993919730176477bde4a565498ccb84bfa",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/mutexblock.c",
+      "lines": 35,
+      "sha256": "066e82fc95a36780bb49f38a5fad1f31b46c59e3a3e364f73cc074d09d9e5f72",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/net.c",
+      "lines": 481,
+      "sha256": "164f0e7ba963ad7dc5c13f921069fc11affe4e9510fdc80dc882cde9e7d8eeb2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netaddr.c",
+      "lines": 433,
+      "sha256": "93fd39c231dfb85a61064a764a4c0581a113033e8eef643fef325f82c80b188f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netmgr/http.c",
+      "lines": 4231,
+      "sha256": "c151e3795a5eff15d4d702bf8f91718afc481b1ba44a37651772be5b75a6a0e7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netmgr/netmgr-int.h",
+      "lines": 1529,
+      "sha256": "3bdf52c22a967255aea0613b359b96ed529b3b837e797f508c8964be2f836f20",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netmgr/netmgr.c",
+      "lines": 2992,
+      "sha256": "03bf6e3c6480c0d17e53825080380b38e343df29f2472acc885dba75388af2db",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netmgr/proxystream.c",
+      "lines": 1169,
+      "sha256": "5e23b11c14e949738d622b51ebd5d5a418ae33f6dabae5b5961aaa9dd2c163fd",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netmgr/proxyudp.c",
+      "lines": 883,
+      "sha256": "9bc697933936cafc49439eb354ddfb1ae764358abc4fff94ca7025956db5d008",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netmgr/socket.c",
+      "lines": 443,
+      "sha256": "e8c1d8db54e799358b43bb2816f0cd5a144a25c6801c7838e8dca80f6626c33a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netmgr/streamdns.c",
+      "lines": 1203,
+      "sha256": "e4dfe47ed6d4d42677b020fa93ec2984e238251662966edce005d5eee845372c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netmgr/tcp.c",
+      "lines": 1351,
+      "sha256": "683cd367ac0587eb9c9fd023c852f01261c802105de276108adb02bf0ee9eb96",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netmgr/timer.c",
+      "lines": 116,
+      "sha256": "3da71517c8434a52c5f0a2cfff710b726e8385fecc7142875355188ef31cf3aa",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netmgr/tlsstream.c",
+      "lines": 1653,
+      "sha256": "cca641d44fd8d6c8429eb213bf7848743fafcfa36913667eb6b9d1ffd9fdc8f9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netmgr/udp.c",
+      "lines": 1060,
+      "sha256": "fda2b63049a06aba5e438871b899befb2d43e7ad0401477d6f38c7e0e567cee2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/netscope.c",
+      "lines": 76,
+      "sha256": "5ad6bb096a82ae4e18cbec5a29e660ecf1e48c3d14ce4a56b5b0d93b7632dbd5",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/openssl_shim.c",
+      "lines": 197,
+      "sha256": "55b8ec4ba81b7b38c1c3a5ec24a35830bf8bebdab2fd8c9b2feed6df2f7e9420",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/openssl_shim.h",
+      "lines": 135,
+      "sha256": "7b2eac8c4afa12820580e06f89f6c8be72fe8f28f939d7ad0c4ff0e8cf13694c",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/os.c",
+      "lines": 219,
+      "sha256": "345910143f096a2e2380f2b6ebd7f6c9198980eb1639b806a523562c66d9fbce",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/os_p.h",
+      "lines": 26,
+      "sha256": "5c3cf01cee297d07bb115db2964a6f4095c902a3b91f7a7a0d00b97d3a2de122",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/parseint.c",
+      "lines": 79,
+      "sha256": "bb6a26b45b3bfe6a7c763dd7d570b6d7e39a9be0d2032293a0d1fbb476a88faf",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/picohttpparser.c",
+      "lines": 791,
+      "sha256": "fa0fa70a05e8c53f60ca1f6414a9793dffe662313bc7eb17e077513cce0d39f8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/picohttpparser.h",
+      "lines": 103,
+      "sha256": "e16f60f762cbc7732bc0cc3f4b208670672bcc8e26386d008a11ee84fc1e1ece",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/portset.c",
+      "lines": 133,
+      "sha256": "e552df045aaef7f524367ed50f96fbdb2f231ea95cde5abe5ea4148b693a580e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/proxy2.c",
+      "lines": 1440,
+      "sha256": "b2711044bd39825aefe8789dd3f73c9021aee37369f9eaf7d31f024f4ae586e7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/quota.c",
+      "lines": 159,
+      "sha256": "4ea212576032ec00c4167667ccd6c7b42cdda8ec29954e9d12fb2436fe87c4a8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/radix.c",
+      "lines": 700,
+      "sha256": "0bcf081f88003a394c501839bbefc0cc4ecd8d0268bedc06c6a798110e47de38",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/random.c",
+      "lines": 153,
+      "sha256": "37b22b4460c31204f41e7dfe89f904f9f596c0be88580fdd2500ca79ed2908de",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/ratelimiter.c",
+      "lines": 328,
+      "sha256": "4a925c1b3542e8ff0bc8b6b80eac2e38d53e51b2e8aab6a7d39b56cea86a1a85",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/regex.c",
+      "lines": 435,
+      "sha256": "2971fb26047f4cb80a8b9963ecac80346d7f8034cc44066a8e37920e82e0e705",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/region.c",
+      "lines": 41,
+      "sha256": "bbd3a8fa4022e1380997dc201062d9f32d0741fe360e84152a5b04bb031f3eb1",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/result.c",
+      "lines": 554,
+      "sha256": "8b993b43303cb541c92fade8e42efbfb4fdaf39136fef05cde7b08da5f02b0e6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/rwlock.c",
+      "lines": 336,
+      "sha256": "fb119493da69f83631d0047fe7cb05e983f05ec38cbf1c0db3fb3389cbfab1e8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/safe.c",
+      "lines": 26,
+      "sha256": "3775d7cb89cba758f888a10bf30b79d90dbdc782fda876a49bef3cd89e1e02a2",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/serial.c",
+      "lines": 55,
+      "sha256": "572bd77801dc9a2d3ae6cd4be07ed70fb7c066e634950e445d6d3df4892cefb5",
+      "status": "ported_module_differential_tested",
+      "go_package": "internal/serial",
+      "oracle_cases": 8273,
+      "unit_tested": true,
+      "differential_tested": true,
+      "system_tested": false,
+      "full_compiled_upstream_oracle_verified": true,
+      "tested_platforms": [
+        "darwin/arm64",
+        "linux/arm64"
+      ]
+    },
+    {
+      "path": "lib/isc/signal.c",
+      "lines": 100,
+      "sha256": "4f4808976d9d16262c619e80977572931d7874e029d511441a9ee77da0b9d226",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/sockaddr.c",
+      "lines": 483,
+      "sha256": "112da422727edecc21451f11ffac6e400f8f189946d166d5ccc6e5e3d7cf59f9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/stats.c",
+      "lines": 198,
+      "sha256": "e558a5a14317e0594919c7e1e10125df1d72e74fef7ba2d285d6e0ca4c378dbb",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/stdio.c",
+      "lines": 148,
+      "sha256": "2af22c67d0a99121704c574a806dd1a6a5508f31bff3e0c7c2bd9cffa9667233",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/stdtime.c",
+      "lines": 60,
+      "sha256": "567d4b098ce42c60123e438430b636925e44a89b6df326a185f233ec22aa1f53",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/string.c",
+      "lines": 148,
+      "sha256": "76efe2853bf0b26a221f784592a106e541afd095c7a35306464017521738d499",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/symtab.c",
+      "lines": 289,
+      "sha256": "2ecbd941f60c58e01ad230452a2748e8b9a5826d677b92e8e9a539dd54193786",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/syslog.c",
+      "lines": 73,
+      "sha256": "2adcecd0909b1a43824527e469ff27d9642f8b56f076d66e555c25509f48b286",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/thread.c",
+      "lines": 181,
+      "sha256": "f4ea0b02db14d941e0c0796b5757957ed780fc7b2017123a8dfa58893e10c1d7",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/tid.c",
+      "lines": 58,
+      "sha256": "1e8bd14a08bc8fc957833abfad87b9ea1e6b8861354d0efc6eef32509f754790",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/time.c",
+      "lines": 517,
+      "sha256": "afe1adb652babbb50580bfe395ef4e615837dcc6f3636362f6760781027cc2a3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/timer.c",
+      "lines": 206,
+      "sha256": "812569a178a74bd3421d1a7a9f4fbe6b27b63bc8f4588948adb6c08353b138d9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/tls.c",
+      "lines": 1761,
+      "sha256": "39b61599fb1e629ae8b49a3344797a3d816af7268a06360d1dfe9ef1f59bcbab",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/tm.c",
+      "lines": 467,
+      "sha256": "da63224c9ac5eee7555c21f578a34f884afe34adf1f5c74d28b9ebfcd41e1636",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/url.c",
+      "lines": 671,
+      "sha256": "d6dd48dcf072ea01a83751c754c4ac6ff0ec75e58321823cb6c0152ee37ec180",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/utf8.c",
+      "lines": 89,
+      "sha256": "d86b60ed04ec1d804b34f1f8d126eecccf1610478c59b479d9d1e453ee8feebd",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/uv.c",
+      "lines": 175,
+      "sha256": "c6ef2fb9610fb60fd306cf5b7e9a4568ddb06c3e8ced9cbbc589f16fb28081db",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/work.c",
+      "lines": 446,
+      "sha256": "9cf3f7294f716e32e7a55118905b2f4d605bc4c17234e96945ef2af77c8ffa87",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isc/xml.c",
+      "lines": 85,
+      "sha256": "f6e3a6f6242c52c06955341affd83826b0b2f0dfb53065689b768f1c77818a3e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/alist.c",
+      "lines": 319,
+      "sha256": "74d1c16a109d12ffc553c35c179f260c5c3adae05d330c22f65e52693f147917",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/base64.c",
+      "lines": 74,
+      "sha256": "d02ee4d93737111fbd811d95c030235d30026843a236008f6b096aad914a96bc",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/cc.c",
+      "lines": 1058,
+      "sha256": "e964590c690d788ae7d900a29eeabcf06d3e0e9d2a4a88ebf8a585bb5c5cfd7e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/ccmsg.c",
+      "lines": 218,
+      "sha256": "0d76f8cf468b3ddccd6923e1e9ddbffef298d37ab78cb02173234ee3d79ab7e8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/include/isccc/alist.h",
+      "lines": 86,
+      "sha256": "91ab9335a5dd350577ea33c9bc1ab83941dd69c773492d792f89720098f33341",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/include/isccc/base64.h",
+      "lines": 79,
+      "sha256": "121823af6a26f4dc5b7c03688745c26b7d3cb474a279669261218aa5dd94cc71",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/include/isccc/cc.h",
+      "lines": 132,
+      "sha256": "351ad42c69059084f71c1b2a5f056f5316efd7a30409c64fec097021d41059c9",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/include/isccc/ccmsg.h",
+      "lines": 145,
+      "sha256": "d160a33f9a329926630fb6be2679e8a0a9840595c7927d7c5b6e02810dcd0342",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/include/isccc/sexpr.h",
+      "lines": 119,
+      "sha256": "4d70948470845e177730f14a9f3cae6ba0226a5154bf756c0bd37c42643eef05",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/include/isccc/symtab.h",
+      "lines": 133,
+      "sha256": "dd42fb28e234c4eeb9c01d84b1772d554f77b9a5b0ece3f17c4a32595ecfd3ac",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/include/isccc/symtype.h",
+      "lines": 37,
+      "sha256": "1f36bd68c9de6418e9795a2be6f8e7aea9225861b267d5b17cf4c870fdc27676",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/include/isccc/types.h",
+      "lines": 52,
+      "sha256": "3acd4398ade4b305a0987d8dfcc75ed8d04f87b4555c8fb73a8334db68e7d3af",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/include/isccc/util.h",
+      "lines": 208,
+      "sha256": "ea9457ea009203dda95f745ad4bbf33f0038f90018db797553a5b073d524cefb",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/sexpr.c",
+      "lines": 316,
+      "sha256": "a4b1148bb0c0ff57e69b9f64f3fb4d0bb55e51186025fd31ca3b7f245f257a82",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccc/symtab.c",
+      "lines": 288,
+      "sha256": "1ca70f12e3cab56da5e6906519be81e34300f7f9f68d4d500f4939d00447ee9b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/aclconf.c",
+      "lines": 981,
+      "sha256": "afd4ab858f7887264c346a76dd071cf361d23c08cb1ab89986c97daf0aef7d69",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/check.c",
+      "lines": 6638,
+      "sha256": "4612e6eeb49b979a3eb0073af150a3080a12b3fef3b1fbeb59e6dc6f2cfd5bfe",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/dnsconf.c",
+      "lines": 57,
+      "sha256": "f533b1f302a6d42091c5d5e425a06080c865f326138c5857fef380abc162b711",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/duration.c",
+      "lines": 261,
+      "sha256": "7edb5f8cc2e5e80c0b79aff58a7d68ae9a0336f2c38fad88569ac077166eb904",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/include/isccfg/aclconf.h",
+      "lines": 80,
+      "sha256": "4e3f9c8a6e98783c0fb07f1e97ef1cab0a156fb920247a48684f954622949d27",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/include/isccfg/cfg.h",
+      "lines": 629,
+      "sha256": "1015bc99a69adfc13e6ce960fec530b183d69e23c7407867ee6d5d895df1d34b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/include/isccfg/check.h",
+      "lines": 78,
+      "sha256": "d90af1dcd21a1361e85601f9996a51d75500c2cef615001e7f9e2778b92d7b99",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/include/isccfg/duration.h",
+      "lines": 87,
+      "sha256": "2811b95c0ba21c9d1a9b61261cacb47e53b2138626294afaa1d0bce0b0744c11",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/include/isccfg/grammar.h",
+      "lines": 597,
+      "sha256": "35a1b64a2d974d7d7fed07b3578463263dd786b6e6bb9dcd0e862ccffdc19dcb",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/include/isccfg/kaspconf.h",
+      "lines": 128,
+      "sha256": "5beedbc986433e0eeb7b700c18e827b6806a597d8123794ff9654b39ea44468a",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/include/isccfg/log.h",
+      "lines": 46,
+      "sha256": "518ad297fab17454655b1a5513065129b7336cde836783aac3005851e0e75010",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/include/isccfg/namedconf.h",
+      "lines": 54,
+      "sha256": "84cade3a02fc98a774eeaed2a2acebf5b8afc793d533267a76bf76bafb59ec5e",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/kaspconf.c",
+      "lines": 1071,
+      "sha256": "b42e5e0f06aed6b4ebfba328e0ac73e27a2bc63995a242d58e34e63ba8d79441",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/log.c",
+      "lines": 38,
+      "sha256": "4607db1036b7fbd6e4eab35aec9550980ed1a54b2c82ef7339af23bcea3236dd",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/namedconf.c",
+      "lines": 4236,
+      "sha256": "d8f0fa708095fb531d8c8f6c2c51e3890e71a2fe7de61b7f022c142d3aff6a40",
+      "status": "unported"
+    },
+    {
+      "path": "lib/isccfg/parser.c",
+      "lines": 3977,
+      "sha256": "6c96e3a5c40f18e0be4d3d388333740c577c99cb05161f43d919b2117c1ad5f4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/client.c",
+      "lines": 3181,
+      "sha256": "c6eb982bef02d0ca18eeb8125ba63b6b8869785ea5423b163245e7554ec84b13",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/hooks.c",
+      "lines": 358,
+      "sha256": "bf9cc8fbb5044617f4dfad4cb524f88e6b5acf6aa2a2dd2f8aae5f297e5a0c36",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/client.h",
+      "lines": 558,
+      "sha256": "518ae38d29c950d399ea60a5d833810e137ceef1de9d871806593343b214ce14",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/hooks.h",
+      "lines": 613,
+      "sha256": "be0500f222136500266a08dc1ef62eb7d507b4b3c04a91dd98dc3ab2127e5a29",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/interfacemgr.h",
+      "lines": 215,
+      "sha256": "3bb37edb283378dcf6e79eadd5faf9fe6501804e70adc9fc47eb5eab3691dc43",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/listenlist.h",
+      "lines": 142,
+      "sha256": "22cab985f7b7637d10afd929a3d7d379d9c810b12f28bed62b99ba0fc20eac25",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/log.h",
+      "lines": 73,
+      "sha256": "070c6755e8c4b1f3e3e8311af3f0f078d3b1769454480b79423f894988c7b8b3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/notify.h",
+      "lines": 44,
+      "sha256": "cb499c497e5088e9d62a2a8ed48fe952723ddb0d0c67a3605e02eebacdec5746",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/query.h",
+      "lines": 326,
+      "sha256": "8feaca91a3a6b49c9c686ff9547618c49087cdbfb7dd52215d7967f48d7893a0",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/server.h",
+      "lines": 208,
+      "sha256": "c35dc0918a9017ea6e827b33eff4ba00dd496cf3179e096f32a25ccc1daa6e7b",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/sortlist.h",
+      "lines": 68,
+      "sha256": "2ffd376835780c569f9a641eba29da780669582234386724b56a7c774642e1de",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/stats.h",
+      "lines": 143,
+      "sha256": "562d412573837c360ae3a22290fa72ba231deac3261c8e802da1c333220174f8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/types.h",
+      "lines": 33,
+      "sha256": "97ebe34edf90640b463eeb6d35740f71aad991620b4289aa30d84ed1cc9f9e24",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/update.h",
+      "lines": 43,
+      "sha256": "fdd14b9935ed92ee5b42242f0551837f9ca948aa8507857e3ed9961b267e6099",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/include/ns/xfrout.h",
+      "lines": 30,
+      "sha256": "156c4268e1517807a37d1034852a08029da072542ec9fbcef9731e0cba7e9281",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/interfacemgr.c",
+      "lines": 1495,
+      "sha256": "5dba1ccfef39fed12168b22169f42a0243c109a4be05219609476b0a4f361ee6",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/listenlist.c",
+      "lines": 367,
+      "sha256": "f05f1515d5d10af1977b5201f6912f0bc9b562a7ff1e95dc975934b656541bee",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/log.c",
+      "lines": 63,
+      "sha256": "cb4c5a4ae03b0db6951b0757f45fb8b584726deedb7c9bd56b749eb161ad3cf3",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/notify.c",
+      "lines": 180,
+      "sha256": "4898451a34c37bdbad556bf179d033e735f42feb4523d3031b07674b515b5478",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/query.c",
+      "lines": 12133,
+      "sha256": "50f4dc42c340f5df53e70cbb74f9cf7f1e38f57e829ba1ee4e140d8520010551",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/server.c",
+      "lines": 260,
+      "sha256": "c29e73a35f7cbc0259f175263d8a717e57ea5e5d80b71a696a3c023bd612da8f",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/sortlist.c",
+      "lines": 150,
+      "sha256": "98e8f8265729c783927d68ba113a8d16d2af4a485dbca975e53361201507d8b4",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/stats.c",
+      "lines": 115,
+      "sha256": "fb2dc4b42befd5be2d83cdc782abaaea10fc1a2ccdd8b7cdaf64ef46678cd9f8",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/update.c",
+      "lines": 3628,
+      "sha256": "8367eb22d20f22eb7c561f849165eff92d32ff1b014d117e99a2f0b3a444f529",
+      "status": "unported"
+    },
+    {
+      "path": "lib/ns/xfrout.c",
+      "lines": 1816,
+      "sha256": "928cfeb6616885473d64b4b14a84af5983dfd88813476ef137eb2fc42d76feb1",
+      "status": "unported"
+    },
+    {
+      "path": "tests/bench/ascii.c",
+      "lines": 223,
+      "sha256": "3137158d0cbf42ad964ba3f8af9689f5a31a62ad4e9775f5ab6f8f7f8d297b16",
+      "status": "unported"
+    },
+    {
+      "path": "tests/bench/compress.c",
+      "lines": 104,
+      "sha256": "bbe345518279ab5d21812a30603be831f7d0802e32b0ab8c92e778f77c0223a0",
+      "status": "unported"
+    },
+    {
+      "path": "tests/bench/dns_name_fromwire.c",
+      "lines": 145,
+      "sha256": "1da08eda24dba86bda79d9a8c2a234dc045039b4cbb4d71a89f5304737e439ce",
+      "status": "unported"
+    },
+    {
+      "path": "tests/bench/iterated_hash.c",
+      "lines": 77,
+      "sha256": "6812c5c7d2a9fb5f41adc3fce9b146a992f103b15560ae94da761a793be43189",
+      "status": "unported"
+    },
+    {
+      "path": "tests/bench/load-names.c",
+      "lines": 621,
+      "sha256": "0280e4e614b8c1414cbe922db94fac8acdd97f03142e0f18529201ce2023085a",
+      "status": "unported"
+    },
+    {
+      "path": "tests/bench/qp-dump.c",
+      "lines": 279,
+      "sha256": "60d4719fab290d1d7e976f2c6addd0ffd6ca0d1fa37e4c3219a4fc2e8aec8771",
+      "status": "unported"
+    },
+    {
+      "path": "tests/bench/qplookups.c",
+      "lines": 288,
+      "sha256": "1ab5348f53e12b850a9b2a6ed1aadbe9c68805f23feb66c07f7998d3de1f5441",
+      "status": "unported"
+    },
+    {
+      "path": "tests/bench/qpmulti.c",
+      "lines": 913,
+      "sha256": "d6a9b959916123545ce6f8877e2ac033f43eccf5029583f5c4335380e6be596d",
+      "status": "unported"
+    },
+    {
+      "path": "tests/bench/siphash.c",
+      "lines": 180,
+      "sha256": "19bf49e4d80069d7c1a3e30e52e20a71e704db217e7615b28e8eab3d13d7b0d4",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/acl_test.c",
+      "lines": 114,
+      "sha256": "b501d48740cc63af1bf4e5d19808f9b5d4b9dbac83c116e4ed9d114a0c82ebb4",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/badcache_test.c",
+      "lines": 383,
+      "sha256": "45bee18eebffaf40a2f6b7e5c531b3f59e73cb914501d8daac62e840c9af6d7a",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/db_test.c",
+      "lines": 401,
+      "sha256": "af537326b2a0c1f18ea9ce66f1ba3a2299df1988405e46b1b25b0bef67666dd8",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/dbdiff_test.c",
+      "lines": 144,
+      "sha256": "0dba4c35ed1813497e3c138ee87c5dc68b136232c1548d8294f0b2b27c6fd121",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/dbiterator_test.c",
+      "lines": 396,
+      "sha256": "be12ce7bda4dd4b6488089c1b39132aa85ab165bc25873c086f95f5fcf6e757d",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/dbversion_test.c",
+      "lines": 525,
+      "sha256": "be4460611b59357911cf5e35e4fa2d66403a889e34d0f81405bafd1c67559d41",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/diff_test.c",
+      "lines": 145,
+      "sha256": "9c77928a4be9f2151107bc6361eacc16ff377c22a4366e52b0b91dfee0fd19d5",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/dispatch_test.c",
+      "lines": 1054,
+      "sha256": "3e83b6552dc19c4bd463a916620de7fce7d5e52b57baf2f0dfef5ebe2db144b7",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/dns64_test.c",
+      "lines": 234,
+      "sha256": "733142d569d10b8f6b85f5ddb007df1a164e6e122149ce1f6992722b47270153",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/dnstap_test.c",
+      "lines": 376,
+      "sha256": "ea93306d21c9e58c7bb3892637d428a4cae7076f07ed87dc088f492eec9967a8",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/dst_test.c",
+      "lines": 447,
+      "sha256": "7ba4e8fdf4deffaba90ea32ac885c78b38bb5ad4b244bef7c2b022947f533c1b",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/ede_test.c",
+      "lines": 222,
+      "sha256": "ca191b03b30984301e2397d52f67d2cecaefd4fe7a9e37b2f5dea5e723080c0f",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/geoip_test.c",
+      "lines": 395,
+      "sha256": "c799d38a269db3b309212ca991b9986974f54f1e62ad8d1dabe30df314a0810e",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/keytable_test.c",
+      "lines": 705,
+      "sha256": "cbbb425d3d2ef2213ab46ef0d524dba06de7efb8170d5433750a5fc7eb4292bc",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/master_test.c",
+      "lines": 583,
+      "sha256": "4c6334c798817f4322bcce6e74029dd173082475cbbe85419a3f2a3b1bac3cf6",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/name_test.c",
+      "lines": 1198,
+      "sha256": "1d763775082fe39ce8a7ecd37e015589e1e68ef8598e7a66390dae50a1e073a8",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/nametree_test.c",
+      "lines": 330,
+      "sha256": "28a10c9132e4c5072c67df38d2475adcb2a3787b04b7d3f0cacda78f257579b2",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/nsec3_test.c",
+      "lines": 155,
+      "sha256": "98dfddf81174e9ccce846f234079fccba6664ea95c7639d9e03ec3301639d66c",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/nsec3param_test.c",
+      "lines": 266,
+      "sha256": "1cc6088048df916f6c661ede49e1c1d71606a7bd74741a9b45245c18245a19e3",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/private_test.c",
+      "lines": 222,
+      "sha256": "09456c200a7f8f06379e03b7012271b59d3d0103f15aa13aad57541a7b2bbcb9",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/qp_test.c",
+      "lines": 940,
+      "sha256": "e25ce4355564e5bdfdfc4d32ccb2590b355bef1740000e1b50094fc54a23bcdc",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/qpdb_test.c",
+      "lines": 468,
+      "sha256": "5da3077c5daec3f7215039bdf2ea8fe438532c04fa88b70b0b9b1c75b053a9f6",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/qpmulti_test.c",
+      "lines": 415,
+      "sha256": "96bc57fb8f6d8da05f91c20f8e0dd3c6139f8f9cc5b3982c47cfd330e5d9634f",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/qpzone_test.c",
+      "lines": 535,
+      "sha256": "a6cb18acf155cbc6142f696ac689ac98b361d25009187ce0d6d828dadce49efc",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/rbt_test.c",
+      "lines": 1222,
+      "sha256": "2244508b8d442316a32cdca69cc9d65b1067877ffc90dfd840c96088e5c72068",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/rbtdb_test.c",
+      "lines": 186,
+      "sha256": "d35da32062d53a5ca4715483b22286ad1e5d7497dcdf0f5aabaa6e65f075ac96",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/rdata_test.c",
+      "lines": 3657,
+      "sha256": "9c120a1febae5f73f1bcb313f1036925db488d0e412cfb3ad730c181623ad141",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/rdataset_test.c",
+      "lines": 108,
+      "sha256": "955d90a227dcf772429760f3c42a7342d79fd7b03f0d1e2d46395e65e882cfb9",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/rdatasetstats_test.c",
+      "lines": 260,
+      "sha256": "93ef51ac5bd6f0cddc34fbeb2da82aa55ad15a501d814332c722136002d231e1",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/resconf_test.c",
+      "lines": 205,
+      "sha256": "ffec3c38311ba705d7a12d15f9771b9b41ae4cdf4f5b64b1c84489573319f3bf",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/resolver_test.c",
+      "lines": 196,
+      "sha256": "55c40763d15b1564a1a712180ce12676953fe4cb37bc9385f1a91d56b0bd4930",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/rsa_test.c",
+      "lines": 404,
+      "sha256": "8da2c03d82a933e9b02c67b36923a918d3d66c23da23d39e3fae147aff430150",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/sigs_test.c",
+      "lines": 443,
+      "sha256": "3321f812846a2ac0ecfc075d9fb0c9489368c28c75360500cf67be4d825562ce",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/skr_test.c",
+      "lines": 506,
+      "sha256": "83895e02b405ad5f9e50ed857b30cbeb6cf067aff07d5ef50a23eb5d88769299",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/time_test.c",
+      "lines": 169,
+      "sha256": "e79baeccfdfc05cc22d90a5313a4f27980d47e5f6ec5e8e4efcfc9769be3c018",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/tsig_test.c",
+      "lines": 567,
+      "sha256": "6eecb2cae9f604a2d1fa1b8abc8ec483625579ab89293e6535035a7cb78c7f8a",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/update_test.c",
+      "lines": 447,
+      "sha256": "4fb5fdd362fc701847e836b3c3e43264673b1d068fb0e47f8eadec17333c0b9d",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/zonemgr_test.c",
+      "lines": 197,
+      "sha256": "d222c86b0691b06aa02e3b9eefc5caf27ef295b6f93a43108937e24345d4f10e",
+      "status": "unported"
+    },
+    {
+      "path": "tests/dns/zt_test.c",
+      "lines": 280,
+      "sha256": "58a1c4424fb65823a094c75b2a4ba256080fee8d8a7197b7c736d60954b9fa8b",
+      "status": "unported"
+    },
+    {
+      "path": "tests/include/tests/dns.h",
+      "lines": 120,
+      "sha256": "b1a437192846fee64477307b7a49de817e84430eb24c04c099c463d4ff1a6ab5",
+      "status": "unported"
+    },
+    {
+      "path": "tests/include/tests/isc.h",
+      "lines": 266,
+      "sha256": "3c5ce22053edf2532c0c74a80d100c53f7e107f2af85f7f95824e34acadb8fb7",
+      "status": "unported"
+    },
+    {
+      "path": "tests/include/tests/ns.h",
+      "lines": 125,
+      "sha256": "e687776c8693c66dfb630fef82856d515655712c79e4b19803cf3bb75b511e0f",
+      "status": "unported"
+    },
+    {
+      "path": "tests/include/tests/qp.h",
+      "lines": 92,
+      "sha256": "72f0ad7cc45ce1c0bce9feb9dee250032229bb3e7e2b380b346383c5d49ed2a1",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/ascii_test.c",
+      "lines": 179,
+      "sha256": "025dc7f44e5a46b15273e097036c9af32f9e6d7c4f099726bed8ca3ebf6609a1",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/async_test.c",
+      "lines": 109,
+      "sha256": "4a5a697272b42f3603ef91c0ed50c767435eee10b66ae90ad810f6e563ac8e34",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/buffer_test.c",
+      "lines": 284,
+      "sha256": "89cd4c23d0144f2a6244d29bf81ca01e7f71be8307eed3fa4836c52b170657cc",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/counter_test.c",
+      "lines": 68,
+      "sha256": "6338b1e323867b142326442645aae6659614e3e2516163a4ef8d2a1fb1eeb9d8",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/crc64_test.c",
+      "lines": 83,
+      "sha256": "d4fc9e69f3fe43bc7bf21612bfc9a8aa55cedacd285c61919fd4d9c7f4918dd0",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/dnsstream_utils_test.c",
+      "lines": 646,
+      "sha256": "0f9ff65f16a50bb6b3264ff43c61eb40a3f4b60b3c6750f613562f4322820021",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/dnsstream_utils_test_data.h",
+      "lines": 602,
+      "sha256": "a0fd79bdd1a044344f57e32ff18b5d9c8dfc3a04a3d84a4c04b1201279595a3b",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/doh_test.c",
+      "lines": 2243,
+      "sha256": "ff2b67dff4c965267fdb78afd6ca8f4a14c468ef158d5c729aff07faa747bee6",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/errno_test.c",
+      "lines": 109,
+      "sha256": "5fbb7380a2ca245b588db85a0b5b8b2c5f7ab7247da132d97cee365faf2cc63a",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/file_test.c",
+      "lines": 141,
+      "sha256": "399f1bfc3ee1ddd7dabe39369e1d47964581f65709e3b54594b117d6d7c4b83b",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/hash_test.c",
+      "lines": 122,
+      "sha256": "02a0b55bea6f41db9388070a338957c25bd7731a379c8db3b59844564af76b63",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/hashmap_nodes.h",
+      "lines": 1282,
+      "sha256": "32806f154940d650d058bf9fda5660c5f45b1d69c435b3312e08f7c3e6cc8961",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/hashmap_test.c",
+      "lines": 517,
+      "sha256": "7134cdfad0adbffdf01563bd221504ca0ddd196661f6851f919ca67285caa235",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/heap_test.c",
+      "lines": 79,
+      "sha256": "8569679babf7115635c318dfea32427198e6657dd9e9eed62274419d61765393",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/histo_test.c",
+      "lines": 358,
+      "sha256": "bc832d5d7200391e39c23a966311b5b47972b8df7db5071b54fd2b433d36788e",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/hmac_test.c",
+      "lines": 939,
+      "sha256": "905249da5799b235e95d771711d5b23fde2f48780f99b1eafe802318b8fa46b2",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/ht_test.c",
+      "lines": 392,
+      "sha256": "fe7325fbb4af1ad8749463c1efa20e1c75f6c8cc8f33b31c2f7f797c308e7692",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/job_test.c",
+      "lines": 136,
+      "sha256": "7faa588cf3a7b32980f61d790a31489c4994a965825f9689828763e08410abb6",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/lex_test.c",
+      "lines": 349,
+      "sha256": "e040d3d142307b878cae06deac35bcc2a4d467142dd9e2942324091d54bad361",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/loop_test.c",
+      "lines": 141,
+      "sha256": "a5a4840f393d79e1bb96a2948da7230b214537c03b262720b2cbc05ed3688efc",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/md_test.c",
+      "lines": 564,
+      "sha256": "9c921d9a1c2030727e7024bc2970874b4bdd07a65a31d27632007342876ea187",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/mem_test.c",
+      "lines": 578,
+      "sha256": "be1bf354d064f622f4fcd65a3b18bf70f6dcdab39fd86ce460934023faee6408",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/mutex_test.c",
+      "lines": 218,
+      "sha256": "6989fd8839ffcf851aad9bf38324df84774531d965cb1923dcb56025cac4e3b1",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/netaddr_test.c",
+      "lines": 154,
+      "sha256": "98728d44872ecd68edad512fb2c1940db8d6f86f268198d97214c0ea8056cc78",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/netmgr_common.c",
+      "lines": 2462,
+      "sha256": "f9d02c064128a47fddc3cd8fbf84dba9371497b8f7b2232a3e0cbd578940af39",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/netmgr_common.h",
+      "lines": 614,
+      "sha256": "27d800936f5431adcb870d6711236e8c54df6ac2b28b675283e62f964ca4ea4d",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/parse_test.c",
+      "lines": 56,
+      "sha256": "af9a1ea2c615b286898f4fa9c3c83f731c35933410dd59053117d4ee7d3586a2",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/proxyheader_test.c",
+      "lines": 1221,
+      "sha256": "4bf74ebc9aa7c07db50eb4c44226abd5b3754e583531ecb4da2e62d4c7d58879",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/proxyheader_test_data.h",
+      "lines": 61,
+      "sha256": "523f641e3763adbb84b753ca1781287ec9bb26e314a2619ee1040810cff544ae",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/proxystream_test.c",
+      "lines": 318,
+      "sha256": "0b58c82f8e4c40feea66261bbc8d3b856728de1374e01c89b8d05643a5ecb294",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/proxyudp_test.c",
+      "lines": 120,
+      "sha256": "ed600e6bc0e40c617cd5ec9845627f3cf677769c99e725c585d1193a6ea0363c",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/quota_test.c",
+      "lines": 317,
+      "sha256": "15234a2f0ff1aabbdf0e01d2114c481377276e1aa74d791e0511903f260bc67d",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/radix_test.c",
+      "lines": 134,
+      "sha256": "972e3cd5532cfba6d44fecb25512c4ee624f712c067056fa29ced8d61815762d",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/ratelimiter_test.c",
+      "lines": 316,
+      "sha256": "5b517a44672605a377c25080fa2b4b9f78cd78213586b40bae1b95d569611058",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/regex_test.c",
+      "lines": 2334,
+      "sha256": "f395311fe8bde96984a8c00c5ae3915ea67414cdaed5f45817147599c0596245",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/result_test.c",
+      "lines": 64,
+      "sha256": "123a46270c3f5e001b2f662aa87845572547a18a39f0c8957f03d1277764a078",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/rwlock_test.c",
+      "lines": 361,
+      "sha256": "73393ed7a9e0e5e92d556d3ed1860195c3e26d9d7f0efe4748f98f090fccc3d7",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/safe_test.c",
+      "lines": 92,
+      "sha256": "d6e7cfb64b3377fbd5a4c5ca573eb0a18bcf9b42631d14e0dbac066a342e3b28",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/siphash_test.c",
+      "lines": 186,
+      "sha256": "72d8918100d553c12004f6391b7bafc94731260e9bd65aa8ab4d30aa1f73ea4b",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/sockaddr_test.c",
+      "lines": 148,
+      "sha256": "fe3671d772a03be1c94b83807bd82cfa25ce2470de27a59be2e32886a8c41444",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/spinlock_test.c",
+      "lines": 228,
+      "sha256": "56b18fef40e26f8e4bf04e13102aa9ddbfb4195bbf1e9c096e3124d4edb11783",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/stats_test.c",
+      "lines": 100,
+      "sha256": "25c1e67a62ee2572baa3039945b1ed3cded878c3c1fa0abbf9e144be8e763a0d",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/stream_shutdown.c",
+      "lines": 224,
+      "sha256": "3c8a83dac5f01ed5a6980503843278dd4b126aa480b96b45d345818f4cdb0f07",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/symtab_test.c",
+      "lines": 134,
+      "sha256": "02f1944c825e40d8d576b1b481826b5972316889d04119d36da2763fa8ca4dd9",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/tcp_test.c",
+      "lines": 164,
+      "sha256": "c4a5a5dcad83ce402aad4d0782987cb946d0797bbe2f3b8836e8e467d30509eb",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/tcpdns_test.c",
+      "lines": 186,
+      "sha256": "92e8705fa21db0652c2b2d12d51961b27fb644fe1ed9973169caaa41249cc063",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/time_test.c",
+      "lines": 664,
+      "sha256": "937ee385e61b6b3e2ae8756df6257f444c69101ecf1c4416a22c7de9e279e535",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/timer_test.c",
+      "lines": 537,
+      "sha256": "87d304c5f4279a32912f3dfd5b7b1f82f0475cd9ba1fc6525b9b5297d458e8ab",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/tls_test.c",
+      "lines": 232,
+      "sha256": "130e6f0f262f2c531630f5eb9b8ce4932319b798a242be71638e874f7481a378",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/tlsdns_test.c",
+      "lines": 237,
+      "sha256": "d549d17d2ca767266c7235f98e5e361b04c4964358d313e9db88ec38b6649ea2",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/udp_test.c",
+      "lines": 236,
+      "sha256": "92f10f90dd48ca3901bc18af7120cce8b22813544fb02199e2a3af3dc2cab0d8",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/url_test.c",
+      "lines": 277,
+      "sha256": "b79bffc8da84b46c592a6dbc44db27c8f51faac9ed96c24adc88b17fddbfc3ab",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/uv_wrap.h",
+      "lines": 319,
+      "sha256": "61a14965399209b0e2fa9781a2ca451099fe7cc3883ebb26166f9f6ad3cf0665",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isc/work_test.c",
+      "lines": 79,
+      "sha256": "8158a3587785836508b86a8bb7c280e5ce79d4a808140b4a2343763e29cd6f1c",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isccfg/duration_test.c",
+      "lines": 243,
+      "sha256": "1e64a9d6615b2ca3b760ee6941161575568275fcf24c643d35b2960d4f63cfaf",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isccfg/grammar_test.c",
+      "lines": 184,
+      "sha256": "7b47225c8efe01d5fda14c5243517f46b47d3fdeabb66f7e6d8806061eff7089",
+      "status": "unported"
+    },
+    {
+      "path": "tests/isccfg/parser_test.c",
+      "lines": 228,
+      "sha256": "8e8ac68de825b32bb960534546c6dfeb7b7411f4a221e8b5d093ca581567a1cd",
+      "status": "unported"
+    },
+    {
+      "path": "tests/libtest/dns.c",
+      "lines": 503,
+      "sha256": "65f69f635984fd74998caf095730df296e9ce121addc864502bf1c1b94ee8784",
+      "status": "unported"
+    },
+    {
+      "path": "tests/libtest/isc.c",
+      "lines": 144,
+      "sha256": "e2b6bbffb5e39a4526f10e05f8de860fbc2cacb487bd458ab1e68fb5ff7bfde8",
+      "status": "unported"
+    },
+    {
+      "path": "tests/libtest/ns.c",
+      "lines": 622,
+      "sha256": "c9668509763a4e5cd68618775822f04ee320112cb9c3361cc2842b5b7912322a",
+      "status": "unported"
+    },
+    {
+      "path": "tests/libtest/qp.c",
+      "lines": 354,
+      "sha256": "4dbf6ed475227c0883450b5244bb6ff52c873c3faea27bb68974c8095a9ca378",
+      "status": "unported"
+    },
+    {
+      "path": "tests/ns/listenlist_test.c",
+      "lines": 98,
+      "sha256": "5237ddc2eba9a456da236e1c4a5cc85af1d2e4341e202fc7d74cf10a8d0c4cf0",
+      "status": "unported"
+    },
+    {
+      "path": "tests/ns/netmgr_wrap.c",
+      "lines": 105,
+      "sha256": "26008a0b7ba44438de2ef3a5488dbb1dcb6602a353706432050b27ae5a20fbe5",
+      "status": "unported"
+    },
+    {
+      "path": "tests/ns/notify_test.c",
+      "lines": 125,
+      "sha256": "3479a72bd632b2578eee8d4df412d79c05402d0b4a14cd4ebfc68209ab66d6f0",
+      "status": "unported"
+    },
+    {
+      "path": "tests/ns/plugin_test.c",
+      "lines": 161,
+      "sha256": "a4081a918c39375bd8ea8af90e4f7bd0fb6a545ffd3b295e04877295bd49f6fd",
+      "status": "unported"
+    },
+    {
+      "path": "tests/ns/query_test.c",
+      "lines": 1484,
+      "sha256": "6b3f4395d8a593f0f5167c922fadf4f3c501e183f4efd5217504957cc4775839",
+      "status": "unported"
+    }
+  ]
+}
